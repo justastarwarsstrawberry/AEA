@@ -1,11 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-require('dotenv').config();
 
-const process = require('process');
-const bot = new Eris(process.env.DISCORD_TOKEN);
-
-bot.connect();
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
 
 client.once('ready', () => {
 	console.log('Ready!');
