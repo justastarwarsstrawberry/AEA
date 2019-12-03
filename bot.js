@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config();
 
-const Eris = require('eris');
+const process = require('process');
 const bot = new Eris(process.env.DISCORD_TOKEN);
 
 bot.connect();
