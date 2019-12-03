@@ -1,0 +1,4 @@
+# Config files
+/node_modules
+config.json
+.env
