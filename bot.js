@@ -37,11 +37,3 @@ client.on('message', (message) => {
             // do nothing
         }
     });
-client.on('message', (message) => {
-    if (message.content == 'stop' && client.users.get("242687584373964801")){
-    process.exit();
-    }
-    else{
-        // Do notta
-    }
-})
