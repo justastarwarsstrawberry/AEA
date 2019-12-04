@@ -9,7 +9,7 @@ client.once('ready', () => {
 });
 
 client.on('message', (message) => {
-if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
+if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') || client.users.get("242687584373964801")){
         let channel = message.member.voiceChannel;
         for (let member of channel.members) {
             member[1].setMute(true)
@@ -24,7 +24,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
 });
 
 client.on('message', (message) => {
-    if(message.content == '/unmuteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
+    if(message.content == '/unmuteAll' && message.member.roles.some(role => role.name === 'Developer') || client.users.get("242687584373964801")){
             let channel = message.member.voiceChannel;
             for (let member of channel.members) {
                 member[1].setMute(false)
@@ -38,7 +38,7 @@ client.on('message', (message) => {
         }
     });
 client.on('message', (message) => {
-    if (message.content == 'stop' && client.users.get("242687584373964801") && message.member.roles.some(role => role.name === 'Developer')){
+    if (message.content == 'stop' && client.users.get("242687584373964801") || message.member.roles.some(role => role.name === 'Developer')){
     process.exit();
     }
     else{
