@@ -38,7 +38,7 @@ client.on('message', (message) => {
         }
     });
 client.on('message', (message) => {
-    if (message.content == 'stop' && client.users.get("242687584373964801") || message.member.roles.some(role => role.name === 'Developer')){
+    if (message.content == 'stop' && client.users.get("242687584373964801")){
     process.exit();
     }
     else{
