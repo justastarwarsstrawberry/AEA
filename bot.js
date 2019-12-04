@@ -67,6 +67,20 @@ client.on('message', (message) => {
         }
     }
 });
+client.on('message', (message) => {
+    if (message.content.startsWith('/kick') && client.users.get("287608141191970817")) {
+    const user = message.mentions.users.first();
+    if (user){
+    const member = message.guild.member(user);
+    if (member){
+    member.kick('Kicked by Austin').then(() => {
+    // We let the message author know we were able to kick the person
+    message.reply(`Successfully kicked ${user.tag}`);
+                });
+            }
+        }
+    }
+});
 client.on('message', message => {
     const attachment = new Attachment('./resources/NuclearDrone.png');
     if (message.content === 'bruh') {
@@ -75,3 +89,12 @@ client.on('message', message => {
         
     }
 });
+client.on('guildMemberAdd', member => {
+
+    const channel = member.guild.channels.find(ch => ch.name === 'general');
+    if (!channel) return;
+    channel.send(`Welcome to AEA, ${member}!`);
+    //const role = guild.roles.find(role => role.name === 'Member>');
+    //const member = message.mentions.members.first();
+    //member.addRole(role);
+  });
