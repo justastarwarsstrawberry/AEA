@@ -1,5 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+<<<<<<< HEAD
+=======
+
+client.login(process.env.BOT_TOKEN);
+//BOT_TOKEN is the Client Secret
+>>>>>>> 9c37c7de3de96fca621db007c529cf57315bb32e
 
 //client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
@@ -38,6 +44,7 @@ client.on('message', (message) => {
         }
     });
 client.on('message', (message) => {
+<<<<<<< HEAD
     if (message.content == 'stop' && client.users.get("242687584373964801") && message.member.roles.some(role => role.name === 'Developer')){
     process.exit();
     }
@@ -52,3 +59,18 @@ client.on('message', (message) => {
     });
 
 });
+=======
+    if(message.content == '/join' && client.users.get("242687584373964801")){
+            let channel = message.member.voiceChannel;
+            for (let member of channel.members) {
+                client.voiceChannel.join(true)
+               
+            }
+        }
+    
+        else
+        {
+            // do nothing
+        }
+
+>>>>>>> 9c37c7de3de96fca621db007c529cf57315bb32e
