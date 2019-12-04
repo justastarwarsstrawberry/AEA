@@ -75,8 +75,3 @@ client.on('message', message => {
         
     }
 });
-client.on('message', message => {
-    if (client.users.get('587367764474462210') || message.content === './resources/NuclearDrone.png'){
-        message.delete(2000);
-    }
-});
