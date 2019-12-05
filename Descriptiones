@@ -33,3 +33,22 @@ client.on('message', message => {
 		Build Speed 124.6s`);
     }
 });
+
+client.on('message', message => {
+    if (message.content === 'Experimental Mech' ||  message.content === 'experimental mech' || message.content === 'Experimental mech' || message.content === 'experimental Mech' || message.content === 'Mech Experimental') {
+
+    message.reply(`
+                Experimental Mech
+                - Very heavily armed and armored 
+		- Can attack ground and light air 
+		- Sub attack when over water 
+		- Very slow 
+		- Can self-repair 
+		- Can move over water
+		Price $125,000
+                Health 15,000
+		Attack Range 310
+                Speed: 0.30
+		Build Speed 92.4s`);
+    }
+});
