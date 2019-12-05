@@ -136,7 +136,7 @@ client.on('message', message => {
         - Guided missiles
         - Cannot fit in air transports
         - Goes nuclear on death
-        Price $65,000
+        Price $250,000
         Health 12,000
         Shield 8,000
         Attack Range 350
@@ -156,7 +156,7 @@ client.on('message', message => {
         - Goes nuclear on death
         - Can only have 5 at a time
 
-        Price $ 250,000
+        Price $65,000
         Health 7,500
         Attack Range 350
         Move Speed 0.45
