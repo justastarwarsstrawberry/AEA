@@ -52,3 +52,24 @@ client.on('message', message => {
 		Build Speed 92.4s`);
     }
 });
+
+client.on('message', message => {
+    if (message.content === 'Experimental Spider' ||  message.content === 'experimental spider' || message.content === 'Experimental spider' || message.content === 'experimental Spider' || message.content === 'Spider Experimental') {
+
+        message.reply(`
+                Experimental Spider
+                - Support unit 
+		- Laser defense 
+		- Built in fabricator 
+		- Can build/repair units and buildings 
+		- Cannot fit in transports 
+		- Can build powerful experimentals 
+		- Can only have 5 built at once 
+		- Goes nuclear on death
+		Price $70,000
+                Health 10,000
+		Attack Range 250
+                Speed: 0.30
+		Build Speed 83.3s`);
+    }
+});
