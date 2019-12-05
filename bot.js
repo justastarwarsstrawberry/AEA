@@ -98,9 +98,9 @@ client.on('guildMemberAdd', member => {
     const channel = member.guild.channels.find(ch => ch.name === 'general');
     if (!channel) return;
     channel.send(`Welcome to AEA, ${member}!`);
-    const role = guild.roles.find(role => role.name === 'Member');
-    const member = message.mentions.members.first();
-    member.addRole(role);
+    //const role = guild.roles.find(role => role.name === 'Member');
+    //const member = message.mentions.members.first();
+    //member.addRole(role);
 });
 
 
