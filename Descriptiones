@@ -73,3 +73,21 @@ client.on('message', message => {
 		Build Speed 83.3s`);
     }
 });
+
+client.on('message', message => {
+    if (message.content === 'Experimental Gunship' ||  message.content === 'experimental gunship' || message.content === 'Experimental gunship' || message.content === 'experimental Spider' || message.content === 'Gunship Experimental') {
+
+          message.reply(`
+                Experimental Gunship
+                - Very heavily armed and armored 
+                - Slow 
+                - VERY powerful Ground attack 
+                - Decent anti-air 
+                - Can self-repair
+		Price $250,000
+                Health 24,000
+		Attack Range 250
+                Speed: 0.80
+		Build Speed 143.8s`);
+    }
+});
