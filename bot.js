@@ -186,17 +186,18 @@ client.on('message', message => {
     if (message.content === 'Experimental Mech' ||  message.content === 'experimental mech' || message.content === 'Experimental mech' || message.content === 'experimental Mech' || message.content === 'Mech Experimental') {
 
     message.reply(`
-                Experimental Mech
-                - Very heavily armed and armored 
+        Experimental Mech
+        - Very heavily armed and armored 
 		- Can attack ground and light air 
 		- Sub attack when over water 
 		- Very slow 
 		- Can self-repair 
-		- Can move over water
+        - Can move over water
+        
 		Price $125,000
-                Health 15,000
+        Health 15,000
 		Attack Range 310
-                Speed: 0.30
+        Speed: 0.30
 		Build Speed 92.4s`);
     }
 });
@@ -205,19 +206,20 @@ client.on('message', message => {
     if (message.content === 'Experimental Spider' ||  message.content === 'experimental spider' || message.content === 'Experimental spider' || message.content === 'experimental Spider' || message.content === 'Spider Experimental') {
 
         message.reply(`
-                Experimental Spider
-                - Support unit 
+        Experimental Spider
+        - Support unit 
 		- Laser defense 
 		- Built in fabricator 
 		- Can build/repair units and buildings 
 		- Cannot fit in transports 
 		- Can build powerful experimentals 
 		- Can only have 5 built at once 
-		- Goes nuclear on death
+        - Goes nuclear on death
+        
 		Price $70,000
-                Health 10,000
+        Health 10,000
 		Attack Range 250
-                Speed: 0.30
+        Speed: 0.30
 		Build Speed 83.3s`);
     }
 });
@@ -226,16 +228,17 @@ client.on('message', message => {
     if (message.content === 'Experimental Gunship' ||  message.content === 'experimental gunship' || message.content === 'Experimental gunship' || message.content === 'experimental Spider' || message.content === 'Gunship Experimental') {
 
           message.reply(`
-                Experimental Gunship
-                - Very heavily armed and armored 
-                - Slow 
-                - VERY powerful Ground attack 
-                - Decent anti-air 
-                - Can self-repair
+        Experimental Gunship
+        - Very heavily armed and armored 
+        - Slow 
+        - VERY powerful Ground attack 
+        - Decent anti-air 
+        - Can self-repair
+
 		Price $250,000
-                Health 24,000
+        Health 24,000
 		Attack Range 250
-                Speed: 0.80
+        Speed: 0.80
 		Build Speed 143.8s`);
     }
 });
