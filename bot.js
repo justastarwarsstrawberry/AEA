@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const { Client, Attachment } = require('discord.js');
 
-//client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
 
 client.once('ready', () => {
