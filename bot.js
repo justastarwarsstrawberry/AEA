@@ -120,3 +120,20 @@ client.on('message', message => {
         Build Speed 123.8s`);
     }
 });
+client.on('message', message => {
+    if (message.content === 'Naval Carrier' ||  message.content === 'naval carrier') {
+
+        message.reply(`
+        Naval Carrier
+        - Experimental Naval Carrier
+        - Can make Air and Naval units
+        - Built in fabricator
+        - Carries 16 Units
+        - Goes nuclear on death
+        - Can only have 5 at a time
+        Price $65000
+        Health 7500
+        Max Attack Range 350
+        Build Speed 123.8s`);
+    }
+});
