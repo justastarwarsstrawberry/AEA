@@ -154,6 +154,7 @@ client.on('message', message => {
         - Carries 16 Units
         - Goes nuclear on death
         - Can only have 5 at a time
+
         Price $ 250,000
         Health 7,500
         Attack Range 350
@@ -165,16 +166,17 @@ client.on('message', message => {
     if (message.content === 'King Kriptor' ||  message.content === 'king kriptor' || message.content === 'king Kriptor' || message.content === 'King kriptor' || message.content === 'kriptor King') {
 
     message.reply(`
-                King Kriptor
-                - Very heavily armed and armored but slow 
+        King Kriptor
+        - Very heavily armed and armored but slow 
 		- Heavy AOE cannons for ground attack 
 		- Powerful shoulder mounted A.A turrets
 		- Can move over water -Can self-repair 
-		- Goes nuclear on death (if nukes are enabled)
+        - Goes nuclear on death (if nukes are enabled)
+        
 		Price $175,000
-                Health 20,000
+        Health 20,000
 		Attack Range 290
-                Speed: 0.30
+        Speed: 0.30
 		Build Speed 124.6s`);
     }
 });
