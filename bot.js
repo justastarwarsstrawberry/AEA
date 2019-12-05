@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const { Client, Attachment } = require('discord.js');
 
-client.login(process.env.BOT_TOKEN);
+//client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
-
+client.login('NTg3MzY3NzY0NDc0NDYyMjEw.XehuTA.ePhTtHUeozKjHP9rbIxq0oAvBnA')
 client.once('ready', () => {
 	console.log('Ready!');
 });
@@ -37,7 +37,8 @@ client.on('message', (message) => {
         {
             // do nothing
         }
-    });
+});
+
 client.on('message', (message) => {
     if (message.content == 'stop' && client.users.get("242687584373964801") && message.member.roles.some(role => role.name === 'Developer')){
     process.exit();
@@ -46,13 +47,7 @@ client.on('message', (message) => {
         // Do notta
     }
 });
-client.on('message', (message) => {
-    let voiceChannel = message.member.voiceChannel;
-    if(message.content == '/join' && client.users.get("242687584373964801")) return voiceChannel.join(true).then(connection => {
-     const dispatcher = connection.playFile('C:/Users/Lemon/OneDrive/Documents/Music/Desktop/discord bots/Austins/resources/bruh.ogg');
-    });
 
-});
 client.on('message', (message) => {
     if (message.content.startsWith('/kick') && client.users.get("242687584373964801")) {
     const user = message.mentions.users.first();
@@ -67,6 +62,7 @@ client.on('message', (message) => {
         }
     }
 });
+
 client.on('message', (message) => {
     if (message.content.startsWith('/kick') && client.users.get("287608141191970817")) {
     const user = message.mentions.users.first();
@@ -81,14 +77,22 @@ client.on('message', (message) => {
         }
     }
 });
+
 client.on('message', message => {
     const attachment = new Attachment('./resources/NuclearDrone.png');
-    if (message.content === 'bruh') {
 
-        message.channel.send(attachment);
-        
+    if (message.content === 'bruh') {
+    message.channel.send(attachment);
     }
 });
+
+client.on('message', message => {
+    let voiceChannel = message.member.voiceChannel;
+    if (message.content === 'bruh') return voiceChannel.join(true).then(connection => {
+        const dispatcher = connection.playFile('./resources/bruh.ogg');
+    })
+});
+
 client.on('guildMemberAdd', member => {
 
     const channel = member.guild.channels.find(ch => ch.name === 'general');
@@ -97,4 +101,22 @@ client.on('guildMemberAdd', member => {
     //const role = guild.roles.find(role => role.name === 'Member>');
     //const member = message.mentions.members.first();
     //member.addRole(role);
-  });
+});
+
+client.on('message', message => {
+    if (message.content === 'Mothership' ||  message.content === 'mothership') {
+
+        message.reply(`
+        Mothership
+        - Ultimate Carrier
+        - Armed with hellfire cannons and missile launchers
+
+        - Built in fabricator
+        - Carries 16 Units
+        - Goes nuclear on death
+        Price $150000
+        Health 15000
+        Max Attack Range 320
+        Build Speed 123.8s`);
+    }
+});
