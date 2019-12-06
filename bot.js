@@ -71,7 +71,6 @@ client.on('message', (message) => {
     const member = message.guild.member(user);
     if (member){
     member.kick('Kicked by Austin').then(() => {
-    // We let the message author know we were able to kick the person
     message.reply(`Successfully kicked ${user.tag}`);
                 });
             }
@@ -136,6 +135,7 @@ client.on('message', message => {
         - Guided missiles
         - Cannot fit in air transports
         - Goes nuclear on death
+
         Price $250,000
         Health 12,000
         Shield 8,000
@@ -240,6 +240,22 @@ client.on('message', message => {
 		Attack Range 250
         Speed: 0.80
 		Build Speed 143.8s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'experimental sam tank' ||  message.content === 'Experimental SAM Tank') {
+
+        message.reply(`
+        Experimental SAM Tank
+        - Very heavily armored
+        - Armed with anti-air missles and flak turret
+        - Can attack air only
+
+        Price $24,000
+        Health 6,000
+        Attack Range 350
+        Move Speed 0.4
+        Build Speed 60s`);
     }
 });
 client.on('message', message => {
@@ -406,3 +422,352 @@ client.on('message', message => {
         Build Speed 6.7s`);
     }
 });
+client.on('message', message => {
+    if (message.content === 'combat engineer' ||  message.content === 'Combatengineer' || message.content === 'combat Engineer' || message.content === 'combatEngineer' || message.content === 'Combat Engineer') {
+
+        message.reply(`
+        Combat Engineer
+        - Can build units and some T2 Buildings
+        - Can attack land, air and subs
+        - Can repair units
+        - Can build Sub-Turrets
+        - Can only have 12 built at once
+
+        Price $7,400
+        Health 1,500
+        Attack Range 200
+        Move Speed  1.2
+        Build Speed 33.3s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'corvette' ||  message.content === 'Corvette' || message.content === 'corvet' || message.content === 'Corvet') {
+
+        message.reply(`
+        Corvette
+        - Equipped with a Long Range Cannon
+        - Strong Anti-sub torpedos
+        - Cannot hit air
+
+        Price $1,250
+        Health 1,500
+        Attack Range 275
+        Move Speed  0.8
+        Build Speed 10.6s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'demo truck' ||  message.content === 'Demo truck' || message.content === 'demoTruck' || message.content === 'demo Truck') {
+
+        message.reply(`
+        Demolition Truck
+        - Blows itself up on enemies
+        - High damage and area of effect
+        - Lower damage if killed before detonation
+        - Light armor
+        - Fast, but accelerates slowly
+        - Cannot enter transports
+
+        Price $2,500
+        Health 420
+        Attack Range 9
+        Move Speed  1.5
+        Build Speed 41.7s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Destroyer' ||  message.content === 'destroyer' || message.content === 'Destroyer ship' || message.content === 'destroyer Ship') {
+
+        message.reply(`
+        Destroyer
+        - Powerful land attack
+        - Anti-sub torpedoes
+        - Cannot attack air
+
+        Price $5,000
+        Health 3,500
+        Attack Range 290
+        Move Speed  0.6
+        Build Speed 24.8s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Dreadnought' ||  message.content === 'dreadnought') {
+
+        message.reply(`
+        Dreadnought
+        - Equipped with Long range cannons
+        - No Defences while in Cannon mode
+        - Area damage only
+        - Cannot attack air
+        - Strong Anti-sub torpedoes
+        - Can build builder ship and Missile ship 
+
+        Price $58,000
+        Health 12,000
+        Attack Range 350
+        Attack Range Deployed 630
+        Move Speed  0.5
+        Build Speed 87.7s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Dropship' ||  message.content === 'dropship') {
+
+        message.reply(`
+        Dropship
+        - Transports up to 4 units
+        - Cannot attack
+
+        Price $800
+        Health 700
+        Attack Range 0
+        Move Speed  2.3
+        Build Speed 16.7s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Frigate' ||  message.content === 'frigate') {
+
+        message.reply(`
+        Frigate
+        - Equipped with a Long Range Cannon
+        - Cannot hit subs
+        - Anti Air Turret 
+
+        Price $3,500
+        Health 2,000
+        Attack Range 350
+        Move Speed 0.75
+        Build Speed 15.2s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Gunboat' ||  message.content === 'gunboat' || message.content === 'gun boat' || message.content === 'Gun boat') {
+
+        message.reply(`
+        Gunboat
+        - Fast
+        - Can attack ground
+
+        Price $300
+        Health 170
+        Attack Range 120
+        Move Speed 1.5
+        Build Speed 3.3s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Gunship' ||  message.content === 'gunship' || message.content === 'gun ship' || message.content === 'Gun ship') {
+
+        message.reply(`
+        Gunship
+        - Can attack ground only
+        - trong attack
+        - Heavily armored
+
+        Price $800
+        Health 285
+        Attack Range 140
+        Move Speed 1.5
+        Build Speed 8.3s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'heavy hover tank' ||  message.content === 'heavyhovertank' || message.content === 'Heavy Hover Tank' || message.content === 'HeavyHoverTank') {
+
+        message.reply(`
+        Heavy Hover Tank
+        - Heavy armor
+        - Able to move over water
+        - Can attack subs, air and ground
+        - Great for killing heavy subs
+
+        Price $1,100
+        Health 420
+        Attack Range 160
+        Move Speed 1.0
+        Build Speed 16.7s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'heavy tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
+
+        message.reply(`
+        Heavy Tank
+        - Heavily armed
+        - Can attack ground
+        - Light air attack
+
+
+        Price $800
+        Health 600
+        Attack Range 160
+        Move Speed 0.8
+        Build Speed 10.7s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
+
+        message.reply(`
+        Heavy Interceptor
+        - Fast
+        - Can attack air only
+        - Heavily armed with shield
+        - Shield weak vs lightning
+
+        Price $1,200
+        Health 40
+        Shield 560
+        Attack Range 170
+        Move Speed 2.5
+        Build Speed 16.7s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'heavy missle ship' ||  message.content === 'heavymissleship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissleShip' || message.content === 'heavy missle ship' || message.content === 'heavymissleship' || message.content === 'Heavy Missle S' || message.content === 'HeavyMissleS') {
+
+        message.reply(`
+        Heavy Missle Ship
+        - Can attack land & air
+        - Long range
+
+        Price $16,000
+        Health 3,000
+        Attack Range 170
+        Move Speed 0.5
+        Build Speed 41.7s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'hover tank' ||  message.content === 'hovertank' || message.content === 'Hover Tank' || message.content === 'HoverTank' || message.content === 'Hover tank' || message.content === 'hover Tank') {
+
+        message.reply(`
+        Hover Tank
+        - Light armor
+        - Able to move over water
+        - Can attack air and ground
+
+        Price $450
+        Health 150
+        Attack Range 140
+        Move Speed 1.2
+        Build Speed 8.3s`);
+    }
+});
+// Ubers Mechs
+client.on('message', message => {
+    if (message.content === 'Assault Mech' ||  message.content === 'AssaultMech' || message.content === 'assault mech' || message.content === 'assaultmech') {
+
+        const attachment = new Attachment('./resources/assaultmech.png');
+
+        if (message.content === 'Assault Mech' ||  message.content === 'AssaultMech' || message.content === 'assault mech' || message.content === 'assaultmech') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Assault Mech
+        - Heavily armed and armored
+        - Can attack ground
+        - Light air attack
+        - Can build and buff nearby small T1 mechs
+        - Can self-repair
+
+        Price $20,000
+        Health 4,800
+        Attack Range 250
+        Move Speed 0.4
+        Build Speed 52.1s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'heavy artillery mech' ||  message.content === 'heavyartillerymech' || message.content === 'Heavy Artillery Mech' || message.content === 'HeavyArtilleryMech') {
+
+        const attachment = new Attachment('./resources/hvyartmech.png');
+
+        if (message.content === 'heavy artillery mech' ||  message.content === 'heavyartillerymech' || message.content === 'Heavy Artillery Mech' || message.content === 'HeavyArtilleryMech') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Heavy Artillery Mech
+        - Ground attack
+        - Needs to deploy to fire
+        - Very long range, but slow reload
+        - Regenerates shield when deployed
+        - Stronger vs. buildings than vs. units
+
+        Price $9,000
+        Health 750
+        Attack Range 410
+        Move Speed 0.6
+        Build Speed 33.3s
+
+        Heavy Artillery Mech Deployed
+
+        Shield 500
+        Move Speed 0
+        Build Speed 2s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Heavy Mech' ||  message.content === 'HeavyMech' || message.content === 'heavy mech' || message.content === 'heavymech') {
+
+        const attachment = new Attachment('./resources/hvymech.png');
+
+        if (message.content === 'Heavy Mech' ||  message.content === 'HeavyMech' || message.content === 'heavy mech' || message.content === 'heavymech') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Heavy Mech
+        - Heavily armored
+        - Ground attack
+        - Moderate damage and range
+        - Can disable weapon to activate 
+        a temporary shield and self-repair
+
+        Price $5,000
+        Health 2,000
+        Attack Range 250
+        Move Speed 0.7
+        Build Speed 18.3s
+
+        Activate Shield
+        - Adds a 900HP shield for 8 seconds
+        - Regenerates 400HP
+        - Slightly increases movement speed
+        - Unable to attack while shield is active
+        
+        Shield 900
+        Move Speed 0.85
+        Build Speed 0s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Heavy Mobile Turret' ||  message.content === 'HeavyMobileTurret' || message.content === 'heavy mobile turret' || message.content === 'heavymobileturret') {
+
+        const attachment = new Attachment('./resources/hvymobileturret.png');
+
+        if (message.content === 'Heavy Mobile Turret' ||  message.content === 'HeavyMobileTurret' || message.content === 'heavy mobile turret' || message.content === 'heavymobileturret') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Heavy Mobile Turret
+        -Heavily armored
+        -Ground attack when undeployed
+        -Deploys for extra range, anti-air and shield regen
+        -Cannot attack while undeploying
+        -Can release a repairing nano-burst when deployed
+
+        Price $8,000
+        Health 1,400
+        Attack Range 220
+        Move Speed 0.5
+        Build Speed 33.3s`);
+    }
+});
+
+// house f f r , senate j
+//foreigh Affairs, finance, rules, judicary [names]
+// rules [my committee]
+// two paragraph describing committees
+// what do you hope to accomplish and why do I want to server on the following committee
