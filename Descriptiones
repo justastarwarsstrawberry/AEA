@@ -19,7 +19,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'King Kriptor' ||  message.content === 'king kriptor' || message.content === 'king Kriptor' || message.content === 'King kriptor' || message.content === 'kriptor King') {
 
-    message.reply(`
+                message.reply(`
                 King Kriptor
                 - Very heavily armed and armored but slow 
 		- Heavy AOE cannons for ground attack 
@@ -37,7 +37,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'Experimental Mech' ||  message.content === 'experimental mech' || message.content === 'Experimental mech' || message.content === 'experimental Mech' || message.content === 'Mech Experimental') {
 
-    message.reply(`
+                message.reply(`
                 Experimental Mech
                 - Very heavily armed and armored 
 		- Can attack ground and light air 
@@ -56,7 +56,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'Experimental Spider' ||  message.content === 'experimental spider' || message.content === 'Experimental spider' || message.content === 'experimental Spider' || message.content === 'Spider Experimental') {
 
-        message.reply(`
+                message.reply(`
                 Experimental Spider
                 - Support unit 
 		- Laser defense 
@@ -77,7 +77,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'Experimental Gunship' ||  message.content === 'experimental gunship' || message.content === 'Experimental gunship' || message.content === 'experimental Spider' || message.content === 'Gunship Experimental') {
 
-          message.reply(`
+                message.reply(`
                 Experimental Gunship
                 - Very heavily armed and armored 
                 - Slow 
