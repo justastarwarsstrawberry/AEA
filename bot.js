@@ -329,7 +329,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Thunderhead' ||  message.content === 'thunderhead' || message.content === 'Thunder head' || message.content === 'thunder head' || message.content === 'thunder Head' || message.content === 'Thunder head') {
+        const attachment = new Attachment('./resources/thunderhead.png');
 
+        if (message.content === 'Thunderhead' ||  message.content === 'thunderhead' || message.content === 'Thunder head' || message.content === 'thunder head' || message.content === 'thunder Head' || message.content === 'Thunder head') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Thunder Head
         - Long range artillery
@@ -346,7 +350,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Typhon' ||  message.content === 'Typhoon' || message.content === 'typhoon') {
+        const attachment = new Attachment('./resources/typhoon.png');
 
+        if (message.content === 'Typhon' ||  message.content === 'Typhoon' || message.content === 'typhoon') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Typhoon
         - Landing assault craft
@@ -363,7 +371,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Anti Air Ship' ||  message.content === 'Anti air ship' || message.content === 'anti air ship' || message.content === 'anti air Ship') {
+        const attachment = new Attachment('./resources/antiairboat.png');
 
+        if (message.content === 'Anti Air Ship' ||  message.content === 'Anti air ship' || message.content === 'anti air ship' || message.content === 'anti air Ship') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Anti Air Ship
         - Equipped with an Anti Air Gun
@@ -378,7 +390,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'battleship cruiser' ||  message.content === 'Battle cruiser' || message.content === 'battle cruiser' || message.content === 'battlecruiser') {
+        const attachment = new Attachment('./resources/battlecruiser.png');
 
+        if (message.content === 'battleship cruiser' ||  message.content === 'Battle cruiser' || message.content === 'battle cruiser' || message.content === 'battlecruiser') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Battle Cruiser
         - Heavily armoured
@@ -394,7 +410,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'battleship' ||  message.content === 'Battleship' || message.content === 'battle ship' || message.content === 'battleship' || message.content === 'BattleShip') {
+        const attachment = new Attachment('./resources/battleship.png');
 
+        if (message.content === 'battleship' ||  message.content === 'Battleship' || message.content === 'battle ship' || message.content === 'battleship' || message.content === 'BattleShip') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Battleship
         - Medium range land attack
@@ -409,7 +429,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'buildership' ||  message.content === 'Buildership' || message.content === 'builderShip' || message.content === 'builder Ship' || message.content === 'Builder ship') {
+        const attachment = new Attachment('./resources/buildership.png');
 
+        if (message.content === 'buildership' ||  message.content === 'Buildership' || message.content === 'builderShip' || message.content === 'builder Ship' || message.content === 'Builder ship') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Builder Ship
         - It builds... 
@@ -442,7 +466,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'corvette' ||  message.content === 'Corvette' || message.content === 'corvet' || message.content === 'Corvet') {
+        const attachment = new Attachment('./resources/corvette.png');
 
+        if (message.content === 'corvette' ||  message.content === 'Corvette' || message.content === 'corvet' || message.content === 'Corvet') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Corvette
         - Equipped with a Long Range Cannon
@@ -458,7 +486,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'demo truck' ||  message.content === 'Demo truck' || message.content === 'demoTruck' || message.content === 'demo Truck') {
+        const attachment = new Attachment('./resources/demotruck.png');
 
+        if (message.content === 'demo truck' ||  message.content === 'Demo truck' || message.content === 'demoTruck' || message.content === 'demo Truck') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Demolition Truck
         - Blows itself up on enemies
@@ -477,7 +509,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Destroyer' ||  message.content === 'destroyer' || message.content === 'Destroyer ship' || message.content === 'destroyer Ship') {
+        const attachment = new Attachment('./resources/destroyer.png');
 
+        if (message.content === 'Destroyer' ||  message.content === 'destroyer' || message.content === 'Destroyer ship' || message.content === 'destroyer Ship') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Destroyer
         - Powerful land attack
@@ -493,7 +529,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Dreadnought' ||  message.content === 'dreadnought') {
+        const attachment = new Attachment('./resources/dreadnought.png');
 
+        if (message.content === 'Dreadnought' ||  message.content === 'dreadnought') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Dreadnought
         - Equipped with Long range cannons
@@ -513,7 +553,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Dropship' ||  message.content === 'dropship') {
+        const attachment = new Attachment('./resources/dropship.png');
 
+        if (message.content === 'Dropship' ||  message.content === 'dropship') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Dropship
         - Transports up to 4 units
@@ -528,7 +572,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Frigate' ||  message.content === 'frigate') {
+        const attachment = new Attachment('./resources/frigate.png');
 
+        if (message.content === 'Frigate' ||  message.content === 'frigate') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Frigate
         - Equipped with a Long Range Cannon
@@ -544,7 +592,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Gunboat' ||  message.content === 'gunboat' || message.content === 'gun boat' || message.content === 'Gun boat') {
+        const attachment = new Attachment('./resources/gunboat.png');
 
+        if (message.content === 'Gunboat' ||  message.content === 'gunboat' || message.content === 'gun boat' || message.content === 'Gun boat') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Gunboat
         - Fast
@@ -559,7 +611,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Gunship' ||  message.content === 'gunship' || message.content === 'gun ship' || message.content === 'Gun ship') {
+        const attachment = new Attachment('./resources/gunship.png');
 
+        if (message.content === 'Gunship' ||  message.content === 'gunship' || message.content === 'gun ship' || message.content === 'Gun ship') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Gunship
         - Can attack ground only
@@ -575,7 +631,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'heavy hover tank' ||  message.content === 'heavyhovertank' || message.content === 'Heavy Hover Tank' || message.content === 'HeavyHoverTank') {
+        const attachment = new Attachment('./resources/hvyhovertank.png');
 
+        if (message.content === 'heavy hover tank' ||  message.content === 'heavyhovertank' || message.content === 'Heavy Hover Tank' || message.content === 'HeavyHoverTank') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Heavy Hover Tank
         - Heavy armor
@@ -592,7 +652,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'heavy tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
+        const attachment = new Attachment('./resources/hvyinterceptor.png');
 
+        if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Heavy Tank
         - Heavily armed
@@ -609,7 +673,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
+        const attachment = new Attachment('./resources/hvyinterceptor.png');
 
+        if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Heavy Interceptor
         - Fast
@@ -627,7 +695,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'heavy missle ship' ||  message.content === 'heavymissleship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissleShip' || message.content === 'heavy missle ship' || message.content === 'heavymissleship' || message.content === 'Heavy Missle S' || message.content === 'HeavyMissleS') {
+        const attachment = new Attachment('./resources/hvymissleship.png');
 
+        if (message.content === 'heavy missle ship' ||  message.content === 'heavymissleship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissleShip' || message.content === 'heavy missle ship' || message.content === 'heavymissleship' || message.content === 'Heavy Missle S' || message.content === 'HeavyMissleS') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Heavy Missle Ship
         - Can attack land & air
@@ -642,7 +714,11 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'hover tank' ||  message.content === 'hovertank' || message.content === 'Hover Tank' || message.content === 'HoverTank' || message.content === 'Hover tank' || message.content === 'hover Tank') {
+        const attachment = new Attachment('./resources/hovertank.png');
 
+        if (message.content === 'hover tank' ||  message.content === 'hovertank' || message.content === 'Hover Tank' || message.content === 'HoverTank' || message.content === 'Hover tank' || message.content === 'hover Tank') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Hover Tank
         - Light armor
