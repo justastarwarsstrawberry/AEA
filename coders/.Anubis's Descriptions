@@ -18,4 +18,4 @@ client.on('message', message => {
         Build Speed 3.3s`);
     }
 });
-CODEOWNERS @Daniel
+CODEOWNERS @Daniel2201
