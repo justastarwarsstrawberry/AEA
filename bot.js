@@ -771,4 +771,3 @@ client.on('message', message => {
 // rules [my committee]
 // two paragraph describing committees
 // what do you hope to accomplish and why do I want to server on the following committee
-CODEOWNERS @LemonsHQ @SkaarjLord
