@@ -42,7 +42,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
     if (message.content == 'stop' && client.users.get("242687584373964801") && message.member.roles.some(role => role.name === 'Developer')){
-    process.exit();
+    //process.exit();
     }
     else{
         // Do notta
@@ -86,12 +86,12 @@ client.on('message', message => {
     }
 });
 
-client.on('message', message => {
-    let voiceChannel = message.member.voiceChannel;
-    if (message.content.includes('bruh')) return voiceChannel.join(true).then(connection => {
-        const dispatcher = connection.playFile('./resources/bruh.wav');
-    })
-});
+//client.on('message', message => {
+//    let voiceChannel = message.member.voiceChannel;
+//    if (message.content.includes('bruh')) return voiceChannel.join(true).then(connection => {
+//        const dispatcher = connection.playFile('./resources/bruh.wav');
+//   })
+//});
 
 client.on('guildMemberAdd', member => {
 
