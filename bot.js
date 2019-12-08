@@ -652,9 +652,9 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'heavy tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
-        const attachment = new Attachment('./resources/hvyinterceptor.png');
+        const attachment = new Attachment('./resources/hvytank.png');
 
-        if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
+        if (message.content === 'heavy tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
         message.channel.send(attachment);
         }
         message.reply(`
