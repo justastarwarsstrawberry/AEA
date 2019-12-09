@@ -739,7 +739,7 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-    if (message.content === 'heavy missile ship' ||  message.content === 'heavymissileship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissileShip' || message.content === 'heavy missile ship' || message.content === 'heavymissileship' || message.content === 'Heavy Missile S' || message.content === 'HeavyMissileS') {
+    if (message.content === 'heavy missile ship' ||  message.content === 'heavymissileship' || message.content === 'Heavy Missile Ship' || message.content === 'HeavyMissileShip' || message.content === 'heavy missile ship' || message.content === 'heavymissileship' || message.content === 'Heavy Missile S' || message.content === 'HeavyMissileS') {
         const attachment = new Attachment('./resources/hvymissileship.png');
 
         if (message.content === 'heavy missile ship' ||  message.content === 'heavymissileship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissileShip' || message.content === 'heavy missile ship' || message.content === 'heavymissileship' || message.content === 'Heavy Missile S' || message.content === 'HeavyMissileS') {
