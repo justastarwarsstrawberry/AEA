@@ -700,11 +700,11 @@ client.on('message', message => {
         }
         message.reply(`
         Kirov Bomber
-					- Heavy aircraft
-					- Armed with 30 bombs (slow reload)
-					- Heavy Armor
-					- Can attack only land
-					- Slow
+	- Heavy aircraft
+	- Armed with 30 bombs (slow reload)
+	- Heavy Armor
+	- Can attack only land
+	- Slow
 					// edit
         Price $45,000
         Health 24,000
@@ -739,14 +739,14 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-    if (message.content === 'heavy missle ship' ||  message.content === 'heavymissleship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissleShip' || message.content === 'heavy missle ship' || message.content === 'heavymissleship' || message.content === 'Heavy Missle S' || message.content === 'HeavyMissleS') {
-        const attachment = new Attachment('./resources/hvymissleship.png');
+    if (message.content === 'heavy missile ship' ||  message.content === 'heavymissileship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissileShip' || message.content === 'heavy missile ship' || message.content === 'heavymissileship' || message.content === 'Heavy Missile S' || message.content === 'HeavyMissileS') {
+        const attachment = new Attachment('./resources/hvymissileship.png');
 
-        if (message.content === 'heavy missle ship' ||  message.content === 'heavymissleship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissleShip' || message.content === 'heavy missle ship' || message.content === 'heavymissleship' || message.content === 'Heavy Missle S' || message.content === 'HeavyMissleS') {
+        if (message.content === 'heavy missile ship' ||  message.content === 'heavymissileship' || message.content === 'Heavy Missle Ship' || message.content === 'HeavyMissileShip' || message.content === 'heavy missile ship' || message.content === 'heavymissileship' || message.content === 'Heavy Missile S' || message.content === 'HeavyMissileS') {
         message.channel.send(attachment);
         }
         message.reply(`
-        Heavy Missle Ship
+        Heavy Missile Ship
         - Can attack land & air
         - Long range
 
