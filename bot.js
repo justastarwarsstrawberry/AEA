@@ -705,7 +705,7 @@ client.on('message', message => {
         - Heavy Armor
         - Can attack only land
         - Slow
-					// edit
+					
         Price $45,000
         Health 24,000
         Attack Range 60
