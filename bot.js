@@ -671,6 +671,51 @@ client.on('message', message => {
         Build Speed 10.7s`);
     }
 });
+
+client.on('message', message => {
+    if (message.content === 'tank' ||  message.content === 'Tank') {
+        const attachment = new Attachment('./resources/tank.png');
+
+        if (message.content === 'tank' ||  message.content === 'Tank') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Tank
+        - Can attack ground only
+        - Fast but low health
+
+        Price $350
+        Health 230
+        Attack Range 130
+        Move Speed 1.10
+        Build Speed 4.8s`);
+    }
+});
+client.on('message', message => {
+    if (message.content === 'Kirov' ||  message.content === 'kirov') {
+        const attachment = new Attachment('./resources/kirov.png');
+
+        if (message.content === 'Kirov' ||  message.content === 'kirov') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Kirov Bomber
+					- Heavy aircraft
+					- Armed with 30 bombs (slow reload)
+					- Heavy Armor
+					- Can attack only land
+					- Slow
+					// edit
+        Price $45,000
+        Health 24,000
+        Attack Range 60
+        Move Speed 1.10
+        Build Speed 45.5s`);
+    }
+});
+
+
+
 client.on('message', message => {
     if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
         const attachment = new Attachment('./resources/hvyinterceptor.png');
