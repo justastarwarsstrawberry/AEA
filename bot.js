@@ -700,11 +700,11 @@ client.on('message', message => {
         }
         message.reply(`
         Kirov Bomber
-	- Heavy aircraft
-	- Armed with 30 bombs (slow reload)
-	- Heavy Armor
-	- Can attack only land
-	- Slow
+        - Heavy aircraft
+        - Armed with 30 bombs (slow reload)
+        - Heavy Armor
+        - Can attack only land
+        - Slow
 					// edit
         Price $45,000
         Health 24,000
