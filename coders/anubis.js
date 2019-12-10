@@ -1,3 +1,6 @@
+global.client = client;
+const discord = require('discord.js');
+
 client.on('message', message => {
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
         const attachment = new Attachment('./resources/typhoon.png');
