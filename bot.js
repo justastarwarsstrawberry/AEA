@@ -226,7 +226,11 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'Experimental Gunship' ||  message.content === 'experimental gunship' || message.content === 'Experimental gunship' || message.content === 'experimental Spider' || message.content === 'Gunship Experimental') {
+        const attachment = new Attachment('./resources/expgunship.png');
 
+        if (message.content === 'Experimental Gunship' ||  message.content === 'experimental gunship' || message.content === 'Experimental gunship' || message.content === 'experimental Spider' || message.content === 'Gunship Experimental') {
+        message.channel.send(attachment);
+        }
           message.reply(`
         Experimental Gunship
         - Very heavily armed and armored 
