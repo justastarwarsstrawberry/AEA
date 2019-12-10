@@ -815,6 +815,27 @@ client.on('message', message => {
         Build Speed 8.3s`);
     }
 });
+client.on('message', message => {
+    if (message.content === 'LRS' ||  message.content === 'lrs') {
+        const attachment = new Attachment('./resources/lrs.png');
+
+        if (message.content === 'lrs' || message.content === 'LRS') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        LRS
+        - Long Range Attack
+        - Able to Surface and Submerge
+        - Land, Underwater, and Air Attack
+        - Light land attack while submerged
+
+        Price $7,750
+        Health 1,000
+        Attack Range 200
+        Move Speed 0.6
+        Build Speed 16.7s`);
+    }
+});
 // Ubers Mechs
 client.on('message', message => {
     if (message.content === 'Assault Mech' ||  message.content === 'AssaultMech' || message.content === 'assault mech' || message.content === 'assaultmech') {
