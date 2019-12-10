@@ -10,15 +10,7 @@ client.login(process.env.BOT_TOKEN);
 client.once('ready', () => {
 	console.log('Ready!');
 });
-client.on('message', message => {
-    if (message.content.includes === 'fuck' ||  message.content.includes === 'shit' || message.content.includes === 'nigga' || message.content.includes === 'Fuck' ||  message.content.includes === 'Shit' || message.content.includes === 'Nigga') {
-        const attachment = new Attachment('./resources/language.png');
 
-        if (message.content.includes === 'fuck' ||  message.content.includes === 'shit' || message.content.includes === 'nigga' || message.content.includes === 'Fuck' ||  message.content.includes === 'Shit' || message.content.includes === 'Nigga') {
-        message.channel.send(attachment);
-        }
-    }
-});
 client.on('message', (message) => {
 if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
         let channel = message.member.voiceChannel;
