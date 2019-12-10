@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const { Client, Attachment } = require('discord.js');
-
+module.exports = {
+    anubis: function () {
+        
 client.on('message', message => {
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
         const attachment = new Attachment('./resources/typhoon.png');
@@ -29,4 +31,7 @@ client.on('message', message => {
         }
     }
 });
+    
+    }
+};
 CODEOWNERS @Daniel2201
