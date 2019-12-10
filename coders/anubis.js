@@ -1,8 +1,9 @@
+//Dont touch Zone start
+exports.code = function(){
 const Discord = require('discord.js');
 const { Client, Attachment } = require('discord.js');
-exports.code = function(){
+//Dont touch Zone end
 
-        
 client.on('message', message => {
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
         const attachment = new Attachment('./resources/typhoon.png');
@@ -34,5 +35,6 @@ client.on('message', message => {
 });
     
     
-
+//Dont touch Zone start
 }
+//Dont touch Zone end
