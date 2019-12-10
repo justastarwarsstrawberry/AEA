@@ -4,7 +4,15 @@ const { Client, Attachment } = require('discord.js');
 const Anubis = require('./coders/anubis.js');
 client.setMaxListeners(0)
 
-console.log(Anubis.code);
+client.on('message', (message) => {
+if(Anubis.code && message.content){
+ console.log(Anubis.code);
+}
+else {
+ console.log('Didnt work');
+}
+});
+
 
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
