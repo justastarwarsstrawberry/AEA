@@ -49,7 +49,7 @@ client.on('message', message => {
            if(message.content === '/random') {
            var x = getRandomInt(1, 36);
            if (x===1) {
-               const attachment = new Attachment('./resources/map/map/[p4]Cold Corners (4p)_map.png');
+               const attachment = new Attachment('./resources/map/[p4]Cold Corners (4p)_map.png');
                message.channel.send(attachment);
                message.reply('');
            }
