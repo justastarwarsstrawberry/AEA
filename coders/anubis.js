@@ -15,13 +15,13 @@ client.on('message', message => {
         -Very fast
         -Low armor
         -Ground attack
-
         Price $275
         Health 120
         Attack Range 130
         Move Speed  1.60
         Build Speed 3.3s`);
     }
+ });
     client.on('message', message => {
     if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
         const attachment = new Attachment('./resources/language.png');
@@ -30,4 +30,8 @@ client.on('message', message => {
         message.channel.send(attachment);
         }
     }
-    }}}}}:
+});
+    
+    }
+
+}
