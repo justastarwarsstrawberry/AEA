@@ -30,6 +30,7 @@ client.on('message', message => {
         message.channel.send(attachment);
 
     }
+});
     client.on('message', message => {
     if (message.content.includes('rape is good') ||  message.content.includes('child porn')) {
         const attachment = new Attachment('./resources/download.jpg');
@@ -40,6 +41,5 @@ client.on('message', message => {
    
     
 //Dont touch Zone start
-})
-//Dont touch Zone end
 }
+//Dont touch Zone end
