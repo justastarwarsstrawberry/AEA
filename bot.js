@@ -714,7 +714,29 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if (message.content === 'laser tank' ||  message.content === 'lasertank' || message.content === 'Laser Tank' || message.content === 'LaserTank') {
+        const attachment = new Attachment('./resources/lasertank.png');
 
+        if (message.content === 'laser tank' ||  message.content === 'lasertank' || message.content === 'Laser Tank' || message.content === 'LaserTank') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Laser Tank
+        - Can attack ground and air
+        - Weak vs. multiple units
+        - Powerful single shot, slow
+          recharge
+
+
+
+        Price $1,300
+        Health 400
+        Attack Range 220
+        Move Speed 0.7
+        Build Speed 12.8s`);
+    }
+});
 
 client.on('message', message => {
     if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
