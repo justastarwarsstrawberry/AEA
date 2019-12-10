@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const { Client, Attachment } = require('discord.js');
-module.exports = {
-    code: function () {
+exports.code = function(){
+
         
 client.on('message', message => {
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
@@ -33,6 +33,6 @@ client.on('message', message => {
     }
 });
     
-    }
+    
 
 }
