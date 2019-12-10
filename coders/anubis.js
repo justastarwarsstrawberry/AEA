@@ -30,6 +30,12 @@ client.on('message', message => {
         message.channel.send(attachment);
 
     }
+    client.on('message', message => {
+    if (message.content.includes('rape is good') ||  message.content.includes('child porn')) {
+        const attachment = new Attachment('./resources/download.png');
+        message.channel.send(attachment);
+
+    }
 });
    
     
