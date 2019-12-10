@@ -32,7 +32,7 @@ client.on('message', message => {
     }
 });
     client.on('message', message => {
-    if (message.content.includes('rape is good') ||  message.content.includes('child porn')) {
+    if (message.content.includes('rape') & ('good') ||  message.content.includes('child porn')) {
         const attachment = new Attachment('./resources/download.jpg');
         message.channel.send(attachment);
 
