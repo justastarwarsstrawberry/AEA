@@ -58,10 +58,27 @@ client.on('message', message => {
                const attachment = new Attachment('./resources/[p4]Desert Battle (4p)_map.png');
                message.channel.send(attachment);
            }
+             if (x===4) {
+               const attachment = new Attachment('./resources/[p4]Dual Commanders (4p)_map.png');
+               message.channel.send(attachment);
+           }
+             if (x===5) {
+               const attachment = new Attachment('./resources/[p5]Bottom Heavy (2v3)_map.png');
+               message.channel.send(attachment);
+           
+           }
+              if (x===6) {
+               const attachment = new Attachment('./resources/[p5]Eye of Magma (2v3)_map.png');
+               message.channel.send(attachment);
+           
+           }
+              if (x===7) {
+               const attachment = new Attachment('./resources/[p5]Eye of Magma (2v3)_map.png');
+               message.channel.send(attachment);
            
        }
            
-}
+});
     
 //Dont touch Zone start
 }
