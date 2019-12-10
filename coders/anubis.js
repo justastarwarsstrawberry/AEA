@@ -24,14 +24,6 @@ client.on('message', message => {
         Build Speed 3.3s`);
     }
  });
-    client.on('message', message => {
-    if (message.content.includes('fuck') ||  message.content.includes('shit') || message.content.includes('nigger')) {
-        const attachment = new Attachment('./resources/language.png');
-
-        if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
-        message.channel.send(attachment);
-        }
-    }
 });
     
     
