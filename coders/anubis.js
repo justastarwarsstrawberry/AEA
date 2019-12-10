@@ -131,7 +131,7 @@ client.on('message', message => {
            
        }
                if (x===18) {
-               const attachment = new Attachment('./resources/[p6]Serpent's Pass (6p)_map.png');
+               const attachment = new Attachment('./resources/[p6]Serpents Pass (6p)_map.png');
                message.channel.send(attachment);
            
        }
