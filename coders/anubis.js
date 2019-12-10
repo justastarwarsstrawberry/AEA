@@ -6,7 +6,7 @@ client.setMaxListeners(0)
 
 client.on('message', message => {
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
-        const attachment = new Attachment('./resources/typhoon.png');
+        const attachment = new Attachment('./resources/lynx.png');
 
         if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
         message.channel.send(attachment);
