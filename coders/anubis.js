@@ -51,6 +51,7 @@ client.on('message', message => {
            if (x===1) {
                const attachment = new Attachment('./resources/map/map/[p4]Cold Corners (4p)_map.png');
                message.channel.send(attachment);
+               message.reply('');
            }
            if (x===2) {
                const attachment = new Attachment('./resources/map/[p4]Convergence (4p)_map.png');
