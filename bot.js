@@ -3,10 +3,13 @@ const client = new Discord.Client();
 const { Client, Attachment } = require('discord.js');
 const Anubis = require('./coders/anubis.js');
 client.setMaxListeners(0)
-
-if(Anubis){
+client.on('message', (message) => {
 	
-}
+if(Anubis){
+    Anubis.code();
+    console.log('Anubis loaded')
+	}
+});
 
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
