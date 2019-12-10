@@ -1,7 +1,6 @@
 //Dont touch Zone start
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
-const talkedRecently = new Set();
 client.setMaxListeners(0)
 //Dont touch Zone end
 
@@ -51,19 +50,6 @@ client.on('message', message => {
            
            if(message.content === '/random') {
            var x = getRandomInt(1, 36);
-            if (talkedRecently.has(message.author.id)) {
-            message.channel.send("Wait 3 seconds before typing this again. - " + message.author);
-            } else {
-
-           // the user can type the command ... your command code goes here :)
-
-        // Adds the user to the set so that they can't talk for a minute
-        talkedRecently.add(message.author.id);
-        setTimeout(() => {
-          // Removes the user from the set after a minute
-          talkedRecently.delete(message.author.id);
-        }, 3000);
-    }
            if (x===1) {
                const attachment = new Attachment('./resources/map/[p4]Cold Corners (4p)_map.png');
                message.channel.send(attachment);
