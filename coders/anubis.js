@@ -48,9 +48,12 @@ client.on('message', message => {
                  return Math.floor(Math.random() * (max - min)) + min;
              }
              
-              if (talkedRecently.has(message.author.id)) {
+           
+           if(message.content === '/random') {
+           var x = getRandomInt(1, 36);
+            if (talkedRecently.has(message.author.id)) {
             message.channel.send("Wait 3 seconds before typing this again. - " + message.author);
-    } else {
+            } else {
 
            // the user can type the command ... your command code goes here :)
 
@@ -61,8 +64,6 @@ client.on('message', message => {
           talkedRecently.delete(message.author.id);
         }, 3000);
     }
-           if(message.content === '/random') {
-           var x = getRandomInt(1, 36);
            if (x===1) {
                const attachment = new Attachment('./resources/map/[p4]Cold Corners (4p)_map.png');
                message.channel.send(attachment);
