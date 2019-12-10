@@ -48,17 +48,17 @@ client.on('message', message => {
                  return Math.floor(Math.random() * (max - min)) + min;
              }
              
-              if (talkedRecently.has(msg.author.id)) {
-            msg.channel.send("Wait 3 seconds before typing this again. - " + msg.author);
+              if (talkedRecently.has(message.author.id)) {
+            message.channel.send("Wait 3 seconds before typing this again. - " + message.author);
     } else {
 
            // the user can type the command ... your command code goes here :)
 
         // Adds the user to the set so that they can't talk for a minute
-        talkedRecently.add(msg.author.id);
+        talkedRecently.add(message.author.id);
         setTimeout(() => {
           // Removes the user from the set after a minute
-          talkedRecently.delete(msg.author.id);
+          talkedRecently.delete(message.author.id);
         }, 3000);
     }
            if(message.content === '/random') {
