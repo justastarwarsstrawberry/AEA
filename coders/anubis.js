@@ -1,5 +1,6 @@
 //Dont touch Zone start
 exports.code = function(){
+const { Client, Attachment } = require('discord.js');
 //Dont touch Zone end
 
 client.on('message', message => {
