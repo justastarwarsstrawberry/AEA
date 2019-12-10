@@ -8,12 +8,12 @@ const Anubis = require('./coders/anubis.js');
 
 client.setMaxListeners(0)
 
-client.on('message', (message) => {
-	if(Anubis && message.content){
+
+if(Anubis && Client){
    		 Anubis.code();
-    		console.log('Anubis loaded')
-	}
-});
+    		console.log('Anubis loaded');
+}
+
 
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
