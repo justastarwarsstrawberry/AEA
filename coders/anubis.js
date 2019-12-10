@@ -49,7 +49,7 @@ client.on('message', message => {
            if(message.content === '/random') {
            var x = getRandomInt(1, 36)
            if (x===1) {
-               const attachment = new Attachment('./resources/[p4]Cold Corners (4p)_map.png');
+               const attachment = new Attachment('./resources/map/[p4]Cold Corners (4p)_map.png');
                message.channel.send(attachment);
            }
            if (x===2) {
@@ -216,7 +216,7 @@ client.on('message', message => {
            
        }
                 if (x===35) {
-               const attachment = new Attachment('./resources/[p10]Seton's Clutch (10p)_map.png');
+               const attachment = new Attachment('./resources/[p10]Setons Clutch (10p)_map.png');
                message.channel.send(attachment);
            
        }
