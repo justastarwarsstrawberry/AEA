@@ -169,16 +169,16 @@ client.on('message', message => {
     message.reply(`
         King Kriptor
         - Very heavily armed and armored but slow 
-	- Heavy AOE cannons for ground attack 
-	- Powerful shoulder mounted A.A turrets
-	- Can move over water -Can self-repair 
+        - Heavy AOE cannons for ground attack 
+        - Powerful shoulder mounted A.A turrets
+        - Can move over water -Can self-repair 
         - Goes nuclear on death (if nukes are enabled)
         
-	Price $175,000
+        Price $175,000
         Health 20,000
-	Attack Range 290
+        Attack Range 290
         Speed: 0.30
-	Build Speed 124.6s`);
+        Build Speed 124.6s`);
     }
 });
 
@@ -188,17 +188,17 @@ client.on('message', message => {
     message.reply(`
         Experimental Mech
         - Very heavily armed and armored 
-	- Can attack ground and light air 
-	- Sub attack when over water 
-	- Very slow 
-	- Can self-repair 
+        - Can attack ground and light air 
+        - Sub attack when over water 
+        - Very slow 
+        - Can self-repair 
         - Can move over water
         
-	Price $125,000
-        Health 15,000
-	Attack Range 310
+        Price $125,000
+        Health 15,000 
+        Attack Range 310
         Speed: 0.30
-	Build Speed 92.4s`);
+        Build Speed 92.4s`);
     }
 });
 
@@ -208,19 +208,19 @@ client.on('message', message => {
         message.reply(`
         Experimental Spider
         - Support unit 
-	- Laser defense 
-	- Built in fabricator 
-	- Can build/repair units and buildings 
-	- Cannot fit in transports 
-	- Can build powerful experimentals 
-	- Can only have 5 built at once 
+        - Laser defense 
+        - Built in fabricator 
+        - Can build/repair units and buildings 
+        - Cannot fit in transports 
+        - Can build powerful experimentals 
+        - Can only have 5 built at once 
         - Goes nuclear on death
         
-	Price $70,000
+        Price $70,000
         Health 10,000
-	Attack Range 250
+        Attack Range 250
         Speed: 0.30
-	Build Speed 83.3s`);
+        Build Speed 83.3s`);
     }
 });
 
@@ -235,11 +235,11 @@ client.on('message', message => {
         - Decent anti-air 
         - Can self-repair
 
-	Price $250,000
+        Price $250,000
         Health 24,000
-	Attack Range 250
+        Attack Range 250
         Speed: 0.80
-	Build Speed 143.8s`);
+        Build Speed 143.8s`);
     }
 });
 client.on('message', message => {
