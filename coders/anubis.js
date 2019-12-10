@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const { Client, Attachment } = require('discord.js');
 module.exports = {
-    anubis: function () {
+    code: function () {
         
 client.on('message', message => {
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
