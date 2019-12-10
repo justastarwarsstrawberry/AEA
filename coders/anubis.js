@@ -47,7 +47,7 @@ client.on('message', message => {
                  return Math.floor(Math.random() * (max - min)) + min;
              }
            if(message.content === '/random') {
-           var x = getRandomInt(1, 36)
+           var x = getRandomInt(1, 36);
            if (x===1) {
                const attachment = new Attachment('./resources/map/map/[p4]Cold Corners (4p)_map.png');
                message.channel.send(attachment);
@@ -225,6 +225,7 @@ client.on('message', message => {
                message.channel.send(attachment);
            
        }
+    }
 });
     
 //Dont touch Zone start
