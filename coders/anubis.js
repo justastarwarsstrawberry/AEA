@@ -23,9 +23,15 @@ client.on('message', message => {
         Move Speed  1.60
         Build Speed 3.3s`);
     }
- });
 });
-    
+client.on('message', message => {
+    if (message.content.includes('fuck') ||  message.content.includes('shit') || message.content.includes('nigger')) {
+        const attachment = new Attachment('./resources/language.png');
+        message.channel.send(attachment);
+
+    }
+});
+   
     
 //Dont touch Zone start
 }
