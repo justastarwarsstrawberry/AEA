@@ -22,6 +22,7 @@ client.on('message', message => {
         Move Speed  1.60
         Build Speed 3.3s`);
     }
+ });
     client.on('message', message => {
     if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
         const attachment = new Attachment('./resources/language.png');
@@ -33,5 +34,5 @@ client.on('message', message => {
 });
     
     }
-};
-CODEOWNERS @Daniel2201
+
+}
