@@ -22,7 +22,7 @@
 # In this example, @doctocat owns any files in the build/logs
 # directory at the root of the repository and any of its
 # subdirectories.
-/bot2/coders/ @Daniel2201
+/bot2/coders/ @Daniel2201 @RWAstonM
 
 # The `docs/*` pattern will match files like
 # `docs/getting-started.md` but not further nested files like
