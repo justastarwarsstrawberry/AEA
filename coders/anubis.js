@@ -1,7 +1,7 @@
 //Dont touch Zone start
 exports.code = function(){
-const Discord = require('discord.js');
-const { Client, Attachment } = require('discord.js');
+var Discord = require('discord.js');
+var { Client, Attachment } = require('discord.js');
 //Dont touch Zone end
 
 client.on('message', message => {
