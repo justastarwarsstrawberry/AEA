@@ -25,7 +25,7 @@ client.on('message', message => {
     }
  });
     client.on('message', message => {
-    if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
+    if (message.content.includes('fuck') ||  message.content.includes('shit') || message.content.includes('nigger')) {
         const attachment = new Attachment('./resources/language.png');
 
         if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
