@@ -13,9 +13,9 @@ Anubis.exec('node ./coders/anubis.js', (error, stdout, stderr) => {
 	
     if (error !== null) {
         console.log(`exec error: ${error}`);
-    }
-});
-
+   	 }
+      });
+}
 
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
