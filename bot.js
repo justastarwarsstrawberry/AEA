@@ -5,16 +5,7 @@ const Anubis = require('./coders/anubis.js');
 client.setMaxListeners(0)
 
 if(Anubis){
-Anubis.exec('node ./coders/anubis.js', (error, stdout, stderr) => {
 	
-    console.log(`${stdout}`);
-    console.log(`${stderr}`);
-    console.log(Anubis.code);
-	
-    if (error !== null) {
-        console.log(`exec error: ${error}`);
-   	 }
-      });
 }
 
 client.login(process.env.BOT_TOKEN);
