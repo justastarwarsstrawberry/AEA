@@ -1,7 +1,10 @@
-const Discord = require('discord.js');
 const { Client, Attachment } = require('discord.js');
-const Anubis = require('./coders/anubis.js');
+global.Discord = require('discord.js');
 global.client = new Discord.Client();
+
+
+const Anubis = require('./coders/anubis.js');
+
 
 client.setMaxListeners(0)
 
