@@ -24,10 +24,10 @@ client.on('message', message => {
     }
  });
     client.on('message', message => {
-    if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
+    if (message.content.includes === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
         const attachment = new Attachment('./resources/language.png');
 
-        if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
+        if (message.content.includes === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
         message.channel.send(attachment);
         }
     }
