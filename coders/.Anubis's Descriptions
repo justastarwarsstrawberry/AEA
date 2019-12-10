@@ -21,7 +21,7 @@ client.on('message', message => {
     if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
         const attachment = new Attachment('./resources/LaNgUaGe.png');
 
-        if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
+        if (message.content === 'fuck' ||  message.content === 'shit' || message.content === 'nigga') {
         message.channel.send(attachment);
         }
     }
