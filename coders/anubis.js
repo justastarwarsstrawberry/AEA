@@ -83,120 +83,145 @@ client.on('message', message => {
                const attachment = new Attachment('./resources/[p5]Kratos and Hercules (2v3)_map.png');
                message.channel.send(attachment);
            
-       }
+              }
               if (x===9) {
-               const attachment = new Attachment('./resources/[p5]Kratos and Hercules (2v3)_map.png');
-               message.channel.send(attachment);
-           
-       }
-              if (x===10) {
                const attachment = new Attachment('./resources/[p6] RoundaBout (6p)_map.PNG');
                message.channel.send(attachment);
            
        }
-              if (x===11) {
+              if (x===10) {
                const attachment = new Attachment('./resources/[p6]Beach Landing mrhidihoEdit (6p)_map.png');
                message.channel.send(attachment);
            
        }
-              if (x===12) {
-               const attachment = new Attachment('./resources/[p6]Beach Landing mrhidihoEdit (6p)_map.png');
-               message.channel.send(attachment);
-           
-       }
-              if (x===13) {
+                  if (x===11) {
                const attachment = new Attachment('./resources/[p6]Bridge of Hell (6p)_map.png');
                message.channel.send(attachment);
            
        }
                
-              if (x===14) {
+              if (x===12) {
                const attachment = new Attachment('./resources/[p6]Burning Beaches (6p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===15) {
+               if (x===13) {
                const attachment = new Attachment('./resources/[p6]Crossing (6p) mrhidihoEdit_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===16) {
+               if (x===14) {
                const attachment = new Attachment('./resources/[p6]Desert Crossing (6p)_map.PNG');
                message.channel.send(attachment);
            
        }
-               if (x===17) {
+               if (x===15) {
                const attachment = new Attachment('./resources/[p6]Divided Islands (6p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===18) {
+               if (x===16) {
                const attachment = new Attachment('./resources/[p6]Igneous-small (6p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===19) {
+               if (x===17) {
                const attachment = new Attachment('./resources/[p6]Magma Island mrhidihoEdit (6p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===20) {
+               if (x===18) {
                const attachment = new Attachment('./resources/[p6]Serpent's Pass (6p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===21) {
+               if (x===19) {
                const attachment = new Attachment('./resources/[p6]Tundra (6p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===22) {
+               if (x===20) {
                const attachment = new Attachment('./resources/[p6]Weddell Isles (6p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===23) {
+               if (x===21) {
                const attachment = new Attachment('./resources/[p6]X-Path (6p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===24) {
+               if (x===22) {
                const attachment = new Attachment('./resources/[p8]Darklord-Egypt (8p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===25) {
+               if (x===23) {
                const attachment = new Attachment('./resources/[p8]Igneous (8p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===26) {
+               if (x===24) {
                const attachment = new Attachment('./resources/[p8]Many Islands mrhidihoEdit (8p)_map.PNG');
                message.channel.send(attachment);
            
        }
-               if (x===27) {
+               if (x===25) {
                const attachment = new Attachment('./resources/[p9]Coliding Powers (4v5)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===28) {
+               if (x===26) {
                const attachment = new Attachment('./resources/[p9]Kings of the Hills (9p)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===29) {
+               if (x===27) {
                const attachment = new Attachment('./resources/[p9]No-Mans Valley (3v4)_map.png');
                message.channel.send(attachment);
            
        }
-               if (x===30) {
+               if (x===28) {
                const attachment = new Attachment('./resources/[p10] Napali Warfare (10p)_map.PNG');
                message.channel.send(attachment);
            
        }
-               if (x===31) {
+               if (x===29) {
                const attachment = new Attachment('./resources/[p10] Ultimate Crossing (10p)_map.png');
+               message.channel.send(attachment);
+           
+       }
+               if (x===30) {
+               const attachment = new Attachment('./resources/[p10]Crossing Large mrhidihoEdit (10p)_map.png');
+               message.channel.send(attachment);
+           
+       }
+               if (x===31) {
+               const attachment = new Attachment('./resources/[p10]Huge Subdivide mrhidihoEdit(10p)_map.pn');
+               message.channel.send(attachment);
+           
+       }
+               if (x===32) {
+               const attachment = new Attachment('./resources/[p10]Island Warfare (10p)_map.png');
+               message.channel.send(attachment);
+           
+       }
+                if (x===33) {
+               const attachment = new Attachment('./resources/[p10]Land Mountains (10p)_map.png');
+               message.channel.send(attachment);
+           
+       }
+                if (x===34) {
+               const attachment = new Attachment('./resources/[p10]Lava Bio-grid mrhidihoEdit (10p)_map.png');
+               message.channel.send(attachment);
+           
+       }
+                if (x===35) {
+               const attachment = new Attachment('./resources/[p10]Seton's Clutch (10p)_map.png');
+               message.channel.send(attachment);
+           
+       }
+                if (x===36) {
+               const attachment = new Attachment('./resources/[p10]The Final Campaign (10p)_map.png');
                message.channel.send(attachment);
            
        }
