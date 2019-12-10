@@ -6,7 +6,17 @@ client.setMaxListeners(0)
 
 client.on('message', (message) => {
 if(Anubis.code && message.content){
- console.log(Anubis.code);
+Anubis.exec('node anubis.js', (error, stdout, stderr) => {
+	
+    console.log(`${stdout}`);
+    console.log(`${stderr}`);
+    console.log(Anubis.code);
+	
+    if (error !== null) {
+        console.log(`exec error: ${error}`);
+    }
+});
+
 }
 else {
  console.log('Didnt work');
