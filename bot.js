@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const { Client, Attachment } = require('discord.js');
+const cmds = require("./commands.js");
 client.setMaxListeners(0)
 
 client.login(process.env.BOT_TOKEN);
