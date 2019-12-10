@@ -38,7 +38,30 @@ client.on('message', message => {
 
     }
 });
-   
+   function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+   } 
+       client.on('message', message => {
+           if(message.content === '/random') {
+           var x = getRandomInt(1, 36)
+           if (x===1) {
+               const attachment = new Attachment('./resources/[p4]Cold Corners (4p)_map.png');
+               message.channel.send(attachment);
+           }
+           if (x===2) {
+               const attachment = new Attachment('./resources/[p4]Convergence (4p)_map.png');
+               message.channel.send(attachment);
+           }
+            if (x===3) {
+               const attachment = new Attachment('./resources/[p4]Desert Battle (4p)_map.png');
+               message.channel.send(attachment);
+           }
+           
+       }
+           
+}
     
 //Dont touch Zone start
 }
