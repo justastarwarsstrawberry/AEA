@@ -15,6 +15,7 @@ client.on('message', message => {
         -Very fast
         -Low armor
         -Ground attack
+
         Price $275
         Health 120
         Attack Range 130
