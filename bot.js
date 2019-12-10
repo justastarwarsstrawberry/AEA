@@ -5,7 +5,7 @@ const Anubis = require('./coders/anubis.js');
 client.setMaxListeners(0)
 client.on('message', (message) => {
 	
-if(Anubis){
+if(Anubis && message.content){
     Anubis.code();
     console.log('Anubis loaded')
 	}
