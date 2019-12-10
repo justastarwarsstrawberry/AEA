@@ -1,13 +1,14 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
 const { Client, Attachment } = require('discord.js');
 const Anubis = require('./coders/anubis.js');
+global.client = new Discord.Client();
+
 client.setMaxListeners(0)
+
 client.on('message', (message) => {
-	
-if(Anubis && message.content){
-    Anubis.code();
-    console.log('Anubis loaded')
+	if(Anubis && message.content){
+   		 Anubis.code();
+    		console.log('Anubis loaded')
 	}
 });
 
