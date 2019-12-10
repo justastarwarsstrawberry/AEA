@@ -172,7 +172,7 @@ client.on('message', message => {
            
        }
                if (x===26) {
-               const attachment = new Attachment('./resources/map/map/[p9]Kings of the Hills (9p)_map.png');
+               const attachment = new Attachment('./resources/map/[p9]Kings of the Hills (9p)_map.png');
                message.channel.send(attachment);
            
        }
@@ -197,12 +197,12 @@ client.on('message', message => {
            
        }
                if (x===31) {
-               const attachment = new Attachment('./resources/map/map/[p10]Huge Subdivide mrhidihoEdit(10p)_map.pn');
+               const attachment = new Attachment('./resources/map/[p10]Huge Subdivide mrhidihoEdit(10p)_map.pn');
                message.channel.send(attachment);
            
        }
                if (x===32) {
-               const attachment = new Attachment('./resources/map/map/[p10]Island Warfare (10p)_map.png');
+               const attachment = new Attachment('./resources/map/[p10]Island Warfare (10p)_map.png');
                message.channel.send(attachment);
            
        }
