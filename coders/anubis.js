@@ -1,5 +1,5 @@
-global.client = client;
-const discord = require('discord.js');
+const Discord = require('discord.js');
+const { Client, Attachment } = require('discord.js');
 
 client.on('message', message => {
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
