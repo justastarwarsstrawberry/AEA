@@ -11,7 +11,7 @@ client.once('ready', () => {
 });
 client.on('message', message => {
     if (message.content.includes === 'fuck' ||  message.content.includes === 'shit' || message.content.includes === 'nigga' || message.content.includes === 'Fuck' ||  message.content.includes === 'Shit' || message.content.includes === 'Nigga') {
-        const attachment = new Attachment('./resources/LaNgUaGe.png');
+        const attachment = new Attachment('./resources/language.png');
 
         if (message.content.includes === 'fuck' ||  message.content.includes === 'shit' || message.content.includes === 'nigga' || message.content.includes === 'Fuck' ||  message.content.includes === 'Shit' || message.content.includes === 'Nigga') {
         message.channel.send(attachment);
