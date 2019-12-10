@@ -197,7 +197,7 @@ client.on('message', message => {
            
        }
                if (x===31) {
-               const attachment = new Attachment('./resources/map/[p10]Huge Subdivide mrhidihoEdit(10p)_map.pn');
+               const attachment = new Attachment('./resources/map/[p10]Huge Subdivide mrhidihoEdit(10p)_map.png');
                message.channel.send(attachment);
            
        }
