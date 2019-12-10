@@ -31,7 +31,3 @@ client.on('message', message => {
         }
     }
 });
-    
-    }
-
-}
