@@ -4,8 +4,7 @@ const { Client, Attachment } = require('discord.js');
 const Anubis = require('./coders/anubis.js');
 client.setMaxListeners(0)
 
-client.on('message', (message) => {
-if(Anubis.code && message.content){
+if(Anubis){
 Anubis.exec('node ./coders/anubis.js', (error, stdout, stderr) => {
 	
     console.log(`${stdout}`);
@@ -15,12 +14,6 @@ Anubis.exec('node ./coders/anubis.js', (error, stdout, stderr) => {
     if (error !== null) {
         console.log(`exec error: ${error}`);
     }
-});
-
-}
-else {
- console.log('Didnt work');
-}
 });
 
 
