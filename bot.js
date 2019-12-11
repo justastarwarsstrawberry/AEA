@@ -39,7 +39,7 @@ client.on('message', (message) => {
 	//do nothing
 	}else
 	{
-		message.channel.send("Cooldown 2 sec");
+		message.channel.send("Please wait... (2 Seconds)");
    		message.delete();
     		return;
 	}
@@ -114,13 +114,13 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 
 
-
+client.on('message', (message) => {
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
     if (message.content.includes('bruh')) {
     message.channel.send(attachment);
     }
-
+});
 //client.on('message', message => {
 //    let voiceChannel = message.member.voiceChannel;
 //    if (message.content.includes('bruh')) return voiceChannel.join(true).then(connection => {
