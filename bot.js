@@ -293,7 +293,11 @@ client.on('message', (message) => {
     }
 
     if (message.content === 'Apache Helicopter' || message.content === 'Apachehelicopter' || message.content === 'apacheHelicopter' || message.content === 'apache Helicopter' || message.content === 'Apache helicopter') {
+        const attachment = new Attachment('./resources/apachehelicopter.png');
 
+        if (message.content === 'Apache Helicopter' || message.content === 'Apachehelicopter' || message.content === 'apacheHelicopter' || message.content === 'apache Helicopter' || message.content === 'Apache helicopter') {
+        message.channel.send(attachment);
+        }
         message.reply(`
         Apache Helicopter
         - Can attack Land and Air
@@ -786,7 +790,6 @@ client.on('message', (message) => {
         Move Speed 1.2
         Build Speed 8.3s`);
     }
-
     if (message.content === 'LRS' ||  message.content === 'lrs') {
         const attachment = new Attachment('./resources/lrs.png');
 
@@ -805,6 +808,64 @@ client.on('message', (message) => {
         Attack Range 200
         Move Speed 0.6
         Build Speed 16.7s`);
+    }
+	
+    if (message.content === 'Hound Apc' ||  message.content === 'hound apc') {
+        const attachment = new Attachment('./resources/houndapc.png');
+
+        if (message.content === 'Hound Apc' || message.content === 'hound apc') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Hound APC
+        - Long Range Attack
+        - Powerful in groups, but glass cannons
+        - Can only attack ground
+
+        Price $350
+        Health 100
+        Attack Range 130
+        Move Speed 1.4
+        Build Speed 3.3s`);
+    }
+	
+    if (message.content === 'Comet' ||  message.content === 'comet') {
+        const attachment = new Attachment('./resources/comet.png');
+
+        if (message.content === 'Comet' || message.content === 'comet') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Comet
+        - Fast
+        - Can attack ground only
+        - Light armor
+	- High spread, weak vs. single targets
+
+        Price $950
+        Health 450
+        Attack Range 150
+        Move Speed 1
+        Build Speed 11.1s`);
+    }
+	
+    if (message.content === 'Heavy Artillery' ||  message.content === 'heavy artillery' || message.content === 'HeavyArtillery' || message.content === 'heavyartillery') {
+        const attachment = new Attachment('./resources/hvyartillery.png');
+
+        if (message.content === 'Heavy Artillery' ||  message.content === 'heavy artillery' || message.content === 'HeavyArtillery' || message.content === 'heavyartillery') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Heavy Artillery
+        - Can attack ground only
+        - Long range
+        - Limited Laser defence
+
+        Price $3,200
+        Health 600
+        Attack Range 310
+        Move Speed 0.7
+        Build Speed 24.8s`);
     }
 
     if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
