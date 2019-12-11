@@ -35,13 +35,13 @@ const talkedRecently = new Set();
 client.on('message', (message) => {
 	
   if (talkedRecently.has(message.author.id)) {
-	if(!client.users.get("587367764474462210")){
-    		message.channel.send("Cooldown 2 sec");
-   		message.delete();
-    		return;
+	if(message.author.id === '587367764474462210'){
+	//do nothing
 	}else
 	{
-		
+		message.channel.send("Cooldown 2 sec");
+   		message.delete();
+    		return;
 	}
   }
 
