@@ -34,7 +34,7 @@ client.on('guildMemberAdd', member => {
 const talkedRecently = new Set();
 client.on('message', (message) => {
 	
-  if (talkedRecently.has(message.author.id) && !talkedRecently.has(message.author.id === '587367764474462210')) {
+  if (talkedRecently.has(message.author.id) && talkedRecently.has(message.author.id !== '587367764474462210')) {
     message.channel.send("Cooldown 2 sec");
     message.delete();
     return;
