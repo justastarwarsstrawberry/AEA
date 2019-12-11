@@ -41,7 +41,7 @@ client.on('message', (message) => {
     		return;
 	}else
 	{
-		break;
+		
 	}
   }
 
