@@ -33,7 +33,8 @@ client.on('guildMemberAdd', member => {
 });
 const talkedRecently = new Set();
 client.on('message', (message) => {
-  if (talkedRecently.has(message.author.id) && !talkedRecently.has(client.user.get('587367764474462210')) {
+	
+  if (talkedRecently.has(message.author.id) && !client.user.get('587367764474462210')) {
     message.channel.send("Cooldown 2 sec");
     message.delete();
     return;
@@ -43,6 +44,7 @@ client.on('message', (message) => {
   setTimeout(() => {
     talkedRecently.delete(message.author.id);
   }, 2000);
+
 if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
         let channel = message.member.voiceChannel;
         for (let member of channel.members) {
