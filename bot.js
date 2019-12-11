@@ -39,7 +39,7 @@ client.on('message', (message) => {
 	//do nothing
 	}else
 	{
-		message.channel.send("Please wait... (2 Seconds)");
+		message.channel.send("Please wait... (30 Seconds)");
    		message.delete();
     		return;
 	}
@@ -48,7 +48,7 @@ client.on('message', (message) => {
   talkedRecently.add(message.author.id);
   setTimeout(() => {
     talkedRecently.delete(message.author.id);
-  }, 2000);
+  }, 30000);
 
 if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
         let channel = message.member.voiceChannel;
