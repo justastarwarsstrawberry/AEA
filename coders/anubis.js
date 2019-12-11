@@ -48,8 +48,20 @@ client.on('message', message => {
              }
              
            
-           if(message.content === '/random') {
-           var x = getRandomInt(1, 36);
+           if(message.content.includes('/random')) {
+           if(message.content.includes('2v2')) {
+           var x = getRandomInt(1, 4);
+           }
+           if(message.content.includes('2v3')) {
+           var x = getRandomInt(5, 8);
+           }
+           if(message.content.includes('3v3')) {
+           var x = getRandomInt(9, 21);
+           }
+           if(message.content.includes('2v2')) {
+           var x = getRandomInt(22, 24);
+           }
+           
            if (x===1) {
                const attachment = new Attachment('./resources/map/[p4]Cold Corners (4p)_map.png');
                message.channel.send(attachment);
