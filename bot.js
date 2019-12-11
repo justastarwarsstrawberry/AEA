@@ -836,6 +836,27 @@ client.on('message', message => {
         Build Speed 16.7s`);
     }
 });
+client.on('message', message => {
+    if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
+        const attachment = new Attachment('./resources/z.png');
+
+        if (message.content === 'Zephyr' || message.content === 'zephyr') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Zephyr
+        - Medium armor
+        - Armed with a prototype flamethrower
+        - Short range ground attack
+        - Can auto-repair
+
+        Price $1,750
+        Health 900
+        Attack Range 140
+        Move Speed 1.0
+        Build Speed 19.6s`);
+    }
+});
 // Ubers Mechs
 client.on('message', message => {
     if (message.content === 'Assault Mech' ||  message.content === 'AssaultMech' || message.content === 'assault mech' || message.content === 'assaultmech') {
