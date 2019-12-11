@@ -22,6 +22,16 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+client.on('guildMemberAdd', member => {
+
+    const channel = member.guild.channels.find(ch => ch.name === 'general');
+    if (!channel) return;
+    channel.send(`Welcome to AEA, ${member}!`);
+    //const role = guild.roles.find(role => role.name === 'Member');
+    //const member = message.mentions.members.first();
+    //member.addRole(role);
+});
+
 client.on('message', (message) => {
 if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
         let channel = message.member.voiceChannel;
@@ -35,9 +45,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     {
         // do nothing
     }
-});
 
-client.on('message', (message) => {
     if(message.content == '/unmuteAll' && message.member.roles.some(role => role.name === 'Developer')){
             let channel = message.member.voiceChannel;
             for (let member of channel.members) {
@@ -50,53 +58,51 @@ client.on('message', (message) => {
         {
             // do nothing
         }
-});
 
-client.on('message', (message) => {
+
+
     if (message.content == 'stop' && client.users.get("242687584373964801") && message.member.roles.some(role => role.name === 'Developer')){
     //process.exit();
     }
     else{
         // Do notta
     }
-});
 
-client.on('message', (message) => {
+
+
     if (message.content.startsWith('/kick') && client.users.get("242687584373964801")) {
-    const user = message.mentions.users.first();
-    if (user){
-    const member = message.guild.member(user);
-    if (member){
-    member.kick('Kicked by Austin').then(() => {
-    // We let the message author know we were able to kick the person
-    message.reply(`Successfully kicked ${user.tag}`);
+   	 const user = message.mentions.users.first();
+    	if (user){
+    		const member = message.guild.member(user);
+   		 if (member){
+   		 member.kick('Kicked by Austin').then(() => {
+  		  // We let the message author know we were able to kick the person
+   		 message.reply(`Successfully kicked ${user.tag}`);
                 });
             }
         }
     }
-});
 
-client.on('message', (message) => {
+
     if (message.content.startsWith('/kick') && client.users.get("287608141191970817")) {
-    const user = message.mentions.users.first();
-    if (user){
-    const member = message.guild.member(user);
-    if (member){
-    member.kick('Kicked by Austin').then(() => {
-    message.reply(`Successfully kicked ${user.tag}`);
+    	const user = message.mentions.users.first();
+    		if (user){
+   			 const member = message.guild.member(user);
+   			 if (member){
+   			 member.kick('Kicked by Austin').then(() => {
+   			 message.reply(`Successfully kicked ${user.tag}`);
                 });
             }
         }
     }
-});
 
-client.on('message', message => {
+
+
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
     if (message.content.includes('bruh')) {
     message.channel.send(attachment);
     }
-});
 
 //client.on('message', message => {
 //    let voiceChannel = message.member.voiceChannel;
@@ -105,19 +111,8 @@ client.on('message', message => {
 //   })
 //});
 
-client.on('guildMemberAdd', member => {
-
-    const channel = member.guild.channels.find(ch => ch.name === 'general');
-    if (!channel) return;
-    channel.send(`Welcome to AEA, ${member}!`);
-    //const role = guild.roles.find(role => role.name === 'Member');
-    //const member = message.mentions.members.first();
-    //member.addRole(role);
-});
-
 
 //#############################Units############################################
-client.on('message', message => {
     if (message.content === 'Mothership' ||  message.content === 'mothership') {
 
         message.reply(`
@@ -134,8 +129,7 @@ client.on('message', message => {
         Move Speed 0.65
         Build Speed 123.8s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Titan' ||  message.content === 'titan') {
 
         message.reply(`
@@ -155,8 +149,7 @@ client.on('message', message => {
         Move Speed 0.4
         Build Speed Varies`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Naval Carrier' ||  message.content === 'naval carrier' || message.content === 'navalcarrier') {
 
         message.reply(`
@@ -174,8 +167,7 @@ client.on('message', message => {
         Move Speed 0.45
         Build Speed 111.1s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'King Kriptor' ||  message.content === 'king kriptor' || message.content === 'king Kriptor' || message.content === 'King kriptor' || message.content === 'kriptor King') {
 
     message.reply(`
@@ -192,9 +184,7 @@ client.on('message', message => {
         Speed: 0.30
         Build Speed 124.6s`);
     }
-});
 
-client.on('message', message => {
     if (message.content === 'Experimental Mech' ||  message.content === 'experimental mech' || message.content === 'Experimental mech' || message.content === 'experimental Mech' || message.content === 'Mech Experimental') {
 
     message.reply(`
@@ -212,9 +202,7 @@ client.on('message', message => {
         Speed: 0.30
         Build Speed 92.4s`);
     }
-});
 
-client.on('message', message => {
     if (message.content === 'Experimental Spider' ||  message.content === 'experimental spider' || message.content === 'Experimental spider' || message.content === 'experimental Spider' || message.content === 'Spider Experimental') {
 
         message.reply(`
@@ -234,9 +222,7 @@ client.on('message', message => {
         Speed: 0.30
         Build Speed 83.3s`);
     }
-});
 
-client.on('message', message => {
     if (message.content === 'Experimental Gunship' ||  message.content === 'experimental gunship' || message.content === 'Experimental gunship' || message.content === 'experimental Spider' || message.content === 'Gunship Experimental') {
         const attachment = new Attachment('./resources/expgunship.png');
 
@@ -257,8 +243,7 @@ client.on('message', message => {
         Speed: 0.80
         Build Speed 143.8s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'experimental sam tank' ||  message.content === 'Experimental SAM Tank') {
 
         message.reply(`
@@ -273,8 +258,7 @@ client.on('message', message => {
         Move Speed 0.4
         Build Speed 60s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Phantom scout' ||  message.content === 'Phantomscout' || message.content === 'phantomScout' || message.content === 'phantom Scout' || message.content === 'phantom scout') {
 
         message.reply(`
@@ -290,8 +274,7 @@ client.on('message', message => {
         Move Speed 2.0
         Build Speed 23.8s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Apache Helicopter' || message.content === 'Apachehelicopter' || message.content === 'apacheHelicopter' || message.content === 'apache Helicopter' || message.content === 'Apache helicopter') {
 
         message.reply(`
@@ -306,8 +289,7 @@ client.on('message', message => {
         Move Speed  1.8
         Build Speed 10.8s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Nautilus' ||  message.content === 'nautilus') {
 
         message.reply(`
@@ -326,8 +308,7 @@ client.on('message', message => {
         Move Speed  0.45
         Build Speed 55.6s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Selenium' ||  message.content === 'selenium') {
 
         message.reply(`
@@ -342,8 +323,7 @@ client.on('message', message => {
         Move Speed  0.8
         Build Speed 55.6s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Thunderhead' ||  message.content === 'thunderhead' || message.content === 'Thunder head' || message.content === 'thunder head' || message.content === 'thunder Head' || message.content === 'Thunder head') {
         const attachment = new Attachment('./resources/thunderhead.png');
 
@@ -363,8 +343,7 @@ client.on('message', message => {
         Move Speed  0.8
         Build Speed 55.6s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Typhon' ||  message.content === 'Typhoon' || message.content === 'typhoon') {
         const attachment = new Attachment('./resources/typhoon.png');
 
@@ -384,8 +363,7 @@ client.on('message', message => {
         Move Speed  1.6
         Build Speed 33.3s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Anti Air Ship' ||  message.content === 'Anti air ship' || message.content === 'anti air ship' || message.content === 'anti air Ship') {
         const attachment = new Attachment('./resources/antiairboat.png');
 
@@ -403,8 +381,7 @@ client.on('message', message => {
         Move Speed  0.9
         Build Speed 6.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'battleship cruiser' ||  message.content === 'Battle cruiser' || message.content === 'battle cruiser' || message.content === 'battlecruiser') {
         const attachment = new Attachment('./resources/battlecruiser.png');
 
@@ -423,8 +400,7 @@ client.on('message', message => {
         Move Speed  0.5
         Build Speed 87.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'battleship' ||  message.content === 'Battleship' || message.content === 'battle ship' || message.content === 'battleship' || message.content === 'BattleShip') {
         const attachment = new Attachment('./resources/battleship.png');
 
@@ -442,8 +418,7 @@ client.on('message', message => {
         Move Speed  0.8
         Build Speed 41.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'buildership' ||  message.content === 'Buildership' || message.content === 'builderShip' || message.content === 'builder Ship' || message.content === 'Builder ship') {
         const attachment = new Attachment('./resources/buildership.png');
 
@@ -461,8 +436,7 @@ client.on('message', message => {
         Move Speed  0.7
         Build Speed 6.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'combat engineer' ||  message.content === 'Combatengineer' || message.content === 'combat Engineer' || message.content === 'combatEngineer' || message.content === 'Combat Engineer') {
 
         message.reply(`
@@ -479,8 +453,7 @@ client.on('message', message => {
         Move Speed  1.2
         Build Speed 33.3s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'corvette' ||  message.content === 'Corvette' || message.content === 'corvet' || message.content === 'Corvet') {
         const attachment = new Attachment('./resources/corvette.png');
 
@@ -499,8 +472,7 @@ client.on('message', message => {
         Move Speed  0.8
         Build Speed 10.6s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'demo truck' ||  message.content === 'Demo truck' || message.content === 'demoTruck' || message.content === 'demo Truck') {
         const attachment = new Attachment('./resources/demotruck.png');
 
@@ -522,8 +494,7 @@ client.on('message', message => {
         Move Speed  1.5
         Build Speed 41.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Destroyer' ||  message.content === 'destroyer' || message.content === 'Destroyer ship' || message.content === 'destroyer Ship') {
         const attachment = new Attachment('./resources/destroyer.png');
 
@@ -542,8 +513,7 @@ client.on('message', message => {
         Move Speed  0.6
         Build Speed 24.8s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Dreadnought' ||  message.content === 'dreadnought') {
         const attachment = new Attachment('./resources/dreadnought.png');
 
@@ -566,8 +536,7 @@ client.on('message', message => {
         Move Speed  0.5
         Build Speed 87.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Dropship' ||  message.content === 'dropship') {
         const attachment = new Attachment('./resources/dropship.png');
 
@@ -585,8 +554,7 @@ client.on('message', message => {
         Move Speed  2.3
         Build Speed 16.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Frigate' ||  message.content === 'frigate') {
         const attachment = new Attachment('./resources/frigate.png');
 
@@ -605,8 +573,7 @@ client.on('message', message => {
         Move Speed 0.75
         Build Speed 15.2s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Gunboat' ||  message.content === 'gunboat' || message.content === 'gun boat' || message.content === 'Gun boat') {
         const attachment = new Attachment('./resources/gunboat.png');
 
@@ -624,8 +591,7 @@ client.on('message', message => {
         Move Speed 1.5
         Build Speed 3.3s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Gunship' ||  message.content === 'gunship' || message.content === 'gun ship' || message.content === 'Gun ship') {
         const attachment = new Attachment('./resources/gunship.png');
 
@@ -644,8 +610,7 @@ client.on('message', message => {
         Move Speed 1.5
         Build Speed 8.3s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'heavy hover tank' ||  message.content === 'heavyhovertank' || message.content === 'Heavy Hover Tank' || message.content === 'HeavyHoverTank') {
         const attachment = new Attachment('./resources/hvyhovertank.png');
 
@@ -665,8 +630,7 @@ client.on('message', message => {
         Move Speed 1.0
         Build Speed 16.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'heavy tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
         const attachment = new Attachment('./resources/hvytank.png');
 
@@ -686,9 +650,7 @@ client.on('message', message => {
         Move Speed 0.8
         Build Speed 10.7s`);
     }
-});
 
-client.on('message', message => {
     if (message.content === 'tank' ||  message.content === 'Tank') {
         const attachment = new Attachment('./resources/tank.png');
 
@@ -706,8 +668,7 @@ client.on('message', message => {
         Move Speed 1.10
         Build Speed 4.8s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Kirov' ||  message.content === 'kirov') {
         const attachment = new Attachment('./resources/kirov.png');
 
@@ -728,9 +689,7 @@ client.on('message', message => {
         Move Speed 1.10
         Build Speed 45.5s`);
     }
-});
 
-client.on('message', message => {
     if (message.content === 'laser tank' ||  message.content === 'lasertank' || message.content === 'Laser Tank' || message.content === 'LaserTank') {
         const attachment = new Attachment('./resources/lasertank.png');
 
@@ -752,9 +711,7 @@ client.on('message', message => {
         Move Speed 0.7
         Build Speed 12.8s`);
     }
-});
 
-client.on('message', message => {
     if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
         const attachment = new Attachment('./resources/hvyinterceptor.png');
 
@@ -775,8 +732,7 @@ client.on('message', message => {
         Move Speed 2.5
         Build Speed 16.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'heavy missile ship' ||  message.content === 'heavymissileship' || message.content === 'Heavy Missile Ship' || message.content === 'HeavyMissileShip' || message.content === 'heavy missile ship' || message.content === 'heavymissileship' || message.content === 'Heavy Missile S' || message.content === 'HeavyMissileS') {
         const attachment = new Attachment('./resources/hvymissileship.png');
 
@@ -794,8 +750,7 @@ client.on('message', message => {
         Move Speed 0.5
         Build Speed 41.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'hover tank' ||  message.content === 'hovertank' || message.content === 'Hover Tank' || message.content === 'HoverTank' || message.content === 'Hover tank' || message.content === 'hover Tank') {
         const attachment = new Attachment('./resources/hovertank.png');
 
@@ -814,8 +769,7 @@ client.on('message', message => {
         Move Speed 1.2
         Build Speed 8.3s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'LRS' ||  message.content === 'lrs') {
         const attachment = new Attachment('./resources/lrs.png');
 
@@ -835,8 +789,7 @@ client.on('message', message => {
         Move Speed 0.6
         Build Speed 16.7s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
         const attachment = new Attachment('./resources/z.png');
 
@@ -856,9 +809,9 @@ client.on('message', message => {
         Move Speed 1.0
         Build Speed 19.6s`);
     }
-});
+
 // Ubers Mechs
-client.on('message', message => {
+
     if (message.content === 'Assault Mech' ||  message.content === 'AssaultMech' || message.content === 'assault mech' || message.content === 'assaultmech') {
 
         const attachment = new Attachment('./resources/assaultmech.png');
@@ -880,8 +833,7 @@ client.on('message', message => {
         Move Speed 0.4
         Build Speed 52.1s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'heavy artillery mech' ||  message.content === 'heavyartillerymech' || message.content === 'Heavy Artillery Mech' || message.content === 'HeavyArtilleryMech') {
 
         const attachment = new Attachment('./resources/hvyartmech.png');
@@ -909,8 +861,7 @@ client.on('message', message => {
         Move Speed 0
         Build Speed 2s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Heavy Mech' ||  message.content === 'HeavyMech' || message.content === 'heavy mech' || message.content === 'heavymech') {
 
         const attachment = new Attachment('./resources/hvymech.png');
@@ -942,8 +893,7 @@ client.on('message', message => {
         Move Speed 0.85
         Build Speed 0s`);
     }
-});
-client.on('message', message => {
+
     if (message.content === 'Heavy Mobile Turret' ||  message.content === 'HeavyMobileTurret' || message.content === 'heavy mobile turret' || message.content === 'heavymobileturret') {
 
         const attachment = new Attachment('./resources/hvymobileturret.png');
