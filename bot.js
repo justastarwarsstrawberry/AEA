@@ -47,9 +47,6 @@ client.on('message', (message) => {
 
   talkedRecently.add(message.author.id);
   setTimeout(() => {
-    if(client.user.lastMessageID === '654382123947655181' && client.user.get('587367764474462210')){
-	    message.delete();
-    }
     talkedRecently.delete(message.author.id);
   }, 30000);
 
