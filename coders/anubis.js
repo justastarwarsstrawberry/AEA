@@ -58,7 +58,7 @@ client.on('message', message => {
            if(message.content.includes('3v3')) {
            var x = getRandomInt(9, 21);
            }
-           if(message.content.includes('2v2')) {
+           if(message.content.includes('4v4')) {
            var x = getRandomInt(22, 24);
            }
            
