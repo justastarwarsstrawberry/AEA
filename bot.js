@@ -6,7 +6,7 @@ global.client = new Discord.Client();
 const Anubis = require('./coders/anubis.js');
 
 
-client.setMaxListeners(0)
+client.setMaxListeners(45)
 
 
 if(Anubis && Client){
