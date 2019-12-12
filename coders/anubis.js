@@ -23,6 +23,15 @@ client.on('message', message => {
         Move Speed  1.60
         Build Speed 3.3s`);
     }
+    if (message.content === '/flipcoin') {
+        var flip = getRandomInt(1, 2);
+        if (flip === '1') {
+        message.reply('Tails')
+            } 
+        if (flip === '2'){
+        message.reply('Heads')
+            }
+    }
 
     if (message.content.includes('fuck') ||  message.content.includes('shit') || message.content.includes('nigger')) {
         const attachment = new Attachment('./resources/language.png');
@@ -273,15 +282,7 @@ client.on('message', message => {
                     message.reply('The Final Campaign');
            
        }
-       if (message.content === '/flipcoin') {
-        var flip = getRandomInt(1, 2);
-        if (flip === '1') {
-        message.reply('Tails')
-            } 
-        if (flip === '2'){
-        message.reply('Heads')
-            }
-        }
+
     }
 });
 //Dont touch Zone start
