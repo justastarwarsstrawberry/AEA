@@ -32,23 +32,7 @@ client.on('guildMemberAdd', member => {
     //member.addRole(role);
 });
 const talkedRecently = new Set();
-client.on('message', (message) => {
-	
-  if (talkedRecently.has(message.author.id)) {
-	if(message.author.id === '587367764474462210'){
-	//do nothing
-	}else
-	{
-		message.channel.send("Please wait... (30 Seconds)");
-   		message.delete();
-    		return;
-	}
-  }
-
-  talkedRecently.add(message.author.id);
-  setTimeout(() => {
-    talkedRecently.delete(message.author.id);
-  }, 30000);
+client.on('message', message => {
 
 if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
         let channel = message.member.voiceChannel;
