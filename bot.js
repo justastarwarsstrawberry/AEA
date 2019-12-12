@@ -38,8 +38,9 @@ const commands = new RichEmbed()
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('/random', '2v2', '3v3', '4v4')
+	.addField('/random', '<options>', false)
 	.addBlankField()
+	.addField('?<unit>', '', false)
 	.setTimestamp()
 	.setFooter('Thats all folks!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 
