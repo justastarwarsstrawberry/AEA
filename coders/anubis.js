@@ -5,9 +5,9 @@ client.setMaxListeners(0)
 //Dont touch Zone end
 
 client.on('message', message => {
+    
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
         const attachment = new Attachment('./resources/lynx.png');
-//this is a code
         if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
         message.channel.send(attachment);
         }
@@ -23,24 +23,22 @@ client.on('message', message => {
         Move Speed  1.60
         Build Speed 3.3s`);
     }
-});
-client.on('message', message => {
+
     if (message.content.includes('fuck') ||  message.content.includes('shit') || message.content.includes('nigger')) {
         const attachment = new Attachment('./resources/language.png');
         message.channel.send(attachment);
 
     }
-});
-    client.on('message', message => {
+
     if (!message.content.includes(',') && !message.content.includes('bad') && !message.content.includes('person') && message.content.includes('rape') && message.content.includes('good') ||  message.content.includes('child porn')) {
         const attachment = new Attachment('./resources/download.jpg');
         message.channel.send(attachment);
 
     }
-});
+
  
   
-         client.on('message', message => {
+
              function getRandomInt(min, max) {
                   min = Math.ceil(min);
                   max = Math.floor(max);
@@ -282,15 +280,15 @@ client.on('message', message => {
                   min = Math.ceil(min);
                   max = Math.floor(max);
                  return Math.floor(Math.random() * (max - min)) + min;
+       }
        var flip = getRandomInt(1, 2);
         if (flip === '1') {
         message.reply('Tails')
                 } else {
         message.reply('Heads')
-            }
-            }
+                }
         }
-    });
+});
 //Dont touch Zone start
 }
 //Dont touch Zone end
