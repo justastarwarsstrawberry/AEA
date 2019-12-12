@@ -87,35 +87,6 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         // Do notta
     }
 
-
-
-    if (message.content.startsWith('/kick') && client.users.get("242687584373964801")) {
-   	 const user = message.mentions.users.first();
-    	if (user){
-    		const member = message.guild.member(user);
-   		 if (member){
-   		 member.kick('Kicked by Austin').then(() => {
-  		  // We let the message author know we were able to kick the person
-   		 message.reply(`Successfully kicked ${user.tag}`);
-                });
-            }
-        }
-    }
-
-
-    if (message.content.startsWith('/kick') && message.member.roles.some(role => role.name === 'Admin') || message.member.roles.some(role => role.name === 'Developer')) {
-    	const user = message.mentions.users.first();
-    		if (user){
-   			 const member = message.guild.member(user);
-   			 if (member){
-   			 member.kick('Kicked ${user.tag}').then(() => {
-   			 message.reply(`Successfully kicked ${user.tag}`);
-                });
-            }
-        }
-    }
-
-
 client.on('message', (message) => {
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
