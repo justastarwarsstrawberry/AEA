@@ -853,7 +853,7 @@ client.on('message', (message) => {
     }
 	
     if (message.content === 'Missile Tank' ||  message.content === 'missile tank' || message.content === 'MissileTank' || message.content === 'missiletank') {
-        const attachment = new Attachment('./resources/missiletank.png');
+        const attachment = new Attachment('./resources/aamissiletank.png');
 
         if (message.content === 'Missile Tank' ||  message.content === 'missile tank' || message.content === 'MissileTank' || message.content === 'missiletank') {
         message.channel.send(attachment);
