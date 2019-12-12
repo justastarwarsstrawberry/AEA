@@ -46,14 +46,12 @@ const commands = new RichEmbed()
 
 client.on('message', (message, user) => {
 //timer future
-if(message.react(':keycap_ten:')){
-		if(message.content === 'Timer'){
-			message.reply('Timer set for 5 seconds');
-			client.setInterveral(function(){
-			message.reply('Times Up');
-			}, 5000);
-		}
-	}
+if(message.content === 'Timer'){
+	message.reply('Timer set for 5 seconds');
+	client.setInterveral(function(){
+		message.reply('Times Up');
+	}, 5000);
+}
 
 if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
         let channel = message.member.voiceChannel;
