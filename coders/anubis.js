@@ -23,7 +23,13 @@ client.on('message', message => {
         Move Speed  1.60
         Build Speed 3.3s`);
     }
-    if (message.content === '/flipcoin') {
+    
+    function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+    }
+    if (message.content.includes('/flipcoin')) {
         var flip = getRandomInt(1, 2);
         if (flip === '1') {
         message.reply('Tails')
@@ -44,17 +50,6 @@ client.on('message', message => {
         message.channel.send(attachment);
 
     }
-
- 
-  
-
-             function getRandomInt(min, max) {
-                  min = Math.ceil(min);
-                  max = Math.floor(max);
-                 return Math.floor(Math.random() * (max - min)) + min;
-             }
-             
-           
            if(message.content.includes('/random')) {
            if(message.content.includes('2v2')) {
            var x = getRandomInt(1, 4);
