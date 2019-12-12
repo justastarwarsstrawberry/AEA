@@ -30,11 +30,11 @@ client.on('message', message => {
     return Math.floor(Math.random() * (max - min)) + min;
     }
     if (message.content.includes('/flipcoin')) {
-        var flip = getRandomInt(1, 2);
-        if (flip === 1) {
+        var flip = getRandomInt(1, 20);
+        if (flip >= 10) {
         message.reply('Tails')
             } 
-        if (flip === 2){
+        if (flip <= 10){
         message.reply('Heads')
             }
     }
