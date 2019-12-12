@@ -273,10 +273,8 @@ client.on('message', message => {
                     message.reply('The Final Campaign');
            
        }
-    }
-
-    if (message.content === '/flipcoin') {
-       var flip = getRandomInt(1, 2);
+       if (message.content === '/flipcoin') {
+        var flip = getRandomInt(1, 2);
         if (flip === '1') {
         message.reply('Tails')
             } 
@@ -284,6 +282,7 @@ client.on('message', message => {
         message.reply('Heads')
             }
         }
+    }
 });
 //Dont touch Zone start
 }
