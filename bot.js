@@ -51,7 +51,7 @@ if(message.react(':keycap_ten:')){
 			message.reply('Timer set for 5 seconds');
 			client.setInterveral(function(){
 			message.reply('Times Up');
-			}) 5000);
+			}, 5000);
 		}
 	}
 
