@@ -33,20 +33,20 @@ client.on('guildMemberAdd', member => {
 });
 const talkedRecently = new Set();
 const commands = new RichEmbed()
-	.setColor('#0099ff')
+	.setColor('#747575')
 	.setTitle('Commands')
-	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
-	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.setURL('')
+	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+	.setDescription('Commands for AEA')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('Regular field title', 'Some value here')
 	.addBlankField()
 	.addField('Inline field title', 'Some value here', true)
 	.addField('Inline field title', 'Some value here', true)
 	.addField('Inline field title', 'Some value here', true)
-	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.setImage('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
-	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+	.setFooter('Thats all folks!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 
 client.on('message', message => {
 
@@ -76,7 +76,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
             // do nothing
         }
     if(message.content == '/listc'){
-
+	message.channel.send(commands);
     	}
         else
         {
