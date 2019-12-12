@@ -39,11 +39,21 @@ const commands = new RichEmbed()
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('/random', '<options>', false)
-	.addBlankField()
 	.addField('?<unit>', 'name of the unit', false)
 	.setTimestamp()
 	.setFooter('Thats all folks!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-
+const tank = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Tank')
+	.setURL('')
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription('- Can attack ground only
+			 - Magical')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.addField('Health', '100', true)
+	.setImage('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 client.on('message', (message, user) => {
 //timer future
 if(message.content === 'Timer'){
