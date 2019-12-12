@@ -276,8 +276,7 @@ client.on('message', message => {
            
        }
     }
-});
-    client.on('message', message => {
+
     if (message.content === '/flip a coin') {
        function getRandomInt(min, max) {
                   min = Math.ceil(min);
@@ -291,8 +290,7 @@ client.on('message', message => {
             }
             }
         }
-    }
-    
+    });
 //Dont touch Zone start
 }
 //Dont touch Zone end
