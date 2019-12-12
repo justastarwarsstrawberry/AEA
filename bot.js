@@ -851,6 +851,24 @@ client.on('message', (message) => {
         Move Speed 0.7
         Build Speed 24.8s`);
     }
+	
+    if (message.content === 'Missile Tank' ||  message.content === 'missile tank' || message.content === 'MissileTank' || message.content === 'missiletank') {
+        const attachment = new Attachment('./resources/missiletank.png');
+
+        if (message.content === 'Missile Tank' ||  message.content === 'missile tank' || message.content === 'MissileTank' || message.content === 'missiletank') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        AA Missile Tank
+        - Long range anti-air only missile
+        - Light Shield
+
+        Price $2,500
+        Health 1100
+        Attack Range 340
+        Move Speed 0.6
+        Build Speed 24.8s`);
+    }
 
     if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
         const attachment = new Attachment('./resources/z.png');
