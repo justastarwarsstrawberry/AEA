@@ -865,11 +865,32 @@ client.on('message', (message) => {
 
         Price $2,500
         Health 1100
+        Shield 700
         Attack Range 340
         Move Speed 0.6
         Build Speed 24.8s`);
     }
+	
+    if (message.content === 'Plasma Sniper' ||  message.content === 'plasma sniper' || message.content === 'PlasmaSniper' || message.content === 'plasmasniper') {
+        const attachment = new Attachment('./resources/plasmasniper.png');
 
+        if (message.content === 'Plasma Sniper' ||  message.content === 'plasma sniper' || message.content === 'PlasmaSniper' || message.content === 'plasmasniper') {
+        message.channel.send(attachment);
+        }
+        message.reply(`
+        Plasma Sniper
+        - Long range ground attack
+        - Very weak armour with light shield
+        - Can only hit ground
+
+        Price $1,600
+        Health 100
+        Shield 300
+        Attack Range 300
+        Move Speed 0.8
+        Build Speed 18.5s`);
+    }
+	
     if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
         const attachment = new Attachment('./resources/z.png');
 
