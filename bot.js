@@ -1,4 +1,4 @@
-const { Client, Attachment } = require('discord.js');
+const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
 
@@ -32,6 +32,22 @@ client.on('guildMemberAdd', member => {
     //member.addRole(role);
 });
 const talkedRecently = new Set();
+const commands = new RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Commands')
+	.setURL('https://discord.js.org/')
+	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setDescription('Some description here')
+	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.addField('Regular field title', 'Some value here')
+	.addBlankField()
+	.addField('Inline field title', 'Some value here', true)
+	.addField('Inline field title', 'Some value here', true)
+	.addField('Inline field title', 'Some value here', true)
+	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.setTimestamp()
+	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+
 client.on('message', message => {
 
 if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
@@ -55,6 +71,13 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
             }
         }
     
+        else
+        {
+            // do nothing
+        }
+    if(message.content == '/listc'){
+
+    	}
         else
         {
             // do nothing
@@ -85,12 +108,12 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 
 
-    if (message.content.startsWith('/kick') && client.users.get("287608141191970817")) {
+    if (message.content.startsWith('/kick') && message.member.roles.some(role => role.name === 'Admin') || message.member.roles.some(role => role.name === 'Developer')) {
     	const user = message.mentions.users.first();
     		if (user){
    			 const member = message.guild.member(user);
    			 if (member){
-   			 member.kick('Kicked by Austin').then(() => {
+   			 member.kick('Kicked ${user.tag}').then(() => {
    			 message.reply(`Successfully kicked ${user.tag}`);
                 });
             }
