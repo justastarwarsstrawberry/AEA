@@ -44,11 +44,14 @@ const commands = new RichEmbed()
 	.setTimestamp()
 	.setFooter('Thats all folks!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 
-client.on('message', (message,reaction,user) => {
+client.on('message', (message, user) => {
 //timer future
-if(reaction.emoji.name === ':keycap_ten:'){
+if(message.react(':keycap_ten:')){
 		if(message.content === 'Timer'){
-			message.reply('test');
+			message.reply('Timer set for 5 seconds');
+			client.setInterveral(function(){
+			message.reply('Times Up');
+			} 5000);
 		}
 	}
 
