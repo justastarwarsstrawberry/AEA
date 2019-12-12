@@ -7,7 +7,7 @@ client.setMaxListeners(0)
 client.on('message', message => {
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
         const attachment = new Attachment('./resources/lynx.png');
-
+//this is a code
         if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
         message.channel.send(attachment);
         }
