@@ -278,7 +278,7 @@ client.on('message', message => {
     }
 });
     client.on('message', message => {
-    if (message.content === '/flip a coin) {
+    if (message.content === '/flip a coin') {
        function getRandomInt(min, max) {
                   min = Math.ceil(min);
                   max = Math.floor(max);
