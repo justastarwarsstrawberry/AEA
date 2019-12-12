@@ -48,7 +48,7 @@ const tank = new Discord.RichEmbed()
 	.setURL('')
 	.attachFiles(['./resources/tank.png'])
 	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
-	.setDescription("-Can attack ground \n -Can Attack ground");
+	.setDescription("-Can attack ground \n -Can Attack ground")
 	.addBlankField()
 	.addField("Stats \n - Health 100")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
