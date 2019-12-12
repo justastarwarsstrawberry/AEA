@@ -277,6 +277,21 @@ client.on('message', message => {
        }
     }
 });
+    client.on('message', message => {
+    if (message.content === '/flip a coin) {
+       function getRandomInt(min, max) {
+                  min = Math.ceil(min);
+                  max = Math.floor(max);
+                 return Math.floor(Math.random() * (max - min)) + min;
+       var flip = getRandomInt(1, 2);
+        if (flip === '1') {
+        message.reply('Tails')
+                } else {
+        message.reply('Heads')
+            }
+            }
+        }
+    }
     
 //Dont touch Zone start
 }
