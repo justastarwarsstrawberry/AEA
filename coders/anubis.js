@@ -284,9 +284,10 @@ client.on('message', message => {
        var flip = getRandomInt(1, 2);
         if (flip === '1') {
         message.reply('Tails')
-                } else {
+            } 
+        if (flip === '2'{
         message.reply('Heads')
-                }
+            }
         }
 });
 //Dont touch Zone start
