@@ -89,7 +89,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
             // do nothing
         }
     if(message.content == '/listc'){
-	message.channel.send(commands);
+	message.channel.send(tank);
     	}
         else
         {
