@@ -275,7 +275,7 @@ client.on('message', message => {
        }
     }
 
-    if (message.content === '/flip a coin') {
+    if (message.content === '/flipcoin') {
        var flip = getRandomInt(1, 2);
         if (flip === '1') {
         message.reply('Tails')
