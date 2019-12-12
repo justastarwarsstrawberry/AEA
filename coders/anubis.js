@@ -285,7 +285,7 @@ client.on('message', message => {
         if (flip === '1') {
         message.reply('Tails')
             } 
-        if (flip === '2'{
+        if (flip === '2'){
         message.reply('Heads')
             }
         }
