@@ -48,13 +48,40 @@ const tank = new Discord.RichEmbed()
 	.setURL('')
 	.attachFiles(['./resources/tank.png'])
 	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
-	.setDescription(" - Can attack ground only \n - Fast but low health")
+	.setDescription(" - Can attack ground only \n- Fast but low health")
 	.addBlankField()
 	.addField("Stats", "Price $350 \n Health 230 \n Attack Range 130 \n Move Speed 1.10 \n Build Speed 4.8s")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://tank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const typhoon = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Typhoon')
+	.setURL('')
+	.attachFiles(['./resources/typhoon.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Landing assault craft \n- Fast \n- Very light Mounted machine-guns \n- Carries 4 units")
+	.addBlankField()
+	.addField("Stats", "Price $2,500 \n Health 300 \n Attack Range 140 \n Move Speed 1.6 \n Build Speed 33.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://typhoon.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const zephyr = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Zephyr')
+	.setURL('')
+	.attachFiles(['./resources/z.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Medium \n- Armed with a prototype flamethrower \n- Short range ground attack \n- Can auto-repair")
+	.addBlankField()
+	.addField("Stats", "Price $1,750 \n Health 900 \n Attack Range 140 \n Move Speed 1.0 \n Build Speed 19.6s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://z.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
 client.on('message', (message, user) => {
 //timer future
 if(message.content === 'Timer'){
@@ -352,23 +379,7 @@ client.on('message', (message) => {
     }
 
     if (message.content === 'Typhon' ||  message.content === 'Typhoon' || message.content === 'typhoon') {
-        const attachment = new Attachment('./resources/typhoon.png');
-
-        if (message.content === 'Typhon' ||  message.content === 'Typhoon' || message.content === 'typhoon') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Typhoon
-        - Landing assault craft
-        - Fast
-        - Very light Mounted machine-guns
-        - Carries 4 units
-
-        Price $2,250
-        Health 300
-        Attack Range 140
-        Move Speed  1.6
-        Build Speed 33.3s`);
+	message.channel.send(typhoon);
     }
 
     if (message.content === 'Anti Air Ship' ||  message.content === 'Anti air ship' || message.content === 'anti air ship' || message.content === 'anti air Ship') {
@@ -659,21 +670,7 @@ client.on('message', (message) => {
     }
 
     if (message.content === 'tank' ||  message.content === 'Tank') {
-        const attachment = new Attachment('./resources/tank.png');
-
-        if (message.content === 'tank' ||  message.content === 'Tank') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Tank
-        - Can attack ground only
-        - Fast but low health
-
-        Price $350
-        Health 230
-        Attack Range 130
-        Move Speed 1.10
-        Build Speed 4.8s`);
+	message.channel.send(tank);
     }
 
     if (message.content === 'Kirov' ||  message.content === 'kirov') {
@@ -894,23 +891,7 @@ client.on('message', (message) => {
     }
 	
     if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
-        const attachment = new Attachment('./resources/z.png');
-
-        if (message.content === 'Zephyr' || message.content === 'zephyr') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Zephyr
-        - Medium armor
-        - Armed with a prototype flamethrower
-        - Short range ground attack
-        - Can auto-repair
-
-        Price $1,750
-        Health 900
-        Attack Range 140
-        Move Speed 1.0
-        Build Speed 19.6s`);
+        message.channel.send(zephyr);
     }
 
 // Ubers Mechs
