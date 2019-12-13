@@ -32,6 +32,7 @@ client.on('guildMemberAdd', member => {
     //member.addRole(role);
 });
 const talkedRecently = new Set();
+// Land units
 const commands = new RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Commands')
@@ -79,6 +80,19 @@ const zephyr = new Discord.RichEmbed()
 	.addField("Stats", "Price $1,750 \n Health 900 \n Attack Range 140 \n Move Speed 1.0 \n Build Speed 19.6s")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://z.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const plasmasniper = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Plasma Sniper')
+	.setURL('')
+	.attachFiles(['./resources/plasmasniper.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Long range ground attack \n- Very weak armour with light shield \n- Can only hit ground")
+	.addBlankField()
+	.addField("Stats", "Price $1,600 \n Health 100 \n Shield 300 \n Attack Range 300 \n Move Speed 0.8 \n Build Speed 18.5s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://plasmasniper.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -871,23 +885,7 @@ client.on('message', (message) => {
     }
 	
     if (message.content === 'Plasma Sniper' ||  message.content === 'plasma sniper' || message.content === 'PlasmaSniper' || message.content === 'plasmasniper') {
-        const attachment = new Attachment('./resources/plasmasniper.png');
-
-        if (message.content === 'Plasma Sniper' ||  message.content === 'plasma sniper' || message.content === 'PlasmaSniper' || message.content === 'plasmasniper') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Plasma Sniper
-        - Long range ground attack
-        - Very weak armour with light shield
-        - Can only hit ground
-
-        Price $1,600
-        Health 100
-        Shield 300
-        Attack Range 300
-        Move Speed 0.8
-        Build Speed 18.5s`);
+        message.channel.send(plasmasniper);
     }
 	
     if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
