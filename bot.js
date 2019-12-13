@@ -106,11 +106,11 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         // Do notta
     }
 
-//client.on('message', (message) => {
-  //  const attachment = new Attachment('./resources/NuclearDrone.png');
+client.on('message', (message) => {
+    const attachment = new Attachment('./resources/NuclearDrone.png');
 
-  //  if (message.content.includes('bruh')) {
-   // message.channel.send(attachment);
+    if (message.content.includes('bruh')) {
+   message.channel.send(attachment);
     }
 });
 //client.on('message', message => {
