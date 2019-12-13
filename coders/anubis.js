@@ -3,27 +3,28 @@ exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //Dont touch Zone end
+// units
+const lynx = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Lynx')
+	.setURL('')
+	.attachFiles(['./resources/lynx.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Very fast \n- Low armor \n- Ground attack")
+	.addBlankField()
+	.addField("Stats", "Price $275 \n Health 120 \n Attack Range 130 \n Move Speed 1.60 \n Build Speed 3.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://lynx.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', message => {
-    
+//units
     if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
-        const attachment = new Attachment('./resources/lynx.png');
-        if (message.content === 'Lynx' ||  message.content === 'Lynx' || message.content === 'lynx') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Lynx
-        -Very fast
-        -Low armor
-        -Ground attack
-
-        Price $275
-        Health 120
-        Attack Range 130
-        Move Speed  1.60
-        Build Speed 3.3s`);
+	    message.channel.send(lynx);
     }
-    
+ 
+ //commands   
     function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
