@@ -95,6 +95,32 @@ const plasmasniper = new Discord.RichEmbed()
 	.setImage('attachment://plasmasniper.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const comet = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Comet')
+	.setURL('')
+	.attachFiles(['./resources/comet.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Fast \n- Can attack ground only \n- Light armor \n- High spread, weak vs. single targets")
+	.addBlankField()
+	.addField("Stats", "Price $950 \n Health 450 \n Attack Range 150 \n Move Speed 1 \n Build Speed 11.1s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://comet.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const houndapc = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Hound APC')
+	.setURL('')
+	.attachFiles(['./resources/houndapc.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Long Range Attack \n- Powerful in groups, but glass cannons \n- Can only attack ground")
+	.addBlankField()
+	.addField("Stats", "Price $350 \n Health 100 \n Attack Range 130 \n Move Speed 1.4 \n Build Speed 3.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://houndapc.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', (message, user) => {
 //timer future
@@ -808,42 +834,11 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 	
     if (message.content === 'Hound Apc' ||  message.content === 'hound apc') {
-        const attachment = new Attachment('./resources/houndapc.png');
-
-        if (message.content === 'Hound Apc' || message.content === 'hound apc') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Hound APC
-        - Long Range Attack
-        - Powerful in groups, but glass cannons
-        - Can only attack ground
-
-        Price $350
-        Health 100
-        Attack Range 130
-        Move Speed 1.4
-        Build Speed 3.3s`);
+	message.channel.send(houndapc);
     }
 	
     if (message.content === 'Comet' ||  message.content === 'comet') {
-        const attachment = new Attachment('./resources/comet.png');
-
-        if (message.content === 'Comet' || message.content === 'comet') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Comet
-        - Fast
-        - Can attack ground only
-        - Light armor
-	- High spread, weak vs. single targets
-
-        Price $950
-        Health 450
-        Attack Range 150
-        Move Speed 1
-        Build Speed 11.1s`);
+	message.channel.send(comet);
     }
 	
     if (message.content === 'Heavy Artillery' ||  message.content === 'heavy artillery' || message.content === 'HeavyArtillery' || message.content === 'heavyartillery') {
