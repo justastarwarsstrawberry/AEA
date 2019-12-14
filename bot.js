@@ -147,13 +147,13 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         // Do notta
     }
 
-client.on('message', (message) => {
+
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
     if (message.content === 'bruh') {
    message.channel.send(attachment);
     }
-});
+
 
 
 //#############################Units############################################
