@@ -41,7 +41,7 @@ const unitlist = new RichEmbed()
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('/random', '<options>', false)
 	.addField('<unit>', 'name of the unit', false)
-	.addField('Land Units', 'Tank \n Heavy Tank \n Typhoon \n Zephyr \n Comet \n Plasma Sniper \n Hound APC \n Laser Tank', false)
+	.addField('Land Units', 'Tank \n Heavy Tank \n Typhoon \n Zephyr \n Comet \n Plasma Sniper \n Hound APC \n Laser Tank \n Lynx', false)
 	.setDescription('List all units and comands \nAssociated with the bot')
 	.setTimestamp()
 	.setFooter('Thats all folks!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
