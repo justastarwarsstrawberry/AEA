@@ -33,16 +33,19 @@ client.on('guildMemberAdd', member => {
 });
 const talkedRecently = new Set();
 // Land units
-const commands = new RichEmbed()
+const unitlist = new RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Commands')
+	.setTitle('Units List and Commands')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('/random', '<options>', false)
-	.addField('?<unit>', 'name of the unit', false)
+	.addField('<unit>', 'name of the unit', false)
+	.addField('List Land Units', 'Tank \n Heavy Tank \n Typhoon \n Zephyr \n Comet \n Plasma Sniper \n Hound APC', false)
+	.setDescription('List all units and comands \n Associated with the bot')
 	.setTimestamp()
 	.setFooter('Thats all folks!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
+
 const tank = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Tank')
@@ -121,6 +124,19 @@ const houndapc = new Discord.RichEmbed()
 	.setImage('attachment://houndapc.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const heavytank = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Tank')
+	.setURL('')
+	.attachFiles(['./resources/hvytank.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Heavily armed \n- Can attack ground \n- Light air attack")
+	.addBlankField()
+	.addField("Stats", "Price $800 \n Health 600 \n Attack Range 160 \n Move Speed 0.8 \n Build Speed 10.7s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://hvytank.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', (message, user) => {
 //timer future
@@ -157,7 +173,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
             // do nothing
         }
     if(message.content == '/listc'){
-	message.channel.send(tank);
+	message.channel.send(unitlist);
     	}
         else
         {
@@ -690,23 +706,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 
     if (message.content === 'heavy tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
-        const attachment = new Attachment('./resources/hvytank.png');
-
-        if (message.content === 'heavy tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Heavy Tank
-        - Heavily armed
-        - Can attack ground
-        - Light air attack
-
-
-        Price $800
-        Health 600
-        Attack Range 160
-        Move Speed 0.8
-        Build Speed 10.7s`);
+	message.channel.send(heavytank);
     }
 
     if (message.content === 'tank' ||  message.content === 'Tank') {
