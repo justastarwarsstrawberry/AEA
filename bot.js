@@ -828,7 +828,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         Build Speed 16.7s`);
     }
 	
-    if (message.content === 'Hound Apc' ||  message.content === 'hound apc') {
+    if (message.content === 'Hound Apc' ||  message.content === 'hound apc' || message.content === 'Hound APC') {
 	message.channel.send(houndapc);
     }
 	
