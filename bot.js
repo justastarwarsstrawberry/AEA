@@ -41,7 +41,7 @@ const unitlist = new RichEmbed()
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('/random', '<options>', false)
 	.addField('<unit>', 'name of the unit', false)
-	.addField('Land Units', 'Tank \n Heavy Tank \n Typhoon \n Zephyr \n Comet \n Plasma Sniper \n Hound APC', false)
+	.addField('Land Units', 'Tank \n Heavy Tank \n Typhoon \n Zephyr \n Comet \n Plasma Sniper \n Hound APC \n Laser Tank', false)
 	.setDescription('List all units and comands \nAssociated with the bot')
 	.setTimestamp()
 	.setFooter('Thats all folks!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
@@ -137,9 +137,22 @@ const heavytank = new Discord.RichEmbed()
 	.setImage('attachment://hvytank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const lasertank = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Laser Tank')
+	.setURL('')
+	.attachFiles(['./resources/lasertank.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Can attack ground and air \n- Weak vs. multiple units \n- Powerful single shot, slow recharge")
+	.addBlankField()
+	.addField("Stats", "Price $1,300 \n Health 400 \n Attack Range 220 \n Move Speed 0.7 \n Build Speed 12.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://lasertank.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', (message, user) => {
-//timer future
+//timer future implementation
 if(message.content === 'Timer'){
 	message.reply('Timer set for 5 seconds');
 	client.setInterveral(function(){
@@ -735,25 +748,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 
     if (message.content === 'laser tank' ||  message.content === 'lasertank' || message.content === 'Laser Tank' || message.content === 'LaserTank') {
-        const attachment = new Attachment('./resources/lasertank.png');
-
-        if (message.content === 'laser tank' ||  message.content === 'lasertank' || message.content === 'Laser Tank' || message.content === 'LaserTank') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Laser Tank
-        - Can attack ground and air
-        - Weak vs. multiple units
-        - Powerful single shot, slow
-          recharge
-
-
-
-        Price $1,300
-        Health 400
-        Attack Range 220
-        Move Speed 0.7
-        Build Speed 12.8s`);
+	message.channel.send(lasertank);
     }
 
     if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
