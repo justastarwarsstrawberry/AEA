@@ -178,6 +178,7 @@ const phantom = new Discord.RichEmbed()
     }
     if (message.content === 'Missile airship' ||  message.content === 'Missile Airship' || message.content === 'missile airship') {
 	    message.channel.send(missileairship);
+    }
     if (message.content === 'Phantom scout' ||  message.content === 'Phantom Scout' || message.content === 'phantom scout') {
 	    message.channel.send(phantom);  
     }
