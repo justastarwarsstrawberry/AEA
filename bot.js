@@ -22,6 +22,10 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+client.on('ready', () => {
+	client.user.setStatus('Type /list')
+});
+
 client.on('guildMemberAdd', member => {
 
     const channel = member.guild.channels.find(ch => ch.name === 'general');
@@ -31,6 +35,7 @@ client.on('guildMemberAdd', member => {
     //const member = message.mentions.members.first();
     //member.addRole(role);
 });
+
 const talkedRecently = new Set();
 // Land units
 const unitlist = new RichEmbed()
@@ -41,11 +46,46 @@ const unitlist = new RichEmbed()
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('/random', '<options>', false)
 	.addField('<unit>', 'name of the unit', false)
-	.addField('Land Units', 'Tank \n Heavy Tank \n Typhoon \n Zephyr \n Comet \n Plasma Sniper \n Hound APC \n Laser Tank \n Lynx', false)
-	.setDescription('List all units and comands \nAssociated with the bot')
+	.addField('Experimental Units', 'Experimental Mech \n Mothership \n Naval Carrier', false)
+	.addField('Land Units', 'Comet \n Heavy Tank \n Hound APC \n Heavy Artillery \n Laser Tank \n Lynx \n Plasma Sniper \n Tank \n Typhoon \n Zephyr', false)
+	.setDescription('Lists all units and comands \nAssociated with the bot')
 	.setTimestamp()
-	.setFooter('Thats all folks!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-
+	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
+//Exp units
+const mothership = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Mothership')
+	.setURL('')
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Ultimate Carrier \n- Armed with hellfire cannons and missile launchers \n- Built in fabricator \n- Carries 16 Units \n- Goes nuclear on death")
+	.addBlankField()
+	.addField("Stats", "Price $150,000 \n Health 15,000 \n Attack Range 320 \n Move Speed 0.65 \n Build Speed 123.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const expmech = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Experimental Mech')
+	.setURL('')
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Very heavily armed and armored \n- Can attack ground and light air \n- Sub attack when over water \n- Very slow \n - Can self-repair \n- Can move over water")
+	.addBlankField()
+	.addField("Stats", "Price $125,000 \n Health 15,000 \n Attack Range 310 \n Move Speed 0.30 \n Build Speed 92.4s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const navalcarrier = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Naval Carrier')
+	.setURL('')
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Experimental Naval Carrier \n- Can make Air and Naval units \n- Built in fabricator \n- Carries 16 Units \n- Goes nuclear on death \n- Can only have 5 at a time")
+	.addBlankField()
+	.addField("Stats", "Price $65,000 \n Health 7,500 \n Attack Range 350 \n Move Speed 0.45 \n Build Speed 111.1s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+//Land units
 const tank = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Tank')
@@ -150,6 +190,19 @@ const lasertank = new Discord.RichEmbed()
 	.setImage('attachment://lasertank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const heavyartillery = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Artillery')
+	.setURL('')
+	.attachFiles(['./resources/hvyartillery.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Can attack ground only \n- Long range \n- Limited Laser defence")
+	.addBlankField()
+	.addField("Stats", "Price $3,200 \n Health 600 \n Attack Range 310 \n Move Speed 0.7 \n Build Speed 24.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://hvyartillery.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', (message, user) => {
 //timer future implementation
@@ -185,7 +238,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         {
             // do nothing
         }
-    if(message.content == '/listc'){
+    if(message.content == '/list'){
 	message.channel.send(unitlist);
     	}
         else
@@ -213,20 +266,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
 
 //#############################Units############################################
     if (message.content === 'Mothership' ||  message.content === 'mothership') {
-
-        message.reply(`
-        Mothership
-        - Ultimate Carrier
-        - Armed with hellfire cannons and 
-          missile launchers
-        - Built in fabricator
-        - Carries 16 Units
-        - Goes nuclear on death
-        Price $150,000
-        Health 15,000
-        Attack Range 320
-        Move Speed 0.65
-        Build Speed 123.8s`);
+	message.channel.send(mothership);
     }
 
     if (message.content === 'Titan' ||  message.content === 'titan') {
@@ -250,21 +290,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 
     if (message.content === 'Naval Carrier' ||  message.content === 'naval carrier' || message.content === 'navalcarrier') {
-
-        message.reply(`
-        Naval Carrier
-        - Experimental Naval Carrier
-        - Can make Air and Naval units
-        - Built in fabricator
-        - Carries 16 Units
-        - Goes nuclear on death
-        - Can only have 5 at a time
-
-        Price $65,000
-        Health 7,500
-        Attack Range 350
-        Move Speed 0.45
-        Build Speed 111.1s`);
+	mesage.channel.send(navalcarrier);
     }
 
     if (message.content === 'King Kriptor' ||  message.content === 'king kriptor' || message.content === 'king Kriptor' || message.content === 'King kriptor' || message.content === 'kriptor King') {
@@ -285,21 +311,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 
     if (message.content === 'Experimental Mech' ||  message.content === 'experimental mech' || message.content === 'Experimental mech' || message.content === 'experimental Mech' || message.content === 'Mech Experimental') {
-
-    message.reply(`
-        Experimental Mech
-        - Very heavily armed and armored 
-        - Can attack ground and light air 
-        - Sub attack when over water 
-        - Very slow 
-        - Can self-repair 
-        - Can move over water
-        
-        Price $125,000
-        Health 15,000 
-        Attack Range 310
-        Speed: 0.30
-        Build Speed 92.4s`);
+	message.channel.send(expmech);
     }
 
     if (message.content === 'Experimental Spider' ||  message.content === 'experimental spider' || message.content === 'Experimental spider' || message.content === 'experimental Spider' || message.content === 'Spider Experimental') {
@@ -837,22 +849,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 	
     if (message.content === 'Heavy Artillery' ||  message.content === 'heavy artillery' || message.content === 'HeavyArtillery' || message.content === 'heavyartillery') {
-        const attachment = new Attachment('./resources/hvyartillery.png');
-
-        if (message.content === 'Heavy Artillery' ||  message.content === 'heavy artillery' || message.content === 'HeavyArtillery' || message.content === 'heavyartillery') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Heavy Artillery
-        - Can attack ground only
-        - Long range
-        - Limited Laser defence
-
-        Price $3,200
-        Health 600
-        Attack Range 310
-        Move Speed 0.7
-        Build Speed 24.8s`);
+	message.channel.send(heavyartillery);
     }
 	
     if (message.content === 'Missile Tank' ||  message.content === 'missile tank' || message.content === 'MissileTank' || message.content === 'missiletank') {
