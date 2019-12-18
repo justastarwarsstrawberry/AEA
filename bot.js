@@ -55,7 +55,7 @@ const unitlist = new RichEmbed()
 	.addField('<unit>', 'name of the unit', false)
 	.addField('Experimental Units', 'Experimental Mech \nMothership \nNaval Carrier', false)
 	.addField('Land Units', 'Comet \nHeavy Tank \nHound APC \nHeavy Artillery \nLaser Tank \nLynx \nPlasma Sniper \nTank \nTyphoon \nZephyr', false)
-	.setDescription('Lists all units and comands \nAssociated with the bot')
+	.setDescription('Lists all units and comands \nassociated with the bot')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 //Exp units
