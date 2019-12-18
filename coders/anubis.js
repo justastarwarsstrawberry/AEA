@@ -31,9 +31,25 @@ const lightgunship = new Discord.RichEmbed()
 	.setImage('attachment://light_gunship.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
+const heavyinterceptor = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Interceptor')
+	.setURL('')
+	.attachFiles(['./resources/heavy_interceptor.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Fast \n- Can attack air only \n- Heavily armed with shield \n- Shield weak vs lighnting")
+	.addBlankField()
+	.addField("Stats", "Price $1200 \n Health 40 \n Attack Range 170 \n Move Speed 2.50 \n Build Speed 16.7s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://light_gunship.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
+	    message.channel.send(lightgunship);
+    if (message.content === 'Heavy interceptor' ||  message.content === 'Heavy Interceptor' || message.content === 'heavy interceptor') {
 	    message.channel.send(lightgunship);
     }
  
