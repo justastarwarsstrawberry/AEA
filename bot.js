@@ -53,7 +53,7 @@ const unitlist = new RichEmbed()
 	.addField('/random', '2v2, 2v3, 3v3, 4v4', false)
 	.addField('/flipcoin', 'Heads or Tails?', false)
 	.addField('<unit>', 'name of the unit', false)
-	.addField('Experimental Units', 'Experimental Mech \nMothership \nNaval Carrier', false)
+	.addField('Experimental Units', 'Experimental Spider \nExperimental Mech \nMothership \nNaval Carrier', false)
 	.addField('Land Units', 'Comet \nHeavy Tank \nHound APC \nHeavy Artillery \nLaser Tank \nLynx \nPlasma Sniper \nTank \nTyphoon \nZephyr', false)
 	.setDescription('Lists all units and comands \nassociated with the bot')
 	.setTimestamp()
@@ -81,6 +81,18 @@ const expmech = new Discord.RichEmbed()
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const expspider = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Experimental Spider')
+	.setURL('')
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Support unit \n- Laser defense \n- Built in fabricator \n- Can build/repair units and buildings \n- Cannot fit in transports \n- Can build powerful experimentals \n- Can only have 5 built at once \n- Goes nuclear on death")
+	.addBlankField()
+	.addField("Stats", "Price $70,000 \n Health 10,000 \n Attack Range 250 \n Move Speed 0.30 \n Build Speed 83.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
 const navalcarrier = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Naval Carrier')
@@ -266,7 +278,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
     if (message.content.includes('bruh')) {
-   message.channel.send(attachment);
+   	message.channel.send(attachment);
     }
 
 
@@ -322,23 +334,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 
     if (message.content === 'Experimental Spider' ||  message.content === 'experimental spider' || message.content === 'Experimental spider' || message.content === 'experimental Spider' || message.content === 'Spider Experimental') {
-
-        message.reply(`
-        Experimental Spider
-        - Support unit 
-        - Laser defense 
-        - Built in fabricator 
-        - Can build/repair units and buildings 
-        - Cannot fit in transports 
-        - Can build powerful experimentals 
-        - Can only have 5 built at once 
-        - Goes nuclear on death
-        
-        Price $70,000
-        Health 10,000
-        Attack Range 250
-        Speed: 0.30
-        Build Speed 83.3s`);
+	message.channel.send(expspider);
     }
 
     if (message.content === 'Experimental Gunship' ||  message.content === 'experimental gunship' || message.content === 'Experimental gunship' || message.content === 'experimental Spider' || message.content === 'Gunship Experimental') {
