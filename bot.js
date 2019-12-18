@@ -23,10 +23,12 @@ client.once('ready', () => {
 });
 
 client.on('ready', () => {
-    if (client.user.Status('Online'))
-	{
-	client.user.setStatus('Type /list');
-	}
+    client.user.setStatus('available')
+    client.user.setPresence({
+        game: {
+            name: 'Type /list',
+        }
+    });
 });
 
 client.on('guildMemberAdd', member => {
