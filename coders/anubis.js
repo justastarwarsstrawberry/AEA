@@ -34,7 +34,7 @@ const lightgunship = new Discord.RichEmbed()
 client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
-	    message.channel.send(lynx);
+	    message.channel.send(lightgunship);
     }
  
  //commands   
