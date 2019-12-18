@@ -376,41 +376,6 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         Build Speed 60s`);
     }
 
-    if (message.content === 'Phantom scout' ||  message.content === 'Phantomscout' || message.content === 'phantomScout' || message.content === 'phantom Scout' || message.content === 'phantom scout') {
-
-        message.reply(`
-        Phantom Scout
-        - Stealthy scouting drone
-        - Very light attack
-        - Has to be manually ordered to attack
-        - Can turn invisible for 13 seconds at a time
-
-        Price $5,000
-        Health 540
-        Attack Range 110
-        Move Speed 2.0
-        Build Speed 23.8s`);
-    }
-
-    if (message.content === 'Apache Helicopter' || message.content === 'Apachehelicopter' || message.content === 'apacheHelicopter' || message.content === 'apache Helicopter' || message.content === 'Apache helicopter') {
-        const attachment = new Attachment('./resources/apachehelicopter.png');
-
-        if (message.content === 'Apache Helicopter' || message.content === 'Apachehelicopter' || message.content === 'apacheHelicopter' || message.content === 'apache Helicopter' || message.content === 'Apache helicopter') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Apache Helicopter
-        - Can attack Land and Air
-        - Heavily armed, very light armour
-        - Unloads hellfire, but slow reload after barrage
-
-        Price $2,750
-        Health 220
-        Attack Range 200
-        Move Speed  1.8
-        Build Speed 10.8s`);
-    }
-
     if (message.content === 'Nautilus' ||  message.content === 'nautilus') {
 
         message.reply(`
@@ -697,25 +662,6 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         Build Speed 3.3s`);
     }
 
-    if (message.content === 'Gunship' ||  message.content === 'gunship' || message.content === 'gun ship' || message.content === 'Gun ship') {
-        const attachment = new Attachment('./resources/gunship.png');
-
-        if (message.content === 'Gunship' ||  message.content === 'gunship' || message.content === 'gun ship' || message.content === 'Gun ship') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Gunship
-        - Can attack ground only
-        - trong attack
-        - Heavily armored
-
-        Price $800
-        Health 285
-        Attack Range 140
-        Move Speed 1.5
-        Build Speed 8.3s`);
-    }
-
     if (message.content === 'heavy hover tank' ||  message.content === 'heavyhovertank' || message.content === 'Heavy Hover Tank' || message.content === 'HeavyHoverTank') {
         const attachment = new Attachment('./resources/hvyhovertank.png');
 
@@ -767,27 +713,6 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
 
     if (message.content === 'laser tank' ||  message.content === 'lasertank' || message.content === 'Laser Tank' || message.content === 'LaserTank') {
 	message.channel.send(lasertank);
-    }
-
-    if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
-        const attachment = new Attachment('./resources/hvyinterceptor.png');
-
-        if (message.content === 'heavy interceptor' ||  message.content === 'heavyinterceptor' || message.content === 'Heavy Interceptor' || message.content === 'HeavyInterceptor' || message.content === 'Heavy Intercept' || message.content === 'heavy intercept' || message.content === 'heavyintercept' || message.content === 'HeavyIntercept') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Heavy Interceptor
-        - Fast
-        - Can attack air only
-        - Heavily armed with shield
-        - Shield weak vs lightning
-
-        Price $1,200
-        Health 40
-        Shield 560
-        Attack Range 170
-        Move Speed 2.5
-        Build Speed 16.7s`);
     }
 
     if (message.content === 'heavy missile ship' ||  message.content === 'heavymissileship' || message.content === 'Heavy Missile Ship' || message.content === 'HeavyMissileShip' || message.content === 'heavy missile ship' || message.content === 'heavymissileship' || message.content === 'Heavy Missile S' || message.content === 'HeavyMissileS') {
