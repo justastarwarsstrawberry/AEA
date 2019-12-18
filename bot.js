@@ -23,7 +23,10 @@ client.once('ready', () => {
 });
 
 client.on('ready', () => {
-	client.user.setStatus('Type /list')
+    if (client.user.Status('Online'))
+	{
+	client.user.setStatus('Type /list');
+	}
 });
 
 client.on('guildMemberAdd', member => {
