@@ -76,10 +76,13 @@ const dropship = new Discord.RichEmbed()
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
 	    message.channel.send(lightgunship);
+    }
     if (message.content === 'Heavy interceptor' ||  message.content === 'Heavy Interceptor' || message.content === 'heavy interceptor') {
 	    message.channel.send(heavyinterceptor);
+    }
     if (message.content === 'Interceptor' ||  message.content === 'Interceptor' || message.content === 'interceptor') {
 	    message.channel.send(interceptor);
+    }
     if (message.content === 'Dropship' ||  message.content === 'Dropship' || message.content === 'dropship') {
 	    message.channel.send(dropship);
     }
