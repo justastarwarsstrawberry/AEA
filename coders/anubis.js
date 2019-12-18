@@ -111,6 +111,19 @@ const attackjet = new Discord.RichEmbed()
 	.setImage('attachment://attack_jet.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const bomber = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Bomber')
+	.setURL('')
+	.attachFiles(['./resources/bomber.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Medium armor \n- Ground attack only \n- Armed with 2 missile launchers and a machine gun ")
+	.addBlankField()
+	.addField("Stats", "Price $4000 \n Health 3000 \n Attack Range 45 \n Move Speed 0.85 \n Build Speed 66.7s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://bomber.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
@@ -133,6 +146,9 @@ const attackjet = new Discord.RichEmbed()
     }
     if (message.content === 'Attack jet' ||  message.content === 'Attack Jet' || message.content === 'attack jet') {
 	    message.channel.send(attackjet);
+    }
+    if (message.content === 'Bomber' ||  message.content === 'Bombr' || message.content === 'bomber') {
+	    message.channel.send(bomber);
     }
  
  //commands   
