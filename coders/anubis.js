@@ -72,6 +72,19 @@ const dropship = new Discord.RichEmbed()
 	.setImage('attachment://dropship.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const gunship = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Gunship')
+	.setURL('')
+	.attachFiles(['./resources/gunship.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Cn attack ground only \n- Strong attack \n- Heavily armored")
+	.addBlankField()
+	.addField("Stats", "Price $800 \n Health 285 \n Move Speed 1.40 \n Build Speed 8.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://gunship.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
@@ -85,6 +98,8 @@ const dropship = new Discord.RichEmbed()
     }
     if (message.content === 'Dropship' ||  message.content === 'Dropship' || message.content === 'dropship') {
 	    message.channel.send(dropship);
+    if (message.content === 'Gunship' ||  message.content === 'Gunship' || message.content === 'Gunship') {
+	    message.channel.send(Gunship);
     }
  
  //commands   
