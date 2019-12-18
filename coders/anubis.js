@@ -111,7 +111,7 @@ const attackjet = new Discord.RichEmbed()
 	.setImage('attachment://attack_jet.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-	]client.on('message', message => {
+	client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
 	    message.channel.send(lightgunship);
