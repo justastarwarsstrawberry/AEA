@@ -137,6 +137,19 @@ const missileairship = new Discord.RichEmbed()
 	.setImage('attachment://missile_airship.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const phantom = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Missile Airship')
+	.setURL('')
+	.attachFiles(['./resources/phantom_scout.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Stealthy scouting drone \n- Very light attack \n- Has to be manually ordered to attack \n- Can turn invisible for 13 seconds at a time ")
+	.addBlankField()
+	.addField("Stats", "Price $5000 \n Health 540 \n Attack Range 110 \n Move Speed 0.85 \n Build Speed 23.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://phantom_scout.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
@@ -165,6 +178,8 @@ const missileairship = new Discord.RichEmbed()
     }
     if (message.content === 'Missile airship' ||  message.content === 'Missile Airship' || message.content === 'missile airship') {
 	    message.channel.send(missileairship);
+    if (message.content === 'Phantom scout' ||  message.content === 'Phantom Scout' || message.content === 'phantom scout') {
+	    message.channel.send(phantom);  
     }
  
  //commands   
