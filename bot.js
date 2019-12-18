@@ -607,24 +607,6 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         Build Speed 87.7s`);
     }
 
-    if (message.content === 'Dropship' ||  message.content === 'dropship') {
-        const attachment = new Attachment('./resources/dropship.png');
-
-        if (message.content === 'Dropship' ||  message.content === 'dropship') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Dropship
-        - Transports up to 4 units
-        - Cannot attack
-
-        Price $800
-        Health 700
-        Attack Range 0
-        Move Speed  2.3
-        Build Speed 16.7s`);
-    }
-
     if (message.content === 'Frigate' ||  message.content === 'frigate') {
         const attachment = new Attachment('./resources/frigate.png');
 
