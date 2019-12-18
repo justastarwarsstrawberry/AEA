@@ -98,7 +98,20 @@ const amphib = new Discord.RichEmbed()
 	.setImage('attachment://amphibious_jet.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-]client.on('message', message => {
+const attckjet = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Attack Jet')
+	.setURL('')
+	.attachFiles(['./resources/attack_jet.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Medium armor \n- Ground attack only \n- Armed with 2 missile launchers and a machine gun ")
+	.addBlankField()
+	.addField("Stats", "Price $2750 \n Health 480 \n Attack Range 220 \n Move Speed 1.80 \n Build Speed 23.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://attack_jet.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+	]client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
 	    message.channel.send(lightgunship);
@@ -116,6 +129,9 @@ const amphib = new Discord.RichEmbed()
 	    message.channel.send(gunship);
     }
     if (message.content === 'Amphibious jet' ||  message.content === 'Amphibious Jet' || message.content === 'amphibious jet') {
+	    message.channel.send(amphib);
+    }
+    if (message.content === 'Attack jet' ||  message.content === 'Attack Jet' || message.content === 'attack jet') {
 	    message.channel.send(amphib);
     }
  
