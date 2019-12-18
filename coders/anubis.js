@@ -98,7 +98,7 @@ const amphib = new Discord.RichEmbed()
 	.setImage('attachment://amphibious_jet.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const attckjet = new Discord.RichEmbed()
+const attackjet = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Attack Jet')
 	.setURL('')
@@ -132,7 +132,7 @@ const attckjet = new Discord.RichEmbed()
 	    message.channel.send(amphib);
     }
     if (message.content === 'Attack jet' ||  message.content === 'Attack Jet' || message.content === 'attack jet') {
-	    message.channel.send(amphib);
+	    message.channel.send(attackjet);
     }
  
  //commands   
