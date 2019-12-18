@@ -98,7 +98,7 @@ const amphib = new Discord.RichEmbed()
 	.setImage('attachment://amphibious_jet.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-	client.on('message', message => {
+]client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
 	    message.channel.send(lightgunship);
@@ -111,8 +111,10 @@ const amphib = new Discord.RichEmbed()
     }
     if (message.content === 'Dropship' ||  message.content === 'Dropship' || message.content === 'dropship') {
 	    message.channel.send(dropship);
+    }
     if (message.content === 'Gunship' ||  message.content === 'Gunship' || message.content === 'Gunship') {
 	    message.channel.send(gunship);
+    }
     if (message.content === 'Amphibious jet' ||  message.content === 'Amphibious Jet' || message.content === 'amphibious jet') {
 	    message.channel.send(amphib);
     }
