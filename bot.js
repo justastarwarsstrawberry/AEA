@@ -26,8 +26,8 @@ client.on('ready', () => {
     client.user.setStatus('available')
     client.user.setPresence({
         game: {
-            name: '/list',
-	    type: "Type"
+            name: ', Type /list',
+	    type: "Listening"
         }
     });
 });
