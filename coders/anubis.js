@@ -4,7 +4,8 @@ const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //Dont touch Zone end
 // units
-const lynx = new Discord.RichEmbed()
+//test
+	const lynx = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Lynx')
 	.setURL('')
