@@ -58,7 +58,20 @@ const interceptor = new Discord.RichEmbed()
 	.setImage('attachment://interceptor.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-client.on('message', message => {
+const dropship = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Dropship')
+	.setURL('')
+	.attachFiles(['./resources/dropship.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Fast \n- Can attack air only")
+	.addBlankField()
+	.addField("Stats", "Price $800 \n Health 700 \n Move Speed 2.30 \n Build Speed 16.7s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://dropship.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+	client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
 	    message.channel.send(lightgunship);
@@ -66,6 +79,8 @@ client.on('message', message => {
 	    message.channel.send(heavyinterceptor);
     if (message.content === 'Interceptor' ||  message.content === 'Interceptor' || message.content === 'interceptor') {
 	    message.channel.send(interceptor);
+    if (message.content === 'Dropship' ||  message.content === 'Dropship' || message.content === 'dropship') {
+	    message.channel.send(dropship);
     }
  
  //commands   
