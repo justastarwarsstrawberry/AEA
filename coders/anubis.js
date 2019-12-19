@@ -199,7 +199,7 @@ const S2 = new Discord.RichEmbed()
 	.addBlankField()
 	.addField("Stats", "Price $3350 \n Health 575 \n Move Speed 1.50 \n Build Speed 8.3s")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://s1.png')
+	.setImage('attachment://s2.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const swallowtail = new Discord.RichEmbed()
