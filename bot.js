@@ -279,13 +279,7 @@ const heavyartillery = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', (message, user) => {
-//timer future implementation
-if(message.content === 'Timer'){
-	message.reply('Timer set for 5 seconds');
-	client.setInterveral(function(){
-		message.reply('Times Up');
-	}, 5000);
-}
+
 
 if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
         let channel = message.member.voiceChannel;
