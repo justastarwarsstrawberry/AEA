@@ -210,7 +210,7 @@ const swallowtail = new Discord.RichEmbed()
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
 	.setDescription(" - Fast, glass cannon \n- Good home defence in groups \n- Weak armour but heavy DPS \n- Fucking swallow tails")
 	.addBlankField()
-	.addField("Stats", "Price $6700 \n Health 700 \n Move Speed 1.80 \n Build Speed 23.8")
+	.addField("Stats", "Price $6700 \n Attack Range 180 \n Health 700 \n Move Speed 1.80 \n Build Speed 23.8")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://swallowtail.png')
 	.setTimestamp()
@@ -223,7 +223,7 @@ const heavymissileaircraft = new Discord.RichEmbed()
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
 	.setDescription(" - Slow, Powerful, Attacks land and air ")
 	.addBlankField()
-	.addField("Stats", "Price $9750 \n Health 2400 \n Move Speed 0.85 \n Build Speed 55.6")
+	.addField("Stats", "Price $9750 \n Attack Range 200 \n Health 2400 \n Move Speed 0.85 \n Build Speed 55.6")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://heavy_missile_aircraft.png')
 	.setTimestamp()
@@ -236,9 +236,22 @@ const kirov = new Discord.RichEmbed()
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
 	.setDescription(" - Heavy aircraft \n- Armed with 30 bombs (slow reload) \n- Heavy armor \n- Can attack only land \n- Slow")
 	.addBlankField()
-	.addField("Stats", "Price $45000 \n Health 24000 \n Move Speed 0.50 \n Build Speed 45.5s")
+	.addField("Stats", "Price $45000 \n Attack Range 60 \n Health 24000 \n Move Speed 0.50 \n Build Speed 45.5s")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://kirov_bomber.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const grandslam = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Grand Slam Bomber')
+	.setURL('')
+	.attachFiles(['./resources/grand_slam_bomber.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Very fast but slow turn \n- Heavily armoured \n- Carries 1 50-ton bomb \n- Also has a quantum torpedo to attack subs \n- Takes a long time to recharge \n- Can self-repair \n- Defensless vs air")
+	.addBlankField()
+	.addField("Stats", "Price $42000 \n Attack Range 45 \n Health 24000 \n Move Speed 1.70 \n Build Speed 83.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://grand_slam_bomber.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	
@@ -294,6 +307,9 @@ const kirov = new Discord.RichEmbed()
     }
     if (message.content === 'Kirov bomber' ||  message.content === 'Kirov Bomber' || message.content === 'kirov bomber' || message.content === 'kirov') {
 	    message.channel.send(kirov);  
+    }
+    if (message.content === 'Grand slam bomber' ||  message.content === 'Grand Slam Bomber' || message.content === 'grand slam bomber' || message.content === 'Grand slam') {
+	    message.channel.send(grandslam);  
     }
  
  //commands   
