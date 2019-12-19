@@ -326,14 +326,14 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
         {
             // do nothing
         }
-    if(message.content == '/list Air' || message.content == '/list land'){
+    if(message.content == '/list Air' || message.content == '/list air'){
 	message.channel.send(alist);
     	}
         else
         {
             // do nothing
         }
-    if(message.content == '/list Water' || message.content == '/list land'){
+    if(message.content == '/list Water' || message.content == '/list water'){
 	message.channel.send(wlist);
     	}
         else
