@@ -47,18 +47,57 @@ client.on('guildMemberAdd', member => {
 
 const talkedRecently = new Set();
 // Land units
-const unitlist = new RichEmbed()
+const clist = new RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Units List and Commands')
+	.setTitle('Commands')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('/random', '2v2, 2v3, 3v3, 4v4', false)
 	.addField('/flipcoin', 'Heads or Tails?', false)
+	.addField('/list', 'Land, Air, Water, Exp', false)
 	.addField('<unit>', 'name of the unit', false)
-	.addField('Experimental Units', 'Experimental Spider \nExperimental Mech \nMothership \nNaval Carrier', false)
+	.setDescription('Lists all comands \nassociated with the bot')
+	.setTimestamp()
+	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
+const llist = new RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Land Units List')
+	.setURL('')
+	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('Land Units', 'Comet \nHeavy Tank \nHound APC \nHeavy Artillery \nLaser Tank \nLynx \nPlasma Sniper \nTank \nTyphoon \nZephyr', false)
-	.setDescription('Lists all units and comands \nassociated with the bot')
+	.setDescription('Lists all land units')
+	.setTimestamp()
+	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
+const alist = new RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Air Units List')
+	.setURL('')
+	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.addField('Air Units', 'Apache Helicopter \nAmphibious Jet \nAttack Jet \nDropship \nGunship \nGrand Slam Bomber \nHeavy Interceptor \nHeavy Missile Aircraft \nHelicopter \nInterceptor \nKirov \nLight Gunship \nMissile Airship \nPhantom Scout \nS1 \nS2 \nSwallow Tail', false)
+	.setDescription('Lists all air units')
+	.setTimestamp()
+	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
+const wlist = new RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Sea Units List')
+	.setURL('')
+	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.addField('Sea Units', 'Anti Air Boat \nBattle Cruiser \nBuilder Ship \nCorvette \nDestroyer \nDreadnought \nFrigate \nGunboat \nHeavy Missile Ship \nLRS \nThunder Head', false)
+	.setDescription('Lists all sea units')
+	.setTimestamp()
+	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
+const EXlist = new RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Experimental Units List')
+	.setURL('')
+	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.addField('Experimental Units', 'Experimental Spider \nExperimental Mech \nMothership \nNaval Carrier', false)
+	.setDescription('Lists all land units')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 //Exp units
@@ -119,6 +158,19 @@ const tank = new Discord.RichEmbed()
 	.addField("Stats", "Price $350 \n Health 230 \n Attack Range 130 \n Move Speed 1.10 \n Build Speed 4.8s")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://tank.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const missiletank = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('AA Missile Tank')
+	.setURL('')
+	.attachFiles(['./resources/aamissiletank.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Long range anti-air only missile \n- Light Shield")
+	.addBlankField()
+	.addField("Stats", "Price $2,500 \n Health 1,100 \n Attack Range 340 \n Shield 700 \n Move Speed 0.6 \n Build Speed 24.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://aamissiletank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const typhoon = new Discord.RichEmbed()
@@ -261,7 +313,35 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
             // do nothing
         }
     if(message.content == '/list'){
-	message.channel.send(unitlist);
+	message.channel.send(clist);
+    	}
+        else
+        {
+            // do nothing
+        }
+    if(message.content == '/list Land' || message.content == '/list land'){
+	message.channel.send(llist);
+    	}
+        else
+        {
+            // do nothing
+        }
+    if(message.content == '/list Air' || message.content == '/list land'){
+	message.channel.send(alist);
+    	}
+        else
+        {
+            // do nothing
+        }
+    if(message.content == '/list Water' || message.content == '/list land'){
+	message.channel.send(wlist);
+    	}
+        else
+        {
+            // do nothing
+        }
+    if(message.content == '/list Exp' || message.content == '/list exp'){
+	message.channel.send(EXlist);
     	}
         else
         {
@@ -766,22 +846,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 	
     if (message.content === 'Missile Tank' ||  message.content === 'missile tank' || message.content === 'MissileTank' || message.content === 'missiletank') {
-        const attachment = new Attachment('./resources/aamissiletank.png');
-
-        if (message.content === 'Missile Tank' ||  message.content === 'missile tank' || message.content === 'MissileTank' || message.content === 'missiletank') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        AA Missile Tank
-        - Long range anti-air only missile
-        - Light Shield
-
-        Price $2,500
-        Health 1100
-        Shield 700
-        Attack Range 340
-        Move Speed 0.6
-        Build Speed 24.8s`);
+	message.channel.send(missiletank);
     }
 	
     if (message.content === 'Plasma Sniper' ||  message.content === 'plasma sniper' || message.content === 'PlasmaSniper' || message.content === 'plasmasniper') {
