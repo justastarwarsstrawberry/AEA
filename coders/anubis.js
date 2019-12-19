@@ -189,7 +189,7 @@ const s1 = new Discord.RichEmbed()
 	.setImage('attachment://s1.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const S2 = new Discord.RichEmbed()
+const s2 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('S-2')
 	.setURL('')
@@ -213,6 +213,19 @@ const swallowtail = new Discord.RichEmbed()
 	.addField("Stats", "Price $6700 \n Health 700 \n Move Speed 1.80 \n Build Speed 23.8")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://swallowtail.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const heavymissileaircraft = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Missile Aircraft')
+	.setURL('')
+	.attachFiles(['./resources/heavy_missile_aircraft.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Slow, Powerful, Attacks land and air ")
+	.addBlankField()
+	.addField("Stats", "Price $9750 \n Health 2400 \n Move Speed 0.85 \n Build Speed 55.6")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://heavy_missile_aircraft.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	
@@ -258,10 +271,13 @@ const swallowtail = new Discord.RichEmbed()
 	    message.channel.send(s1);  
     }
     if (message.content === 'S-2' ||  message.content === 's-2' || message.content === 'mae-1' || message.content === 's2') {
-	    message.channel.send(S2);  
+	    message.channel.send(s2);  
     }
     if (message.content === 'Swallow tail' ||  message.content === 'Swallow Tail' || message.content === 'swallowtail' || message.content === 'swallowtail') {
 	    message.channel.send(swallowtail);  
+    }
+    if (message.content === 'Heavy missile aircraft' ||  message.content === 'Heavy Missile Aircraft' || message.content === 'heavy missile aircraft' || message.content === 'heavymissileaircraft') {
+	    message.channel.send(heavymissileaircraft);  
     }
  
  //commands   
