@@ -7,14 +7,7 @@ client.setMaxListeners(0)
 client.on("message", message => {
 
 //timer future implementation
-function timeup() {
-  message.reply('Times Up!')
-  clearTimeout(Timer10s, 250);
-  clearTimeout(Timer1m, 250);
-  clearTimeout(Timer2m, 250);
-  clearTimeout(Timer3m, 250);
-  clearTimeout(Timer10m, 250);
-}
+
 
 
 
@@ -45,7 +38,6 @@ function timeup() {
   message.reply('Timer Started for 10 minutes')
   Timer10m;
   }
-}
 if(message.content == '/stopTimer'){
   message.reply('Stopped Timer')
   clearTimeout(Timer10s, 250);
@@ -54,7 +46,14 @@ if(message.content == '/stopTimer'){
   clearTimeout(Timer3m, 250);
   clearTimeout(Timer10m, 250);
   }
-
+function timeup() {
+  message.reply('Times Up!')
+  clearTimeout(Timer10s, 250);
+  clearTimeout(Timer1m, 250);
+  clearTimeout(Timer2m, 250);
+  clearTimeout(Timer3m, 250);
+  clearTimeout(Timer10m, 250);
+}
 
 });
   
