@@ -254,6 +254,19 @@ const grandslam = new Discord.RichEmbed()
 	.setImage('attachment://grand_slam_bomber.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const helicopter = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Missile Aircraft')
+	.setURL('')
+	.attachFiles(['./resources/helicopter.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Not cost-effective in direct combat \n- Can attack ground and air ")
+	.addBlankField()
+	.addField("Stats", "Price $700 \n Attack Range 130 \n Health 150 \n Move Speed 1.80 \n Build Speed 13.9")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://heavy_missile_aircraft.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	
 	client.on('message', message => {
 //units
@@ -310,6 +323,9 @@ const grandslam = new Discord.RichEmbed()
     }
     if (message.content === 'Grand slam bomber' ||  message.content === 'Grand Slam Bomber' || message.content === 'grand slam bomber' || message.content === 'Grand slam') {
 	    message.channel.send(grandslam);  
+    }
+  if (message.content === 'Helicopter' ||  message.content === 'helicopter' || message.content === 'Which unit should I use if I want to stay a virgin?') {
+	    message.channel.send(helicopter);  
     }
  
  //commands   
