@@ -163,6 +163,19 @@ const apache = new Discord.RichEmbed()
 	.setImage('attachment://apache_helicopter.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const mae1 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('MAE-1')
+	.setURL('')
+	.attachFiles(['./resources/MAE-1.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Like a builder but better \n- It's very vulnerable, but efficient \n- Can build fast and can repair units/buildings \n- Cannot build anti-air turrets \n-Cannot build more than 6 at a time")
+	.addBlankField()
+	.addField("Stats", "Price $3525 \n Health 150 \n Attack Range 170 \n Move Speed 2.25 \n Build Speed 8.3")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://MAE-1.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
@@ -197,6 +210,9 @@ const apache = new Discord.RichEmbed()
     }
     if (message.content === 'Apache helicopter' ||  message.content === 'Apache' || message.content === 'apache helicopter' || message.content === 'apache') {
 	    message.channel.send(apache);  
+    }
+    if (message.content === 'Apache helicopter' ||  message.content === 'MAE-1' || message.content === 'mae-1' || message.content === 'Mae 1') {
+	    message.channel.send(mae1);  
     }
  
  //commands   
