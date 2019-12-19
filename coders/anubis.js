@@ -176,6 +176,32 @@ const mae1 = new Discord.RichEmbed()
 	.setImage('attachment://MAE-1.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const s1 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('S-1')
+	.setURL('')
+	.attachFiles(['./resources/s1.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - 1 transport slot \n- Can't attack ")
+	.addBlankField()
+	.addField("Stats", "Price $1350 \n Health 100 \n Move Speed 2.25 \n Build Speed 8.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://s1.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const s2 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('S-2')
+	.setURL('')
+	.attachFiles(['./resources/s2.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - 6 pick-up slots \n- Can't attack ")
+	.addBlankField()
+	.addField("Stats", "Price $3350 \n Health 575 \n Move Speed 1.50 \n Build Speed 8.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://s1.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
@@ -213,6 +239,9 @@ const mae1 = new Discord.RichEmbed()
     }
     if (message.content === 'Apache helicopter' ||  message.content === 'MAE-1' || message.content === 'mae-1' || message.content === 'Mae 1') {
 	    message.channel.send(mae1);  
+    }
+    if (message.content === 'S-1' ||  message.content === 's-1' || message.content === 'mae-1' || message.content === 's1') {
+	    message.channel.send(s1);  
     }
  
  //commands   
