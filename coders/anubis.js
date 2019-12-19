@@ -232,13 +232,13 @@ const kirov = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Kirov Bomber')
 	.setURL('')
-	.attachFiles(['./resources/.png'])
+	.attachFiles(['./resources/kirov_bomber.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
-	.setDescription(" - 6 pick-up slots \n- Can't attack ")
+	.setDescription(" - Heavy aircraft \n- Armed with 30 bombs (slow reload) \n- Heavy armor \n- Can attack only land \n- Slow")
 	.addBlankField()
-	.addField("Stats", "Price $3350 \n Health 575 \n Move Speed 1.50 \n Build Speed 8.3s")
+	.addField("Stats", "Price $45000 \n Health 24000 \n Move Speed 0.50 \n Build Speed 45.5s")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://s1.png')
+	.setImage('attachment://kirov_bomber.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	
@@ -291,6 +291,9 @@ const kirov = new Discord.RichEmbed()
     }
     if (message.content === 'Heavy missile aircraft' ||  message.content === 'Heavy Missile Aircraft' || message.content === 'heavy missile aircraft' || message.content === 'heavymissileaircraft') {
 	    message.channel.send(heavymissileaircraft);  
+    }
+    if (message.content === 'Kirov bomber' ||  message.content === 'Kirov Bomber' || message.content === 'kirov bomber' || message.content === 'kirov') {
+	    message.channel.send(kirov);  
     }
  
  //commands   
