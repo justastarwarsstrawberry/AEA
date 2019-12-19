@@ -15,7 +15,7 @@ const Timer1m = setTimeout(timeup, 60000);
 const Timer2m = setTimeout(timeup, 80000);
 const Timer3m = setTimeout(timeup, 120000);
 const Timer10m = setTimerout(timeup, 600000);
-if(message.content == '/startTimer'){
+if(message.content.includes == '/startTimer'){
   if(message.content.includes('10s')){
   message.reply('Timer started for 10 seconds')
   Timer10s;
