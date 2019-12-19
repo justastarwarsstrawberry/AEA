@@ -256,7 +256,7 @@ const grandslam = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const helicopter = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Heavy Missile Aircraft')
+	.setTitle('Helicopter')
 	.setURL('')
 	.attachFiles(['./resources/helicopter.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
