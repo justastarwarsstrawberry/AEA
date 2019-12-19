@@ -189,7 +189,7 @@ const s1 = new Discord.RichEmbed()
 	.setImage('attachment://s1.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const S-2 = new Discord.RichEmbed()
+const S2 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('S-2')
 	.setURL('')
@@ -258,7 +258,7 @@ const swallowtail = new Discord.RichEmbed()
 	    message.channel.send(s1);  
     }
     if (message.content === 'S-2' ||  message.content === 's-2' || message.content === 'mae-1' || message.content === 's2') {
-	    message.channel.send(S-2);  
+	    message.channel.send(S2);  
     }
     if (message.content === 'Swallow tail' ||  message.content === 'Swallow Tail' || message.content === 'swallowtail' || message.content === 'swallowtail') {
 	    message.channel.send(swallowtail);  
