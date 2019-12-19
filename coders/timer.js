@@ -15,28 +15,28 @@ const Timer1m = setTimeout(timeup, 60000);
 const Timer2m = setTimeout(timeup, 80000);
 const Timer3m = setTimeout(timeup, 120000);
 const Timer10m = setTimeout(timeup, 600000);
-if(message.content.includes == '/startTimer'){
-  if(message.content.includes('10s')){
+
+  if(message.content === '10s'){
   message.reply('Timer started for 10 seconds')
   Timer10s;
   }
-  if(message.content.includes('1m')){
+  if(message.content === '1m'){
   message.reply('Timer Started for 1 minute')
   Timer1m;
   }
-  if(message.content.includes('2m')){
+  if(message.content === '2m'){
   message.reply('Timer Started for 2 minutes')
   Timer2m;
   }
-  if(message.content.includes('3m')){
+  if(message.content === '3m'){
   message.reply('Timer Started for 3 minutes')
   Timer3m;
   }
-  if(message.content.includes('10m')){
+  if(message.content === '10m'){
   message.reply('Timer Started for 10 minutes')
   Timer10m;
   }
-}
+
 if(message.content == '/stopTimer'){
   message.reply('Stopped Timer')
   if(Timer10s) {
