@@ -264,7 +264,7 @@ const heavymissileaircraft = new Discord.RichEmbed()
     if (message.content === 'Apache helicopter' ||  message.content === 'Apache' || message.content === 'apache helicopter' || message.content === 'apache') {
 	    message.channel.send(apache);  
     }
-    if (message.content === 'Apache helicopter' ||  message.content === 'MAE-1' || message.content === 'mae-1' || message.content === 'Mae 1') {
+    if (message.content === 'mae1' ||  message.content === 'MAE-1' || message.content === 'mae-1' || message.content === 'Mae 1') {
 	    message.channel.send(mae1);  
     }
     if (message.content === 'S-1' ||  message.content === 's-1' || message.content === 'mae-1' || message.content === 's1') {
