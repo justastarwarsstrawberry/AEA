@@ -202,6 +202,20 @@ const s2 = new Discord.RichEmbed()
 	.setImage('attachment://s1.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const swallowtail = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Swallow Tail')
+	.setURL('')
+	.attachFiles(['./resources/swallowtail.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Fast, glass cannon \n- Good home defence in groups \n- Weak armour but heavy DPS \n- Fucking swallow tails")
+	.addBlankField()
+	.addField("Stats", "Price $6700 \n Health 700 \n Move Speed 1.80 \n Build Speed 23.8")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://swallowtail.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+	
 	client.on('message', message => {
 //units
     if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
@@ -245,6 +259,9 @@ const s2 = new Discord.RichEmbed()
     }
     if (message.content === 'S-2' ||  message.content === 's-2' || message.content === 'mae-1' || message.content === 's2') {
 	    message.channel.send(s2);  
+    }
+    if (message.content === 'Swallow tail' ||  message.content === 'Swallow Tail' || message.content === 'swallowtail' || message.content === 'swallowtail') {
+	    message.channel.send(swallowtail);  
     }
  
  //commands   
