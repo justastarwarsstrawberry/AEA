@@ -139,7 +139,7 @@ const missileairship = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const phantom = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Phantom Scout')
+	.setTitle('Missile Airship')
 	.setURL('')
 	.attachFiles(['./resources/phantom_scout.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -237,11 +237,14 @@ const s2 = new Discord.RichEmbed()
     if (message.content === 'Apache helicopter' ||  message.content === 'Apache' || message.content === 'apache helicopter' || message.content === 'apache') {
 	    message.channel.send(apache);  
     }
-    if (message.content === 'MAE-1' || message.content === 'mae-1' || message.content === 'Mae 1') {
+    if (message.content === 'Apache helicopter' ||  message.content === 'MAE-1' || message.content === 'mae-1' || message.content === 'Mae 1') {
 	    message.channel.send(mae1);  
     }
-    if (message.content === 'S-1' ||  message.content === 's-1' || message.content === 'mae-1' || message.content === 'S1') {
+    if (message.content === 'S-1' ||  message.content === 's-1' || message.content === 'mae-1' || message.content === 's1') {
 	    message.channel.send(s1);  
+    }
+    if (message.content === 'S-2' ||  message.content === 's-2' || message.content === 'mae-1' || message.content === 's2') {
+	    message.channel.send(s2);  
     }
  
  //commands   
