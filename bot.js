@@ -282,6 +282,19 @@ const heavyartillery = new Discord.RichEmbed()
 	.setImage('attachment://hvyartillery.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const DemoTruck = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Demo Truck')
+	.setURL('')
+	.attachFiles(['./resources/demotruck.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Blows itself up on enemies \n- High damage and area of effect \n- Lower damage if killed before detonation \n- Light armor \n- Fast, but accelerates slowly \n- Cannot enter transports")
+	.addBlankField()
+	.addField("Stats", "Price $2,500 \n Health 420 \n Attack Range 9 \n Move Speed 1.5 \n Build Speed 41.7s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://demotruck.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', (message, user) => {
 
@@ -623,25 +636,7 @@ if(message.content == '/muteAll' && message.member.roles.some(role => role.name 
     }
 
     if (message.content === 'demo truck' ||  message.content === 'Demo truck' || message.content === 'demoTruck' || message.content === 'demo Truck') {
-        const attachment = new Attachment('./resources/demotruck.png');
-
-        if (message.content === 'demo truck' ||  message.content === 'Demo truck' || message.content === 'demoTruck' || message.content === 'demo Truck') {
-        message.channel.send(attachment);
-        }
-        message.reply(`
-        Demolition Truck
-        - Blows itself up on enemies
-        - High damage and area of effect
-        - Lower damage if killed before detonation
-        - Light armor
-        - Fast, but accelerates slowly
-        - Cannot enter transports
-
-        Price $2,500
-        Health 420
-        Attack Range 9
-        Move Speed  1.5
-        Build Speed 41.7s`);
+	message.channel.send(DemoTruck);
     }
 
     if (message.content === 'Destroyer' ||  message.content === 'destroyer' || message.content === 'Destroyer ship' || message.content === 'destroyer Ship') {
