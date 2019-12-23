@@ -306,10 +306,10 @@ const helicopter = new Discord.RichEmbed()
     if (message.content === 'MAE-1' || message.content === 'mae-1' || message.content === 'Mae 1') {
 	    message.channel.send(mae1);  
     }
-    if (message.content === 'S-1' ||  message.content === 's-1' || message.content === 's1') {
+    if (message.content === 'S-1' ||  message.content === 's-1' || message.content === 'S1') {
 	    message.channel.send(s1);  
     }
-    if (message.content === 'S-2' ||  message.content === 's-2' || message.content === 's2') {
+    if (message.content === 'S-2' ||  message.content === 's-2' || message.content === 'S2') {
 	    message.channel.send(S2);  
     }
     if (message.content === 'Swallow tail' ||  message.content === 'Swallow Tail' || message.content === 'swallowtail' || message.content === 'swallowtail') {
