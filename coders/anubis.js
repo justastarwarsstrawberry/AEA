@@ -344,7 +344,7 @@ const helicopter = new Discord.RichEmbed()
             }
     }
 
-    if (message.content.includes('fuck') ||  message.content.includes('shit') || message.content.includes('nigger')) {
+    if ( message.content.equalsIgnoreCase('nigger')) {
         const attachment = new Attachment('./resources/language.png');
         message.channel.send(attachment);
 
