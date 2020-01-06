@@ -344,7 +344,7 @@ const helicopter = new Discord.RichEmbed()
             }
     }
 
-    if ( message.content.equalsIgnoreCase('nigger')) {
+    if ( message.content.IgnoreCase('nigger')) {
         const attachment = new Attachment('./resources/language.png');
         message.channel.send(attachment);
 
