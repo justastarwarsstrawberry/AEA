@@ -343,12 +343,6 @@ const helicopter = new Discord.RichEmbed()
         message.reply('Heads')
             }
     }
-// May be error
-    if ( message.content.IgnoreCase('nigger')) {
-        const attachment = new Attachment('./resources/language.png');
-        message.channel.send(attachment);
-
-    }
 
     if (!message.content.includes(',') && !message.content.includes('bad') && !message.content.includes('person') && message.content.includes('rape') && message.content.includes('good') ||  message.content.includes('child porn')) {
         const attachment = new Attachment('./resources/download.jpg');
