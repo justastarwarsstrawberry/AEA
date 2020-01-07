@@ -338,7 +338,7 @@ if (message.content.length === 6){
 		
 		}
 		else if (message.content.endsWith('r')){
-			if(message.content.contains('igge') || message.content === "nigger"){
+			if(message.content === "nigger"){
 		       		const attachment = new Attachment('./resources/language.png');
         			message.channel.send(attachment);
 			}
