@@ -6,7 +6,7 @@ global.client = new Discord.Client();
 const Anubis = require('./coders/anubis.js');
 const Darkest = require('./coders/darkest.js');
 const Timer = require('./coders/timer.js');
-client.setMaxListeners(45)
+client.setMaxListeners(0)
 if(Timer && Client){
    		 Timer.code();
     		console.log('Timer loaded');
