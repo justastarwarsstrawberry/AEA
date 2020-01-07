@@ -343,7 +343,7 @@ const helicopter = new Discord.RichEmbed()
         message.reply('Heads')
             }
     }
-
+// May be error
     if ( message.content.IgnoreCase('nigger')) {
         const attachment = new Attachment('./resources/language.png');
         message.channel.send(attachment);
