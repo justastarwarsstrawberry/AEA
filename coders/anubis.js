@@ -327,7 +327,24 @@ const helicopter = new Discord.RichEmbed()
   if (message.content === 'Helicopter' ||  message.content === 'helicopter' || message.content === 'Which unit should I use if I want to stay a virgin?') {
 	    message.channel.send(helicopter);  
     }
- 
+ // nigger filter
+if (message.content.length === 6){
+	if (message.content.startsWith('n')){
+		if (message.content.endsWith('a')){
+			if(message.content.contains('igge') || message.content === "nigger"){
+		       		const attachment = new Attachment('./resources/language.png');
+        			message.channel.send(attachment);
+			}
+		
+		}
+		else if (message.content.endsWith('r')){
+			if(message.content.contains('igge') || message.content === "nigger"){
+		       		const attachment = new Attachment('./resources/language.png');
+        			message.channel.send(attachment);
+			}
+		}
+	}
+}
  //commands   
     function getRandomInt(min, max) {
     min = Math.ceil(min);
