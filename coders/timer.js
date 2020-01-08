@@ -53,6 +53,16 @@ client.on("message", message => {
   message.reply('Timer Started for 7 minutes')
   Timer7m;
   }
+  if(message.content === '8m'){
+  var Timer8m = setTimeout(timeup, 480000);
+  message.reply('Timer Started for 8 minutes')
+  Timer8m;
+  }
+  if(message.content === '9m'){
+  var Timer9m = setTimeout(timeup, 540000);
+  message.reply('Timer Started for 9 minutes')
+  Timer9m;
+  }
   if(message.content === '10m'){
   var Timer10m = setTimeout(timeup, 600000);
   message.reply('Timer Started for 10 minutes')
@@ -68,6 +78,8 @@ if(message.content == '/stopTimer'){
   clearTimeout(Timer5m, 250);
   clearTimeout(Timer6m, 250);
   clearTimeout(Timer7m, 250);
+  clearTimeout(Timer8m, 250);
+  clearTimeout(Timer9m, 250);
   clearTimeout(Timer10m, 250);
   }
 function timeup() {
@@ -80,6 +92,8 @@ function timeup() {
   clearTimeout(Timer5m, 250);
   clearTimeout(Timer6m, 250);
   clearTimeout(Timer7m, 250);
+  clearTimeout(Timer8m, 250);
+  clearTimeout(Timer9m, 250);
   clearTimeout(Timer10m, 250);
 }
 
