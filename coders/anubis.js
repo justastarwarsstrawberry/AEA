@@ -328,17 +328,17 @@ const helicopter = new Discord.RichEmbed()
 	    message.channel.send(helicopter);  
     }
  // nigger filter
-if (message.content.length === 6){
+if (message.content.length <= 6){
 	if (message.content.startsWith('n')){
 		if (message.content.endsWith('a')){
-			if(message.content.contains('igge') || message.content === "nigger"){
+			if(message.content.contains('igg')){
 		       		const attachment = new Attachment('./resources/language.png');
         			message.channel.send(attachment);
 			}
 		
 		}
 		else if (message.content.endsWith('r')){
-			if(message.content === "nigger"){
+			if(message.content.contains('igg')){
 		       		const attachment = new Attachment('./resources/language.png');
         			message.channel.send(attachment);
 			}
