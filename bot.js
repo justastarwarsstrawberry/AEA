@@ -156,7 +156,7 @@ const navalcarrier = new Discord.RichEmbed()
 client.on('message', (message, user) => {
 
 
-if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer') && client.users.get("242687584373964801")){
+if(message.content == '/muteAll' && message.member.roles.some(role => role.name === 'Developer')){
         let channel = message.member.voiceChannel;
         for (let member of channel.members) {
             member[1].setMute(true)
