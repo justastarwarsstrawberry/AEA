@@ -367,17 +367,23 @@ if (message.content.length <= 6){
 
     }
            if(message.content.includes('/random')) {
-           if(message.content.includes('2v2')) {
-           var x = getRandomInt(1, 4);
+           if(message.content.includes('1v1')) {
+           var x = getRandomInt(1, 8);
+           }
+	   if(message.content.includes('2v2')) {
+           var x = getRandomInt(9, 20);
            }
            if(message.content.includes('2v3')) {
-           var x = getRandomInt(5, 8);
+           var x = getRandomInt(21, 24);
            }
            if(message.content.includes('3v3')) {
-           var x = getRandomInt(9, 21);
+           var x = getRandomInt(25, 40);
            }
            if(message.content.includes('4v4')) {
-           var x = getRandomInt(22, 24);
+           var x = getRandomInt(41, 49);
+           }
+	   if(message.content.includes('5v5')) {
+           var x = getRandomInt(50, 65);
            }
            
            if (x===1) {
