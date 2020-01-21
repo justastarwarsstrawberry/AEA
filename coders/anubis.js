@@ -667,55 +667,85 @@ if (message.content.length <= 6){
 		message.reply('Enclosed Island');
            
        }  
-              if (x===0) {
+	       if (x===52) {
+               const attachment = new Attachment('./resources/map/[z;p10]Kingdoms (10p) [by Vulkan]_map.png');
+               message.channel.send(attachment);
+		message.reply('Kingdoms');
+           
+       }  
+		if (x===53) {
+               const attachment = new Attachment('./resources/map/[z;p10]Large Lava Divide (10p)_map.png');
+               message.channel.send(attachment);
+		message.reply('Large Lava Divide');
+           
+       }  
+		if (x===54) {
+               const attachment = new Attachment('./resources/map/[z;p10]Many Islands Large (10p)_map.png');
+               message.channel.send(attachment);
+		message.reply('Many Islands Large');
+           
+       }  
+	        if (x===55) {
+               const attachment = new Attachment('./resources/map/[z;p10]Two Sides Remake (10p)_map.png');
+               message.channel.send(attachment);
+		message.reply('Two Sides Remake');
+           
+       }  
+		if (x===56) {
+               const attachment = new Attachment('./resources/map/[z;p10]Valley Arena (10p) [by_uber]_map.png');
+               message.channel.send(attachment);
+		message.reply('Valley Arena');
+           
+       }  
+              if (x===57) {
                const attachment = new Attachment('./resources/map/[p10] Napali Warfare (10p)_map.PNG');
                message.channel.send(attachment);
                    message.reply('Napali Warfare');
            
        }
-               if (x===0) {
+               if (x===58) {
                const attachment = new Attachment('./resources/map/[p10] Ultimate Crossing (10p)_map.png');
                message.channel.send(attachment);
                    message.reply('Ultimate Crossing');
            
        }
-               if (x===0) {
+               if (x===59) {
                const attachment = new Attachment('./resources/map/[p10]Crossing Large mrhidihoEdit (10p)_map.png');
                message.channel.send(attachment);
                    message.reply('Crossing Large');
            
        }
-               if (x===0) {
+               if (x===60) {
                const attachment = new Attachment('./resources/map/[p10]Huge Subdivide mrhidihoEdit(10p)_map.png');
                message.channel.send(attachment);
                    message.reply('Huge Subdivide');
            
        }
-               if (x===0) {
+               if (x===61) {
                const attachment = new Attachment('./resources/map/[p10]Island Warfare (10p)_map.png');
                message.channel.send(attachment);
                    message.reply('Island Warfare');
            
        }
-                if (x===0) {
+                if (x===62) {
                const attachment = new Attachment('./resources/map/[p10]Land Mountains (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('Land Mountains');
            
        }
-                if (x===0) {
+                if (x===63) {
                const attachment = new Attachment('./resources/map/[p10]Lava Bio-grid mrhidihoEdit (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('Lava Bio-Grid');
            
        }
-                if (x===0) {
+                if (x===64) {
                const attachment = new Attachment('./resources/map/[p10]Setons Clutch (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('Setons Clutch');
            
        }
-                if (x===0) {
+                if (x===65) {
                const attachment = new Attachment('./resources/map/[p10]The Final Campaign (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('The Final Campaign');
