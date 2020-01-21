@@ -381,39 +381,74 @@ if (message.content.length <= 6){
            }
            
            if (x===1) {
-               const attachment = new Attachment('./resources/map/[p2]Beach landing (2p) [by hxyy]_map');
+               const attachment = new Attachment('./resources/map/[p2]Beach landing (2p) [by hxyy]_map.png');
                message.channel.send(attachment);
                message.reply('Beach Landing');
            }
 	   if (x===2) {
-               const attachment = new Attachment('./resources/map/[p2]Big Island (2p)_map');
+               const attachment = new Attachment('./resources/map/[p2]Big Island (2p)_map.png');
                message.channel.send(attachment);
                message.reply('Big Island');
            }
 	   if (x===3) {
-               const attachment = new Attachment('./resources/map/[p2]Dire_Straight (2p) [by uber]_map');
+               const attachment = new Attachment('./resources/map/[p2]Dire_Straight (2p) [by uber]_map.png');
                message.channel.send(attachment);
                message.reply('Dire Straight');
            }
-	    if (x===0) {
-               const attachment = new Attachment('./resources/map/[p4]Cold Corners (4p)_map.png');
+	   if (x===4) {
+               const attachment = new Attachment('./resources/map/[p2]Fire Bridge (2p) [by uber]_map.png');
                message.channel.send(attachment);
-               message.reply('Cold Corners');
+               message.reply('Fire Bridge');
            }
-           if (x===0) {
+	   if (x===5) {
+               const attachment = new Attachment('./resources/map/[p2]Ice Island (2p)_map.png');
+               message.channel.send(attachment);
+               message.reply('Ice Island');
+           }
+           if (x===6) {
+               const attachment = new Attachment('./resources/map/[p2]Lake (2p)_map.png');
+               message.channel.send(attachment);
+               message.reply('Lake');
+           }
+	    if (x===7) {
+               const attachment = new Attachment('./resources/map/[p2]Small_Island (2p)_map.png');
+               message.channel.send(attachment);
+               message.reply('Small Island');
+           }
+	    if (x===8) {
+               const attachment = new Attachment('./resources/map/[p2]Two_cold_sides (2p)_map.png');
+               message.channel.send(attachment);
+               message.reply('Two Cold Sides');
+           }   
+	    if (x===9) {
                const attachment = new Attachment('./resources/map/[p4]Convergence (4p)_map.png');
                message.channel.send(attachment);
                message.reply('Convergence');
            }
-            if (x===0) {
+            if (x===10) {
                const attachment = new Attachment('./resources/map/[p4]Desert Battle (4p)_map.PNG');
                message.channel.send(attachment);
                 message.reply('Desert Battle');
            }
-             if (x===0) {
+             if (x===11) {
                const attachment = new Attachment('./resources/map/[p4]Dual Commanders (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Dual Commanders');
+           }
+	     if (x===12) {
+               const attachment = new Attachment('./resources/map/[p4]Depth charges (4p) [by hxyy]_map.png');
+               message.channel.send(attachment);
+                 message.reply('Depth Charges');
+           }
+	     if (x===13) {
+               const attachment = new Attachment('./resources/map/[p4]Desert (4p)_map.png');
+               message.channel.send(attachment);
+                 message.reply('Desert');
+           }
+	     if (x===14) {
+               const attachment = new Attachment('./resources/map/[p4]Ice Lake (4p) [by hxyy]_map.png');
+               message.channel.send(attachment);
+                 message.reply('Ice Lake');
            }
              if (x===0) {
                const attachment = new Attachment('./resources/map/[p5]Bottom Heavy (2v3)_map.png');
