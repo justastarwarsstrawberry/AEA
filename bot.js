@@ -229,7 +229,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
 
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
-    if (message.content.includes('bruh' || 'Bruh')) {
+    if (message.content.includes('bruh') || message.content.includes('Bruh')) {
    	message.channel.send(attachment);
     }
 
