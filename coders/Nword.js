@@ -16,7 +16,7 @@ const nworde = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', (message, user) => {
-let nword = ['nigger','nigga','nibba','nibber']
+let nword = ['nigger','nigga','nibba','nibber','nigg','nibb']
 let found = false;
 
 for(var i in nword){
