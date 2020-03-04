@@ -345,7 +345,17 @@ if (message.content.length <= 6){
 		}
 	}
 }
- //commands   
+ //commands 
+//N-word delete
+	if (message.content ===	'nigger' || message.content ===	'Nigger' || message.content ===	'nigga' || message.content ===	'Nigga') {
+		message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+		message.reply('Don't say the n word bitch'');
+	}
+		
+		
+		
     function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
