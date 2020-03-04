@@ -16,10 +16,10 @@ const nword = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
  client.on('message', (message, user) => {
-  
-if (message.content.startsWith('n') || message.content.startsWith('N')) { 
-    if (message.content.endsWith('a') || message.content.endsWith('r') || message.content.endsWith('A') || message.content.endsWith('R')) {
-		if(message.content.includes('i') || message.content.includes('g') || message.content.includes('I') || message.content.includes('G')){
+const m1 = message.content.includes('n') || message.content.includes('N')
+if (m1.startsWith('n') || m1.startsWith('N')) { 
+    if (m1.endsWith('a') || m1.endsWith('r') || m1.endsWith('A') || m1.endsWith('R')) {
+		if(m1.includes('i') || m1.includes('g') || m1.includes('I') || m1.includes('G')){
 	message.delete(); 
 	const attachment = new Attachment('./resources/nwordmechs.jpg');
 	      message.reply('');
