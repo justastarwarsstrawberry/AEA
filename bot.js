@@ -5,6 +5,7 @@ global.client = new Discord.Client();
 
 const Anubis = require('./coders/anubis.js');
 const Darkest = require('./coders/darkest.js');
+const N = require('./coders/Nword.js');
 const Timer = require('./coders/timer.js');
 client.setMaxListeners(0)
 if(Timer && Client){
@@ -22,6 +23,10 @@ if(Darkest && Client){
     		console.log('Darkest loaded');
 }
 
+if(N && Client){
+   		N.code();
+    		console.log('N loaded');
+}
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
 
