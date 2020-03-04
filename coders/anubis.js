@@ -346,6 +346,11 @@ if (message.content.length <= 6){
 	}
 }
  //commands 
+	//N-word delete
+	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga')) {
+		message.delete();
+		message.reply('Dont say the n word bitch');
+	}
 
 		
 		
