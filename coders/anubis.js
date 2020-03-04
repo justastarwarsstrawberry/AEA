@@ -347,11 +347,11 @@ if (message.content.length <= 6){
 }
  //commands 
 //N-word delete
-	if (message.content ===	'nigger' || message.content ===	'Nigger' || message.content ===	'nigga' || message.content ===	'Nigga') {
+	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga')) {
 		message.delete()
   .then(msg => console.log(`Deleted message from ${msg.author.username}`))
   .catch(console.error);
-		message.reply('Don't say the n word bitch'');
+		message.reply('Dont say the n word bitch'');
 	}
 		
 		
