@@ -26,7 +26,7 @@ if(message.content.toLowerCase().includes(nword[i].toLowerCase())) found = true;
 if (found){
  message.reply();
  message.delete();
- message.send(nworde);
+ message.channel.send(nworde);
 }
  });
 
