@@ -331,14 +331,11 @@ const helicopter = new Discord.RichEmbed()
  //commands 
 	//N-word delete
 	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga')) { 
-		const nword = new Discord.RichEmbed()
-	.setColor('#1500f7')
-	.setTitle(' ${msg.author.username} just said the n word')
-	.setURL('')
-	.attachFiles(['./resources/nwordmechs.png'])
-	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+		
 		message.delete(); 
-		message.channel.send(nword);
+		 const attachment = new Attachment('./resources/nwordmechs.png');
+               message.channel.send(attachment);
+               message.reply('is racist');
 	}
 
 		
