@@ -330,7 +330,7 @@ const helicopter = new Discord.RichEmbed()
 
  //commands 
 	//N-word delete
-	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga')) { 
+	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga') || message.content.includes('NIGGER') || message.content.includes('NIGGA') || message.content.includes('nibba') || message.content.includes('NIBBA')) { 
 		
 		message.delete(); 
 		 const attachment = new Attachment('./resources/nwordmechs.jpg');
