@@ -351,7 +351,7 @@ if (message.content.length <= 6){
 		message.delete()
   .then(msg => console.log(`Deleted message from ${msg.author.username}`))
   .catch(console.error);
-		message.reply('Dont say the n word bitch'');
+		message.reply('Dont say the n word bitch');
 	}
 		
 		
