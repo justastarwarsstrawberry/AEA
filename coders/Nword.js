@@ -19,7 +19,7 @@ const nword = new Discord.RichEmbed()
   
 if (message.content.startswith('n') || message.content.startswith('N')) { 
     if (message.content.endswith('a') || message.content.endswith('r') || message.content.endswith('A') || message.content.endswith('R')) {
-		if(message.content.includes('i') || message.content.includes('g') || message.content.includes('I') || message.content.includes('G'){
+		if(message.content.includes('i') || message.content.includes('g') || message.content.includes('I') || message.content.includes('G')){
 	message.delete(); 
 	const attachment = new Attachment('./resources/nwordmechs.jpg');
 	      message.reply('');
