@@ -333,7 +333,7 @@ const helicopter = new Discord.RichEmbed()
 	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga')) { 
 		
 		message.delete(); 
-		 const attachment = new Attachment('./resources/nwordmechs.png');
+		 const attachment = new Attachment('./resources/nwordmechs.jpg');
                message.channel.send(attachment);
                message.reply('is racist');
 	}
