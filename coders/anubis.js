@@ -327,27 +327,18 @@ const helicopter = new Discord.RichEmbed()
   if (message.content === 'Helicopter' ||  message.content === 'helicopter' || message.content === 'Which unit should I use if I want to stay a virgin?') {
 	    message.channel.send(helicopter);  
     }
- // nigger filter
-if (message.content.length <= 6){
-	if (message.content.startsWith('n')){
-		if (message.content.endsWith('a')){
-			if(message.content.includes('igg')){
-		       		const attachment = new Attachment('./resources/language.png');
-        			message.channel.send(attachment);
-			}
-		
-		}
-		else if (message.content.endsWith('r')){
-			if(message.content.includes('igg')){
-		       		const attachment = new Attachment('./resources/language.png');
-        			message.channel.send(attachment);
-			}
-		}
-	}
-}
+
  //commands 
 	//N-word delete
-	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga')) { message.delete(); message.reply('Dont say the n word bitch');
+	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga')) { 
+		const nword = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle(' ${msg.author.username} just said the n word')
+	.setURL('')
+	.attachFiles(['./resources/nwordmechs.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+		message.delete(); 
+		message.channel.send(nword);
 	}
 
 		
