@@ -19,8 +19,9 @@ client.on('message', (message, user) => {
 let nword = ['nigger','nigga','nibba','nibber']
 let found = false;
 
-for (message.content.toLowerCase().includes(nword[i].toLowerCase())) found = true;
-
+for(var i in nword){
+if(message.content.toLowerCase().includes(nword[i].toLowerCase())) found = true;
+}
    
 if (found){
  message.reply();
