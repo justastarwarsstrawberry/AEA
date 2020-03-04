@@ -331,14 +331,14 @@ const helicopter = new Discord.RichEmbed()
 if (message.content.length <= 6){
 	if (message.content.startsWith('n')){
 		if (message.content.endsWith('a')){
-			if(message.content.contains('igg')){
+			if(message.content.includes('igg')){
 		       		const attachment = new Attachment('./resources/language.png');
         			message.channel.send(attachment);
 			}
 		
 		}
 		else if (message.content.endsWith('r')){
-			if(message.content.contains('igg')){
+			if(message.content.includes('igg')){
 		       		const attachment = new Attachment('./resources/language.png');
         			message.channel.send(attachment);
 			}
