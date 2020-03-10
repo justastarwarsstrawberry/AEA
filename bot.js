@@ -258,23 +258,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
     }
 
     if (message.content === 'Titan' ||  message.content === 'titan') {
-
-        message.reply(`
-        Titan
-        - Advanced heavy seige mech
-        - Strong ground attack with long range
-        - Gatling anti-tank cannon
-        - Drum-fed grenade launcher
-        - Guided missiles
-        - Cannot fit in air transports
-        - Goes nuclear on death
-
-        Price $250,000
-        Health 12,000
-        Shield 8,000
-        Attack Range 350
-        Move Speed 0.4
-        Build Speed Varies`);
+	message.channel.send(titan);
     }
 
     if (message.content === 'Naval Carrier' ||  message.content === 'naval carrier' || message.content === 'navalcarrier') {
