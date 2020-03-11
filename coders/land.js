@@ -220,7 +220,7 @@ var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytan
 	message.channel.send(e8);
     }
 var tank = ["Tank", "tank"];
-    if (message.content.typeof === tank) {
+    if (message.content.includes(tank)) {
 	message.channel.send(e1);
     }
 var lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
