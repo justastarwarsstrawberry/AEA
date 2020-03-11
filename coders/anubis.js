@@ -370,7 +370,7 @@ const helicopter = new Discord.RichEmbed()
 	   if(message.content.includes('5v5')) {
            var x = getRandomInt(65, 82);
            }
-
+}
            if (x===1) {
                const attachment = new Attachment('./resources/map/[p2]Beach landing (2p) [by hxyy]_map.png');
                message.channel.send(attachment);
@@ -415,6 +415,7 @@ const helicopter = new Discord.RichEmbed()
                const attachment = new Attachment('./resources/[p2]Volcano Duel (2p)_map.png');
                message.channel.send(attachment);
                message.reply('Volcano Duel');
+}}
 	    if (x=== 10) {
                const attachment = new Attachment('./resources/map/[p4]Convergence (4p)_map.png');
                message.channel.send(attachment);
@@ -789,7 +790,7 @@ const helicopter = new Discord.RichEmbed()
        }
 		    
 		    
-	    }	    
+	 
 		    
  }
 
