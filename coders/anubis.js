@@ -790,7 +790,7 @@ const helicopter = new Discord.RichEmbed()
 
 
     }
-});
+};
 //Dont touch Zone start
 }
 //Dont touch Zone end
