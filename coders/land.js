@@ -275,7 +275,7 @@ const buffalo = ["Buffalo", "buffalo"];
 	message.channel.send(e14);
     }	
 	
-const hvyhovertank = ["Heavy Hover Tank", "Heavy hover tank", "heavy Hover tank", "heavyhovertank"];	
+const hvyhovertank = ("Heavy Hover Tank", "Heavy hover tank", "heavy Hover tank", "heavyhovertank");	
     if (message.content === hvyhovertank) {
 	message.channel.send(e15);
     }		
