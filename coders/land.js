@@ -13,7 +13,7 @@ client.setMaxListeners(0)
 // Units Description 
 // Note: The description has to be outside client.on({});
 
-const tank = new Discord.RichEmbed()
+const e1 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Tank')
 	.setURL('')
@@ -26,7 +26,7 @@ const tank = new Discord.RichEmbed()
 	.setImage('attachment://tank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const missiletank = new Discord.RichEmbed()
+const e2 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('AA Missile Tank')
 	.setURL('')
@@ -39,7 +39,7 @@ const missiletank = new Discord.RichEmbed()
 	.setImage('attachment://aamissiletank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const typhoon = new Discord.RichEmbed()
+const e3 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Typhoon')
 	.setURL('')
@@ -52,7 +52,7 @@ const typhoon = new Discord.RichEmbed()
 	.setImage('attachment://typhoon.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const zephyr = new Discord.RichEmbed()
+const e4 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Zephyr')
 	.setURL('')
@@ -65,7 +65,7 @@ const zephyr = new Discord.RichEmbed()
 	.setImage('attachment://z.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const plasmasniper = new Discord.RichEmbed()
+const e5 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Plasma Sniper')
 	.setURL('')
@@ -78,7 +78,7 @@ const plasmasniper = new Discord.RichEmbed()
 	.setImage('attachment://plasmasniper.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const comet = new Discord.RichEmbed()
+const e6 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Comet')
 	.setURL('')
@@ -91,7 +91,7 @@ const comet = new Discord.RichEmbed()
 	.setImage('attachment://comet.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const houndapc = new Discord.RichEmbed()
+const e7 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Hound APC')
 	.setURL('')
@@ -104,7 +104,7 @@ const houndapc = new Discord.RichEmbed()
 	.setImage('attachment://houndapc.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const heavytank = new Discord.RichEmbed()
+const e8 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Heavy Tank')
 	.setURL('')
@@ -117,7 +117,7 @@ const heavytank = new Discord.RichEmbed()
 	.setImage('attachment://hvytank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const lasertank = new Discord.RichEmbed()
+const e9 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Laser Tank')
 	.setURL('')
@@ -130,7 +130,7 @@ const lasertank = new Discord.RichEmbed()
 	.setImage('attachment://lasertank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const heavyartillery = new Discord.RichEmbed()
+const e10 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Heavy Artillery')
 	.setURL('')
@@ -143,7 +143,7 @@ const heavyartillery = new Discord.RichEmbed()
 	.setImage('attachment://hvyartillery.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-const DemoTruck = new Discord.RichEmbed()
+const e11 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Demo Truck')
 	.setURL('')
@@ -156,54 +156,72 @@ const DemoTruck = new Discord.RichEmbed()
 	.setImage('attachment://demotruck.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-  
+const e12 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Hover Tank')
+	.setURL('')
+	.attachFiles(['./resources/hovertank.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Light armor \n- Able to move over water \n- Can attack air and ground")
+	.addBlankField()
+	.addField("Stats", "Price $450 \n Health 150 \n Attack Range 140 \n Move Speed 1.2 \n Build Speed 8.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://hovertank.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
 client.on('message', message => {
+	
+var heavytank == ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
 //units code
-    if (message.content === 'heavy tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
-	message.channel.send(heavytank);
+    if (message.content === heavytank) {
+	message.channel.send(e8);
     }
-
-    if (message.content === 'tank' ||  message.content === 'Tank') {
-	message.channel.send(tank);
+var tank == ["Tank", "tank"];
+    if (message.content === tank) {
+	message.channel.send(e1);
     }
-	
-    if (message.content === 'laser tank' ||  message.content === 'lasertank' || message.content === 'Laser Tank' || message.content === 'LaserTank') {
-	message.channel.send(lasertank);
+var lasertank == ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
+    if (message.content === lasertank) {
+	message.channel.send(e9);
     }  
-
-    if (message.content === 'Hound Apc' ||  message.content === 'hound apc' || message.content === 'Hound APC') {
-	message.channel.send(houndapc);
+var houndapc == ["Hound Apc", "Hound apc", "Houndapc", "HoundApc", "houndApc", "hound Apc", "houndapc"];
+    if (message.content === houndapc) {
+	message.channel.send(e7);
     }
-	
-    if (message.content === 'Comet' ||  message.content === 'comet') {
-	message.channel.send(comet);
+var comet == ["Comet", "comet"];
+    if (message.content === comet) {
+	message.channel.send(e6);
     }
-	
-    if (message.content === 'Heavy Artillery' ||  message.content === 'heavy artillery' || message.content === 'HeavyArtillery' || message.content === 'heavyartillery') {
-	message.channel.send(heavyartillery);
+var heavyartillery == ["Heavy Artillery", "Heavyartillery", "HeavyArtillery", "heavyartillery", "Heavy artillery", "heavy artillery", "heavy Artillery"];	
+    if (message.content === heavyartillery) {
+	message.channel.send(e10);
     }
-	
-    if (message.content === 'Missile Tank' ||  message.content === 'missile tank' || message.content === 'MissileTank' || message.content === 'missiletank') {
-	message.channel.send(missiletank);
+var missletank == ["Missle Tank", "missle tank", "MissleTank", "missletank", "missleTank", "missle Tank", "Missle tank"];	
+    if (message.content === missletank) {
+	message.channel.send(e2);
     }
-	
-    if (message.content === 'Plasma Sniper' ||  message.content === 'plasma sniper' || message.content === 'PlasmaSniper' || message.content === 'plasmasniper') {
-        message.channel.send(plasmasniper);
+var plasmasniper == ["Plasma Sniper", "plasma Sniper", "plasmaSniper", "Plasma Sniper", "Plasmasniper", "Plasma sniper", "plasma sniper", "plasma sniper"];	
+    if (message.content === plasmasniper) {
+        message.channel.send(e5);
     }
 	
     if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
-        message.channel.send(zephyr);
+        message.channel.send(e6);
     }
 
     if (message.content === 'demo truck' ||  message.content === 'Demo truck' || message.content === 'demoTruck' || message.content === 'demo Truck') {
-	message.channel.send(DemoTruck);
+	message.channel.send(e11);
     }
 
 
     if (message.content === 'Typhon' ||  message.content === 'Typhoon' || message.content === 'typhoon') {
-	message.channel.send(typhoon);
+	message.channel.send(e3);
     }
 	
+    if (message.content === 'hover tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
+	message.channel.send(e12);
+    }	
 	
 });
   
