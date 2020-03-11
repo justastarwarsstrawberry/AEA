@@ -415,7 +415,7 @@ const helicopter = new Discord.RichEmbed()
                const attachment = new Attachment('./resources/[p2]Volcano Duel (2p)_map.png');
                message.channel.send(attachment);
                message.reply('Volcano Duel');
-}}
+}
 	    if (x=== 10) {
                const attachment = new Attachment('./resources/map/[p4]Convergence (4p)_map.png');
                message.channel.send(attachment);
