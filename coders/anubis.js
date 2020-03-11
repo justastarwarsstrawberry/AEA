@@ -787,8 +787,8 @@ const helicopter = new Discord.RichEmbed()
                     message.reply('Volcanic Surface');
            
        }
-
-
+}
+}
     
 });
 //Dont touch Zone start
