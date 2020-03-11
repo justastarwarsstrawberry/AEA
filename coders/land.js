@@ -214,68 +214,68 @@ const e15 = new Discord.RichEmbed()
 
 client.on('message', message => {
 	
-const heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
+var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
 //units code
     if (message.content === heavytank) {
 	message.channel.send(e8);
     }
-const tank = ["Tank", "tank"];
+var tank = ["Tank", "tank"];
     if (message.content === tank) {
 	message.channel.send(e1);
     }
-
-    if (message.content === "Laser tank" || "Lasertank") {
+var lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
+    if (message.content === lasertank) {
 	message.channel.send(e9);
     }  
-const houndapc = ["Hound Apc", "Hound apc", "Houndapc", "HoundApc", "houndApc", "hound Apc", "houndapc"];
+var houndapc = ["Hound Apc", "Hound apc", "Houndapc", "HoundApc", "houndApc", "hound Apc", "houndapc"];
     if (message.content === houndapc) {
 	message.channel.send(e7);
     }
-const comet = ["Comet", "comet"];
+var comet = ["Comet", "comet"];
     if (message.content === comet) {
 	message.channel.send(e6);
     }
-const heavyartillery = ["Heavy Artillery", "Heavyartillery", "HeavyArtillery", "heavyartillery", "Heavy artillery", "heavy artillery", "heavy Artillery"];	
+var heavyartillery = ["Heavy Artillery", "Heavyartillery", "HeavyArtillery", "heavyartillery", "Heavy artillery", "heavy artillery", "heavy Artillery"];	
     if (message.content === heavyartillery) {
 	message.channel.send(e10);
     }
-const missletank = ["Missle Tank", "missle tank", "MissleTank", "missletank", "missleTank", "missle Tank", "Missle tank"];	
+var missletank = ["Missle Tank", "missle tank", "MissleTank", "missletank", "missleTank", "missle Tank", "Missle tank"];	
     if (message.content === missletank) {
 	message.channel.send(e2);
     }
-const plasmasniper = ["Plasma Sniper", "plasma Sniper", "plasmaSniper", "Plasma Sniper", "Plasmasniper", "Plasma sniper", "plasma sniper", "plasma sniper"];	
+var plasmasniper = ["Plasma Sniper", "plasma Sniper", "plasmaSniper", "Plasma Sniper", "Plasmasniper", "Plasma sniper", "plasma sniper", "plasma sniper"];	
     if (message.content === plasmasniper) {
         message.channel.send(e5);
     }
-const z = ["Zephyr", "zephyr"];		
+var z = ["Zephyr", "zephyr"];		
     if (message.content === z) {
         message.channel.send(e4);
     }
-const demotruck = ["Demotruck", "demotruck", "demoTruck", "DemoTruck", "Demo Truck", "Demo truck", "demo truck", "demo Truck"]	
+var demotruck = ["Demotruck", "demotruck", "demoTruck", "DemoTruck", "Demo Truck", "Demo truck", "demo truck", "demo Truck"];	
     if (message.content === demotruck) {
 	message.channel.send(e11);
     }
 
-const typhoon = ["Typhon", "Typhoon", "typhon", "typhoon"];
+var typhoon = ["Typhon", "Typhoon", "typhon", "typhoon"];
     if (message.content === typhoon) {
 	message.channel.send(e3);
     }
-const hovertank = ["hovertank", "Hover tank","hover tank", "hover Tank", "Hovertank", "hoverTank", "HoverTank", "Hover Tank"];	
+var hovertank = ["hovertank", "Hover tank","hover tank", "hover Tank", "Hovertank", "hoverTank", "HoverTank", "Hover Tank"];	
     if (message.content === hovertank) {
 	message.channel.send(e12);
     }	
 	
-const saber = ["Saber", "saber"];	
+var saber = ["Saber", "saber"];	
     if (message.content === saber) {
 	message.channel.send(e13);
     }	
 	
-const buffalo = ["Buffalo", "buffalo"];	
+var buffalo = ["Buffalo", "buffalo"];	
     if (message.content === buffalo) {
 	message.channel.send(e14);
     }	
 	
-const hvyhovertank = ("Heavy Hover Tank", "Heavy hover tank", "heavy Hover tank", "heavyhovertank");	
+var hvyhovertank = ["Heavy Hover Tank", "Heavy hover tank", "heavy Hover tank", "heavyhovertank"];	
     if (message.content === hvyhovertank) {
 	message.channel.send(e15);
     }		
