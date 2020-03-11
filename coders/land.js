@@ -223,7 +223,7 @@ const tank = ["Tank", "tank"];
     if (message.content === tank) {
 	message.channel.send(e1);
     }
-const lasertank = [];	
+
     if (message.content === "Laser tank" || "Lasertank") {
 	message.channel.send(e9);
     }  
