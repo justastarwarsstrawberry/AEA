@@ -224,7 +224,7 @@ const tank = ["Tank", "tank"];
 	message.channel.send(e1);
     }
 const lasertank = [];	
-    if (message.content === "Laser tank" || "Laser Tank" || "laser tank" || "lasertank" || "laser Tank" || "laserTank" || "Lasertank") {
+    if (message.content === "Laser tank" || "Lasertank") {
 	message.channel.send(e9);
     }  
 const houndapc = ["Hound Apc", "Hound apc", "Houndapc", "HoundApc", "houndApc", "hound Apc", "houndapc"];
