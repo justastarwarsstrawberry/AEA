@@ -351,7 +351,7 @@ const helicopter = new Discord.RichEmbed()
         message.channel.send(attachment);
 
     }
-
+	if(message.content.startsWith('/')){
            if(message.content.includes('1v1')) {
            var x = getRandomInt(1, 9);
            }
@@ -789,7 +789,7 @@ const helicopter = new Discord.RichEmbed()
        }
 		    
 		    
-		    
+	    }	    
 		    
  }
 
