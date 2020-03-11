@@ -415,78 +415,78 @@ const helicopter = new Discord.RichEmbed()
                const attachment = new Attachment('./resources/[p2]Volcano Duel (2p)_map.png');
                message.channel.send(attachment);
                message.reply('Volcano Duel');
-	    if (x===10) {
+	    if (x=== 10) {
                const attachment = new Attachment('./resources/map/[p4]Convergence (4p)_map.png');
                message.channel.send(attachment);
                message.reply('Convergence');
            }
-            if (x===11) {
+            if (x=== 11) {
                const attachment = new Attachment('./resources/map/[p4]Desert Battle (4p)_map.PNG');
                message.channel.send(attachment);
                 message.reply('Desert Battle');
            }
-             if (x==12) {
+             if (x== 12) {
                const attachment = new Attachment('./resources/map/[p4]Dual Commanders (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Dual Commanders');
            }
-	     if (x===13) {
+	     if (x=== 13) {
                const attachment = new Attachment('./resources/map/[p4]Depth charges (4p) [by hxyy]_map.png');
                message.channel.send(attachment);
                  message.reply('Depth Charges');
            }
-	     if (x===14) {
+	     if (x=== 14) {
                const attachment = new Attachment('./resources/map/[p4]Desert (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Desert');
            }
-	     if (x===15) {
+	     if (x=== 15) {
                const attachment = new Attachment('./resources/map/[p4]Ice Lake (4p) [by hxyy]_map.png');
                message.channel.send(attachment);
                  message.reply('Ice Lake');
            }
-  	     if (x===16) {
+  	     if (x=== 16) {
                const attachment = new Attachment('./resources/map/[p4]Island freeze (4p) [by hxyy]_map.png');
                message.channel.send(attachment);
                  message.reply('Island Freeze');
            }
-	     if (x===17) {
+	     if (x=== 17) {
                const attachment = new Attachment('./resources/map/[p4]Islands (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Islands');
            }
-	     if (x===18) {
+	     if (x=== 18) {
                const attachment = new Attachment('./resources/map/[p4]Lava Maze (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Lava Maze');
            }
-	     if (x===19) {
+	     if (x=== 19) {
                const attachment = new Attachment('./resources/map/[p4]Lava Vortex (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Lava Vortex');
            }
-	     if (x===20) {
+	     if (x=== 20) {
                const attachment = new Attachment('./resources/map/[p4]Magma Island (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Magma Island');
            }
-	      if (x===21) {
+	      if (x=== 21) {
                const attachment = new Attachment('./resources/[p4]Glacier (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Glacier');
            }
-	      if (x===22) {
+	      if (x=== 22) {
                const attachment = new Attachment('./resources/map/[p4]Nuclear war (4p) [by hxyy]_map.png');
                message.channel.send(attachment);
                  message.reply('Nuclear War');
            }
-             if (x===23) {
+             if (x=== 23) {
                const attachment = new Attachment('./resources/map/[p5]Bottom Heavy (2v3)_map.png');
                message.channel.send(attachment);
                  message.reply('Bottom Heavy');
            
            }
-              if (x===24) {
+              if (x=== 24) {
                const attachment = new Attachment('./resources/map/[p5]Eye of Magma (2v3)_map.PNG');
                message.channel.send(attachment);
                   message.reply('Eye of Magma');
