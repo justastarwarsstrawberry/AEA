@@ -356,19 +356,19 @@ const helicopter = new Discord.RichEmbed()
            var x = getRandomInt(1, 9);
            }
 	   if(message.content.includes('2v2')) {
-           var x = getRandomInt(10, 20);
+           var x = getRandomInt(10, 22);
            }
            if(message.content.includes('2v3')) {
-           var x = getRandomInt(21, 24);
+           var x = getRandomInt(23, 26);
            }
            if(message.content.includes('3v3')) {
-           var x = getRandomInt(25, 40);
+           var x = getRandomInt(27, 53);
            }
            if(message.content.includes('4v4')) {
-           var x = getRandomInt(41, 49);
+           var x = getRandomInt(54, 64);
            }
 	   if(message.content.includes('5v5')) {
-           var x = getRandomInt(50, 65);
+           var x = getRandomInt(65, 82);
            }
            
            if (x===1) {
@@ -475,282 +475,319 @@ const helicopter = new Discord.RichEmbed()
                message.channel.send(attachment);
                  message.reply('Glacier');
            }
-	      if (x=== ) {
+	      if (x===22) {
                const attachment = new Attachment('./resources/map/[p4]Nuclear war (4p) [by hxyy]_map.png');
                message.channel.send(attachment);
                  message.reply('Nuclear War');
            }
-             if (x=== ) {
+             if (x===23) {
                const attachment = new Attachment('./resources/map/[p5]Bottom Heavy (2v3)_map.png');
                message.channel.send(attachment);
                  message.reply('Bottom Heavy');
            
            }
-              if (x=== ) {
+              if (x===24) {
                const attachment = new Attachment('./resources/map/[p5]Eye of Magma (2v3)_map.PNG');
                message.channel.send(attachment);
                   message.reply('Eye of Magma');
            
            }
-              if (x=== ) {
+              if (x===25) {
                const attachment = new Attachment('./resources/map/[p5]Hourglass (2v3)_map.png');
                message.channel.send(attachment);
                   message.reply('Hourglass');
            
        }
-              if (x=== ) {
+              if (x===26) {
                const attachment = new Attachment('./resources/map/[p5]Kratos and Hercules (2v3)_map.png');
                message.channel.send(attachment);
                   message.reply('Kratos and Hercules');
            
               }
-              if (x=== ) {
+              if (x===27) {
                const attachment = new Attachment('./resources/map/[p6] RoundaBout (6p)_map.PNG');
                message.channel.send(attachment);
                   message.reply('RoundaBout');
            
        }
-              if (x=== ) {
+              if (x===28) {
                const attachment = new Attachment('./resources/map/[p6]Beach Landing mrhidihoEdit (6p)_map.png');
                message.channel.send(attachment);
                   message.reply('Beach Landing');
            
        }
-              if (x=== ) {
+              if (x===29) {
                const attachment = new Attachment('./resources/map/[p6]Bridge of Hell (6p)_map.png');
                message.channel.send(attachment);
                       message.reply('Bridge of Hell');
            
        }
                
-              if (x=== ) {
+              if (x===30) {
                const attachment = new Attachment('./resources/map/[p6]Burning Beaches (6p)_map.png');
                message.channel.send(attachment);
                   message.reply('Burning Beaches');
            
        }
-               if (x=== ) {
+               if (x===40) {
                const attachment = new Attachment('./resources/map/[p6]Crossing (6p) mrhidihoEdit_map.png');
                message.channel.send(attachment);
                    message.reply('Crossing');
            
        }
-               if (x=== ) {
+               if (x===41) {
                const attachment = new Attachment('./resources/map/[p6]Desert Crossing (6p)_map.PNG');
                message.channel.send(attachment);
                    message.reply('Dessert Crossing');
            
        }
-               if (x=== ) {
+               if (x===42) {
                const attachment = new Attachment('./resources/map/[p6]Divided Islands (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Divided Islands');
            
        }
-               if (x=== ) {
+               if (x===43) {
                const attachment = new Attachment('./resources/map/[p6]Igneous-small (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Igneous Small');
            
        }
-               if (x=== ) {
+               if (x===44) {
                const attachment = new Attachment('./resources/map/[p6]Magma Island mrhidihoEdit (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Magma Island');
            
        }
-               if (x=== ) {
+               if (x===45) {
                const attachment = new Attachment('./resources/map/[p6]Serpents Pass (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Serpents Pass');
            
        }
-               if (x=== ) {
+               if (x===46) {
                const attachment = new Attachment('./resources/map/[p6]Tundra (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Tundra');
            
        }
-               if (x=== ) {
+               if (x===47) {
                const attachment = new Attachment('./resources/map/[p6]Weddell Isles (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Weddell Isles');
            
        }
-               if (x=== ) {
+               if (x===48) {
                const attachment = new Attachment('./resources/map/[p6]X-Path (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('X-Path');
            
        }
-		if (x=== ) {
+		if (x===49) {
                const attachment = new Attachment('./resources/map/[p6]Crossing (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Crossing');
            
        }
-		if (x=== ) {
+		if (x===50) {
                const attachment = new Attachment('./resources/map/[p6]Shore to Shore (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Shore to Shore');
            
        }
-		if (x=== ) {
+		if (x===51) {
                const attachment = new Attachment('./resources/map/[p6]Valley Pass (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Valley Pass');
            
        }
-               if (x=== ) {
+	        if (x===52) {
+               const attachment = new Attachment('./resources/[p6]FFire BBridge (p6)_map.png');
+               message.channel.send(attachment);
+                   message.reply('FFire BBridge');
+           
+       }
+               if (x===53) {
+               const attachment = new Attachment('./resources/[p6]Passages (6p)_map.png');
+               message.channel.send(attachment);
+                   message.reply('Darklord Egypt');
+           
+       }
+	       if (x===54) {
                const attachment = new Attachment('./resources/map/[p8]Darklord-Egypt (8p)_map.png');
                message.channel.send(attachment);
                    message.reply('Darklord Egypt');
            
        }
-               if (x=== ) {
+               if (x===55) {
                const attachment = new Attachment('./resources/map/[p8]Igneous (8p)_map.png');
                message.channel.send(attachment);
                    message.reply('Igneous');
            
        }
-               if (x=== ) {
+               if (x===56) {
                const attachment = new Attachment('./resources/map/[p8]Many Islands mrhidihoEdit (8p)_map.PNG');
                message.channel.send(attachment);
                    message.reply('Many Islands');
            
        }
-               if (x=== ) {
+               if (x===57) {
                const attachment = new Attachment('./resources/map/[p8]Bridges Over Lava (8p)_map.png');
                message.channel.send(attachment);
                    message.reply('Bridges Over Lava');
            
        }
-		if (x=== ) {
+		if (x===58) {
                const attachment = new Attachment('./resources/map/[p8]Coastline (8p) [by hxyy]_map.png');
                message.channel.send(attachment);
 		message.reply('Coastline');
            
        }  
-		if (x=== ) {
+		if (x===59) {
                const attachment = new Attachment('./resources/map/[p8]Huge Subdivide (8p)_map.png');
                message.channel.send(attachment);
 		message.reply('Huge Subdivide');
            
        }  
-		if (x=== ) {
+		if (x===60) {
                const attachment = new Attachment('./resources/map/[p8]Large Ice Outcrop (8p)_map.png');
                message.channel.send(attachment);
 		message.reply('Large Ice Outcrop');
            
        }  
-		if (x=== ) {
+		if (x===61) {
                const attachment = new Attachment('./resources/map/[p8]Lava Divide(8p)_map.png');
                message.channel.send(attachment);
 		message.reply('Lava Divide');
            
        }  
-		if (x=== ) {
+		if (x===62) {
                const attachment = new Attachment('./resources/map/[p8]Two Sides (8p)_map.png');
                message.channel.send(attachment);
 		message.reply('Two Sides');
            
        }  
-              if (x=== ) {
+               if (x===63) {
+               const attachment = new Attachment('./resources/[p8]Hell's Arena (8p)_map.png');
+               message.channel.send(attachment);
+		message.reply('Hell's Arena');
+           
+       }  
+	       if (x===64) {
+               const attachment = new Attachment('./resources/[p8]Hot Cornerz (p8)_map.png');
+               message.channel.send(attachment);
+		message.reply('Hot Cornerz');
+           
+       }  
+	       if (x===65) {
                const attachment = new Attachment('./resources/map/[z;p10]Crossing Large (10p)_map.png');
                message.channel.send(attachment);
 		message.reply('Crossing Large');
            
        }  
-	      if (x=== ) {
+	      if (x===66) {
                const attachment = new Attachment('./resources/map/[z;p10]Enclosed Island (10p)_map.png');
                message.channel.send(attachment);
 		message.reply('Enclosed Island');
            
        }  
-	       if (x=== ) {
+	       if (x===67) {
                const attachment = new Attachment('./resources/map/[z;p10]Kingdoms (10p) [by Vulkan]_map.png');
                message.channel.send(attachment);
 		message.reply('Kingdoms');
            
        }  
-		if (x=== ) {
+		if (x===68) {
                const attachment = new Attachment('./resources/map/[z;p10]Large Lava Divide (10p)_map.png');
                message.channel.send(attachment);
 		message.reply('Large Lava Divide');
            
        }  
-		if (x=== ) {
+		if (x===69) {
                const attachment = new Attachment('./resources/map/[z;p10]Many Islands Large (10p)_map.png');
                message.channel.send(attachment);
 		message.reply('Many Islands Large');
            
        }  
-	        if (x=== ) {
+	        if (x===70) {
                const attachment = new Attachment('./resources/map/[z;p10]Two Sides Remake (10p)_map.png');
                message.channel.send(attachment);
 		message.reply('Two Sides Remake');
            
        }  
-		if (x=== ) {
+		if (x===71) {
                const attachment = new Attachment('./resources/map/[z;p10]Valley Arena (10p) [by_uber]_map.png');
                message.channel.send(attachment);
 		message.reply('Valley Arena');
            
        }  
-              if (x=== ) {
+              if (x===72) {
                const attachment = new Attachment('./resources/map/[p10] Napali Warfare (10p)_map.PNG');
                message.channel.send(attachment);
                    message.reply('Napali Warfare');
            
        }
-               if (x=== ) {
+               if (x===73) {
                const attachment = new Attachment('./resources/map/[p10] Ultimate Crossing (10p)_map.png');
                message.channel.send(attachment);
                    message.reply('Ultimate Crossing');
            
        }
-               if (x=== ) {
+               if (x===74) {
                const attachment = new Attachment('./resources/map/[p10]Crossing Large mrhidihoEdit (10p)_map.png');
                message.channel.send(attachment);
                    message.reply('Crossing Large');
            
        }
-               if (x=== ) {
+               if (x===75) {
                const attachment = new Attachment('./resources/map/[p10]Huge Subdivide mrhidihoEdit(10p)_map.png');
                message.channel.send(attachment);
                    message.reply('Huge Subdivide');
            
        }
-               if (x=== ) {
+               if (x===76) {
                const attachment = new Attachment('./resources/map/[p10]Island Warfare (10p)_map.png');
                message.channel.send(attachment);
                    message.reply('Island Warfare');
            
        }
-                if (x=== ) {
+                if (x===77) {
                const attachment = new Attachment('./resources/map/[p10]Land Mountains (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('Land Mountains');
            
        }
-                if (x=== ) {
+                if (x===78) {
                const attachment = new Attachment('./resources/map/[p10]Lava Bio-grid mrhidihoEdit (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('Lava Bio-Grid');
            
        }
-                if (x=== ) {
+                if (x===79) {
                const attachment = new Attachment('./resources/map/[p10]Setons Clutch (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('Setons Clutch');
            
        }
-                if (x=== ) {
+                if (x===80) {
                const attachment = new Attachment('./resources/map/[p10]The Final Campaign (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('The Final Campaign');
            
        }
+		if (x===81) {
+               const attachment = new Attachment('./resources/[p10]Cold Canal (10p)_map.png');
+               message.channel.send(attachment);
+                    message.reply('Cold Canal');
+           
+       }
+                if (x===82) {
+               const attachment = new Attachment('./resources/[p10]Volcanic Surface (10p)_map.png');
+               message.channel.send(attachment);
+                    message.reply('Volcanic Surface');
+           
+       }
+
 
     }
 });
