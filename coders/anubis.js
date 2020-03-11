@@ -5,7 +5,7 @@ client.setMaxListeners(0)
 //Dont touch Zone end
 // units
 //test
-	const lynx = new Discord.RichEmbed()
+const lynx = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Lynx')
 	.setURL('')
@@ -370,7 +370,7 @@ const helicopter = new Discord.RichEmbed()
 	   if(message.content.includes('5v5')) {
            var x = getRandomInt(65, 82);
            }
-           
+	   }
            if (x===1) {
                const attachment = new Attachment('./resources/map/[p2]Beach landing (2p) [by hxyy]_map.png');
                message.channel.send(attachment);
@@ -497,7 +497,7 @@ const helicopter = new Discord.RichEmbed()
                message.channel.send(attachment);
                   message.reply('Hourglass');
            
-       }
+      	   }
               if (x===26) {
                const attachment = new Attachment('./resources/map/[p5]Kratos and Hercules (2v3)_map.png');
                message.channel.send(attachment);
@@ -791,9 +791,8 @@ const helicopter = new Discord.RichEmbed()
 		    
 		    
 		    
-		    
-   }
-}
+ }
+
     
 });
 //Dont touch Zone start
