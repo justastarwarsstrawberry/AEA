@@ -668,7 +668,7 @@ const helicopter = new Discord.RichEmbed()
            
        }  
                if (x===63) {
-               const attachment = new Attachment("./resources/[p8]Hell's Arena (8p)_map.png");
+               const attachment = new Attachment('./resources/[p8]Hells Arena (8p)_map.png');
                message.channel.send(attachment);
 		message.reply("Hell's Arena");
            
@@ -790,7 +790,7 @@ const helicopter = new Discord.RichEmbed()
 
 
     }
-};
+});
 //Dont touch Zone start
 }
 //Dont touch Zone end
