@@ -787,7 +787,12 @@ const helicopter = new Discord.RichEmbed()
                     message.reply('Volcanic Surface');
            
        }
-}
+		    
+		    
+		    
+		    
+		    
+   }
 }
     
 });
