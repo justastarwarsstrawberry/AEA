@@ -351,7 +351,7 @@ const helicopter = new Discord.RichEmbed()
         message.channel.send(attachment);
 
     }
-	if(message.content.startsWith('/random')){
+
            if(message.content.includes('1v1')) {
            var x = getRandomInt(1, 9);
            }
@@ -370,7 +370,7 @@ const helicopter = new Discord.RichEmbed()
 	   if(message.content.includes('5v5')) {
            var x = getRandomInt(65, 82);
            }
-	}
+
            if (x===1) {
                const attachment = new Attachment('./resources/map/[p2]Beach landing (2p) [by hxyy]_map.png');
                message.channel.send(attachment);
