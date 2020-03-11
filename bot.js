@@ -4,7 +4,7 @@ global.client = new Discord.Client();
 
 
 const Anubis = require('./coders/anubis.js');
-const Darkest = require('./coders/darkest.js');
+const Darkest = require('./coders/land.js');
 const N = require('./coders/Nword.js');
 const Timer = require('./coders/timer.js');
 client.setMaxListeners(0)
@@ -20,7 +20,7 @@ if(Anubis && Client){
 
 if(Darkest && Client){
    		Darkest.code();
-    		console.log('Darkest loaded');
+    		console.log('Land loaded');
 }
 
 if(N && Client){
