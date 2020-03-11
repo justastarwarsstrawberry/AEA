@@ -223,8 +223,8 @@ const tank = ["Tank", "tank"];
     if (message.content === tank) {
 	message.channel.send(e1);
     }
-const lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
-    if (message.content === lasertank) {
+const lasertank = [];	
+    if (message.content === "Laser tank" || "Laser Tank" || "laser tank" || "lasertank" || "laser Tank" || "laserTank" || "Lasertank") {
 	message.channel.send(e9);
     }  
 const houndapc = ["Hound Apc", "Hound apc", "Houndapc", "HoundApc", "houndApc", "hound Apc", "houndapc"];
