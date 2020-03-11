@@ -668,9 +668,9 @@ const helicopter = new Discord.RichEmbed()
            
        }  
                if (x===63) {
-               const attachment = new Attachment('./resources/[p8]Hell's Arena (8p)_map.png');
+               const attachment = new Attachment("./resources/[p8]Hell's Arena (8p)_map.png");
                message.channel.send(attachment);
-		message.reply('Hell's Arena');
+		message.reply("Hell's Arena");
            
        }  
 	       if (x===64) {
