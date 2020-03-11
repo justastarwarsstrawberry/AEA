@@ -172,36 +172,36 @@ const e12 = new Discord.RichEmbed()
 
 client.on('message', message => {
 	
-var heavytank == ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
+var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
 //units code
     if (message.content === heavytank) {
 	message.channel.send(e8);
     }
-var tank == ["Tank", "tank"];
+var tank = ["Tank", "tank"];
     if (message.content === tank) {
 	message.channel.send(e1);
     }
-var lasertank == ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
+var lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
     if (message.content === lasertank) {
 	message.channel.send(e9);
     }  
-var houndapc == ["Hound Apc", "Hound apc", "Houndapc", "HoundApc", "houndApc", "hound Apc", "houndapc"];
+var houndapc = ["Hound Apc", "Hound apc", "Houndapc", "HoundApc", "houndApc", "hound Apc", "houndapc"];
     if (message.content === houndapc) {
 	message.channel.send(e7);
     }
-var comet == ["Comet", "comet"];
+var comet = ["Comet", "comet"];
     if (message.content === comet) {
 	message.channel.send(e6);
     }
-var heavyartillery == ["Heavy Artillery", "Heavyartillery", "HeavyArtillery", "heavyartillery", "Heavy artillery", "heavy artillery", "heavy Artillery"];	
+var heavyartillery = ["Heavy Artillery", "Heavyartillery", "HeavyArtillery", "heavyartillery", "Heavy artillery", "heavy artillery", "heavy Artillery"];	
     if (message.content === heavyartillery) {
 	message.channel.send(e10);
     }
-var missletank == ["Missle Tank", "missle tank", "MissleTank", "missletank", "missleTank", "missle Tank", "Missle tank"];	
+var missletank = ["Missle Tank", "missle tank", "MissleTank", "missletank", "missleTank", "missle Tank", "Missle tank"];	
     if (message.content === missletank) {
 	message.channel.send(e2);
     }
-var plasmasniper == ["Plasma Sniper", "plasma Sniper", "plasmaSniper", "Plasma Sniper", "Plasmasniper", "Plasma sniper", "plasma sniper", "plasma sniper"];	
+var plasmasniper = ["Plasma Sniper", "plasma Sniper", "plasmaSniper", "Plasma Sniper", "Plasmasniper", "Plasma sniper", "plasma sniper", "plasma sniper"];	
     if (message.content === plasmasniper) {
         message.channel.send(e5);
     }
