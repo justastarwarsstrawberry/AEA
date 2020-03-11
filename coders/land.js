@@ -170,6 +170,48 @@ const e12 = new Discord.RichEmbed()
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
+const e13 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Saber')
+	.setURL('')
+	.attachFiles(['./resources/saber.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Can attack air only \n- Armed with 2 small flak cannons \n- Medium armor")
+	.addBlankField()
+	.addField("Stats", "Price $900 \n Health 600 \n Attack Range 200 \n Move Speed 0.6 \n Build Speed 12.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://saber.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
+const e14 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Buffalo')
+	.setURL('')
+	.attachFiles(['./resources/buffalo.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Minigun tank \n- Can attack land & air \n- Speeds up as it fires")
+	.addBlankField()
+	.addField("Stats", "Price $2500 \n Health 550 \n Attack Range 200 \n Move Speed 0.85 \n Build Speed 20.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://buffalo.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
+const e15 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Hover Tank')
+	.setURL('')
+	.attachFiles(['./resources/hvyhovertank.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Minigun tank \n- Can attack land & air \n- Speeds up as it fires")
+	.addBlankField()
+	.addField("Stats", "Price $1100 \n Health 420 \n Attack Range 160 \n Move Speed 1 \n Build Speed 16.7s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://hvyhovertank.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
 client.on('message', message => {
 	
 var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
@@ -205,24 +247,38 @@ var plasmasniper = ["Plasma Sniper", "plasma Sniper", "plasmaSniper", "Plasma Sn
     if (message.content === plasmasniper) {
         message.channel.send(e5);
     }
-	
-    if (message.content === 'Zephyr' ||  message.content === 'zephyr') {
-        message.channel.send(e6);
+var z = ["Zephyr", "zephyr"];		
+    if (message.content === z) {
+        message.channel.send(e4);
     }
-
-    if (message.content === 'demo truck' ||  message.content === 'Demo truck' || message.content === 'demoTruck' || message.content === 'demo Truck') {
+var demotruck = ["Demotruck", "demotruck", "demoTruck", "DemoTruck", "Demo Truck", "Demo truck", "demo truck", "demo Truck"]	
+    if (message.content === demotruck) {
 	message.channel.send(e11);
     }
 
-
-    if (message.content === 'Typhon' ||  message.content === 'Typhoon' || message.content === 'typhoon') {
+var typhoon = ["Typhon", "Typhoon", "typhon", "typhoon"];
+    if (message.content === typhoon) {
 	message.channel.send(e3);
     }
-	
-    if (message.content === 'hover tank' ||  message.content === 'heavytank' || message.content === 'Heavy Tank' || message.content === 'HeavyTank') {
+var hovertank = ["hovertank", "Hover tank","hover tank", "hover Tank", "Hovertank", "hoverTank", "HoverTank", "Hover Tank"];	
+    if (message.content === hovertank) {
 	message.channel.send(e12);
     }	
 	
+var saber = ["Saber", "saber"];	
+    if (message.content === saber) {
+	message.channel.send(e13);
+    }	
+	
+var buffalo = ["Buffalo", "buffalo"];	
+    if (message.content === buffalo) {
+	message.channel.send(e14);
+    }	
+	
+var hvyhovertank = ["Heavy Hover Tank", "Heavy hover tank", "heavy Hover tank", "heavyhovertank"];	
+    if (message.content === hvyhovertank) {
+	message.channel.send(e15);
+    }		
 });
   
   
