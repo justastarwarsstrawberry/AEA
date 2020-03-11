@@ -792,7 +792,6 @@ const helicopter = new Discord.RichEmbed()
 		    
 	 
 		    
- }
 
     
 });
