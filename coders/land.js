@@ -219,7 +219,10 @@ var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytan
     if (message.content === heavytank) {
 	message.channel.send(e8);
     }
-const tank = {"Tank", "tank"};
+const tank = {
+              "Tank", 
+              "tank"
+             };
     if (tank[message.content]) {
 	message.channel.send(e1);
     }
