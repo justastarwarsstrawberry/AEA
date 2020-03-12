@@ -219,11 +219,11 @@ var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytan
     if (message.content === heavytank) {
 	message.channel.send(e8);
     }
-var tank = ["Tank", "tank"];
+const tank = ["Tank", "tank"];
     if (tank[message.content]) {
 	message.channel.send(e1);
     }
-var lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
+const lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
     if (message.content === lasertank) {
 	message.channel.send(e9);
     }  
