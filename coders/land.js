@@ -216,71 +216,70 @@ const e15 = new Discord.RichEmbed()
 
 client.on('message', message => {
 	
-var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
-//units code
-    if (message.content.toLowerCase() === db.B) {
-	message.channel.send(e8);
-    }
 
+//tank
     if (message.content.toLowerCase() === db.A) {
 	message.channel.send(e1);
     }
-const lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
-    if (message.content === lasertank) {
-	message.channel.send(e9);
-    }  
-var houndapc = ["Hound Apc", "Hound apc", "Houndapc", "HoundApc", "houndApc", "hound Apc", "houndapc"];
-    if (message.content === houndapc) {
-	message.channel.send(e7);
-    }
-var comet = ["Comet", "comet"];
-    if (message.content === comet) {
-	message.channel.send(e6);
-    }
-var heavyartillery = ["Heavy Artillery", "Heavyartillery", "HeavyArtillery", "heavyartillery", "Heavy artillery", "heavy artillery", "heavy Artillery"];	
-    if (message.content === heavyartillery) {
-	message.channel.send(e10);
-    }
-var missletank = ["Missle Tank", "missle tank", "MissleTank", "missletank", "missleTank", "missle Tank", "Missle tank"];	
-    if (message.content === missletank) {
+//missiletank
+    if (message.content.toLowerCase() === db.K) {
 	message.channel.send(e2);
     }
-var plasmasniper = ["Plasma Sniper", "plasma Sniper", "plasmaSniper", "Plasma Sniper", "Plasmasniper", "Plasma sniper", "plasma sniper", "plasma sniper"];	
-    if (message.content === plasmasniper) {
-        message.channel.send(e5);
-    }
-var z = ["Zephyr", "zephyr"];		
-    if (message.content === z) {
-        message.channel.send(e4);
-    }
-var demotruck = ["Demotruck", "demotruck", "demoTruck", "DemoTruck", "Demo Truck", "Demo truck", "demo truck", "demo Truck"];	
-    if (message.content === demotruck) {
-	message.channel.send(e11);
-    }
-
-var typhoon = ["Typhon", "Typhoon", "typhon", "typhoon"];
-    if (message.content === typhoon) {
+//typhoon
+    if (message.content.toLowerCase() === db.G) {
 	message.channel.send(e3);
     }
-var hovertank = ["hovertank", "Hover tank","hover tank", "hover Tank", "Hovertank", "hoverTank", "HoverTank", "Hover Tank"];	
-    if (message.content === hovertank) {
+//Zephyr
+    if (message.content.toLowerCase() === db.L) {
+    message.channel.send(e4);
+    }
+//plasmasniper 
+    if (message.content.toLowerCase() === db.E) {
+        message.channel.send(e5);
+    }
+//comet
+    if (message.content.toLowerCase() === db.C) {
+	message.channel.send(e6);
+    }
+//houndapc
+    if (message.content.toLowerCase()== db.D) {
+	message.channel.send(e7);
+    }
+//Heavytank
+    if (message.content.toLowerCase() === db.B) {
+	message.channel.send(e8);
+    }
+//Lasertank
+    if (message.content.toLowerCase() === db.M) {
+	message.channel.send(e9);
+    }  
+//heavyartillery
+    if (message.content.toLowerCase() === db.O) {
+	message.channel.send(e10);
+    }
+//Demotruck
+    if (message.content.toLowerCase() === db.J) {
+	message.channel.send(e11);
+    }
+//hovertank
+    if (message.content.toLowerCase() === db.N) {
 	message.channel.send(e12);
-    }	
-	
-var saber = ["Saber", "saber"];	
-    if (message.content === saber) {
+    }		
+//saber
+    if (message.content.toLowerCase() === db.F) {
 	message.channel.send(e13);
     }	
-	
-var buffalo = ["Buffalo", "buffalo"];	
-    if (message.content === buffalo) {
+//buffalo
+    if (message.content.toLowerCase() === db.H) {
 	message.channel.send(e14);
     }	
-	
-var hvyhovertank = ["Heavy Hover Tank", "Heavy hover tank", "heavy Hover tank", "heavyhovertank"];	
-    if (message.content === hvyhovertank) {
+//Heavy hover tank	
+    if (message.content.toLowerCase() === db.I) {
 	message.channel.send(e15);
-    }		
+    }	
+	
+	
+
 });
   
   
