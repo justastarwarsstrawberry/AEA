@@ -220,7 +220,7 @@ var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytan
 	message.channel.send(e8);
     }
 const tank = {
-              "Tank", 
+              "Tank"
               "tank"
              };
     if (tank[message.content]) {
