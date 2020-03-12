@@ -1,8 +1,9 @@
 //_____________Dont touch Zone start
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
-client.setMaxListeners(0)
+const fs = require("fs");
 let db = JSON.parse(fs.readFileSync("./coders/databasel.json", "utf8"));
+client.setMaxListeners(0)
 //_____________Dont touch Zone end
   
 	
