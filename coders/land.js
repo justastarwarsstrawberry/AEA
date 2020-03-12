@@ -82,7 +82,7 @@ const e5 = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const e6 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Comet')
+	.setTitle('Comet') 
 	.setURL('')
 	.attachFiles(['./resources/comet.png'])
 	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
@@ -218,11 +218,11 @@ client.on('message', message => {
 	
 var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
 //units code
-    if (message.content.toLowerCase().includes(db.B)) {
+    if (message.content.toLowerCase() === db.B) {
 	message.channel.send(e8);
     }
 
-    if (message.content.toLowerCase().includes(db.A)) {
+    if (message.content.toLowerCase() === db.A) {
 	message.channel.send(e1);
     }
 const lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
