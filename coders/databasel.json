@@ -1,4 +1,6 @@
 {
-"tank":"tank",
-"Tank":"Tank"
+"tank":{
+       "tank":"0",
+       "Tank":"1"
+       }
 }
