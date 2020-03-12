@@ -222,7 +222,7 @@ var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytan
 	message.channel.send(e8);
     }
 
-    if (message.content === db.tank) {
+    if (message.content === db.1A) {
 	message.channel.send(e1);
     }
 const lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
