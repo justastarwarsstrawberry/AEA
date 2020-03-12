@@ -1,12 +1,18 @@
 {
 "A":"tank",
-"AB":"Tank",
-"AC":"TANK",
 "B":"heavytank",
-"BA":"heavy tank",
-"BB":"heavytank",
-"BC":"hvy tank",
-"BD":"Heavy Tank",
-"BE":"hvytank"
+"C":"Comet",
+"D":"HoundApc",
+"E":"PlasmaSniper",
+"F":"Saber",
+"G":"Typoon",
+"H":"Buffalo",
+"I":"HeavyHoverTank",
+"J":"DemoTruck",
+"K":"MissileTank",
+"L":"Zephyr",
+"M":"LaserTank",
+"N":"HoverTank"
+ 
 
 }
