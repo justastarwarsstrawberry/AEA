@@ -13,7 +13,10 @@
 "L":"Zephyr",
 "M":"LaserTank",
 "N":"HoverTank",
-"O":"HeavyArtillery"
+"O":"HeavyArtillery",
+"P":"Duster",
+"Q":"Scout",
+"R":"TeslaTank"
  
 
 }
