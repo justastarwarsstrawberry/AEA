@@ -219,8 +219,9 @@ var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytan
     if (message.content === heavytank) {
 	message.channel.send(e8);
     }
-
-    if (message.content == "tank") {
+var tank = {'x': 'tank',
+            'y': 'Tank'};
+    if (message.content === tank.x || tank.y) {
 	message.channel.send(e1);
     }
 const lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
