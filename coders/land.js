@@ -218,11 +218,11 @@ client.on('message', message => {
 	
 var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytank", "Heavy Tank"];
 //units code
-    if (message.content === heavytank) {
+    if (message.content.toLowerCase().includes(db.B)) {
 	message.channel.send(e8);
     }
 
-    if (message.content === db.A || message.content === db.AB) {
+    if (message.content.toLowerCase().includes(db.A)) {
 	message.channel.send(e1);
     }
 const lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
