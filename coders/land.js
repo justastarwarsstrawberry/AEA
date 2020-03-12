@@ -2,7 +2,7 @@
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
-let db = JSON.parse(fs.readFileSync("./coders/databasel.json", "utf8"));
+let db = require("./coders/databasel.json", "utf8");
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
   
@@ -222,7 +222,7 @@ var heavytank = ["Heavy tank", "heavy tank", "heavytank", "HeavyTank", "Heavytan
 	message.channel.send(e8);
     }
 
-    if (message.content === db[tank]) {
+    if (message.content === db.tank) {
 	message.channel.send(e1);
     }
 const lasertank = ["Laser tank", "Laser Tank", "laser tank", "lasertank", "laser Tank", "laserTank", "Lasertank"];	
