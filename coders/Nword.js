@@ -17,8 +17,12 @@ const nworde = new Discord.RichEmbed()
 
 client.on('message', (message, user) => {
 let nword = ['nigger','nigga','nibba','nibber','nigg','nibb']
-let found = false;
 
+const swearWords = ["darn", "shucks", "frak", "shite"];
+if( swearWords.some(word => message.content.includes(word)) ) {
+  message.reply("Oh no you said a bad word!!!");
+  // Or just do message.delete();
+}
 for(var i in nword){
 if(message.content.toLowerCase().includes(nword[i].toLowerCase())) found = true;
 }
