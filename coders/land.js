@@ -281,7 +281,7 @@ client.on('message', message => {
 	message.channel.send(e6);
     }
 //houndapc
-    if (message.content.toLowerCase()== db.D) {
+    if (message.content.toLowerCase()=== db.D) {
 	message.channel.send(e7);
     }
 //Heavytank
