@@ -213,6 +213,45 @@ const e15 = new Discord.RichEmbed()
 	.setImage('attachment://hvyhovertank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e16 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Tesla Tank')
+	.setURL('')
+	.attachFiles(['./resources/teslatank.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription(" - Heavy Armour \n- Tesla tech, good against shields \n- Can attack land and air \n- Reduced damage to buildings")
+	.addBlankField()
+	.addField("Stats", " Price $3900 \n Health 2600 \n Attack Range 170 \n Move Speed 0.6 \n Build Speed 0.0006s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://teslatank.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e17 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Scout')
+	.setURL('')
+	.attachFiles(['./resources/scout.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription("")
+	.addBlankField()
+	.addField("Stats", " Price $0 \n Health 0 \n Attack Range 0 \n Move Speed 0 \n Build Speed 0s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://scout.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e18 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Duster')
+	.setURL('')
+	.attachFiles(['./resources/duster.png'])
+	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setDescription("")
+	.addBlankField()
+	.addField("Stats", " Price $0 \n Health 0 \n Attack Range 0 \n Move Speed 0 \n Build Speed 0s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://duster.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', message => {
 	
@@ -277,9 +316,18 @@ client.on('message', message => {
     if (message.content.toLowerCase() === db.I) {
 	message.channel.send(e15);
     }	
-	
-	
-
+//tesla tank
+    if (message.content.toLowerCase() === db.R) {
+	message.channel.send(e16);
+    }		
+//scout
+    if (message.content.toLowerCase() === db.Q) {
+	message.channel.send(e17);
+    }
+//duster
+    if (message.content.toLowerCase() === db.P) {
+	message.channel.send(e18);
+    }	
 });
   
   
