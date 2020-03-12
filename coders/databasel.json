@@ -1,6 +1,12 @@
 {
 "A":"tank",
-"AB":"Tank"
-
+"A":"Tank",
+"A":"TANK",
+"B":"Heavy tank",
+"BA":"heavy tank",
+"BB":"heavytank",
+"BC":"hvy tank",
+"BD":"Heavy Tank",
+"BE":"hvytank"
 
 }
