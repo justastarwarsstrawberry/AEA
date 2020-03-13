@@ -359,7 +359,11 @@ client.on('message', message => {
 	message.channel.send(e19);
     }	
 //combat engineer
-    if (message.content.toLowerCase() === db.T) {
+    if (message.content.toLowerCase() === db.S) {
+	message.channel.send(e20);
+    }	
+//Siegetank
+    if (message.content.toLowerCase() === db.V) {
 	message.channel.send(e20);
     }	
 });
