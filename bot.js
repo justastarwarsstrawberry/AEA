@@ -23,10 +23,6 @@ if(Darkest && Client){
     		console.log('Land loaded');
 }
 
-if(N && Client){
-   		N.code();
-    		console.log('N loaded');
-}
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
 
