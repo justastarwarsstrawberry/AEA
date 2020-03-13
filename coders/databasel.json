@@ -16,7 +16,11 @@
 "O":"heavyartillery",
 "P":"duster",
 "Q":"scout",
-"R":"teslatank"
- 
+"R":"teslatank",
+"S":"combatengineer",
+"T":"artillery",
+"U":"achilles",
+"V":"siegetank"
+
 
 }
