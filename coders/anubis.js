@@ -7,7 +7,7 @@ client.setMaxListeners(0)
 //mechs
 const basicmech = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Lynx')
+	.setTitle('Basic Mech')
 	.setURL('')
 	.attachFiles(['./resources/basicmech.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -21,7 +21,7 @@ const basicmech = new Discord.RichEmbed()
 	
 const artillerymech = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Lynx')
+	.setTitle('Artillery Mech')
 	.setURL('')
 	.attachFiles(['./resources/artillerymech.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -34,7 +34,7 @@ const artillerymech = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const mobileturret = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Lynx')
+	.setTitle('Mobile Turret')
 	.setURL('')
 	.attachFiles(['./resources/mobileturret.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -47,7 +47,7 @@ const mobileturret = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const antiairmech = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Lynx')
+	.setTitle('Anti Air Mech')
 	.setURL('')
 	.attachFiles(['./resources/antiairmech.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -60,7 +60,7 @@ const antiairmech = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const lightminigunmech = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Lynx')
+	.setTitle('Light Minigun Mech')
 	.setURL('')
 	.attachFiles(['./resources/lightminigunmech.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -73,7 +73,7 @@ const lightminigunmech = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const heavymech = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Lynx')
+	.setTitle('Heavy Mech')
 	.setURL('')
 	.attachFiles(['./resources/heavymech.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -86,7 +86,7 @@ const heavymech = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const minigunmech = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Lynx')
+	.setTitle('Minigun Mech')
 	.setURL('')
 	.attachFiles(['./resources/minigunmech.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -99,7 +99,7 @@ const minigunmech = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 const teslamech = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Lynx')
+	.setTitle('Tesla Mech')
 	.setURL('')
 	.attachFiles(['./resources/teslamech.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
@@ -431,7 +431,7 @@ const helicopter = new Discord.RichEmbed()
     if (message.content === 'Grand slam bomber' ||  message.content === 'Grand Slam Bomber' || message.content === 'grand slam bomber' || message.content === 'Grand slam') {
 	    message.channel.send(grandslam);  
     }
-  if (message.content === 'Helicopter' ||  message.content === 'helicopter' || message.content === 'Which unit should I use if I want to stay a virgin?') {
+    if (message.content === 'Helicopter' ||  message.content === 'helicopter' || message.content === 'Which unit should I use if I want to stay a virgin?') {
 	    message.channel.send(helicopter);  
     }
 	if (message.content === 'Basic mech' ||  message.content === 'basic mech') {
