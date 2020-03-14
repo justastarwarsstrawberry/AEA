@@ -84,6 +84,33 @@ const heavymech = new Discord.RichEmbed()
 	.setImage('attachment://heavymech.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const minigunmech = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Lynx')
+	.setURL('')
+	.attachFiles(['./resources/minigunmech.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Ground attack \n- Fast firing \n- Speeds up as it fires \n- Has shield (weak against lightning) ")
+	.addBlankField()
+	.addField("Stats", "Price $5,000 \n Health 800 \n Attack Range 210 \n Move Speed 0.60 \n Build Speed 27.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://minigunmech.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const teslamech = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Lynx')
+	.setURL('')
+	.attachFiles(['./resources/teslamech.png'])
+	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
+	.setDescription(" - Land & air lightning attack \n- Decent range and movement speed \n- Very strong vs shields \n- Reduced damage vs grounded buildings \n- Can discharge itself and sacrifice HP to deal area damage")
+	.addBlankField()
+	.addField("Stats", "Price $6,500 \n Health 2,000 \n Attack Range 250 \n Move Speed 0.60 \n Build Speed 27.8s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://teslamech.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+	
 	//test
 const lynx = new Discord.RichEmbed()
 	.setColor('#1500f7')
@@ -407,7 +434,28 @@ const helicopter = new Discord.RichEmbed()
   if (message.content === 'Helicopter' ||  message.content === 'helicopter' || message.content === 'Which unit should I use if I want to stay a virgin?') {
 	    message.channel.send(helicopter);  
     }
+	if (message.content === 'Basic mech' ||  message.content === 'basic mech') {
+	    message.channel.send(basicmech);  
+    }
+	if (message.content === 'Artillery mech' ||  message.content === 'atrillery mech') {
+	    message.channel.send(artillerymech);  
+    }
+	if (message.content === 'Anti air mech' ||  message.content === 'anti air mech') {
+	    message.channel.send(antiairmech);  
+    }
+	if (message.content === 'Light minigun mech' ||  message.content === 'light minigun mech') {
+	    message.channel.send(lightminigunmech);  
+    }
+	if (message.content === 'Heavy mech' ||  message.content === 'heavy mech') {
+	    message.channel.send(heavymech);  
+    }
+	if (message.content === 'Minigun mech' ||  message.content === 'minigun mech') {
+	    message.channel.send(minigunmech);  
+    }
 
+	if (message.content === 'Tesla mech' ||  message.content === 'tesla mech') {
+	    message.channel.send(teslamech);  
+    }
  //commands 	
 		
 		
