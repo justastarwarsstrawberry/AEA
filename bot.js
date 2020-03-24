@@ -1,7 +1,7 @@
 const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
-
+//test deployment
 
 const Anubis = require('./coders/anubis.js');
 const Darkest = require('./coders/land.js');
