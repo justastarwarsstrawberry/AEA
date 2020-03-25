@@ -5,7 +5,7 @@ client.setMaxListeners(0)
 //_____________Dont touch Zone end
   
 module.exports.run = async (bot, message, args) => {
-  
+if(message.content.startsWith('/a')){
   if(!message.member.roles.find(r => r.name === "Admin") || !message.member.roles.find(r => r.name === "Developer") || !message.member.roles.find(r => r.name === "Bot Developer")) return message.channel.send("Thoust are not able")
   let argsresult;
   message.delete()
@@ -17,6 +17,7 @@ module.exports.run = async (bot, message, args) => {
   
   argsresult = args.join(" ")
   argsresult.channel.send(argsresult)
+    }
   }
 }
 
