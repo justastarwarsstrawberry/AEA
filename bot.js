@@ -2,7 +2,7 @@ const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
 //test deployment
-
+const Sea = require('./coders/sea.js');
 const Anubis = require('./coders/anubis.js');
 const Darkest = require('./coders/land.js');
 const N = require('./coders/Nword.js');
@@ -22,7 +22,10 @@ if(Darkest && Client){
    		Darkest.code();
     		console.log('Land loaded');
 }
-
+if(Sea && Client){
+   		Sea.code();
+    		console.log('Sea loaded');
+}
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
 
