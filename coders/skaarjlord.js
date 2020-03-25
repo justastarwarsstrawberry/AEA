@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
   if(!message.member.roles.find(r => r.name === "Admin") || !message.member.roles.find(r => r.name === "Developer") || !message.member.roles.find(r => r.name === "Bot Developer")) return message.channel.send("Thoust are not able")
   let argsresult;
   message.delete()
-  let mChannel = message.mentioned.channels.first()
+  let mChannel = message.mentions.channels.first()
   if(mChannel) {
   argsresult = args.slice(1).join(" ")
   mChannel.send(argsresult)
