@@ -66,6 +66,7 @@ const clist = new RichEmbed()
 	.addField('/list', 'Land, Air, Water, Exp', false)
 	.addField('<unit>', 'name of the unit', false)
 	.addField('<time>', 'amount of time max: 10m', false)
+	//.addField('a', '<announcementtext>', false)
 	.setDescription('Lists all comands \nassociated with the bot')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
