@@ -6,7 +6,6 @@ const fs = require("fs");
 let db = require("./databases.json");
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
- 
  const e0 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Gunboat')
@@ -50,13 +49,15 @@ client.setMaxListeners(0)
 client.on('message', message => {
 	
 
-//tank
+//Gunboat
 if (message.content.toLowerCase() === db.A) {
 	message.channel.send(e0);
 }
+//Probe
 if (message.content.toLowerCase() === db.B) {
 	message.channel.send(e1);
 } 
+//Missile Ship
 if (message.content.toLowerCase() === db.C) {
 	message.channel.send(e2);
 }
