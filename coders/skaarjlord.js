@@ -3,29 +3,23 @@ exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
-  
-module.exports.run = async (bot, message, args) => {
-if(message.content.startsWith('/a')){
-  if(!message.member.roles.find(r => r.name === "Admin") || !message.member.roles.find(r => r.name === "Developer") || !message.member.roles.find(r => r.name === "Bot Developer")) return message.channel.send("Thoust are not able")
-  let argsresult;
-  message.delete()
-  let mChannel = message.mentions.channels.first()
-  if(mChannel) {
-  argsresult = args.slice(1).join(" ")
-  mChannel.send(argsresult)
-  } else {
-  
-  argsresult = args.join(" ")
-  argsresult.channel.send(argsresult)
+ client.on("message", message => {
+    if(message.author.bot) return;
+
+    let messageArray = message.content.split(" ");
+    let command = messageArray[0];
+    let args = messageArray.slice(1);
+
+    if(message.channel.type === "dm") return;
+
+    if(!message.content.startsWith('+')) return;
+
+    if(command === '+ann') {
+        let channel = message.mentions.channels();
+        let announcement = args.slice(1).join(" ");
+
+        channel.send(announcement);
     }
   }
 }
 
-module.exports.config = {
-  name: "a",
-  description: "Make an announcement to the server",
-  usage:"/a",
-  accessableby:"Developer, Bot Devs, Admins",
-  aliases:["acc", "announcement"]
-  }
-}
