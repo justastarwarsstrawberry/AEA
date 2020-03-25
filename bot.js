@@ -3,6 +3,7 @@ global.Discord = require('discord.js');
 global.client = new Discord.Client();
 //test deployment
 const Sea = require('./coders/sea.js');
+const Func = require('./coders/skaarjlord.js');
 const Anubis = require('./coders/anubis.js');
 const Darkest = require('./coders/land.js');
 const N = require('./coders/Nword.js');
@@ -25,6 +26,10 @@ if(Darkest && Client){
 if(Sea && Client){
    		Sea.code();
     		console.log('Sea loaded');
+}
+if(Func && Client){
+   		Func.code();
+    		console.log('Skaarjlord loaded');
 }
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
