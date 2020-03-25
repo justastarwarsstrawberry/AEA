@@ -26,4 +26,5 @@ module.exports.config = {
   usage:"/a",
   accessableby:"Developer, Bot Devs, Admins",
   aliases:["acc", "announcement"]
+  }
 }
