@@ -1,4 +1,5 @@
 //_____________Dont touch Zone start
+// Fixed Offline
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
