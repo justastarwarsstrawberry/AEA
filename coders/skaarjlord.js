@@ -26,11 +26,10 @@ const config = require("./prefix.json");
 
  if(message.author.bot) return;  
  let channels = message.mentions.channels; 
- if(message.content.toLowerCase().startsWith(prefix) && message.channel){
+ if(message.content.toLowerCase().startsWith(config.prefix) && message.mentions.channels){
      if(!channels) return;
-    channels.send(a1);
-
- }
+    	message.mentions.channels.send(a1);
+     }
   });
 }
 
