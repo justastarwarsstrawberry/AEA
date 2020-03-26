@@ -1,6 +1,7 @@
 const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
+global prefix = "/";
 //test deployment
 const Sea = require('./coders/sea.js');
 const Func = require('./coders/skaarjlord.js');
