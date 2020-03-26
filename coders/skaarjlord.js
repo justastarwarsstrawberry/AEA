@@ -2,7 +2,6 @@
 // Fixed Offline
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
-const config = require('./coders/prefix.json');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
  
