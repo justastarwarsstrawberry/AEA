@@ -21,7 +21,7 @@ const basicmech = new Discord.RichEmbed()
 	
 const artillerymech = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Artillery Mech')
+	.setTitle('Artillery Mech') 
 	.setURL('')
 	.attachFiles(['./resources/artillerymech.png'])
 	.setAuthor('Anubis', 'https://cdn.discordapp.com/avatars/307614504550793226/27efe0ae606e37d871edb9654e460390.png?size=1024')
