@@ -2,6 +2,7 @@
 // Fixed Offline
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
+const config = require('./coders/prefix.json');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
  
@@ -25,7 +26,7 @@ client.setMaxListeners(0)
 
  if(message.author.bot) return;  
  let channels = message.mentions.channels; 
- if(message.content.toLowerCase().startsWith('-')){
+ if(message.content.toLowerCase().startsWith(prefix)){
      if(!channels) return;
     channels.send(a1);
 
