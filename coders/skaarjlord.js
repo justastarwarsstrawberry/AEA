@@ -29,7 +29,7 @@ client.setMaxListeners(0)
  let channels = message.mentions.channels; 
  if(message.content.toLowerCase().startsWith('a')){
      if(!channels) return;
-    message.content.send(a1);
+    message.channels.send(a1);
 
  }
   });
