@@ -25,10 +25,12 @@ const config = require("./prefix.json");
          	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
  if(message.author.bot) return;  
- let channels = message.mentions.channels; 
- if(message.content.toLowerCase().startsWith(config.prefix) && message.mentions.channels){
-     if(!channels) return;
-    	message.mentions.channels.send(a1);
+
+ if(message.content.toLowerCase().startsWith(config.prefix) && channels){
+
+	let channel = message.mentions.channels;
+	if(!channels) return;
+    	message.channel.send(a1);
      }
   });
 }
