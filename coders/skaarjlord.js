@@ -25,7 +25,7 @@ client.setMaxListeners(0)
 
  if(message.author.bot) return;  
  let channels = message.mentions.channels; 
- if(message.content.toLowerCase().startsWith('\')){
+ if(message.content.toLowerCase().startsWith('-')){
      if(!channels) return;
     channels.send(a1);
 
