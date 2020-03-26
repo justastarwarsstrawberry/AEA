@@ -5,7 +5,7 @@ client.setMaxListeners(0)
 //Dont touch Zone end
 // units
 //mechs
-const basicmech = new Discord.RichEmbed()
+const basicmech = new Discord.RichEmbed() 
 	.setColor('#1500f7')
 	.setTitle('Basic Mech')
 	.setURL('')
