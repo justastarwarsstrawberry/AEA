@@ -20,6 +20,6 @@ client.setMaxListeners(0)
 
         channel.send(announcement);
     }
-  }
+  });
 }
 
