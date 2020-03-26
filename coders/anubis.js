@@ -19,7 +19,7 @@ const basicmech = new Discord.RichEmbed()
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 	
-const artillerymech = new Discord.RichEmbed()
+const artillerymech = new Discord.RichEmbed() 
 	.setColor('#1500f7')
 	.setTitle('Artillery Mech') 
 	.setURL('')
