@@ -30,7 +30,7 @@ const config = require("./prefix.json");
 	if(message.mentions.channels){
 	let channel = message.mentions.channels;
 	if(!channel) return;
-    	client.channels.get(channel).send(a1)
+    	message.mentions.channels.get(channel).send(a1)
 	}
 
      }
