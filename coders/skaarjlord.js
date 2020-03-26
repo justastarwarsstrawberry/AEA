@@ -16,7 +16,7 @@ client.setMaxListeners(0)
     if(!message.content.startsWith('+')) return;
 
     if(command === '+ann') {
-        let channel = message.mentions.channels();
+        let channel = message.mentions.channel();
         let announcement = args.slice(1).join(" ");
 
         channel.send(announcement);
