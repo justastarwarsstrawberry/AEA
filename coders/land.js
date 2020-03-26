@@ -283,7 +283,7 @@ client.on('message', message => {
 	
 
 //tank
-    if (message.content.toLowerCase() === db.A) {
+    if (message.content.toLowerCase() === 'tank') {
 	message.channel.send(e1);
     }
 //missiletank
