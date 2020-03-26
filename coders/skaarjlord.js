@@ -29,7 +29,7 @@ const config = require("./prefix.json");
  if(message.content.toLowerCase().startsWith(config.prefix)){
 
 	let channel = message.mentions.channels;
-	if(!channels) return;
+	if(!channel) return;
     	message.channel.send(a1);
      }
   });
