@@ -6,7 +6,6 @@ global.client = new Discord.Client();
 client.setMaxListeners(0)
 
 const Imports = require('./coders/imports.js');
-process.title = myApp
   if(Imports && Client){
    		Imports.code();
     		console.log('Loading imports');
