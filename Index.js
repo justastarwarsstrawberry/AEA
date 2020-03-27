@@ -6,20 +6,11 @@ const client = new Discord.Client();
 client.music = require("discord.js-musicbot-addon");
 var options = {
   606586202942079017: {
-    id: 427239929924288532,
+    id: 606586202942079017,
     djRole: "DJ",
     prefix: "/"
   }
 }
-
-
-let newObj = new Map(); // Make a new map.
-options.forEach(option => {
-  // "option" will be the servers in "options" in order.
-
-  // Here we set the prefix for the server ID.
-  newObj.set(options.id, {prefix: option.prefix});
-});
 // Now we start the music module.
 client.music.start(client, {
  youtubeKey: process.env.API_KEY,
