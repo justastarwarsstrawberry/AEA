@@ -21,5 +21,9 @@
   	},
   	"devDependencies": {
     		"eslint": "^5.15.2"
-  	}
+  	},
+	"scripts": {
+    		"start": "bot.js"
+    		, "stop": "pkill --signal SIGINT myApp"
+	}
 }
