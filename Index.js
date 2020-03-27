@@ -1,5 +1,5 @@
 exports.code = function(){
-
+// doesnt work
 const Discord = require('discord.js');
 // Start a new Client from Discord.js. You can name this to whatever you like.
 const client = new Discord.Client();
