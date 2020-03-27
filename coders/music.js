@@ -6,35 +6,25 @@ const client = new Discord.Client();
 
 const queue = new Map();
 
-client.once("ready", () => {
-  console.log("Ready!");
-});
 
-client.once("reconnecting", () => {
-  console.log("Reconnecting!");
-});
-
-client.once("disconnect", () => {
-  console.log("Disconnect!");
-});
 
 client.on("message", async message => {
   if (message.author.bot) return;
 
   const serverQueue = queue.get(message.guild.id);
 
-  if (message.content.startsWith(`play`)) {
+  if (message.content.startsWith('play')) {
     execute(message, serverQueue);
     return;
-  } else if (message.content.startsWith(`skip`)) {
+  } 
+  if (message.content.startsWith('skip')) {
     skip(message, serverQueue);
     return;
-  } else if (message.content.startsWith(`stop`)) {
+  }
+  if (message.content.startsWith('stop')) {
     stop(message, serverQueue);
     return;
-  } else {
-    
-  }
+  } 
 });
 
 async function execute(message, serverQueue) {
