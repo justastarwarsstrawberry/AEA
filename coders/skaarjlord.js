@@ -5,34 +5,33 @@ const { Client, Attachment } = require('discord.js');
 
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
- 
-const config = require("./prefix.json");
- 
- 
- 
- client.on("message", message => {
+const Discord = require('discord.js');
+const settings = require('../settings');
 
-   const taco = message.content
-         const a1 = new Discord.RichEmbed()
-         	.setColor('#1500f7')
-	        .setTitle('Announcement')
-         	.setAuthor('SkaarjLord', message.author.displayAvatarURL())
-         	.setDescription(taco)
-         	.addBlankField()
-         	.setURL('')
-	        .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-         	.setTimestamp()
-         	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+module.exports = {
+	name: 'announce',
+	description: 'Announcement for the server',
+	usage: '<title message>, <description>, <link of title>, <main image>, <footer image>, <Field Title>, <field>',
+	exec: async (message) => {
+		const rest_of_the_string = message.content.slice('!announce'.length);
+		const array_of_arguments = rest_of_the_string.split(',');
+		const embed = new Discord.RichEmbed()
+			.setTitle(array_of_arguments[0])
+			.setDescription(array_of_arguments[1])
+			.setImage(array_of_arguments[3])
+			.setURL(array_of_arguments[2])
+			.addField(array_of_arguments[4], array_of_arguments[5])
+			.setColor(0x00AE86)
+			.setFooter(`${message.author.tag}`, array_of_arguments[3])
+			.setTimestamp();
 
- if(message.author.bot) return;  
+		const announcechannel = message.guild.channels.find(s => s.name === settings.announcechannel);
 
- if(message.content.toLowerCase().startsWith('-')){
-	if(message.mentions.channels){
-	let channel = message.mentions.channels;
-    	message.mentions.channels.get(channel).send(a1)
-	}
+		if (!announcechannel) return message.channel.send('Announcement channel cannot be found', [(announcechannel)]);
+		announcechannel.send(embed);
+		message.delete();
+	},
+};
 
-     }
-  });
 }
 
