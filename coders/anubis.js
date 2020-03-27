@@ -465,6 +465,7 @@ const helicopter = new Discord.RichEmbed()
 		 const attachment = new Attachment('./resources/nwordmechs.jpg');
                message.channel.send(attachment);
                message.reply('is racist');
+	if(message.author.bot) return;
 	}
 		
     function getRandomInt(min, max) {
