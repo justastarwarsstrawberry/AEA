@@ -6,7 +6,7 @@ const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
 const config = require("./prefix.json");
- 
+ //random shit
  
  
  client.on("message", message => {
