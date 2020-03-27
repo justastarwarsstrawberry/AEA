@@ -1,3 +1,4 @@
+
 const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
@@ -5,7 +6,7 @@ global.client = new Discord.Client();
 client.setMaxListeners(0)
 
 const Imports = require('./coders/imports.js');
-
+process.title = myApp
   if(Imports && Client){
    		Imports.code();
     		console.log('Loading imports');
