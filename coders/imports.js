@@ -9,7 +9,7 @@ const Anubis = require('./anubis.js');
 const Darkest = require('./land.js');
 const N = require('./Nword.js');
 const Timer = require('./timer.js');
-const Music2 = require('./music.js');
+
   
   if(Timer && Client){
    		 Timer.code();
@@ -29,11 +29,6 @@ const Music2 = require('./music.js');
   if(Sea && Client){
    		Sea.code();
     		console.log('Sea loaded');
-  }
-
-  if(Music2 && Client){
-		Music2.code();
-		console.log('Music2 loaded');
   }
   //if(Func && Client){
   //   		Func.code();
