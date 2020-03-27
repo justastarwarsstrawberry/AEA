@@ -1,6 +1,6 @@
 exports.code = function(){
 const Discord = require("discord.js");
-const { prefix } = require("../config.json");
+const { prefix } = require("./prefix.json");
 const ytdl = require("ytdl-core");
 const client = new Discord.Client();
 
