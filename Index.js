@@ -29,7 +29,7 @@ client.music.start(client, {
   // Make it so the owner (you) bypass permissions for music.
   ownerOverMember: true,
   ownerID: 242687584373964801,
-  botPrefix: /
+  botPrefix: "/"
   // The cooldown Object.
   cooldown: {
     // This disables the cooldown. Not recommended.
