@@ -26,10 +26,12 @@ const Music = require('../Index.js');
    		Darkest.code();
     		console.log('Land loaded');
   }
+
   if(Sea && Client){
    		Sea.code();
     		console.log('Sea loaded');
   }
+
   if(Music && Client){
 		Music.code();
 		console.log('Music loaded');
