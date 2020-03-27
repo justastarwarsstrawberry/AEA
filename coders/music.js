@@ -9,10 +9,10 @@ client.on("message", (message, user) => {
   const client = message.client;
 
   // Get the command from the message.
-  const command = message.substring(message.length).split(/[ \n]/)[0].trim();
+  const command = (message.length).split(/[ \n]/)[0].trim();
 
   // Get the suffix, the String after the command.
-  const suffix = message.substring(message.length + command.length).trim();
+  const suffix = (message.length + command.length).trim();
 
   // Set the prefix to "!". This is a horrible way to set
   // one, but it will do for now.
