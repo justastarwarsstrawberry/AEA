@@ -28,9 +28,9 @@ const config = require("./prefix.json");
  if(message.content.toLowerCase().startsWith('-')){
 
  if(message.member.roles.some(role => role.name === 'Bot Developer' || message.member.roles.some(role => role.name === 'Developer'){
-	let channel = config.announcechannel
-    	message.channels.get(channel).send(a1)
-
+	let channel = message.mentions.channels.first()
+    	client.channels.get(channel).send(a1)
+	
      }
     }
   });
