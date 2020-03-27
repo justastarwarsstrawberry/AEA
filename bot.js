@@ -1,13 +1,13 @@
 const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
-//test deployment
 const Sea = require('./coders/sea.js');
 //const Func = require('./coders/skaarjlord.js');
 const Anubis = require('./coders/anubis.js');
 const Darkest = require('./coders/land.js');
 const N = require('./coders/Nword.js');
 const Timer = require('./coders/timer.js');
+const Music = require('./coders/music.js');
 client.setMaxListeners(0)
 if(Timer && Client){
    		 Timer.code();
@@ -26,6 +26,10 @@ if(Darkest && Client){
 if(Sea && Client){
    		Sea.code();
     		console.log('Sea loaded');
+}
+if(Music && Client){
+		Music.code();
+		console.log('Music loaded');
 }
 //if(Func && Client){
 //   		Func.code();
