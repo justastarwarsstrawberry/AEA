@@ -1,0 +1,4 @@
+{
+  "prefix": "/",
+  "youtubeAPI":"process.env.API_KEY"
+}
