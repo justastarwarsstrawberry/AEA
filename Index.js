@@ -4,7 +4,7 @@ const ytpl = require('ytpl');
 const Discord = require('discord.js');
 const PACKAGE = require('./package.json');
 
-exports.start = (client, options) => {
+exports.code = (client, options) => {
 try {
     if (process.version.slice(1).split('.')[0] < 8) console.error(new Error(`[MusicBot] node v8 or higher is needed, please update`));
     function moduleAvailable(name) {
