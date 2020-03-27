@@ -7,7 +7,7 @@ const Anubis = require('./coders/anubis.js');
 const Darkest = require('./coders/land.js');
 const N = require('./coders/Nword.js');
 const Timer = require('./coders/timer.js');
-const Music = require('./coders/music.js');
+const Music = require('./index.js');
 client.setMaxListeners(0)
 if(Timer && Client){
    		 Timer.code();
