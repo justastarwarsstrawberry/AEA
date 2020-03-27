@@ -1,3 +1,5 @@
+exports.code = function(){
+
 const fs = require('fs');
 const Discord = require('discord.js');
 const config = require('./config.json');
@@ -5,7 +7,7 @@ const client = new Discord.Client();
 client.config = config;
 client.commands = new Discord.Collection();
 
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
@@ -19,5 +21,4 @@ fs.readdir('./events/', (err, files) => {
 		client.on(eventName, event.bind(null, client));
 	});
 });
-
-client.login(config.token);
+}
