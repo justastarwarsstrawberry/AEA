@@ -457,7 +457,15 @@ const helicopter = new Discord.RichEmbed()
 	    message.channel.send(teslamech);  
     }
  //commands 	
+
+    //N-word delete
+	if (message.content.includes('nigger') || message.content.includes('Nigger') || message.content.includes('nigga') ||message.content.includes('Nigga') || message.content.includes('NIGGER') || message.content.includes('NIGGA') || message.content.includes('nibba') || message.content.includes('NIBBA')) { 
 		
+		message.delete(); 
+		 const attachment = new Attachment('./resources/nwordmechs.jpg');
+               message.channel.send(attachment);
+               message.reply('is racist');
+	}
 		
     function getRandomInt(min, max) {
     min = Math.ceil(min);
