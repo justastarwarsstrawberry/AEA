@@ -20,7 +20,7 @@ const Anubis = require('./anubis.js');
 const Darkest = require('./land.js');
 const N = require('./Nword.js');
 const Timer = require('./timer.js');
-const Music = require('../index.js');
+const Music = require('..index.js');
   
   
   if(Timer && Client){
