@@ -4,7 +4,7 @@ client.setMaxListeners(0)
 
 
 const Sea = require('./sea.js');
-//const Func = require('./skaarjlord.js');
+const Func = require('./skaarjlord.js');
 const Anubis = require('./anubis.js');
 const Darkest = require('./land.js');
 const N = require('./Nword.js');
@@ -30,9 +30,9 @@ const Timer = require('./timer.js');
    		Sea.code();
     		console.log('Sea loaded');
   }
-  //if(Func && Client){
-  //   		Func.code();
-  //   		console.log('Skaarjlord loaded');
-  //}
+  if(Func && Client){
+     		Func.code();
+     		console.log('Skaarjlord loaded');
+  }
   
 }
