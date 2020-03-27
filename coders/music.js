@@ -1,34 +1,131 @@
 exports.code = function(){
 client.music = require("discord.js-musicbot-addon");
-client.on("message", (message, user) => {
-  if (message.author.bot) return; // Good practice to do this.
+const Discord = require("discord.js");
+const { prefix, token } = require("./config.json");
+const ytdl = require("ytdl-core");
 
-  // I set the Client to this just for ease.
-  // You'll probably have access to it another
-  // way, but this still works.
-  const client = message.client;
+const client = new Discord.Client();
 
-  // Get the command from the message.
-  const command = (message.length).split(/[ \n]/)[0].trim();
+const queue = new Map();
 
-  // Get the suffix, the String after the command.
-  const suffix = (message.length + command.length).trim();
-
-  // Set the prefix to "!". This is a horrible way to set
-  // one, but it will do for now.
-  let prefix = "/"
-
-  // Now we check if the message starts with the prefix,
-  // and asks for the PLAY command.
-  if (message.content.startsWith(prefix) && command == "play") {
-    // Now we pass the Message Object (msg) and
-    // the suffix. It will then proceed as it would
-    // with the bot normally.
-    client.music.playFunction(message, suffix);
-  }
-  
-  
-  
+client.once("ready", () => {
+  console.log("Ready!");
 });
+
+client.once("reconnecting", () => {
+  console.log("Reconnecting!");
+});
+
+client.once("disconnect", () => {
+  console.log("Disconnect!");
+});
+
+client.on("message", async message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  const serverQueue = queue.get(message.guild.id);
+
+  if (message.content.startsWith(`${prefix}play`)) {
+    execute(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}skip`)) {
+    skip(message, serverQueue);
+    return;
+  } else if (message.content.startsWith(`${prefix}stop`)) {
+    stop(message, serverQueue);
+    return;
+  } else {
+    message.channel.send("You need to enter a valid command!");
+  }
+});
+
+async function execute(message, serverQueue) {
+  const args = message.content.split(" ");
+
+  const voiceChannel = message.member.voice.channel;
+  if (!voiceChannel)
+    return message.channel.send(
+      "You need to be in a voice channel to play music!"
+    );
+  const permissions = voiceChannel.permissionsFor(message.client.user);
+  if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
+    return message.channel.send(
+      "I need the permissions to join and speak in your voice channel!"
+    );
+  }
+
+  const songInfo = await ytdl.getInfo(args[1]);
+  const song = {
+    title: songInfo.title,
+    url: songInfo.video_url
+  };
+
+  if (!serverQueue) {
+    const queueContruct = {
+      textChannel: message.channel,
+      voiceChannel: voiceChannel,
+      connection: null,
+      songs: [],
+      volume: 5,
+      playing: true
+    };
+
+    queue.set(message.guild.id, queueContruct);
+
+    queueContruct.songs.push(song);
+
+    try {
+      var connection = await voiceChannel.join();
+      queueContruct.connection = connection;
+      play(message.guild, queueContruct.songs[0]);
+    } catch (err) {
+      console.log(err);
+      queue.delete(message.guild.id);
+      return message.channel.send(err);
+    }
+  } else {
+    serverQueue.songs.push(song);
+    return message.channel.send(`${song.title} has been added to the queue!`);
+  }
+}
+
+function skip(message, serverQueue) {
+  if (!message.member.voice.channel)
+    return message.channel.send(
+      "You have to be in a voice channel to stop the music!"
+    );
+  if (!serverQueue)
+    return message.channel.send("There is no song that I could skip!");
+  serverQueue.connection.dispatcher.end();
+}
+
+function stop(message, serverQueue) {
+  if (!message.member.voice.channel)
+    return message.channel.send(
+      "You have to be in a voice channel to stop the music!"
+    );
+  serverQueue.songs = [];
+  serverQueue.connection.dispatcher.end();
+}
+
+function play(guild, song) {
+  const serverQueue = queue.get(guild.id);
+  if (!song) {
+    serverQueue.voiceChannel.leave();
+    queue.delete(guild.id);
+    return;
+  }
+
+  const dispatcher = serverQueue.connection
+    .play(ytdl(song.url))
+    .on("finish", () => {
+      serverQueue.songs.shift();
+      play(guild, serverQueue.songs[0]);
+    })
+    .on("error", error => console.error(error));
+  dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
+  serverQueue.textChannel.send(`Start playing: **${song.title}**`);
+}
   
 }
