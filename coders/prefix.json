@@ -1,4 +1,9 @@
 {
   "prefix": "/",
-  "youtubeAPI":"process.env.API_KEY"
+  "youtubeAPI":"process.env.API_KEY",
+  "kickchannel": "punishment-log",
+  "banchannel": "punishment-log",
+  "memberlog": "member-log",
+  "announcechannel": "bot-testing"
+
 }
