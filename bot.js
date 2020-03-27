@@ -1,40 +1,14 @@
 const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
-const Sea = require('./coders/sea.js');
-//const Func = require('./coders/skaarjlord.js');
-const Anubis = require('./coders/anubis.js');
-const Darkest = require('./coders/land.js');
-const N = require('./coders/Nword.js');
-const Timer = require('./coders/timer.js');
-const Music = require('./index.js');
+
 client.setMaxListeners(0)
-if(Timer && Client){
-   		 Timer.code();
+const Imports = require('./coders/imports.js');
+  if(Imports && Client){
+   		Imports.code();
     		console.log('Timer loaded');
-}
+  }
 
-if(Anubis && Client){
-   		 Anubis.code();
-    		console.log('Anubis loaded');
-}
-
-if(Darkest && Client){
-   		Darkest.code();
-    		console.log('Land loaded');
-}
-if(Sea && Client){
-   		Sea.code();
-    		console.log('Sea loaded');
-}
-if(Music && Client){
-		Music.code();
-		console.log('Music loaded');
-}
-//if(Func && Client){
-//   		Func.code();
-//   		console.log('Skaarjlord loaded');
-//}
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
 
