@@ -6,7 +6,7 @@ const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
 const Discord = require('discord.js');
-const settings = require('./settings.json');
+const settings = require('./prefix.json');
 
 module.exports = {
 	name: 'announce',
