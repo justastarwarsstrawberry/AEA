@@ -9,8 +9,8 @@ const Anubis = require('./anubis.js');
 const Darkest = require('./land.js');
 const N = require('./Nword.js');
 const Timer = require('./timer.js');
-//const Music = require('../Index.js');
-const Music2 = require('../Index.js');
+const Music = require('../Index.js');
+const Music2 = require('./music.js');
   
   if(Timer && Client){
    		 Timer.code();
