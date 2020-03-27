@@ -3,12 +3,17 @@ global.Discord = require('discord.js');
 global.client = new Discord.Client();
 
 client.setMaxListeners(0)
+const Hydra = require('./imports/bot.js');
 const Imports = require('./coders/imports.js');
+
   if(Imports && Client){
    		Imports.code();
     		console.log('Loading imports');
   }
-
+  if(Hydra && Client){
+   		Hydra.code();
+    		console.log('Hydra loaded');
+  }
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
 
