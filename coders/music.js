@@ -1,5 +1,5 @@
 exports.code = function(){
-
+client.music = require("discord.js-musicbot-addon");
 client.on("message", (message, user) => {
   if (message.author.bot) return; // Good practice to do this.
 
