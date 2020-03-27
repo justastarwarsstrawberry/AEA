@@ -26,10 +26,9 @@ const config = require("./prefix.json");
 
  if(message.author.bot) return;  
 
- if(message.content.toLowerCase().startsWith('a')){
+ if(message.content.toLowerCase().startsWith('-')){
 	if(message.mentions.channels){
 	let channel = message.mentions.channels;
-	if(!channel) return;
     	message.mentions.channels.get(channel).send(a1)
 	}
 
