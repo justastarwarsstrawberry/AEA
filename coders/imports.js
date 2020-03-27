@@ -9,7 +9,7 @@ const Anubis = require('./anubis.js');
 const Darkest = require('./land.js');
 const N = require('./Nword.js');
 const Timer = require('./timer.js');
-const Hydra = require('../imports/bot.js');
+
   
   if(Timer && Client){
    		 Timer.code();
@@ -29,11 +29,6 @@ const Hydra = require('../imports/bot.js');
   if(Sea && Client){
    		Sea.code();
     		console.log('Sea loaded');
-  }
- 
-  if(Hydra && Client){
-   		Hydra.code();
-    		console.log('Hydra loaded');
   }
   //if(Func && Client){
   //   		Func.code();
