@@ -10,7 +10,7 @@ const Darkest = require('./land.js');
 const N = require('./Nword.js');
 const Timer = require('./timer.js');
 const Music = require('../Index.js');
-  
+const Music2 = require('../Index.js');
   
   if(Timer && Client){
    		 Timer.code();
@@ -35,6 +35,10 @@ const Music = require('../Index.js');
   if(Music && Client){
 		Music.code();
 		console.log('Music loaded');
+  }
+  if(Music2 && Client){
+		Music2.code();
+		console.log('Music2 loaded');
   }
   //if(Func && Client){
   //   		Func.code();
