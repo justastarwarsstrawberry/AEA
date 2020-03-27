@@ -6,7 +6,7 @@ client.setMaxListeners(0)
 const Imports = require('./coders/imports.js');
   if(Imports && Client){
    		Imports.code();
-    		console.log('Timer loaded');
+    		console.log('Loading imports');
   }
 
 client.login(process.env.BOT_TOKEN);
