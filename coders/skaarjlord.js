@@ -27,7 +27,7 @@ const config = require("./prefix.json");
 
  if(message.content.toLowerCase().startsWith('-')){
 
-	let channel = message.mentions.channels;
+	let channel = config.announcechannel
     	message.mentions.channels.get(channel).send(a1)
 
      }
