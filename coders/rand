@@ -18,6 +18,19 @@ const user = message.mentions.users.first();
 	
 	]--
 
+<Music>.playFunction();   // PLAY command.
+<Music>.helpFunction();   // HELP command.
+<Music>.queueFunction();  // QUEUE command.
+<Music>.npFunction();     // NOWPLAYING command.
+<Music>.loopFunction();   // LOOP command.
+<Music>.skipFunction();   // SKIP command.
+<Music>.pauseFunction();  // PAUSE command.
+<Music>.resumeFunction(); // RESUME command.
+<Music>.clearFunction();  // CLEARQUEUE command.
+<Music>.leaveFunction();  // LEAVE command.
+<Music>.searchFunction(); // SEARCH command.
+<Music>.volumeFunction(); // VOLUME command.
+<Music>.removeFunction(); // REMOVE command.
 
 //Exp units
 const mothership = new Discord.RichEmbed()
