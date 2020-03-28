@@ -28,9 +28,9 @@ const config = require("./prefix.json");
  if(message.content.toLowerCase().endsWith('.')){
 
  if(message.member.roles.some(role => role.name === 'Bot Developer') || message.member.roles.some(role => role.name === 'Developer')){
-	let channel = message.mentions.channels.first()
+	let channel = config.announcechannel
 	if(!channel){
-    	message.reply('You must specify a channel')
+    	message.reply('The annouments channel myst exist')
 	}else {
 		message.channels.get(channel).send(a1)
 	}
