@@ -6,13 +6,13 @@ const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
 const config = require("./prefix.json");
-let guild = client.guilds.get('606586202942079017');
-let member = guild.member(message.author);
-let nickname = member ? member.displayName : null;
+
  
  
  client.on("message", message => {
-
+let guild = client.guilds.get('606586202942079017');
+let member = guild.member(message.author);
+let nickname = member ? member.displayName : null;
    const taco = message.content
          const a1 = new Discord.RichEmbed()
          	.setColor('#1500f7')
