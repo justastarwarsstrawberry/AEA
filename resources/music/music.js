@@ -1,3 +1,4 @@
+exports.code = function(){
 var exec = require('child_process').exec, child;
 child = exec('java -jar ./Music.jar',
   function (error, stdout, stderr){
@@ -7,3 +8,4 @@ child = exec('java -jar ./Music.jar',
       console.log('exec error: ' + error);
     }
 });
+}
