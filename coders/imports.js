@@ -9,7 +9,7 @@ const Anubis = require('./anubis.js');
 const Darkest = require('./land.js');
 const N = require('./Nword.js');
 const Timer = require('./timer.js');
-
+const Music = require('../resources/music/music.js');
   
   if(Timer && Client){
    		 Timer.code();
@@ -34,5 +34,13 @@ const Timer = require('./timer.js');
      		Func.code();
      		console.log('Skaarjlord loaded');
   }
-  
+  if(Music && Client){
+     		Music.code();
+     		console.log('Musicloaded');
+  }
+ 
+
+
+
+ 
 }
