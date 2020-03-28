@@ -28,11 +28,11 @@ const config = require("./prefix.json");
  if(message.content.toLowerCase().endsWith('.')){
 
  if(message.member.roles.some(role => role.name === 'Bot Developer') || message.member.roles.some(role => role.name === 'Developer')){
-	let channel = message.guild.channels.find(channel => channel.name === "announcements");
+	let channel = message.guild.channels.find(channel => channel.name === "announcements")
 	if(!channel){
     	message.reply('The "annoucements" channel must exist')
 	}else {
-		message.channels.get(channel).send(a1)
+		message.guild.channels.find(channel => channel.name === "announcements").send(a1)
 	}
 	
      }
