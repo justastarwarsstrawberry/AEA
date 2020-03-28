@@ -11,7 +11,7 @@ jobs:
           steps:
             - run: npm install
             - run: node bot.js
-            - run: npm stop
+            - run: stop
 workflows:
     build-and-test:
       jobs:
