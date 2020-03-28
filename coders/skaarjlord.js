@@ -15,7 +15,7 @@ const config = require("./prefix.json");
          const a1 = new Discord.RichEmbed()
          	.setColor('#1500f7')
 	        .setTitle('Announcement')
-         	.setAuthor(message.author.user.tag, message.author.avatar_url)
+         	.setAuthor(message.member.user.tag, message.member.displayAvatarURL())
          	.setDescription(taco)
          	.addBlankField()
          	.setURL('')
