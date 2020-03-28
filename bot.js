@@ -131,10 +131,16 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
                
             }
         }
-    
+
         else
         {
             // do nothing
+        }
+    if(message.content == 'stop'){
+ 	if(message.author) return;  
+		message.channel.send('Shutting down...').then(m => {
+        		client.destroy();
+     		});
         }
     if(message.content == '/list'){
 	message.channel.send(clist);
