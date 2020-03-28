@@ -29,7 +29,9 @@ const config = require("./prefix.json");
 
  if(message.member.roles.some(role => role.name === 'Bot Developer') || message.member.roles.some(role => role.name === 'Developer')){
 	let channel = message.mentions.channels.first()
+	if(!channel){
     	message.channels.get(channel).send(a1)
+	}
 	
      }
     }
