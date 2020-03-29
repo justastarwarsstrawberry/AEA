@@ -13,7 +13,7 @@
 // If you don't know how to get a bot token, please see the guide here:
 // https://github.com/jagrosh/MusicBot/wiki/Getting-a-Bot-Token
 
-token = process.env.BOT_TOKEN
+token = 
 
 
 // This sets the owner of the bot
@@ -74,7 +74,7 @@ searching = "🔎"
 // For example, if you set the prefix to !! and the help to cmds, you would type
 // !!cmds to see the help text
 
-help = cmds
+help = list
 
 
 // If you set this, the "nowplaying" command will show youtube thumbnails
