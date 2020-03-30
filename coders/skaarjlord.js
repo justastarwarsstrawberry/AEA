@@ -8,10 +8,10 @@ client.setMaxListeners(0)
 const config = require("./prefix.json");
 
 //    Add emoji name
-var emojiname = ["",""];
+var emojiname = [":aea:"];
 
 //    Add role name
-var rolename=["",""];
+var rolename=["AEA Elites"];
 
 
 client.on('message', msg => {
