@@ -16,7 +16,7 @@ var rolename=["AEA Elites"];
 
 client.on('message', msg => {
 
-if(msg.content.startsWith("/") && msg.content.endsWith("reaction"){
+if(msg.content.startsWith("/") && msg.content.endsWith("reaction")){
   if(!msg.channel.guild) return;
   for(let n in emojiname){
   var emoji =[msg.guild.emojis.find(r => r.name == emojiname[n])];
