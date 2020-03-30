@@ -8,7 +8,7 @@ client.setMaxListeners(0)
 const config = require("./prefix.json");
 
 client.on("raw", event => {
-	console.log(event);
+
 	const eventName = event.t;
 	if(eventName === "MESSAGE_REACTION_ADD"){
 		if(event.d.message_id === "694317573583536148")
