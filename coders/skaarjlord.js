@@ -6,33 +6,75 @@ const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
 const config = require("./prefix.json");
-client.on('ready', () => {
-        client.guilds.get('606586202942079017').channels.get('693704540561604608').fetchMessage('694317573583536148');
-        /* We could use .then() here but we don't need the returning promise in this case
-           This will just cache the specified message, to make sure
-           that 'messageReactionAdd' will always get called */
+
+client.on("raw", event => {
+	console.log(event);
+	const eventName = event.t;
+	if(eventName === "MESSAGE_REACTION_ADD"){
+		if(event.d.message_id === "694317573583536148")
+		{
+			var reactionChannel = client.channels.get(event.d.channel_id);
+			if(reactionChannel.message.has(event.d.message_d))
+				return;
+			else{
+				reactionChannel.fetchMessage(event.d.message_id)
+				.then(msg => {
+					var msgReaction = msg.reactions.get(event.d.emoji + ":" + event.d.emoji.id);
+					var user = client.users.get(event.d.user_id);
+					client.emit("messageReactionAdd", msgReaction, user);
+				})
+				.catch(err => console.log(err));
+			}
+		}
+	}
+	else if(eventName === "MESSAGE_REACTION_REMOVE")
+	{
+		if(event.d.message_id === "694317573583536148")
+		{
+			var reactionChannel = client.channels.get(event.d.channel_id);
+			if(reactionChannel.message.has(event.d.message_d))
+				return;
+			else{
+				reactionChannel.fetchMessage(event.d.message_id)
+				.then(msg => {
+					var msgReaction = msg.reactions.get(event.d.emoji + ":" + event.d.emoji.id);
+					var user = client.users.get(event.d.user_id);
+					client.emit("messageReactionRemove", msgReaction, user);
+				})
+				.catch(err => console.log(err));
+			}
+		}
+	}
 });
-
-// Same code as above
-client.on('messageReactionAdd', (reaction, user) => {
-        let message = reaction.message, emoji = reaction.emoji;
-
-        if (emoji.name == ':aea:') {
-                // We don't have the member, but only the user...
-                // Thanks to the previous part, we know how to fetch it
-                message.guild.fetchMember(user.id).then(member => {
-                        member.addRole('694316498553929778');
-                });
-        }
-
-        else if (reaction.remove(user)) {
-                message.guild.fetchMember(user.id).then(member => {
-                        member.removeRole('694316498553929778');
-                });
-        }
-
-        // Remove the user's reaction
-        
+ 
+client.on("messageReactionAdd",(message, user) => {
+	console.log(user.username + " reacted");
+	var rolename = messageReaction.emoji.name;
+	var role = messageRecation.message.guild.roles.find(role => role.name.toLowerCase() === roleName.toLowerCase());
+	if(role)
+	{
+		var member = messageReaction.message.guild.member.find(member => member.id === user.id);
+		if(member)
+		{
+			member.addRole(role.id);
+			console.log("addedrole");
+		}
+	}
+	
+});
+client.on("messageReactionRemove",(message, user) => {
+	var rolename = messageReaction.emoji.name;
+	var role = messageRecation.message.guild.roles.find(role => role.name.toLowerCase() === roleName.toLowerCase());
+	if(role)
+	{
+		var member = messageReaction.message.guild.member.find(member => member.id === user.id);
+		if(member)
+		{
+			member.removeRole(role.id);
+			console.log(" Removed role");
+		}
+	}
+	
 });
  
 client.on("message", message => {
