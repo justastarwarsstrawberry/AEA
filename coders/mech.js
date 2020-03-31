@@ -2,7 +2,7 @@
 exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
-    let db = require("./databasem.json");
+    const db = require("./databasem.json");
     client.setMaxListeners(0)
     //Dont touch Zone end
     // units
@@ -136,11 +136,11 @@ exports.code = function(){
                 } 
             //heavymech
                 if(message.content.toLowerCase() === db.F){
-                    message.channel.send(heavymech)
+                    message.channel.send(heavymech);
                 }
             //minigunmech
                 if(message.content.toLowerCase() === db.G){
-                    message.channel.send(minigunmech)
+                    message.channel.send(minigunmech);
                 }
             //teslamech
                 if (message.content.toLowerCase() === db.H) {
