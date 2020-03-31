@@ -17,7 +17,7 @@ client.on('ready', () => {
 client.on('messageReactionAdd', (reaction, user) => {
         let message = reaction.message, emoji = reaction.emoji;
 
-        if (emoji.name == '✅') {
+        if (emoji.name == ':AEAElites:') {
                 // We don't have the member, but only the user...
                 // Thanks to the previous part, we know how to fetch it
                 message.guild.fetchMember(user.id).then(member => {
@@ -25,14 +25,14 @@ client.on('messageReactionAdd', (reaction, user) => {
                 });
         }
 
-        else if (emoji.name == '❎') {
+        else if (emoji.name == ':AEAElites:') {
                 message.guild.fetchMember(user.id).then(member => {
                         member.removeRole('694316498553929778');
                 });
         }
 
         // Remove the user's reaction
-        reaction.remove(user);
+        //reaction.remove(user);
 });
  
 client.on("message", message => {
