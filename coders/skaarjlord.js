@@ -25,7 +25,7 @@ client.on('messageReactionAdd', (reaction, user) => {
                 });
         }
 
-        else if (emoji.name == ':AEAElites:') {
+        else if (!emoji.name == ':AEAElites:') {
                 message.guild.fetchMember(user.id).then(member => {
                         member.removeRole('694316498553929778');
                 });
