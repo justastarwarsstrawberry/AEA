@@ -143,7 +143,7 @@ exports.code = function(){
                     message.channel.send(minigunmech)
                 }
             //teslamech
-                if (message.content.toLowerCase() === db.h) {
+                if (message.content.toLowerCase() === db.H) {
                     message.channel.send(teslamech);
                 }  
             });
