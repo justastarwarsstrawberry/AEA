@@ -7,6 +7,8 @@ const Sea = require('./sea.js');
 const Func = require('./skaarjlord.js');
 const Anubis = require('./anubis.js');
 const Darkest = require('./land.js');
+
+const Mechs = require('./mech.js');
 const N = require('./Nword.js');
 const Timer = require('./timer.js');
 const Music = require('../resources/music/music.js');
@@ -29,6 +31,10 @@ const Music = require('../resources/music/music.js');
   if(Sea && Client){
    		Sea.code();
     		console.log('Sea loaded');
+  }
+  if(Mechs && Client){
+    Sea.code();
+     console.log('Mechs loaded');
   }
   if(Func && Client){
      		Func.code();
