@@ -49,8 +49,7 @@ client.on('message', message => {
 	
 
 //Gunboat
-if (message.content.toLowerCase() === 'gunboat') {
-	if(message.author.bot) return; 
+if (message.content.toLowerCase() === 'gunboat' && !message.author.bot) {
 	message.channel.send(e0);
 }
 //Probe
