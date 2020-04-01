@@ -2,7 +2,7 @@
 exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
-    let db = require("./databasem.json");
+    let db = require("./database1.json");
     client.setMaxListeners(0)
 //Dont touch Zone end
 
@@ -114,35 +114,35 @@ exports.code = function(){
 
         client.on('message', message => {
             //basicmech
-                if (message.content.toLowerCase() === db.A) {
+                if (message.content.toLowerCase() === db.A1) {
                     message.channel.send(e1);
                 }
             //artillerymech
-                if (message.content.toLowerCase() === db.B) {
+                if (message.content.toLowerCase() === db.B1) {
                     message.channel.send(e2);
                 }
             //mobileturret
-                if (message.content.toLowerCase() === db.C) {
+                if (message.content.toLowerCase() === db.C1) {
                     message.channel.send(e3);
                 }
             //antiairmech
-                if (message.content.toLowerCase() === db.D) {
+                if (message.content.toLowerCase() === db.D1) {
                     message.channel.send(e4);
                 }
             //lightminigunmech
-                if (message.content.toLowerCase() === db.E) {
+                if (message.content.toLowerCase() === db.E1) {
                     message.channel.send(e5);
                 } 
             //heavymech
-                if(message.content.toLowerCase() === db.F){
+                if(message.content.toLowerCase() === db.F1){
                     message.channel.send(e6);
                 }
             //minigunmech
-                if(message.content.toLowerCase() === db.G){
+                if(message.content.toLowerCase() === db.G1){
                     message.channel.send(e7);
                 }
             //teslamech
-                if (message.content.toLowerCase() === db.H) {
+                if (message.content.toLowerCase() === db.H1) {
                     message.channel.send(e8);
                 }  
             });
