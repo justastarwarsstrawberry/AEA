@@ -4,10 +4,9 @@ exports.code = function(){
     const fs = require("fs");
     const db = require("./databasem.json");
     client.setMaxListeners(0)
-    //Dont touch Zone end
-    // units
-    //mechs
-    const basicmech = new Discord.RichEmbed()  
+//Dont touch Zone end
+
+    const e1 = new Discord.RichEmbed()  
         .setColor('#1500f7')
         .setTitle('Basic Mech')
         .setURL('')
@@ -21,7 +20,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
         
-    const artillerymech = new Discord.RichEmbed() 
+    const e2 = new Discord.RichEmbed() 
         .setColor('#1500f7')
         .setTitle('Artillery Mech') 
         .setURL('')
@@ -34,7 +33,7 @@ exports.code = function(){
         .setImage('attachment://artillerymech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const mobileturret = new Discord.RichEmbed()
+    const e3 = new Discord.RichEmbed()
         .setColor('#1500f7')
         .setTitle('Mobile Turret')
         .setURL('')
@@ -47,7 +46,7 @@ exports.code = function(){
         .setImage('attachment://mobileturret.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const antiairmech = new Discord.RichEmbed()
+    const e4 = new Discord.RichEmbed()
         .setColor('#1500f7')
         .setTitle('Anti Air Mech')
         .setURL('')
@@ -60,7 +59,7 @@ exports.code = function(){
         .setImage('attachment://antiairmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const lightminigunmech = new Discord.RichEmbed()
+    const e5 = new Discord.RichEmbed()
         .setColor('#1500f7')
         .setTitle('Light Minigun Mech')
         .setURL('')
@@ -73,7 +72,7 @@ exports.code = function(){
         .setImage('attachment://lightminigunmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const heavymech = new Discord.RichEmbed()
+    const e6 = new Discord.RichEmbed()
         .setColor('#1500f7')
         .setTitle('Heavy Mech')
         .setURL('')
@@ -86,7 +85,7 @@ exports.code = function(){
         .setImage('attachment://heavymech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const minigunmech = new Discord.RichEmbed()
+    const e7 = new Discord.RichEmbed()
         .setColor('#1500f7')
         .setTitle('Minigun Mech')
         .setURL('')
@@ -99,7 +98,7 @@ exports.code = function(){
         .setImage('attachment://minigunmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const teslamech = new Discord.RichEmbed()
+    const e8 = new Discord.RichEmbed()
         .setColor('#1500f7')
         .setTitle('Tesla Mech')
         .setURL('')
@@ -116,35 +115,35 @@ exports.code = function(){
         client.on('message', message => {
             //basicmech
                 if (message.content.toLowerCase() === db.A) {
-                    message.channel.send(basicmech);
+                    message.channel.send(e1);
                 }
             //artillerymech
                 if (message.content.toLowerCase() === db.B) {
-                    message.channel.send(artillerymech);
+                    message.channel.send(e2);
                 }
             //mobileturret
                 if (message.content.toLowerCase() === db.C) {
-                    message.channel.send(mobileturret);
+                    message.channel.send(e3);
                 }
             //antiairmech
                 if (message.content.toLowerCase() === db.D) {
-                    message.channel.send(antiairmech);
+                    message.channel.send(e4);
                 }
             //lightminigunmech
                 if (message.content.toLowerCase() === db.E) {
-                    message.channel.send(lightminigunmech);
+                    message.channel.send(e5);
                 } 
             //heavymech
                 if(message.content.toLowerCase() === db.F){
-                    message.channel.send(heavymech);
+                    message.channel.send(e6);
                 }
             //minigunmech
                 if(message.content.toLowerCase() === db.G){
-                    message.channel.send(minigunmech);
+                    message.channel.send(e7);
                 }
             //teslamech
                 if (message.content.toLowerCase() === db.H) {
-                    message.channel.send(teslamech);
+                    message.channel.send(e8);
                 }  
             });
 }
