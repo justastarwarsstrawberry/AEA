@@ -33,7 +33,7 @@ const Music = require('../resources/music/music.js');
     		console.log('Sea loaded');
   }
   if(Mechs && Client){
-    Sea.code();
+    Mechs.code();
      console.log('Mechs loaded');
   }
   if(Func && Client){
