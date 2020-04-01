@@ -2,7 +2,7 @@
 exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
-    const db = require("./databasem.json");
+    let db = require("./databasem.json");
     client.setMaxListeners(0)
 //Dont touch Zone end
 
