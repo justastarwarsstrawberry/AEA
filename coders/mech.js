@@ -2,7 +2,7 @@
 exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
-    let db = require("./database1.json");
+
     client.setMaxListeners(0)
 //Dont touch Zone end
 
@@ -113,36 +113,37 @@ exports.code = function(){
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
         client.on('message', message => {
+			let db2 = require("./databasem.json");
             //basicmech
-                if (message.content.toLowerCase() === db.A1) {
+                if (message.content.toLowerCase() === db2.A1) {
                     message.channel.send(e1);
                 }
             //artillerymech
-                if (message.content.toLowerCase() === db.B1) {
+                if (message.content.toLowerCase() === db2.B1) {
                     message.channel.send(e2);
                 }
             //mobileturret
-                if (message.content.toLowerCase() === db.C1) {
+                if (message.content.toLowerCase() === db2.C1) {
                     message.channel.send(e3);
                 }
             //antiairmech
-                if (message.content.toLowerCase() === db.D1) {
+                if (message.content.toLowerCase() === db2.D1) {
                     message.channel.send(e4);
                 }
             //lightminigunmech
-                if (message.content.toLowerCase() === db.E1) {
+                if (message.content.toLowerCase() === db2.E1) {
                     message.channel.send(e5);
                 } 
             //heavymech
-                if(message.content.toLowerCase() === db.F1){
+                if(message.content.toLowerCase() === db2.F1){
                     message.channel.send(e6);
                 }
             //minigunmech
-                if(message.content.toLowerCase() === db.G1){
+                if(message.content.toLowerCase() === db2.G1){
                     message.channel.send(e7);
                 }
             //teslamech
-                if (message.content.toLowerCase() === db.H1) {
+                if (message.content.toLowerCase() === db2.H1) {
                     message.channel.send(e8);
                 }  
             });

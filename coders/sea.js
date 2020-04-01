@@ -3,7 +3,6 @@
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
-let db = require("./database1.json");
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
  const e0 = new Discord.RichEmbed()
@@ -11,7 +10,7 @@ client.setMaxListeners(0)
 	.setTitle('Gunboat')
 	.setURL('')
 	.attachFiles(['./resources/gunboat.png'])
-	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Fast \n - Can attack ground")
 	.addBlankField()
 	.addField("Stats", " Price $300 \n Health 170 \n Attack Range 120 \n Move Speed 1.5 \n Build Speed 3.3s \n InIClass c_gunboat")
@@ -24,7 +23,7 @@ client.setMaxListeners(0)
 	.setTitle('Underwater Probe')
 	.setURL('')
 	.attachFiles(['./resources/underwaterprobe.png'])
-	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Very weak \n - Light torpedo attack only")
 	.addBlankField()
 	.addField("Stats", " Price $450 \n Health 80 \n Attack Range 100 \n Move Speed 0.70 \n Build Speed 3.3s \n InIClass lightSub")
@@ -37,7 +36,7 @@ client.setMaxListeners(0)
 	.setTitle('Missile Ship')
 	.setURL('')
 	.attachFiles(['./resources/missileship.png'])
-	.setAuthor('LemonsHQ', 'https://cdn.discordapp.com/avatars/242687584373964801/4b20eb44bfff0b11f7447ed582fedbb2.png?size=128')
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Fast \n - Can attack ground and air and subs \n - Weak amour")
 	.addBlankField()
 	.addField("Stats", " Price $800 \n Health 450 \n Attack Range 200 \n Move Speed 1.2 \n Build Speed 6.7s \n InIClass c_missileShip")
@@ -50,15 +49,15 @@ client.on('message', message => {
 	
 
 //Gunboat
-if (message.content.toLowerCase() === db.A) {
+if (message.content.toLowerCase() === 'gunboat') {
 	message.channel.send(e0);
 }
 //Probe
-if (message.content.toLowerCase() === db.B) {
+if (message.content.toLowerCase() === 'underwaterprobe') {
 	message.channel.send(e1);
 } 
 //Missile Ship
-if (message.content.toLowerCase() === db.C) {
+if (message.content.toLowerCase() === 'missileship') {
 	message.channel.send(e2);
 }
 });
