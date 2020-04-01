@@ -113,37 +113,44 @@ exports.code = function(){
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
         client.on('message', message => {
-			let db2 = require("./databasem.json");
             //basicmech
-                if (message.content.toLowerCase() === db2.A1) {
+                if (message.content.toLowerCase() === 'basicmech') {
+					if(message.author.bot) return; 
                     message.channel.send(e1);
                 }
             //artillerymech
-                if (message.content.toLowerCase() === db2.B1) {
+                if (message.content.toLowerCase() === 'artillerymech') {
+					if(message.author.bot) return; 
                     message.channel.send(e2);
                 }
             //mobileturret
-                if (message.content.toLowerCase() === db2.C1) {
+                if (message.content.toLowerCase() === 'mobileturret') {
+					if(message.author.bot) return; 
                     message.channel.send(e3);
                 }
             //antiairmech
-                if (message.content.toLowerCase() === db2.D1) {
+                if (message.content.toLowerCase() === 'antiairmech') {
+					if(message.author.bot) return; 
                     message.channel.send(e4);
                 }
             //lightminigunmech
-                if (message.content.toLowerCase() === db2.E1) {
+                if (message.content.toLowerCase() === 'lightminigunmech') {
+					if(message.author.bot) return; 
                     message.channel.send(e5);
                 } 
             //heavymech
-                if(message.content.toLowerCase() === db2.F1){
+                if(message.content.toLowerCase() === 'heavymech'){
+					if(message.author.bot) return; 
                     message.channel.send(e6);
                 }
             //minigunmech
-                if(message.content.toLowerCase() === db2.G1){
+                if(message.content.toLowerCase() === 'minigunmech'){
+					if(message.author.bot) return; 
                     message.channel.send(e7);
                 }
             //teslamech
-                if (message.content.toLowerCase() === db2.H1) {
+                if (message.content.toLowerCase() === 'teslamech') {
+					if(message.author.bot) return; 
                     message.channel.send(e8);
                 }  
             });

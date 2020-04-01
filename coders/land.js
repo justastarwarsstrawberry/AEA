@@ -2,7 +2,6 @@
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
-let db = require("./databasel.json");
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
   
@@ -284,86 +283,107 @@ client.on('message', message => {
 
 //tank
     if (message.content.toLowerCase() === 'tank') {
+	if(message.author.bot) return; 
 	message.channel.send(e1);
     }
 //missiletank
-    if (message.content.toLowerCase() === db.K) {
+    if (message.content.toLowerCase() === 'missiletank') {
+	if(message.author.bot) return; 
 	message.channel.send(e2);
     }
 //typhoon
-    if (message.content.toLowerCase() === db.G) {
+    if (message.content.toLowerCase() === 'typhoon') {
+	if(message.author.bot) return; 
 	message.channel.send(e3);
     }
 //Zephyr
-    if (message.content.toLowerCase() === db.L) {
-    	message.channel.send(e4);
+    if (message.content.toLowerCase() === 'zephyr') {
+	if(message.author.bot) return; 
+    message.channel.send(e4);
     }
 //plasmasniper 
-    if (message.content.toLowerCase() === db.E) {
-        message.channel.send(e5);
+    if (message.content.toLowerCase() === 'plasmasniper') {
+	if(message.author.bot) return; 
+    message.channel.send(e5);
     }
 //comet
-    if (message.content.toLowerCase() === db.C) {
+    if (message.content.toLowerCase() === 'comet') {
+	if(message.author.bot) return; 
 	message.channel.send(e6);
     }
 //houndapc
-    if (message.content.toLowerCase() === db.D) {
+    if (message.content.toLowerCase() === 'houndapc') {
+	if(message.author.bot) return; 
 	message.channel.send(e7);
     }
 //Heavytank
-    if (message.content.toLowerCase() === db.B) {
+    if (message.content.toLowerCase() === 'heavytank') {
+	if(message.author.bot) return; 
 	message.channel.send(e8);
     }
 //Lasertank
-    if (message.content.toLowerCase() === db.M) {
+    if (message.content.toLowerCase() === 'lasertank') {
+	if(message.author.bot) return; 
 	message.channel.send(e9);
     }  
 //heavyartillery
-    if (message.content.toLowerCase() === db.O) {
+    if (message.content.toLowerCase() === 'heavyartillery') {
+	if(message.author.bot) return; 
 	message.channel.send(e10);
     }
 //Demotruck
-    if (message.content.toLowerCase() === db.J) {
+    if (message.content.toLowerCase() === 'demotruck') {
+	if(message.author.bot) return; 
 	message.channel.send(e11);
     }
 //hovertank
-    if (message.content.toLowerCase() === db.N) {
+    if (message.content.toLowerCase() === 'hovertank') {
+	if(message.author.bot) return; 
 	message.channel.send(e12);
     }		
 //saber
-    if (message.content.toLowerCase() === db.F) {
+    if (message.content.toLowerCase() === 'saber') {
+	if(message.author.bot) return; 
 	message.channel.send(e13);
     }	
 //buffalo
-    if (message.content.toLowerCase() === db.H) {
+    if (message.content.toLowerCase() === 'buffalo') {
+	if(message.author.bot) return; 
 	message.channel.send(e14);
     }	
 //Heavy hover tank	
-    if (message.content.toLowerCase() === db.I) {
+    if (message.content.toLowerCase() === 'heavyhovertank') {
+	if(message.author.bot) return; 
 	message.channel.send(e15);
     }	
 //tesla tank
-    if (message.content.toLowerCase() === db.R) {
+    if (message.content.toLowerCase() === 'teslatank') {
+	if(message.author.bot) return; 
 	message.channel.send(e16);
     }		
 //scout
-    if (message.content.toLowerCase() === db.Q) {
+    if (message.content.toLowerCase() === 'scout') {
+	if(message.author.bot) return; 
 	message.channel.send(e17);
     }
 //duster
-    if (message.content.toLowerCase() === db.P) {
+    if (message.content.toLowerCase() === 'duster') {
+	if(message.author.bot) return; 
 	message.channel.send(e18);
     }	
 //artillery
-    if (message.content.toLowerCase() === db.T) {
+    if (message.content.toLowerCase() === 'artillery') {
+	if(message.author.bot) return; 
 	message.channel.send(e19);
     }	
 //combat engineer
-    if (message.content.toLowerCase() === db.S) {
+    if (message.content.toLowerCase() === 'combatengineer') {
+	if(message.author.bot) return; 
 	message.channel.send(e20);
     }	
 //Siegetank
-    if (message.content.toLowerCase() === db.V) {
+    if (message.content.toLowerCase() === 'siegetank') {
+	if(message.author.bot) return; 
 	message.channel.send(e20);
     }	
 });

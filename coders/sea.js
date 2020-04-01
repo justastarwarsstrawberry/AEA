@@ -50,14 +50,17 @@ client.on('message', message => {
 
 //Gunboat
 if (message.content.toLowerCase() === 'gunboat') {
+	if(message.author.bot) return; 
 	message.channel.send(e0);
 }
 //Probe
 if (message.content.toLowerCase() === 'underwaterprobe') {
+	if(message.author.bot) return;
 	message.channel.send(e1);
 } 
 //Missile Ship
 if (message.content.toLowerCase() === 'missileship') {
+	if(message.author.bot) return;  
 	message.channel.send(e2);
 }
 });
