@@ -83,6 +83,32 @@ const e5 = new Discord.RichEmbed()
 	.setImage('attachment://frigate.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e6 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Battleship')
+	.setURL('')
+	.attachFiles(['./resources/battleship.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Medium range land attack \n - Cannot attack air or subs")
+	.addBlankField()
+	.addField("Stats", " Price $1,500 \n Health 1,200 \n Attack Range 240 \n Move Speed 0.80 \n Build Speed 24.8s \n InIClass c_battleShip")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://battleship.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e7 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Battleship')
+	.setURL('')
+	.attachFiles(['./resources/hvybattleship.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Long range land attack \n - Anti-air \n - Light anti-sub torpedos")
+	.addBlankField()
+	.addField("Stats", " Price $6,000 \n Health 4,000 \n Attack Range 290 \n Move Speed 0.70 \n Build Speed 41.7s \n PrimaryDamage 65\n InIClass heavyBattleship")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://hvybattleship.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', message => {
 	
