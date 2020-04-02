@@ -79,7 +79,7 @@ exports.code = function(){
         .setAuthor('Anubis#5471', 'https://imgur.com/RYFFWLt.png')
         .setDescription(" - Ground attack \n- Heavily armored \n- Moderate damage and range \n- Can disable weapon to activate a temporary shield and self-repair")
         .addBlankField()
-        .addField("Stats", "Price $5,000 \n Health 2000 \n HealthRegen 0.8415 \n Shield 900 \n ShieldRegen 0 \n Attack Range 250 \n FogOfWar 20 \n Move Speed 0.70 \n Build Speed 18.3s \n PrimaryDamage 125 \n InIclass heavyMech")
+        .addField("Stats", "Price $5,000 \n Health 2,000 \n HealthRegen 0.8415 \n Shield 900 \n ShieldRegen 0 \n Attack Range 250 \n FogOfWar 20 \n Move Speed 0.70 \n Build Speed 18.3s \n PrimaryDamage 125 \n InIclass heavyMech")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://heavymech.png')
         .setTimestamp()
@@ -131,7 +131,7 @@ exports.code = function(){
         .setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
         .setDescription(" - Area effect flamethrower \n - Can attack land only \n - High HP with self-repair \n - Can fire an underground incendiary shell")
         .addBlankField()
-        .addField("Stats", "Price $12,000 \n Health 5000 \n HealthRegen 0.08 \n Attack Range 180 \n Move Speed 0.60 \n Build Speed 27.8s \n PrimaryAreaDamage/Radius 18/80 SecondaryAreaDamage/Radius 70-110/100 \n InIclass flameMech")
+        .addField("Stats", "Price $12,000 \n Health 5,000 \n HealthRegen 0.08 \n Attack Range 180 \n Move Speed 0.60 \n Build Speed 27.8s \n PrimaryAreaDamage/Radius 18/80 SecondaryAreaDamage/Radius 70-110/100 \n InIclass flameMech")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://flamemech.png')
         .setTimestamp()
@@ -144,7 +144,7 @@ exports.code = function(){
         .setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
         .setDescription(" - Attacks land & air \n - Needs to recharge after firing \n - Long range \n - Stronger vs. units than vs. buildings")
         .addBlankField()
-        .addField("Stats", "Price $7,000 \n Health 1300 \n HealthRegen 0.08 \n Attack Range 320 \n FogOfWar 20 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryDamage 150 \n InIclass plasmaMech")
+        .addField("Stats", "Price $7,000 \n Health 1,300 \n HealthRegen 0.08 \n Attack Range 320 \n FogOfWar 20 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryDamage 150 \n InIclass plasmaMech")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://plasmamech.png')
         .setTimestamp()
@@ -160,6 +160,45 @@ exports.code = function(){
         .addField("Stats", "Price $9,000 \n Health 750 \n HealthRegen 0.08 \n Shield 500 \n ShieldRegen 0 - 0.275 \n Attack Range 410 \n FogOfWar 23 - 28 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryAreaDamage/Radius 125/65 \n InIclass heavyArtilleryMech")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://hvyartmech.png')
+        .setTimestamp()
+        .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+    const e13 = new Discord.RichEmbed()
+        .setColor('#1500f7')
+        .setTitle('Rocket Mech')
+        .setURL('')
+        .attachFiles(['./resources/rocketmech.png'])
+        .setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+        .setDescription(" - Medium armor \n - Heavily armed \n - Can attack ground and air \n - Strong vs. multiple units \n - Can overcharge itself to increase firepower and movement speed")
+        .addBlankField()
+        .addField("Stats", "Price $6,500 \n Health 1,100 \n Attack Range 265 \n FogOfWar 20 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryAreaDamage/Radius 65/75 \n SecondaryAreaDamage/Radius 40/75 \n InIclass rocketMech")
+        .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+        .setImage('attachment://rocketmech.png')
+        .setTimestamp()
+        .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+    const e14 = new Discord.RichEmbed()
+        .setColor('#1500f7')
+        .setTitle('Heavy Mobile Turret')
+        .setURL('')
+        .attachFiles(['./resources/hvymobileturret.png'])
+        .setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+        .setDescription(" - Heavily armored \n - Ground attack when undeployed \n - Deploys for extra range, anti-air and shield regen \n - Cannot attack while undeploying \n - Can release a repairing nano-burst when deployed")
+        .addBlankField()
+        .addField("Stats", "Price $8,000 \n Health 1,400 \n Shield 0-1600 \n ShieldRegen 0 - 0.3 \n UnitHealArea/Radius 0/0 - 200/220 \n Attack Range 220 - 300 \n FogOfWar 20 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryAreaDamage/Radius 40 - 50 \n SecondaryAreaDamage/Radius 30 -25 \n InIclass rocketMech")
+        .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+        .setImage('attachment://hvymobileturret.png')
+        .setTimestamp()
+        .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+    const e15 = new Discord.RichEmbed()
+        .setColor('#1500f7')
+        .setTitle('Assault Mech')
+        .setURL('')
+        .attachFiles(['./resources/assaultmech.png'])
+        .setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+        .setDescription(" - Heavily armed and armored \n - Can attack ground \n - Light air attack \n - Can build and buff nearby small T1 mechs \n - Can self-repair")
+        .addBlankField()
+        .addField("Stats", "Price $20,000 \n Health 4,800 \n Attack Range 250 \n FogOfWar 20 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryAreaDamage/Radius 300 \n SecondaryAreaDamage/Radius 45 \n InIclass assaultMech")
+        .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+        .setImage('attachment://assaultmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -225,10 +264,20 @@ exports.code = function(){
                 if(message.author.bot) return; 
                 message.channel.send(e12);
             }  
+            //RocketMech
+            if (message.content.toLowerCase() === 'rocketmech') {
+                if(message.author.bot) return; 
+                message.channel.send(e13);
+            }  
             //Heavy Mobile Turret
             if (message.content.toLowerCase() === 'heavymobileturret') {
                 if(message.author.bot) return; 
-                message.channel.send(e13);
+                message.channel.send(e14);
+            }  
+            //Assault Mech
+            if (message.content.toLowerCase() === 'assaultmech') {
+                if(message.author.bot) return; 
+                message.channel.send(e15);
             }  
             });
 }
