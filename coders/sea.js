@@ -128,9 +128,9 @@ const e9 = new Discord.RichEmbed()
 	.setURL('')
 	.attachFiles(['./resources/battlecruiser.png'])
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
-	.setDescription(" - Powerful land attack \n - Anti-sub torpedoes \n - Cannot attack air")
+	.setDescription(" - Heavily armoured\n - Can attack attack land, air, and subs\n - Slow firing rate ")
 	.addBlankField()
-	.addField("Stats", " Price $9,000 \n Health 7,000 \n SelfRegen 0.003 \n Attack Range 330 \n Move Speed 0.50 \n Build Speed 87.7s \n PrimaryDamage 100 \n InIClass Destroyer")
+	.addField("Stats", " Price $9,000 \n Health 7,000 \n SelfRegen 0.003 \n Attack Range 330 \n Move Speed 0.50 \n Build Speed 87.7s \n PrimaryAreaDamage/Radius 150/50 \n SecondaryDamage 95 \n TertiaryDamage 100 \n InIClass BattleCruiser")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://battlecruiser.png')
 	.setTimestamp()
@@ -184,10 +184,10 @@ if (message.content.toLowerCase() === 'destroyer') {
 	message.channel.send(e8);
 }
 //BattleCruiser
-//if (message.content.toLowerCase() === 'battlecruiser') {
-//	if(message.author.bot) return;  
-//	message.channel.send(e9);
-//}
+if (message.content.toLowerCase() === 'battlecruiser') {
+	if(message.author.bot) return;  
+	message.channel.send(e9);
+}
 });
   
   
