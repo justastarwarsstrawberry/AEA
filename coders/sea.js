@@ -104,9 +104,35 @@ const e7 = new Discord.RichEmbed()
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Long range land attack \n - Anti-air \n - Light anti-sub torpedos")
 	.addBlankField()
-	.addField("Stats", " Price $6,000 \n Health 4,000 \n Attack Range 290 \n Move Speed 0.70 \n Build Speed 41.7s \n PrimaryDamage 65\n InIClass heavyBattleship")
+	.addField("Stats", " Price $6,000 \n Health 4,000 \n Attack Range 290 \n Move Speed 0.70 \n Build Speed 41.7s \n PrimaryDamage 65 \n SecondaryDamage 50 \n InIClass heavyBattleship")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://hvybattleship.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e8 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Destroyer')
+	.setURL('')
+	.attachFiles(['./resources/destroyer.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Powerful land attack \n - Anti-sub torpedoes \n - Cannot attack air")
+	.addBlankField()
+	.addField("Stats", " Price $5,000 \n Health 3,500 \n SelfRegen 0.003 \n Attack Range 280 \n Move Speed 0.50 \n Build Speed 24.8s \n PrimaryDamage 100 \n InIClass Destroyer")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://destroyer.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e9 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Battle Cruiser')
+	.setURL('')
+	.attachFiles(['./resources/destroyer.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Powerful land attack \n - Anti-sub torpedoes \n - Cannot attack air")
+	.addBlankField()
+	.addField("Stats", " Price $9,000 \n Health 7,000 \n SelfRegen 0.003 \n Attack Range 330 \n Move Speed 0.50 \n Build Speed 87.7s \n PrimaryDamage 100 \n InIClass Destroyer")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://destroyer.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -142,6 +168,26 @@ if (message.content.toLowerCase() === 'frigate') {
 	if(message.author.bot) return;  
 	message.channel.send(e5);
 }
+//battleship
+if (message.content.toLowerCase() === 'battleship') {
+	if(message.author.bot) return;  
+	message.channel.send(e6);
+}
+//Heavybattleship
+if (message.content.toLowerCase() === 'heavybattleship') {
+	if(message.author.bot) return;  
+	message.channel.send(e7);
+}
+//Destroyer
+if (message.content.toLowerCase() === 'destroyer') {
+	if(message.author.bot) return;  
+	message.channel.send(e8);
+}
+//BattleCruiser
+//if (message.content.toLowerCase() === 'battlecruiser') {
+//	if(message.author.bot) return;  
+//	message.channel.send(e9);
+//}
 });
   
   
