@@ -57,7 +57,7 @@ exports.code = function(){
             if (flip = 16){
                 message.reply('If you have a lot of income, and want to build units quickly, there are 3 main units that can suit your needs. The Naval Carrier, planetary walker, Flying Fortress, and the Mother ship.')
             }  
-            //here
+            
             if (flip = 17){
                 message.reply('The Experimental Spider can build 2 very powerful units; the Planetary Walker and the Titan.')
             }  
