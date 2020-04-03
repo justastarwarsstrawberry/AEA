@@ -13,7 +13,12 @@ const N = require('./Nword.js');
 const tips = require('./tips.js');
 const Timer = require('./timer.js');
 const Music = require('../resources/music/music.js');
-  
+
+  if(N && Client){
+    N.code();
+    console.log('Nword loaded');
+  } 
+
   if(Timer && Client){
    		 Timer.code();
     		console.log('Timer loaded');

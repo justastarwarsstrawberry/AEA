@@ -18,18 +18,15 @@ const nworde = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', (message, user) => {
-    if (message.content.toLowerCase().includes(db.A) ) {
-	if (message.content.toLowerCase().endsWith(db.B)){
-	message.channel.send(nworde);
-	}
-    }	
-    if (message.content.toLowerCase().includes(db.A) && message.content.toLowerCase().includes(db.C) ) {
-	message.channel.send(nworde);
-    }	
+    if (message.content.toLowerCase().includes(db.A) || message.content.toLowerCase().includes(db.B) || message.content.toLowerCase().includes(db.B) || message.content.toLowerCase().includes(db.C) || message.content.toLowerCase().includes(db.D) || message.content.toLowerCase().includes(db.E) || message.content.toLowerCase().includes(db.F) || message.content.toLowerCase().includes(db.G) || message.content.toLowerCase().includes(db.H) ) {
+		if(message.author.bot) return;
+		message.delete(); 
+               message.channel.send(nworde);
+               message.reply('is racist');
+		
+    }
  });
 
-// Giving Up
-
-
+//Tacos
 
 }
