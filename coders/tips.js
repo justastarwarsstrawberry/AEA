@@ -1,13 +1,13 @@
 exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     client.setMaxListeners(0)
-
+    client.on('message', message => {
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
         }
-        if(Message.content.toLowerCase() === "/tip") {
+        if(message.content.toLowerCase() === "/tip") {
             var flip = getRandomInt(1, 100);
             if (flip = 1) {
             message.reply('There’s 5 main aspects to RTS. Those are Speed, resources, map control, intel, and preparation.')
@@ -59,7 +59,7 @@ exports.code = function(){
             }  
         }
     
-
+    });
 
  
 }
