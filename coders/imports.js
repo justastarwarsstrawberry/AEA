@@ -10,6 +10,7 @@ const Darkest = require('./land.js');
 
 const Mechs = require('./mech.js');
 const N = require('./Nword.js');
+const tips = require('./tips.js');
 const Timer = require('./timer.js');
 const Music = require('../resources/music/music.js');
   
@@ -32,19 +33,26 @@ const Music = require('../resources/music/music.js');
    		Sea.code();
     		console.log('Sea loaded');
   }
+  
   if(Mechs && Client){
     Mechs.code();
      console.log('Mechs loaded');
   }
+
   if(Func && Client){
      		Func.code();
      		console.log('Skaarjlord loaded');
   }
+
   if(Music && Client){
      		Music.code();
-     		console.log('Musicloaded');
+     		console.log('Music loaded');
   }
- 
+
+  if(tips && Client){
+    tips.code();
+    console.log('tips loaded');
+  }
 
 
 
