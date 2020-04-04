@@ -135,6 +135,19 @@ const e9 = new Discord.RichEmbed()
 	.setImage('attachment://battlecruiser.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e10 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Thunder Head')
+	.setURL('')
+	.attachFiles(['./resources/thunderhead.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Heavily armoured\n - Can attack attack land, air, and subs\n - Slow firing rate ")
+	.addBlankField()
+	.addField("Stats", " Price $6,500 \n Health 1,500 \n Attack Range 420 \n Move Speed 0.80 \n Build Speed 55.6s \n PrimaryAreaDamage/Radius 250/80 \n SecondaryDamage 50 \n InIClass EkThunderhead")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://thunderhead.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', message => {
 	
@@ -188,6 +201,16 @@ if (message.content.toLowerCase() === 'battlecruiser') {
 	if(message.author.bot) return;  
 	message.channel.send(e9);
 }
+//ThunderHead
+if (message.content.toLowerCase() === 'thunderhead') {
+	if(message.author.bot) return;  
+	message.channel.send(e10);
+}
+//attacksubmarine
+//if (message.content.toLowerCase() === 'attacksubmarine') {
+//	if(message.author.bot) return;  
+//	message.channel.send(e10);
+//}
 });
   
   
