@@ -22,7 +22,6 @@ client.on('message', (message, user) => {
 		if(message.author.bot) return;
 		message.delete(); 
                message.channel.send(nworde);
-               message.reply('is racist');
 		
     }
  });
