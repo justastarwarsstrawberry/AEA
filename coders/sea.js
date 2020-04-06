@@ -13,7 +13,7 @@ client.setMaxListeners(0)
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Fast \n - Can attack ground")
 	.addBlankField()
-	.addField("Stats", " Price $300 \n Health 170 \n Attack Range 120 \n Move Speed 1.5 \n Build Speed 3.3s \n InIClass c_gunboat")
+	.addField("Stats", " Price $300 \n Health 170 \n Attack Range 120 \n Move Speed 1.5 \n Build Speed 3.3s \n PrimaryDamage 12 \n InIClass c_gunboat")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://gunboat.png')
 	.setTimestamp()
@@ -26,7 +26,7 @@ client.setMaxListeners(0)
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Very weak \n - Light torpedo attack only")
 	.addBlankField()
-	.addField("Stats", " Price $450 \n Health 80 \n Attack Range 100 \n Move Speed 0.70 \n Build Speed 3.3s \n InIClass lightSub")
+	.addField("Stats", " Price $450 \n Health 80 \n Attack Range 100 \n Move Speed 0.70 \n Build Speed 3.3s \n PrimaryDamage 10 \n InIClass lightSub")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://underwaterprobe.png')
 	.setTimestamp()
@@ -39,7 +39,7 @@ client.setMaxListeners(0)
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Fast \n - Can attack ground and air and subs \n - Weak amour")
 	.addBlankField()
-	.addField("Stats", " Price $800 \n Health 450 \n Attack Range 200 \n Move Speed 1.2 \n Build Speed 6.7s \n InIClass c_missileShip")
+	.addField("Stats", " Price $800 \n Health 450 \n Attack Range 200 \n Move Speed 1.2 \n Build Speed 6.7s \n PrimaryDamage 62 \n SecondaryDamage 42 \n InIClass c_missileShip")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://missileship.png')
 	.setTimestamp()
@@ -52,7 +52,7 @@ const e3 = new Discord.RichEmbed()
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Equipped with an Anti Air Gun \n - Weak armour ")
 	.addBlankField()
-	.addField("Stats", " Price $750 \n Health 270 \n Attack Range 190 \n Move Speed 0.90 \n Build Speed 6.7s \n InIClass  antiAirTurretBoat")
+	.addField("Stats", " Price $750 \n Health 270 \n Attack Range 190 \n Move Speed 0.90 \n Build Speed 6.7s \n PrimaryDamage 2 \n InIClass  antiAirTurretBoat")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://antiairboat.png')
 	.setTimestamp()
@@ -65,7 +65,7 @@ const e4 = new Discord.RichEmbed()
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Equipped with an Anti Air Gun \n - Weak armour ")
 	.addBlankField()
-	.addField("Stats", " Price $1,250 \n Health 1,500 \n Attack Range 275 \n Move Speed 0.80 \n Build Speed 10.6s \n InIClass Corvette")
+	.addField("Stats", " Price $1,250 \n Health 1,500 \n Attack Range 275 \n Move Speed 0.80 \n Build Speed 10.6s \n PrimaryDamage/Radius 100/40 \n SecondaryDamage 70 \n InIClass Corvette")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://corvette.png')
 	.setTimestamp()
@@ -78,7 +78,7 @@ const e5 = new Discord.RichEmbed()
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Equipped with an Anti Air Gun \n - Weak armour ")
 	.addBlankField()
-	.addField("Stats", " Price $3,500 \n Health 2,000 \n Attack Range 290 \n Move Speed 0.75 \n Build Speed 15.2s \n InIClass Frigate")
+	.addField("Stats", " Price $3,500 \n Health 2,000 \n Attack Range 290 \n Move Speed 0.75 \n Build Speed 15.2s \n PrimaryDamage/Radius 140/50 \n SecondaryDamage 9 \n InIClass Frigate")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://frigate.png')
 	.setTimestamp()
@@ -91,7 +91,7 @@ const e6 = new Discord.RichEmbed()
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Medium range land attack \n - Cannot attack air or subs")
 	.addBlankField()
-	.addField("Stats", " Price $1,500 \n Health 1,200 \n Attack Range 240 \n Move Speed 0.80 \n Build Speed 24.8s \n InIClass c_battleShip")
+	.addField("Stats", " Price $1,500 \n Health 1,200 \n Attack Range 240 \n Move Speed 0.80 \n Build Speed 24.8s \n PrimaryDamage 65 \n InIClass c_battleShip")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://battleship.png')
 	.setTimestamp()
@@ -146,6 +146,110 @@ const e10 = new Discord.RichEmbed()
 	.addField("Stats", " Price $6,500 \n Health 1,500 \n Attack Range 420 \n Move Speed 0.80 \n Build Speed 55.6s \n PrimaryAreaDamage/Radius 250/80 \n SecondaryDamage 50 \n InIClass EkThunderhead")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://thunderhead.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e11 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Attack Submarine')
+	.setURL('')
+	.attachFiles(['./resources/attacksubmarine.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - When underwater cannot be attacked by most units\n - Attacks in-water units\n - Can surface to also attack land and air units")
+	.addBlankField()
+	.addField("Stats", " Price $800 \n Health 260 \n Attack Range 250 \n Move Speed 0.80 \n Build Speed 16.7s \n PrimaryAreaDamage/Radius 250/80 \n SecondaryDamage 50 \n InIClass _Unknown_")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://attacksubmarine.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e12 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Missile Ship')
+	.setURL('')
+	.attachFiles(['./resources/hvymissileship.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Can attack land & air\n- Long range")
+	.addBlankField()
+	.addField("Stats", " Price $16,000 \n Health 3,000 \n Attack Range 390 \n Move Speed 0.50 \n Build Speed 41.7s \n PrimaryDamage 30 \n SecondaryDamage 65 \n TertiaryDamage 70 \n InIClass c_heavyMissileShip")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://hvymissileship.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e13 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Heavy Sub')
+	.setURL('')
+	.attachFiles(['./resources/hvysubmarine.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Heavily armored torpedos \n- Cannot attack units out of water")
+	.addBlankField()
+	.addField("Stats", " Price $5,500 \n Health 1,000 \n Attack Range 210 \n Move Speed 0.85 \n Build Speed 41.7s \n PrimaryDamage 95 \n SecondaryDamage 65 \n TertiaryDamage 70 \n InIClass heavySub")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://hvysubmarine.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e14 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Nautilus')
+	.setURL('')
+	.attachFiles(['./resources/nautilus.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Heavily armed and armored \n - Can attack ships \n - Can surface and walk on land \n - Can attack land and air when surfaced \n - Can build a few attack units \n - Can launch a scout builder crab \n - Can transport 6 unit slots")
+	.addBlankField()
+	.addField("Stats", " Price $16,800 \n Health 5,000 \n Attack Range 240 \n Move Speed 0.45 \n Build Speed 55.6s \n PrimaryDamage 50 \n SecondaryDamage 35 \n InIClass nautilusSubmarine")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://nautilus.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e15 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Selenium')
+	.setURL('')
+	.attachFiles(['./resources/selenium.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Mammoth Submarine \n - Slow but armored, heavily armed \n - Can surface and hit air/land")
+	.addBlankField()
+	.addField("Stats", " Price $21,800 \n Health 3,200 \n Attack Range 270 \n Move Speed 0.45 \n Build Speed 55.6s \n PrimaryDamage 95 \n SecondaryDamage 70 \n InIClass EkSelenium")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://selenium.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e16 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Recon Sub')
+	.setURL('')
+	.attachFiles(['./resources/reconsub.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Can Shoot 4 Light Torpedos\n - Very Weak ")
+	.addBlankField()
+	.addField("Stats", " Price $1,800 \n Health 475 \n Attack Range 150 \n Move Speed 0.60 \n Build Speed 6.7s \n PrimaryDamage 40 \n InIClass Sub Glider")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://reconsub.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e17 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Amphibious Warship')
+	.setURL('')
+	.attachFiles(['./resources/amphibiouswarship.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Can produce low tier air, naval, and hover units.\n- Can repair units\n- Light defenses, mainly useable as a mobile factory.")
+	.addBlankField()
+	.addField("Stats", " Price $16,500 \n Health 5,500 \n Attack Range 275 \n Move Speed 0.70 \n Build Speed 55.6s \n PrimaryDamage 50 \n SecondaryDamage 95 \n InIClass warShip")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://amphibiouswarship.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e18 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Dreadnought')
+	.setURL('')
+	.attachFiles(['./resources/dreadnought.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Equipped with Long range cannons \n - No Defences while in Cannon mode \n - Area damage only \n - Cannot attack air \n - Strong Anti-sub torpedoes \n - Can build builder ship and Missile ship")
+	.addBlankField()
+	.addField("Stats", " Price $58,000 \n Health 12,000 \n Attack Range 350 \n Move Speed 0.50 \n Build Speed 87.7s \n PrimaryAreaDamage/Radius 200/60 \n SecondaryDamage 150 \n TertiaryAreaDamage/Radius 90/50 QuadraryAreaDamage/Radius 160/80 \n InIClass DreadNought")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://dreadnought.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -207,10 +311,45 @@ if (message.content.toLowerCase() === 'thunderhead') {
 	message.channel.send(e10);
 }
 //attacksubmarine
-//if (message.content.toLowerCase() === 'attacksubmarine') {
-//	if(message.author.bot) return;  
-//	message.channel.send(e10);
-//}
+if (message.content.toLowerCase() === 'attacksubmarine') {
+	if(message.author.bot) return;  
+	message.channel.send(e11);
+}
+//HeavyMissileShip
+if (message.content.toLowerCase() === 'heavymissileship') {
+	if(message.author.bot) return;  
+	message.channel.send(e12);
+}
+//HeavySub
+if (message.content.toLowerCase() === 'heavysub') {
+	if(message.author.bot) return;  
+	message.channel.send(e13);
+}
+//Nautilus
+if (message.content.toLowerCase() === 'nautilus') {
+	if(message.author.bot) return;  
+	message.channel.send(e14);
+}
+//Selenium
+if (message.content.toLowerCase() === 'selenium') {
+	if(message.author.bot) return;  
+	message.channel.send(e15);
+}
+//Recon Sub
+if (message.content.toLowerCase() === 'reconsub') {
+	if(message.author.bot) return;  
+	message.channel.send(e16);
+}
+//Amphibiouswarship
+if (message.content.toLowerCase() === 'amphibiouswarship') {
+	if(message.author.bot) return;  
+	message.channel.send(e17);
+}
+//Dreadnought
+if (message.content.toLowerCase() === 'dreadnought') {
+	if(message.author.bot) return;  
+	message.channel.send(e18);
+}
 });
   
   
