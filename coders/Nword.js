@@ -26,6 +26,5 @@ client.on('message', (message, user) => {
     }
  });
 
-//Tacos
 
 }
