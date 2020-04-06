@@ -255,7 +255,7 @@ const e18 = new Discord.RichEmbed()
 
 client.on('message', message => {
 	
-//
+//random
 //Gunboat
 if (message.content.toLowerCase() === 'gunboat' && !message.author.bot) {
 	message.channel.send(e0);
