@@ -350,6 +350,11 @@ if (message.content.toLowerCase() === 'dreadnought') {
 	if(message.author.bot) return;  
 	message.channel.send(e18);
 }
+//navalcarrier
+//if (message.content.toLowerCase() === 'navalcarrier') {
+//	if(message.author.bot) return;  
+//	message.channel.send(e19);
+//}
 });
   
   
