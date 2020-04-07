@@ -247,9 +247,35 @@ const e18 = new Discord.RichEmbed()
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Equipped with Long range cannons \n - No Defences while in Cannon mode \n - Area damage only \n - Cannot attack air \n - Strong Anti-sub torpedoes \n - Can build builder ship and Missile ship")
 	.addBlankField()
-	.addField("Stats", " Price $58,000 \n Health 12,000 \n Attack Range 350-630 \n Move Speed 0.50 \n Build Speed 87.7s \n PrimaryAreaDamage/Radius 200/60 \n SecondaryDamage 150 \n TertiaryAreaDamage/Radius 90/50 QuadraryAreaDamage/Radius 160/80 \n InIClass DreadNought")
+	.addField("Stats", " Price $58,000 \n Health 12,000 \n Attack Range 350-630 \n Move Speed 0.50 \n Build Speed 87.7s \n PrimaryAreaDamage/Radius 200/60 \n SecondaryDamage 150 \n TertiaryAreaDamage/Radius 90/50 \n QuadraryAreaDamage/Radius 160/80 \n InIClass DreadNought")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://dreadnought.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e19 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Naval Carrier')
+	.setURL('')
+	.attachFiles(['./resources/navalcarrier.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Experimental Naval Carrier \n - Can make Air and Naval units \n - Built in fabricator \n - Goes nuclear on death\n- Can only have 5 at a time.")
+	.addBlankField()
+	.addField("Stats", " Price $65,000 \n Health 7,500 \n Attack Range 350 \n Move Speed 0.45 \n Build Speed 111.1s \n PrimaryAreaDamage/Radius 25/30 \n SecondaryAreaDamage/Radius 75/100 \n TertiaryAreaDamage/Radius 95 \n InIClass navalCarrier")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://navalcarrier.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e20 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Target Sub')
+	.setURL('')
+	.attachFiles(['./resources/targetsub.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Experimental Naval Carrier \n - Can make Air and Naval units \n - Built in fabricator \n - Goes nuclear on death\n- Can only have 5 at a time.")
+	.addBlankField()
+	.addField("Stats", " Price $3,800 \n Health 1,250 \n Attack Range 210 \n Move Speed 0.60 \n Build Speed 16.7s \n PrimaryAreaDamage/Radius 25/30 \n SecondaryAreaDamage/Radius 75/100 \n TertiaryAreaDamage/Radius 95 \n InIClass navalCarrier")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://targetsub.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -351,10 +377,10 @@ if (message.content.toLowerCase() === 'dreadnought') {
 	message.channel.send(e18);
 }
 //navalcarrier
-//if (message.content.toLowerCase() === 'navalcarrier') {
-//	if(message.author.bot) return;  
-//	message.channel.send(e19);
-//}
+if (message.content.toLowerCase() === 'navalcarrier') {
+	if(message.author.bot) return;  
+	message.channel.send(e19);
+}
 });
   
   
