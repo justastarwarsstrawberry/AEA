@@ -406,7 +406,7 @@ if (message.content.toLowerCase() === 'lrs') {
 }
 });
   
-  
+// Fucking done... for now
   
 //_____________Dont touch Zone start
 }
