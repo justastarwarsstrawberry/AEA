@@ -82,7 +82,7 @@ const wlist = new RichEmbed()
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('Sea Units', 'Anti Air Boat \nBattle Cruiser \nBuilder Ship \nCorvette \nDestroyer \nDreadnought \nFrigate \nGunboat \nHeavy Missile Ship \nLRS \nThunder Head', false)
+	.addField('Sea Units', 'AntiAirBoat \nAmphibiousWarship \nAttackSubmarine \nBattleCruiser\nBattleship \nCorvette \nDestroyer \nDreadnought \nFrigate \nGunboat \nHeavyMissileShip \nHeavyBattleship \nHeavysub \nLRS \nMissileship \nNautilus \nNavalCarrier \nReconsub \nSelenium \nTargetsub \nThunderHead', false)
 	.setDescription('Lists all sea units')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
