@@ -271,11 +271,24 @@ const e20 = new Discord.RichEmbed()
 	.setURL('')
 	.attachFiles(['./resources/targetsub.png'])
 	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
-	.setDescription(" - Experimental Naval Carrier \n - Can make Air and Naval units \n - Built in fabricator \n - Goes nuclear on death\n- Can only have 5 at a time.")
+	.setDescription(" - Highly Advance Sub\n - Able to Surface and Submerge\n - Land, Air, Sea Weapons ")
 	.addBlankField()
-	.addField("Stats", " Price $3,800 \n Health 1,250 \n Attack Range 210 \n Move Speed 0.60 \n Build Speed 16.7s \n PrimaryAreaDamage/Radius 25/30 \n SecondaryAreaDamage/Radius 75/100 \n TertiaryAreaDamage/Radius 95 \n InIClass navalCarrier")
+	.addField("Stats", " Price $3,800 \n Health 1,250 \n Attack Range 210 \n Move Speed 0.60 \n Build Speed 16.7s \n PrimaryDamage 65 \n InIClass Target Sub")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://targetsub.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e21 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('LRS')
+	.setURL('')
+	.attachFiles(['./resources/lrs.png'])
+	.setAuthor('LemonsHQ', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Long Range Attack\n - Able to Surface and Submerge\n - Land, Underwater, and Air Attack\n - Light land attack while submerged")
+	.addBlankField()
+	.addField("Stats", " Price $7,550 \n Health 1,000 \n Attack Range 200 \n Move Speed 0.60 \n Build Speed 16.7s \n PrimaryAreaDamage/Radius 100/80 \n InIClass LRS")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://lrs.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -380,6 +393,16 @@ if (message.content.toLowerCase() === 'dreadnought') {
 if (message.content.toLowerCase() === 'navalcarrier') {
 	if(message.author.bot) return;  
 	message.channel.send(e19);
+}
+//targetsub
+if (message.content.toLowerCase() === 'targetsub') {
+	if(message.author.bot) return;  
+	message.channel.send(e20);
+}
+//LRS
+if (message.content.toLowerCase() === 'lrs') {
+	if(message.author.bot) return;  
+	message.channel.send(e21);
 }
 });
   
