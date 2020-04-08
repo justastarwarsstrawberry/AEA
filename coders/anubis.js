@@ -421,7 +421,7 @@ const helicopter = new Discord.RichEmbed()
                message.reply('Two Cold Sides');
            }   
 	    if (x===9) {
-               const attachment = new Attachment('./resources/[p2]Volcano Duel (2p)_map.png');
+               const attachment = new Attachment('./resources/map/[p2]Volcano Duel (2p)_map.png');
                message.channel.send(attachment);
                message.reply('Volcano Duel');
 }
@@ -481,7 +481,7 @@ const helicopter = new Discord.RichEmbed()
                  message.reply('Magma Island');
            }
 	      if (x=== 21) {
-               const attachment = new Attachment('./resources/[p4]Glacier (4p)_map.png');
+               const attachment = new Attachment('./resources/map/[p4]Glacier (4p)_map.png');
                message.channel.send(attachment);
                  message.reply('Glacier');
            }
@@ -612,13 +612,13 @@ const helicopter = new Discord.RichEmbed()
            
        }
 	        if (x===52) {
-               const attachment = new Attachment('./resources/[p6]FFire BBridge (p6)_map.png');
+               const attachment = new Attachment('./resources/map/[p6]FFire BBridge (p6)_map.png');
                message.channel.send(attachment);
                    message.reply('FFire BBridge');
            
        }
                if (x===53) {
-               const attachment = new Attachment('./resources/[p6]Passages (6p)_map.png');
+               const attachment = new Attachment('./resources/map/[p6]Passages (6p)_map.png');
                message.channel.send(attachment);
                    message.reply('Darklord Egypt');
            
@@ -678,19 +678,19 @@ const helicopter = new Discord.RichEmbed()
            
        }  
                if (x===63) {
-               const attachment = new Attachment('./resources/[p8]Hells Arena (8p)_map.png');
+               const attachment = new Attachment('./resources/map/[p8]Hells Arena (8p)_map.png');
                message.channel.send(attachment);
 		message.reply('Hells Arena');
            
        }  
 	       if (x===64) {
-               const attachment = new Attachment('./resources/[p8]Hot Cornerz (p8)_map.png');
+               const attachment = new Attachment('./resources/map/[p8]Hot Cornerz (p8)_map.png');
                message.channel.send(attachment);
 		message.reply('Hot Cornerz');
            
        }  
 	       if (x===65) {
-               const attachment = new Attachment('./resources/map/[z;p10]Crossing Large (10p)_map.png');
+               const attachment = new Attachment('./resources/map/[p10]Crossing Large (10p)_map.png');
                message.channel.send(attachment);
 		message.reply('Crossing Large');
            
@@ -786,13 +786,13 @@ const helicopter = new Discord.RichEmbed()
            
        }
 		if (x===81) {
-               const attachment = new Attachment('./resources/[p10]Cold Canal (10p)_map.png');
+               const attachment = new Attachment('./resources/map/[p10]Cold Canal (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('Cold Canal');
            
        }
                 if (x===82) {
-               const attachment = new Attachment('./resources/[p10]Volcanic Surface (10p)_map.png');
+               const attachment = new Attachment('./resources/map/[p10]Volcanic Surface (10p)_map.png');
                message.channel.send(attachment);
                     message.reply('Volcanic Surface');
            
