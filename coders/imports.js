@@ -13,7 +13,7 @@ const N = require('./Nword.js');
 const tips = require('./tips.js');
 const Timer = require('./timer.js');
 const Music = require('../resources/music/music.js');
-
+const exp = require('./exp.js');
   if(N && Client){
     N.code();
     console.log('Nword loaded');
@@ -58,7 +58,10 @@ const Music = require('../resources/music/music.js');
     tips.code();
     console.log('tips loaded');
   }
-
+  if(exp && Client){
+    exp.code();
+    console.log('exps loaded');
+  }
 
 
  
