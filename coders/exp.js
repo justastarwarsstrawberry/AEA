@@ -133,12 +133,12 @@ exports.code = function(){
                 message.channel.send(e5);
             } 
              //Exp hovertank
-             if (message.content.toLowerCase() === 'shieldedhovertank' || message.content.toLowerCase('exphovertank') || message.content.toLowerCase('experiementalhovertank')) {
+             if (message.content.toLowerCase() === 'shieldedhovertank' ) {
                 if(message.author.bot) return; 
                 message.channel.send(e6);
             }      
              //Exp hovertank
-             if (message.content.toLowerCase() === 'nucleardrone' || message.content.toLowerCase('nukedrone')) {
+             if (message.content.toLowerCase() === 'nucleardrone') {
                 if(message.author.bot) return; 
                 message.channel.send(e7);
             }        
