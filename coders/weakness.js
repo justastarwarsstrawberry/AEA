@@ -7,19 +7,19 @@ exports.code = function(){
         if(message.content.toLowerCase().startsWith('/wvs')) {
 
             if(message.content.toLowerCase().includes('heavyinterceptor')){
-                message.channel.reply('AmphibiousJet, or Interceptor')
+                message.reply('AmphibiousJet, or Interceptor')
             }
 
             if(message.content.toLowerCase().includes('grandslam')){
-                message.channel.reply('Interceptor, or HeavyInterceptor, or T3SamTurret')
+                message.reply('Interceptor, or HeavyInterceptor, or T3SamTurret')
             }
 
             if(message.content.toLowerCase().includes('apache')){
-                message.channel.reply('Interceptor, HeavyInterceptor, AmphibiousJet, or SamTurret')
+                message.reply('Interceptor, HeavyInterceptor, AmphibiousJet, or SamTurret')
             }
 
             if(message.content.toLowerCase().includes('amphibiousjet')){
-                message.channel.reply('AmphibiousJet, or SamTurret')
+                message.reply('AmphibiousJet, or SamTurret')
             }
         }
     
