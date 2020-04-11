@@ -65,7 +65,7 @@ const exp = require('./exp.js');
   }
 
   if(weak && Client){
-    WeakMap.code();
+    weak.code();
     console.log('Weaknesses loaded');
   }
   
