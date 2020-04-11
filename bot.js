@@ -137,8 +137,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
         {
             // do nothing
         }
-    if(message.content == 'stop'){
- 	if(message.author) return;  
+    if(message.content == '/stop' && client.users.get("242687584373964801")){
 		message.channel.send('Shutting down...').then(m => {
         		client.destroy();
      		});
