@@ -2,6 +2,7 @@ exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 
+//imports from other files
 
 const Sea = require('./sea.js');
 const Func = require('./skaarjlord.js');
