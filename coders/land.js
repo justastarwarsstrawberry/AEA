@@ -296,11 +296,11 @@ const e22 = new Discord.RichEmbed()
 	.setURL('')
 	.attachFiles(['./resources/achilles.jpg'])
 	.setAuthor('Lemons#5444', 'https://imgur.com/1ir1AqD.png')
-	.setDescription(" - Advanced heavy attack tank \n - Attacks ground and air \n - Reinforced armor")
+	.setDescription(" - Powerful artillery cannon \n - Cannot hit air\n - Medium armour")
 	.addBlankField()
-	.addField("Stats", " Price $5,600 \n Health 4,000 \n Attack Range 200 \n Move Speed 0.50 \n Build Speed 33.3s \n PrimaryDamage 100 \n SecondaryDamage 15 \n InIClass siegeTankArmor")
+	.addField("Stats", " Price $4,500 \n Health 1,100 \n Attack Range 280 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryDamage 275 \n InIClass achillesTank")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://siegetank.jpg')
+	.setImage('attachment://achilles.jpg')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -410,7 +410,12 @@ client.on('message', message => {
 //Siegetank
     if (message.content.toLowerCase() === 'siegetank') {
 	if(message.author.bot) return; 
-	message.channel.send(e20);
+	message.channel.send(e21);
+	}	
+//Siegetank
+if (message.content.toLowerCase() === 'achilles') {
+	if(message.author.bot) return; 
+	message.channel.send(e22);
     }	
 });
   
