@@ -21,9 +21,8 @@ const amphib = new Discord.RichEmbed()
 
     client.on('message', message => {
 
-        if(message.content.toLowerCase().startsWith() === "/weaknessof") {
-
-            if(message.content.toLowerCase().includes('heavyinterceptor')){
+        if(message.content.toLowerCase().startsWith('/wvs')) {
+            if(message.content.includes('heavyinterceptor')){
                 message.channel.send(amphib);
             }
         }
