@@ -72,7 +72,7 @@ const alist = new RichEmbed()
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('Air Units', 'Apache Helicopter \n Amphibious Jet \n Attack Jet \n Bomber \n Dropship \n Gunship \n Grand Slam Bomber \n Heavy Interceptor \n Heavy Missile Aircraft \n Helicopter \n Interceptor \n Kirov \n Light Gunship \n Missile Airship \n MAE-1 \n Phantom Scout \n S1 \n S2 \n Swallow Tail', false)
+	.addField('Air Units', 'ApacheHelicopter \n Amphibious Jet \n AttackJet \n Bomber \n Dropship \n Gunship \n GrandSlamBomber \n HeavyInterceptor \n HeavyMissileAircraft \n Helicopter \n Interceptor \n Kirov \n LightGunship \n MissileAirship \n MAE-1 \n PhantomScout \n S-1 \n S-2 \n SwallowTail', false)
 	.setDescription('Lists all air units')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');

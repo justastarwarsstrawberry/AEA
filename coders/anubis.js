@@ -248,7 +248,7 @@ const grandslam = new Discord.RichEmbed()
 	.setURL('')
 	.attachFiles(['./resources/grand_slam_bomber.png'])
 	.setAuthor('Anubis#5471', 'https://imgur.com/RYFFWLt.png')
-	.setDescription(" - Very fast but slow turn \n- Heavily armoured \n- Carries 1 50-ton bomb \n- Also has a quantum torpedo to attack subs \n- Takes a long time to recharge \n- Can self-repair \n- Defensless vs air")
+	.setDescription(" - Very fast but slow turn \n- Heavily armoured \n- Carries 1 50-ton bomb \n- Also has a quantum torpedo to attack subs \n- Takes a long time to recharge \n- Can self-repair \n- Defensless vs air \n - Can only build 5 at a time ")
 	.addBlankField()
 	.addField("Stats", "Price $42,000 \n Attack Range 45 \n Health 24000 \n Move Speed 1.70 \n Build Speed 83.3s")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
@@ -261,9 +261,9 @@ const helicopter = new Discord.RichEmbed()
 	.setURL('')
 	.attachFiles(['./resources/helicopter.png'])
 	.setAuthor('Anubis#5471', 'https://imgur.com/RYFFWLt.png')
-	.setDescription(" - Not cost-effective in direct combat \n- Can attack ground and air ")
+	.setDescription("- Very light air/ground attack\n - Can transport 4 infantry units\n - Landed when not actively moving")
 	.addBlankField()
-	.addField("Stats", "Price $700 \n Attack Range 130 \n Health 150 \n Move Speed 1.80 \n Build Speed 13.9")
+	.addField("Stats", "Price $500 \n Attack Range 130 \n Health 150 \n Move Speed 1.80 \n Build Speed 13.9")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://helicopter.png')
 	.setTimestamp()
@@ -271,61 +271,61 @@ const helicopter = new Discord.RichEmbed()
 	
 	client.on('message', message => {
 //units
-    if (message.content === 'Light gun ship' ||  message.content === 'Light gun ship' || message.content === 'light gun ship') {
+    if (message.content.toLowerCase() === 'lightgunship') {
 	    message.channel.send(lightgunship);
     }
-    if (message.content === 'Heavy interceptor' ||  message.content === 'Heavy Interceptor' || message.content === 'heavy interceptor') {
+    if (message.content.toLowerCase() === 'heavyinterceptor') {
 	    message.channel.send(heavyinterceptor);
     }
-    if (message.content === 'Interceptor' ||  message.content === 'Interceptor' || message.content === 'interceptor') {
+    if (message.content.toLowerCase() === 'Interceptor') {
 	    message.channel.send(interceptor);
     }
-    if (message.content === 'Dropship' ||  message.content === 'Dropship' || message.content === 'dropship') {
+    if (message.content.toLowerCase() === 'dropship') {
 	    message.channel.send(dropship);
     }
-    if (message.content === 'Gunship' ||  message.content === 'Gunship' || message.content === 'Gunship') {
+    if (message.content.toLowerCase() === 'gunship') {
 	    message.channel.send(gunship);
     }
-    if (message.content === 'Amphibious jet' ||  message.content === 'Amphibious Jet' || message.content === 'amphibious jet') {
+    if (message.content.toLowerCase() === 'amphibiousjet') {
 	    message.channel.send(amphib);
     }
-    if (message.content === 'Attack jet' ||  message.content === 'Attack Jet' || message.content === 'attack jet') {
+    if (message.content.toLowerCase() === 'attackjet') {
 	    message.channel.send(attackjet);
     }
-    if (message.content === 'Bomber' ||  message.content === 'Bombr' || message.content === 'bomber') {
+    if (message.content.toLowerCase() === 'bomber') {
 	    message.channel.send(bomber);
     }
-    if (message.content === 'Missile airship' ||  message.content === 'Missile Airship' || message.content === 'missile airship') {
+    if (message.content.toLowerCase() === 'missileairship') {
 	    message.channel.send(missileairship);
     }
-    if (message.content === 'Phantom scout' ||  message.content === 'Phantom Scout' || message.content === 'phantom scout') {
+    if (message.content.toLowerCase() === 'phantomscout') {
 	    message.channel.send(phantom);  
     }
-    if (message.content === 'Apache helicopter' ||  message.content === 'Apache' || message.content === 'apache helicopter' || message.content === 'apache') {
+    if (message.content.toLowerCase() === 'apachehelicopter') {
 	    message.channel.send(apache);  
     }
-    if (message.content === 'MAE-1' || message.content === 'mae-1' || message.content === 'Mae 1') {
+    if (message.content.toLowerCase() === 'mae-1') {
 	    message.channel.send(mae1);  
     }
-    if (message.content === 'S-1' ||  message.content === 's-1' || message.content === 'S1') {
+    if (message.content.toLowerCase() === 's-1') {
 	    message.channel.send(s1);  
     }
-    if (message.content === 'S-2' ||  message.content === 's-2' || message.content === 'S2') {
+    if (message.content.toLowerCase() === 'S-2') {
 	    message.channel.send(S2);  
     }
-    if (message.content === 'Swallow tail' ||  message.content === 'Swallow Tail' || message.content === 'swallowtail' || message.content === 'swallowtail') {
+    if (message.content.toLowerCase() === 'swallowtail') {
 	    message.channel.send(swallowtail);  
     }
-    if (message.content === 'Heavy missile aircraft' ||  message.content === 'Heavy Missile Aircraft' || message.content === 'heavy missile aircraft' || message.content === 'heavymissileaircraft') {
+    if (message.content.toLowerCase() === 'heavymissileaircraft') {
 	    message.channel.send(heavymissileaircraft);  
     }
-    if (message.content === 'Kirov bomber' ||  message.content === 'Kirov Bomber' || message.content === 'kirov bomber' || message.content === 'kirov') {
+    if (message.content.toLowerCase() === 'kirovbomber') {
 	    message.channel.send(kirov);  
     }
-    if (message.content === 'Grand slam bomber' ||  message.content === 'Grand Slam Bomber' || message.content === 'grand slam bomber' || message.content === 'Grand slam') {
+    if (message.content.toLowerCase() === 'grandslambomber') {
 	    message.channel.send(grandslam);  
     }
-    if (message.content === 'Helicopter' ||  message.content === 'helicopter' || message.content === 'Which unit should I use if I want to stay a virgin?') {
+    if (message.content.toLowerCase() === 'helicopter') {
 	    message.channel.send(helicopter);  
     }
  //commands 	
