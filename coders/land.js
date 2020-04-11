@@ -290,6 +290,19 @@ const e21 = new Discord.RichEmbed()
 	.setImage('attachment://siegetank.jpg')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+const e22 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Achilles Tank')
+	.setURL('')
+	.attachFiles(['./resources/achilles.jpg'])
+	.setAuthor('Lemons#5444', 'https://imgur.com/1ir1AqD.png')
+	.setDescription(" - Advanced heavy attack tank \n - Attacks ground and air \n - Reinforced armor")
+	.addBlankField()
+	.addField("Stats", " Price $5,600 \n Health 4,000 \n Attack Range 200 \n Move Speed 0.50 \n Build Speed 33.3s \n PrimaryDamage 100 \n SecondaryDamage 15 \n InIClass siegeTankArmor")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://siegetank.jpg')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', message => {
 	
