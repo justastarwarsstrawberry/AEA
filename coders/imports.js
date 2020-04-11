@@ -10,6 +10,7 @@ const Darkest = require('./land.js');
 
 const Mechs = require('./mech.js');
 const N = require('./Nword.js');
+const weak = require('./weakness.js');
 const tips = require('./tips.js');
 const Timer = require('./timer.js');
 const Music = require('../resources/music/music.js');
@@ -56,13 +57,18 @@ const exp = require('./exp.js');
 
   if(tips && Client){
     tips.code();
-    console.log('tips loaded');
+    console.log('Tips loaded');
   }
   if(exp && Client){
     exp.code();
-    console.log('exps loaded');
+    console.log('Experimentals loaded');
   }
 
+  if(weak && Client){
+    WeakMap.code();
+    console.log('Weaknesses loaded');
+  }
+  
 
  
 }
