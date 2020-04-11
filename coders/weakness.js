@@ -11,7 +11,7 @@ exports.code = function(){
             }
 
             if(message.content.toLowerCase().includes('grandslam')){
-                message.reply('Interceptor, or HeavyInterceptor, or T3SamTurret')
+                message.reply('Interceptor, HeavyInterceptor, or T3SamTurret')
             }
 
             if(message.content.toLowerCase().includes('apache')){
