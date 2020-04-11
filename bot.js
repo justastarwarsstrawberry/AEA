@@ -55,7 +55,7 @@ const clist = new RichEmbed()
 	.addField('<time>', 'Set a timer for an amount of time \n (Max: 10m)', false)
 
 	//.addField('a', '<announcementtext>', false)
-	.setDescription('Lists all comands \nassociated with the bot')
+	.setDescription('Lists all comands associated with the bot')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 const llist = new RichEmbed()
