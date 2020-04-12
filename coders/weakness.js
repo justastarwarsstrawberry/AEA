@@ -49,6 +49,7 @@ exports.code = function(){
             if(message.content.toLowerCase().includes('heavymissileship')){
                 message.reply('HeavyMissileShip can cause large amounts of damage to air and land, however large amounts of air can counter')
             }
+            //Edited counters
         }
     
     });
