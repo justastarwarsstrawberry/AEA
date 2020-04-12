@@ -195,7 +195,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
     else{
         // Do notta
     }
-
+//tf?
 
     const attachment = new Attachment('./resources/bruh.png');
 
