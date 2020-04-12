@@ -87,7 +87,7 @@ const e6 = new Discord.RichEmbed()
 	.setAuthor('Lemons#5444', 'https://imgur.com/1ir1AqD.png')
 	.setDescription(" - Fast \n- Can attack ground only \n- Light armor \n- High spread, weak vs. single targets")
 	.addBlankField()
-	.addField("Stats", "Price $950 \n Health 450 \n Attack Range 150 \n Move Speed 1 \n Build Speed 11.1s \n PrimaryAreaDamage/Radius 50/40 \n InIClass cometTank")
+	.addField("Stats", "Price $1050 \n Health 435 \n Attack Range 150 \n Move Speed 1 \n Build Speed 11.1s \n PrimaryAreaDamage/Radius 50/40 \n InIClass cometTank")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://comet.png')
 	.setTimestamp()
@@ -351,10 +351,10 @@ client.on('message', message => {
 	message.channel.send(e6);
     }
 //houndapc
-    if (message.content.toLowerCase() === 'houndapc') {
-	if(message.author.bot) return; 
-	message.channel.send(e7);
-    }
+   // if (message.content.toLowerCase() === 'houndapc') {
+   // if(message.author.bot) return; 
+   // message.channel.send(e7);
+   // }
 //Heavytank
     if (message.content.toLowerCase() === 'heavytank') {
 	if(message.author.bot) return; 
