@@ -9,7 +9,7 @@ exports.code = function(){
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
 
-        if (message.content.toLowerCase().startsWith('/team') && client.channels.get('651205041356537891')){
+        if (message.content.toLowerCase().startsWith('/team')){
 
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
@@ -62,10 +62,6 @@ exports.code = function(){
                 }else{
                     message.reply('Team B')
                     countd - 1;
-                }
-                if (!message.content.toLowerCase().startsWith('/team')){
-                    if(message.author.bot) return;
-                    message.delete();
                 }
             }
         
