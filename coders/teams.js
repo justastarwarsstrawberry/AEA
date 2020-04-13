@@ -19,11 +19,11 @@ exports.code = function(){
             let dclass = message.guild.roles.find(role => role.name === "D - Class");
 
                 if (message.member.roles.some(role => role.name === 'S - Class')){
-                    S = message.author.displayName;
+                    
                     counts++
                 }
                 if(message.member.roles.some(role => role.name === 'A - Class')){
-                    A = message.author.displayName;
+                  
                     counta++
                 }
                 if(message.member.roles.some(role => role.name === 'B - Class')){
@@ -31,30 +31,35 @@ exports.code = function(){
                     countb++
                 }
                 if(message.member.roles.some(role => role.name === 'C - Class')){
-                    C = message.author.displayName;
+                   
                     countc++
                 }
                 if(message.member.roles.some(role => role.name === 'D - Class')){
-                    D = message.author.displayName;
+                    
                     countd++
                 }
             }
     if(message.content.toLowerCase().startsWith('/teams')){
-
-        if(counts === 1){
-            let Team1 = S
+        var Team1 = [S,A,B,C,D];
+        if(counts < 0){
+            S = message.author.displayName;
+            Team1[0] = S;
         }
-        if(counta === 1){
-            let Team1 = A
+        if(counta < 0){
+            A = message.author.displayName;
+            Team1[1] = A;
         }
-        if(countb === 1){
-            let Team1 = B
+        if(countb < 0){
+            B = message.author.displayName;
+            Team1[2] = B;
         }
-        if(countc === 1){
-            let Team1 = C
+        if(countc < 0){
+           C = message.author.displayName;
+           Team1[3] = C;
         }
-        if(countd === 1){
-            let Team1 = D
+        if(countd < 0){
+           D = message.author.displayName;
+           Team1[4] = D;
         }
         message.channel.send(Team1)
     }
