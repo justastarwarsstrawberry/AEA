@@ -40,7 +40,7 @@ exports.code = function(){
                 }
             }
     if(message.content.toLowerCase().startsWith('/teams')){
-        var Team1 = [S,A,B,C,D];
+        var Team1 = ["","","","",""];
         
        
         
@@ -48,23 +48,23 @@ exports.code = function(){
         
         if(counts < 0 && !counts == 0){
             var S = message.author.displayName;
-            Team1[S] = S
+            Team1[0] = message.author.displayName;
         }
         if(counta < 0 && !counta == 0){
             var A = message.author.displayName;
-            Team1[A] = A
+            Team1[1] = message.author.displayName;
         }
         if(countb < 0 && !countb == 0){
             var B = message.author.displayName;
-            Team1[B] = B
+            Team1[2] = message.author.displayName;
         }
         if(countc < 0 && !countc == 0){
             var C = message.author.displayName;
-            Team1[C] = C
+            Team1[3] = message.author.displayName;
         }
         if(countd < 0 && !countd == 0){
             var D = message.author.displayName;
-            Team1[D] = D
+            Team1[4] = message.author.displayName;
         }
         message.channel.send('Teams:' + Team1)
     }
