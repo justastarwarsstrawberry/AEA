@@ -14,35 +14,35 @@ exports.code = function(){
             let cclass = message.guild.roles.find(role => role.name === "C - Class");
             let dclass = message.guild.roles.find(role => role.name === "D - Class");
 
-                if (member.roles.some(role => role.name === 'S - Class')){
+                if (message.member.roles.some(role => role.name === 'S - Class')){
                     s = member.user.id();
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == s)
                          count++;
                       }
                 }
-                if(member.roles.some(role => role.name === 'A - Class')){
+                if(message.member.roles.some(role => role.name === 'A - Class')){
                     a = member.user.id();
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == a)
                          count++;
                       }
                 }
-                if(member.roles.some(role => role.name === 'B - Class')){
+                if(message.member.roles.some(role => role.name === 'B - Class')){
                     b = member.user.id();
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == b)
                          count++;
                       }
                 }
-                if(member.roles.some(role => role.name === 'C - Class')){
+                if(message.member.roles.some(role => role.name === 'C - Class')){
                     c = member.user.id();
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == c)
                          count++;
                       }
                 }
-                if(member.roles.some(role => role.name === 'D - Class')){
+                if(message.member.roles.some(role => role.name === 'D - Class')){
                     d = member.user.id();
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == d)
