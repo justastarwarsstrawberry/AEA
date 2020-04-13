@@ -41,26 +41,25 @@ exports.code = function(){
             }
     if(message.content.toLowerCase().startsWith('/teams')){
         var Team1 = [S,A,B,C,D];
-        var S = message.author.displayName;
-        var A = message.author.displayName;
-        var B = message.author.displayName;
-        var C = message.author.displayName;
-        var D = message.author.displayName;
+        
+       
+        
+        
+        
         if(counts < 0){
-           
-            Team1[0] = S;
+            var S = message.author.displayName;
         }
         if(counta < 0){
-            Team1[1] = A;
+            var A = message.author.displayName;
         }
         if(countb < 0){
-            Team1[2] = B;
+            var B = message.author.displayName;
         }
         if(countc < 0){
-           Team1[3] = C;
+            var C = message.author.displayName;
         }
         if(countd < 0){
-           Team1[4] = D;
+            var D = message.author.displayName;
         }
         message.channel.send(Team1)
     }
