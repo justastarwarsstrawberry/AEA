@@ -8,20 +8,21 @@ exports.code = function(){
       
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
-       
-        let Team1 = [T1S,T1A,T1B,T1C,T1D];
-        let Team2 = [T2S,T2A,T2B,T2C,T2D];
+        var Team1 = [T1S,T1A,T1B,T1C,T1D];
+        var Team2 = [T2S,T2A,T2B,T2C,T2D];
+        var T1S = "";
+        var T1A = "";
+        var T1B = "";
+        var T1C = "";
+        var T1D = "";
+        var T2S = "";
+        var T2A = "";
+        var T2B = "";
+        var T2C = "";
+        var T2D = "";
+
         if (message.content.toLowerCase().startsWith('/team')){
-            var T1S = "";
-            var T1A = "";
-            var T1B = "";
-            var T1C = "";
-            var T1D = "";
-            var T2S = "";
-            var T2A = "";
-            var T2B = "";
-            var T2C = "";
-            var T2D = "";
+
             var counts = 0;
             var counta = 0;
             var countb = 0;
@@ -93,11 +94,12 @@ exports.code = function(){
 
                     }
                 }
+                if(message.content.toLowerCase().endsWith('list')){
+                    message.channel.send('Team 1: ' + Team1)
+                    message.channel.send('Team 2: ' + Team2)
+                }
             }
-            if(message.content.toLowerCase().startsWith('/lteams')){
-                message.channel.send('Team 1: ' + Team1)
-                message.channel.send('Team 2: ' + Team2)
-            }
+
 
         
 });
