@@ -6,7 +6,7 @@ exports.code = function(){
       
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
-        if (message.content.toLowerCase.startsWith('/team')){
+        if (message.content.toLowerCase().startsWith('/team')){
         message.guild.fetchMember(user.id).then(member => {
             var count = 0;
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
