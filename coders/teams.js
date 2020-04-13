@@ -95,12 +95,12 @@ exports.code = function(){
                     }
                 }
                 if(message.content.toLowerCase().endsWith('list')){
-                    let channel = message.member.voiceChannel;
-                    for (let member of channel.members) {
-                        member[1] = T1S
+                    var chan = bot.channels['606586202942079029'];
+                    var mems = chan.members;
+                    for (var x in mems) {
+                    message.channel.send(x.GuildMember.id);
                     }
-                    message.channel.send('Team 1: ' + Team1)
-                    message.channel.send('Team 2: ' + Team2)
+                    return 'ANYTHING';
                 } 
             }
 
