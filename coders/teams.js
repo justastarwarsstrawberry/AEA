@@ -8,103 +8,66 @@ exports.code = function(){
       
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
-        var Team1 = [T1S,T1A,T1B,T1C,T1D];
-        var Team2 = [T2S,T2A,T2B,T2C,T2D];
-        var T1S = "";
-        var T1A = "";
-        var T1B = "";
-        var T1C = "";
-        var T1D = "";
-        var T2S = "";
-        var T2A = "";
-        var T2B = "";
-        var T2C = "";
-        var T2D = "";
 
-        if (message.content.toLowerCase().startsWith('/team')){
+        if (message.content.toLowerCase().startsWith('/team') && client.channels.get('651205041356537891')){
 
-            var counts = 0;
-            var counta = 0;
-            var countb = 0;
-            var countc = 0;
-            var countd = 0;
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
             let bclass = message.guild.roles.find(role => role.name === "B - Class");
             let cclass = message.guild.roles.find(role => role.name === "C - Class");
             let dclass = message.guild.roles.find(role => role.name === "D - Class");
             const nick = message.author.displayName;
-                if (message.member.roles.some(role => role.name === 'S - Class')){
-                    if(counts == 2){
-
-                    T2S = message.member.user.tag
-                    counts--
-
-                    }else {
-
-                    T1S = message.member.user.tag
-                    counts++
-
-                    }
-
+                //S CLASS
+                if (message.member.roles.some(sclass) && !counts == 1){
+                    message.reply('Team A')
+                    counts + 1;
+                    
+                }else{
+                    message.reply('Team B')
+                    counts - 1;
                 }
-                if(message.member.roles.some(role => role.name === 'A - Class')){
-                    if(counta == 2){
-                    T2A = message.member.user.tag
-                    counta--
-
-                    }else{
-                    T1A = message.member.user.tag
-                    counta++
-
-                    }
-
-
+                // A CLASS
+                if (message.member.roles.some(aclass) && !counta == 1){
+                    message.reply('Team A')
+                    counta + 1;
+                    
+                }else{
+                    message.reply('Team B')
+                    counta - 1;
                 }
-                if(message.member.roles.some(role => role.name === 'B - Class')){
-                    if(countb == 2){
-                    T2B = message.member.user.tag
-                    countb--
 
-                    }else {
-                    T1B = message.member.user.tag
-                    countb++
-
-                    }
+                //B CLASS
+                if (message.member.roles.some(bclass) && !countb == 1){
+                    message.reply('Team A')
+                    countb + 1;
+                    
+                }else{
+                    message.reply('Team B')
+                    countb - 1;
                 }
-                if(message.member.roles.some(role => role.name === 'C - Class')){
-                    if(countc == 2){
-                    T2C = message.member.user.tag
-                    countc--
-
-                    }else{
-                    T1C = message.member.user.tag
-                    countc++
-
-                    }
+                // C CLASS
+                if (message.member.roles.some(cclass) && !countc == 1){
+                    message.reply('Team A')
+                    countc + 1;
+                    
+                }else{
+                    message.reply('Team B')
+                    countc - 1;
                 }
-                if(message.member.roles.some(role => role.name === 'D - Class')){
-                    if(countd == 2){
-                    Team2[4] = message.member.user.tag
-                    countd--
-
-                    }else{
-                    Team1[4] = message.member.user.tag
-                    countd++
-
-                    }
+                // D CLASS
+                if (message.member.roles.some(dclass) && !countd == 1){
+                    message.reply('Team A')
+                    countd + 1;
+                    
+                }else{
+                    message.reply('Team B')
+                    countd - 1;
                 }
-                if(message.content.toLowerCase().endsWith('list')){
-                    var chan = message.member.voiceChannel;
-                    var mems = chan.members;
-                    for (var x in mems) {
-                    message.channel.send(x.GuildMember.id);
-                    }
-                    return 'ANYTHING';
-                } 
+                if (!message.content.toLowerCase().startsWith('/team')){
+                    if(message.author.bot) return;
+                    message.delete();
+                }
             }
-
-
         
 });
 
