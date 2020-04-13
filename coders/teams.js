@@ -59,7 +59,7 @@ exports.code = function(){
                 if(countd < 0 && !countd == 0){
                     Team1[4] = nick
                 }
-                message.channel.send('Teams:' + Team1)
+                message.channel.send('Team1:' + Team1)
             }
     if(message.content.toLowerCase().startsWith('/teams')){
         if(counts < 0 && !counts == 0){
