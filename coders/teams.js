@@ -95,9 +95,13 @@ exports.code = function(){
                     }
                 }
                 if(message.content.toLowerCase().endsWith('list')){
+                    let channel = message.member.voiceChannel;
+                    for (let member of channel.members) {
+                        member[1] = TS1
+                    }
                     message.channel.send('Team 1: ' + Team1)
                     message.channel.send('Team 2: ' + Team2)
-                }
+                } 
             }
 
 
