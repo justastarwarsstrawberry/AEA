@@ -9,6 +9,7 @@ exports.code = function(){
         
         if (message.content.toLowerCase().startsWith('/team')){
             var Team1 = ["bob","bob","bob","bob","bob"];
+            var Team2 = ["bob","bob","bob","bob","bob"];
             var counts = 0;
             var counta = 0;
             var countb = 0;
@@ -21,69 +22,53 @@ exports.code = function(){
             let dclass = message.guild.roles.find(role => role.name === "D - Class");
             const nick = message.author.displayName;
                 if (message.member.roles.some(role => role.name === 'S - Class')){
+                    if(counts == 1){
+                    Team2[0] = message.member.user.tag
+                    counts--
+                    }else {
                     Team1[0] = message.member.user.tag
                     counts++
+                    }
                 }
                 if(message.member.roles.some(role => role.name === 'A - Class')){
+                    if(counta == 1){
+                    Team2[1] = message.member.user.tag
+                    counta--
+                    }else{
                     Team1[1] = message.member.user.tag
                     counta++
+                    }
                 }
                 if(message.member.roles.some(role => role.name === 'B - Class')){
+                    if(countb == 1){
+                    Team2[2] = message.member.user.tag
+                    countb--
+                    }else {
                     Team1[2] = message.member.user.tag
                     countb++
+                    }
                 }
                 if(message.member.roles.some(role => role.name === 'C - Class')){
+                    if(countc == 1){
+                    Team2[3] = message.member.user.tag
+                    countc--
+                    }else{
                     Team1[3] = message.member.user.tag
                     countc++
+                    }
                 }
                 if(message.member.roles.some(role => role.name === 'D - Class')){
+                    if(countd == 1){
+                    Team2[4] = message.member.user.tag
+                    countd--
+                    }else{
                     Team1[4] = message.member.user.tag
                     countd++
+                    }
                 }
-                if(counts < 0 && !counts == 0){
 
-                    Team1[0] = nick
-                }
-                if(counta < 0 && !counta == 0){
-
-                    Team1[1] = nick
-                }
-                if(countb < 0 && !countb == 0){
-
-                    Team1[2] = nick
-                }
-                if(countc < 0 && !countc == 0){
-
-                    Team1[3] = nick
-                }
-                if(countd < 0 && !countd == 0){
-                    Team1[4] = nick
-                }
                 message.channel.send('Team1:' + Team1)
             }
-    if(message.content.toLowerCase().startsWith('/teams')){
-        if(counts < 0 && !counts == 0){
-            var S = message.author.displayName;
-            Team1[0] = message.author.displayName;
-        }
-        if(counta < 0 && !counta == 0){
-            var A = message.author.displayName;
-            Team1[1] = message.author.displayName;
-        }
-        if(countb < 0 && !countb == 0){
-            var B = message.author.displayName;
-            Team1[2] = message.author.displayName;
-        }
-        if(countc < 0 && !countc == 0){
-            var C = message.author.displayName;
-            Team1[3] = message.author.displayName;
-        }
-        if(countd < 0 && !countd == 0){
-            var D = message.author.displayName;
-            Team1[4] = message.author.displayName;
-        }
-        message.channel.send('Teams:' + Team1)
-    }
 
         
 });
