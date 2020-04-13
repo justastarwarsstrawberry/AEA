@@ -8,6 +8,7 @@ exports.code = function(){
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
         if (message.content.toLowerCase().startsWith('/team')){
             var count = 0;
+            const team = [s,a,b,c,d]
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
             let bclass = message.guild.roles.find(role => role.name === "B - Class");
@@ -52,19 +53,19 @@ exports.code = function(){
              }
     if(message.content.toLowerCase().startsWith('/teams')){
     message.channel.send('Team 1 | Team 2 | Team 3')
-    if(s === 2 || s === 3){
+    if(s === 1 || s === 2 || s === 3){
         message.channel.send(s)
     }
-    if(a === 2 || a === 3){
+    if(a === 1 || a === 2 || a === 3){
         message.channel.send(a)
     }
-    if(b === 2 || b === 3){
+    if(b === 1 || b === 2 || b === 3){
         message.channel.send(b)
     }
-    if(c === 2 || c === 3){
+    if(c === 1 || c === 2 || c === 3){
         message.channel.send(c)
     }
-    if(d === 2 || d === 3){
+    if(d === 1 || d === 2 || d === 3){
         message.channel.send(d)
     }
 }
