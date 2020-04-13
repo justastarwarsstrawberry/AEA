@@ -61,7 +61,7 @@ exports.code = function(){
         if(countd < 0){
             var D = message.author.displayName;
         }
-        message.channel.send(Team1)
+        message.channel.send('Teams:' + Team1)
     }
 
         
