@@ -7,11 +7,11 @@ exports.code = function(){
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
         if (message.content.toLowerCase().startsWith('/team')){
-            const counts = 0;
-            const counta = 0;
-            const countb = 0;
-            const countc = 0;
-            const countd = 0;
+            var counts = 0;
+            var counta = 0;
+            var countb = 0;
+            var countc = 0;
+            var countd = 0;
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
             let bclass = message.guild.roles.find(role => role.name === "B - Class");
