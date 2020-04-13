@@ -15,35 +15,35 @@ exports.code = function(){
             let dclass = message.guild.roles.find(role => role.name === "D - Class");
 
                 if (message.member.roles.some(role => role.name === 'S - Class')){
-                    s = message.member.user.id();
+                    s = 1
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == s)
                          count++;
                       }
                 }
                 if(message.member.roles.some(role => role.name === 'A - Class')){
-                    a = message.member.user.id();
+                    a = 1 
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == a)
                          count++;
                       }
                 }
                 if(message.member.roles.some(role => role.name === 'B - Class')){
-                    b = message.member.user.id();
+                    b = 1
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == b)
                          count++;
                       }
                 }
                 if(message.member.roles.some(role => role.name === 'C - Class')){
-                    c = message.member.user.id();
+                    c = 1
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == c)
                          count++;
                       }
                 }
                 if(message.member.roles.some(role => role.name === 'D - Class')){
-                    d = message.member.user.id();
+                    d = 1
                     for(var i = 0; i < array.length; ++i){
                         if(array[i] == d)
                          count++;
