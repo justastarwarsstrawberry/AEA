@@ -12,6 +12,7 @@ const Darkest = require('./land.js');
 const Mechs = require('./mech.js');
 const N = require('./Nword.js');
 const weak = require('./weakness.js');
+const teams = require('./teams.js');
 const tips = require('./tips.js');
 const Timer = require('./timer.js');
 const Music = require('../resources/music/music.js');
@@ -69,7 +70,10 @@ const exp = require('./exp.js');
     weak.code();
     console.log('Weaknesses loaded');
   }
-  
+  if(teams && Client){
+    teams.code();
+    console.log('Teams loaded');
+  }
 
  
 }

@@ -30,9 +30,7 @@ client.on('messageReactionAdd', (reaction, user) => {
                         member.removeRole('694316498553929778');
                 });
         }
-		if (!emoji.name == '✅') {
-                reaction.remove(user);
-        }
+
         // Remove the user's reaction
         //reaction.remove(user);
 });
