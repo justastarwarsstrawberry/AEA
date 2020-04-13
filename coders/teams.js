@@ -22,37 +22,37 @@ exports.code = function(){
 
                 if (message.member.roles.some(role => role.name === 'S - Class')){
                     s = 1
-                    for(var i = 0; i < array.length; ++i){
-                        if(array[i] == s)
-                         count++;
+                    for(var i = 0; i < s.length; ++i){
+                        if(s[i] == s)
+                         s++;
                       }
                 }
                 if(message.member.roles.some(role => role.name === 'A - Class')){
                     a = 1 
-                    for(var i = 0; i < array.length; ++i){
-                        if(array[i] == a)
-                         count++;
+                    for(var i = 0; i < a.length; ++i){
+                        if(a[i] == a)
+                         a++;
                       }
                 }
                 if(message.member.roles.some(role => role.name === 'B - Class')){
                     b = 1
-                    for(var i = 0; i < array.length; ++i){
-                        if(array[i] == b)
-                         count++;
+                    for(var i = 0; i < b.length; ++i){
+                        if(b[i] == b)
+                         b++;
                       }
                 }
                 if(message.member.roles.some(role => role.name === 'C - Class')){
                     c = 1
-                    for(var i = 0; i < array.length; ++i){
-                        if(array[i] == c)
-                         count++;
+                    for(var i = 0; i < c.length; ++i){
+                        if(c[i] == c)
+                         c++;
                       }
                 }
                 if(message.member.roles.some(role => role.name === 'D - Class')){
                     d = 1
-                    for(var i = 0; i < array.length; ++i){
-                        if(array[i] == d)
-                         count++;
+                    for(var i = 0; i < d.length; ++i){
+                        if(d[i] == d)
+                         d++;
                       }
                 }
              }
