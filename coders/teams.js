@@ -38,6 +38,7 @@ exports.code = function(){
                     D = message.author.displayName;
                     countd++
                 }
+            }
     if(message.content.toLowerCase().startsWith('/teams')){
 
         if(counts === 1){
@@ -58,6 +59,7 @@ exports.code = function(){
         message.channel.send(Team1)
     }
 
+        
 });
 
 }
