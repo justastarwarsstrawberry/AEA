@@ -113,8 +113,9 @@ exports.code = function(){
                     });
                     }
                 }
-
-                if(message.content.toLowerCase.startsWith('/teams')){
+            }
+                if(message.content.toLowerCase.startsWith('/rteams')){
+                    
                     fs.unlink('./teams/team1.txt', function (err) {
                     if (err) throw err;
                     console.log('team1 reset');
@@ -124,6 +125,9 @@ exports.code = function(){
                         console.log('Team2 reset');
                     }); 
                 }
+            if(message.content.toLowerCase.startsWith('/lteams')){
+                message.channel.send('Team 1' + Team1)
+                message.channel.send('Team 2' + Team2)
             }
 
         
