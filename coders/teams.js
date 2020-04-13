@@ -6,9 +6,9 @@ exports.code = function(){
       
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
-        var Team1 = ["bob","bob","bob","bob","bob"];
+        
         if (message.content.toLowerCase().startsWith('/team')){
-            
+            var Team1 = ["bob","bob","bob","bob","bob"];
             var counts = 0;
             var counta = 0;
             var countb = 0;
