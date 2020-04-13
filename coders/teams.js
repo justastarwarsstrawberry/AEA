@@ -95,7 +95,7 @@ exports.code = function(){
                     }
                 }
                 if(message.content.toLowerCase().endsWith('list')){
-                    var chan = bot.channels['606586202942079029'];
+                    var chan = client.channels['606586202942079029'];
                     var mems = chan.members;
                     for (var x in mems) {
                     message.channel.send(x.GuildMember.id);
