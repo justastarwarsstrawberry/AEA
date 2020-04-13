@@ -10,8 +10,8 @@ exports.code = function(){
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
         
         if (message.content.toLowerCase().startsWith('/team')){
-            var Team1 = ["bob","bob","bob","bob","bob"];
-            var Team2 = ["bob","bob","bob","bob","bob"];
+            let Team1 = ["bob","bob","bob","bob","bob"];
+            let Team2 = ["bob","bob","bob","bob","bob"];
             var counts = 0;
             var counta = 0;
             var countb = 0;
@@ -66,17 +66,11 @@ exports.code = function(){
                     if(countb == 1){
                     Team2[2] = message.member.user.tag
                     countb--
-                    fs.writeFile('./teams/team2.txt', Team2, function (err) {
-                        if (err) return console.log(err);
-                        console.log('Hello World > team2.txt');
-                    });
+
                     }else {
                     Team1[2] = message.member.user.tag
                     countb++
-                    fs.writeFile('./teams/team1.txt', Team2, function (err) {
-                        if (err) return console.log(err);
-                        console.log('Hello World > team1.txt');
-                    });
+                    
                     }
                 }
                 if(message.member.roles.some(role => role.name === 'C - Class')){
