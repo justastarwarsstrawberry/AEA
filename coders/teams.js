@@ -8,8 +8,22 @@ exports.code = function(){
       
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min;
+            }
 
         if (message.content.toLowerCase().startsWith('/team')){
+            var A = getRandomInt(1, 10);
+            if(A >= 5){
+                message.reply('Team A')
+            }
+            if(A <= 5){
+                message.reply('Team B')
+            }
+        }
+        if (message.content.toLowerCase().startsWith('/afkosjafdsoi')){
 
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
