@@ -50,7 +50,7 @@ exports.code = function(){
                       }
                 }
              }
-    if(message.content.toLowerCase().startsWith('/teams')){}
+    if(message.content.toLowerCase().startsWith('/teams')){
     message.channel.send('Team 1 | Team 2 | Team 3')
     if(s === 2 || s === 3){
         message.channel.send(s)
