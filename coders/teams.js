@@ -8,10 +8,10 @@ exports.code = function(){
       
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
-        
+        let Team1 = ["bob","bob","bob","bob","bob"];
+        let Team2 = ["bob","bob","bob","bob","bob"];
         if (message.content.toLowerCase().startsWith('/team')){
-            let Team1 = ["bob","bob","bob","bob","bob"];
-            let Team2 = ["bob","bob","bob","bob","bob"];
+
             var counts = 0;
             var counta = 0;
             var countb = 0;
@@ -70,7 +70,7 @@ exports.code = function(){
                     }else {
                     Team1[2] = message.member.user.tag
                     countb++
-                    
+
                     }
                 }
                 if(message.member.roles.some(role => role.name === 'C - Class')){
