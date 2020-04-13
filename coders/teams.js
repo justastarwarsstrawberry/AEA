@@ -6,7 +6,7 @@ exports.code = function(){
       
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
-        var Team1 = ["","","","",""];
+        var Team1 = ["bob","bob","bob","bob","bob"];
         if (message.content.toLowerCase().startsWith('/team')){
             
             var counts = 0;
@@ -19,7 +19,7 @@ exports.code = function(){
             let bclass = message.guild.roles.find(role => role.name === "B - Class");
             let cclass = message.guild.roles.find(role => role.name === "C - Class");
             let dclass = message.guild.roles.find(role => role.name === "D - Class");
-
+            const nick = message.author.displayName;
                 if (message.member.roles.some(role => role.name === 'S - Class')){
                     
                     counts++
@@ -41,24 +41,23 @@ exports.code = function(){
                     countd++
                 }
                 if(counts < 0 && !counts == 0){
-                    var S = message.author.displayName;
-                    Team1[0] = message.author.displayName;
+
+                    Team1[0] = nick
                 }
                 if(counta < 0 && !counta == 0){
-                    var A = message.author.displayName;
-                    Team1[1] = message.author.displayName;
+
+                    Team1[1] = nick
                 }
                 if(countb < 0 && !countb == 0){
-                    var B = message.author.displayName;
-                    Team1[2] = message.author.displayName;
+
+                    Team1[2] = nick
                 }
                 if(countc < 0 && !countc == 0){
-                    var C = message.author.displayName;
-                    Team1[3] = message.author.displayName;
+
+                    Team1[3] = nick
                 }
                 if(countd < 0 && !countd == 0){
-                    var D = message.author.displayName;
-                    Team1[4] = message.author.displayName;
+                    Team1[4] = nick
                 }
                 message.channel.send('Teams:' + Team1)
             }
