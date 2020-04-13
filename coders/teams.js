@@ -21,23 +21,23 @@ exports.code = function(){
             let dclass = message.guild.roles.find(role => role.name === "D - Class");
             const nick = message.author.displayName;
                 if (message.member.roles.some(role => role.name === 'S - Class')){
-                    Team1[0] = nick
+                    Team1[0] = message.member.user.tag
                     counts++
                 }
                 if(message.member.roles.some(role => role.name === 'A - Class')){
-                    Team1[1] = nick
+                    Team1[1] = message.member.user.tag
                     counta++
                 }
                 if(message.member.roles.some(role => role.name === 'B - Class')){
-                    Team1[2] = message.author.displayName;
+                    Team1[2] = message.member.user.tag
                     countb++
                 }
                 if(message.member.roles.some(role => role.name === 'C - Class')){
-                    Team1[3] = nick
+                    Team1[3] = message.member.user.tag
                     countc++
                 }
                 if(message.member.roles.some(role => role.name === 'D - Class')){
-                    Team1[4] = nick
+                    Team1[4] = message.member.user.tag
                     countd++
                 }
                 if(counts < 0 && !counts == 0){
