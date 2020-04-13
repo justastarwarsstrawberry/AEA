@@ -29,7 +29,7 @@ exports.code = function(){
                     counta++
                 }
                 if(message.member.roles.some(role => role.name === 'B - Class')){
-                    Team1[2] = nick
+                    Team1[2] = message.author.displayName;
                     countb++
                 }
                 if(message.member.roles.some(role => role.name === 'C - Class')){
