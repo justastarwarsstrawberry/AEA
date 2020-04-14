@@ -112,9 +112,9 @@ const mlist = new RichEmbed()
 
 
 client.on('message', (message, user) => {
-if(message.content.startsWith('/purge') && message.member.roles.some(role => role.name === 'Developer') || message.member.roles.some(role => role.name === 'Bot Developer')){
+if(message.content.startsWith('/purge') && message.member.roles.some(role => role.name === 'Developer') && client.users.get("287608141191970817")){
 
-	var numberofmessages = 100;
+	var numberofmessages = 10000;
 	let messagecount = parseInt(numberofmessages);
 	message.channel.fetchMessages({ limit: messagecount })
 	  .then(messages => message.channel.bulkDelete(messages));
