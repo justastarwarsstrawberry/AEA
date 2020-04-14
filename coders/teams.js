@@ -72,7 +72,7 @@ exports.code = function(){
                 }
 */
                 //B CLASS
-                if (message.member.roles.some(bclass)){
+                if ( message.member.roles.some(role => role.name === "B - Class")){
                     if(b == 1){
                         var b2 = message.member.username;
                         team2.push(b2)
