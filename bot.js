@@ -113,7 +113,7 @@ const mlist = new RichEmbed()
 
 
 client.on('message', (message, user) => {
-if(message.content.startsWith('/purge') && message.member.roles.some(role => role.name === 'Developer') || message.member.roles.some(role => role.name === 'Bot Developer')){
+if(message.content == '/purge' && message.member.roles.some(role => role.name === 'Developer') || message.member.roles.some(role => role.name === 'Bot Developer')){
 
 	var numberofmessages = 100;
 	let messagecount = parseInt(numberofmessages);
