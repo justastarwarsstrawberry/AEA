@@ -10,7 +10,7 @@ exports.code = function(){
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
 
         if (message.content.toLowerCase().startsWith('/teams2')){
-            message.reply('Type _/teamme_ NOW!!!');
+            message.reply('Type _AEA_ NOW!!!');
             // `m` is a message object that will be passed through the filter function
             var Team1 = [];
             var team2 = [];
@@ -20,7 +20,7 @@ exports.code = function(){
             var c = 0;
             var d = 0;
 
-            const filter = m => m.content.startsWith('/teamme');
+            const filter = m => m.content.startsWith('AEA');
             const collector = message.channel.createMessageCollector(filter, { time: 20000 });
 
                 collector.on('collect', m => {
