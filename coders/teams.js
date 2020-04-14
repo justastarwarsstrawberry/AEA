@@ -23,8 +23,9 @@ exports.code = function(){
                 message.reply('Team B')
             }
         }
-        if (message.content.toLowerCase().startsWith('/afkosjafdsoi')){
-
+        if (message.content.toLowerCase().startsWith('/test')){
+            let A = message.voiceChannel.members.map(m=>m.name).join('\n') 
+            message.channel.send(A);
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
             let bclass = message.guild.roles.find(role => role.name === "B - Class");
