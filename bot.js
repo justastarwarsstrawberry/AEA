@@ -113,21 +113,11 @@ const mlist = new RichEmbed()
 
 client.on('message', (message, user) => {
 if(message.content.startsWith('/purge') && message.member.roles.some(role => role.name === 'Developer') || message.member.roles.some(role => role.name === 'Bot Developer')){
-	const user = message.mentions.users.first();
-	// Parse Amount
-	const amount = !!parseInt(message.content.split(' ')[1]) ? parseInt(message.content.split(' ')[1]) : parseInt(message.content.split(' ')[2])
-	if (!amount) return message.reply('Must specify an amount to delete!');
-	if (!amount && !user) return message.reply('Must specify a user and amount, or just an amount, of messages to purge!');
-	// Fetch 100 messages (will be filtered and lowered up to max amount requested)
-	message.channel.fetchMessages({
-	 limit: 1000,
-	}).then((messages) => {
-	 if (user) {
-	 const filterBy = user ? user.id : Client.user.id;
-	 messages = messages.filter(m => m.author.id === filterBy).array().slice(0, amount);
-	 }
-	 message.channel.bulkDelete(messages).catch(error => console.log(error.stack));
-	});
+
+	var numberofmessages = 100;
+	let messagecount = parseInt(numberofmessages);
+	message.channel.fetchMessages({ limit: messagecount })
+	  .then(messages => message.channel.bulkDelete(messages));
 }
 if(message.content == '/muteall' && message.member.roles.some(role => role.name === 'Developer')){
         let channel = message.member.voiceChannel;
