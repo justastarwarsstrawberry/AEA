@@ -78,11 +78,12 @@ exports.code = function(){
                         team2.push(b2)
                         b-1;
                         console.log('dec')
-                    }
+                    }else {
                     var b1 = message.member.user.tag;
                     Team1.push(b1)
                     b+1;
                     console.log('inc')
+                    }
                 }
 
                 /*
