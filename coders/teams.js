@@ -8,22 +8,9 @@ exports.code = function(){
       
     client.on("message", message => {
         client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min)) + min;
-            }
 
-        if (message.content.toLowerCase().startsWith('/team')){
-            var A = getRandomInt(1, 10);
-            if(A >= 5){
-                message.reply('Team A')
-            }
-            if(A <= 5){
-                message.reply('Team B')
-            }
-        }
-        if (message.content.toLowerCase().startsWith('/test')){
+        if (message.content.toLowerCase().startsWith('/teams2')){
+            message.reply('Type _/teamme_ NOW!!!');
             // `m` is a message object that will be passed through the filter function
             var Team1 = [];
             var team2 = [];
@@ -33,7 +20,7 @@ exports.code = function(){
             var c = 0;
             var d = 0;
 
-            const filter = m => m.content.startsWith('/t');
+            const filter = m => m.content.startsWith('/teamme');
             const collector = message.channel.createMessageCollector(filter, { time: 20000 });
 
                 collector.on('collect', m => {
