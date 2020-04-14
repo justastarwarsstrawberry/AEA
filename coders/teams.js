@@ -72,14 +72,14 @@ exports.code = function(){
                 }
 */
                 //B CLASS
-                if ( message.member.roles.some(role => role.name === "B - Class")){
+                if ( m.member.roles.some(role => role.name === "B - Class")){
                     if(b == 1){
-                        var b2 = message.member.user.tag;
+                        var b2 = m.member.user.tag;
                         team2.push(b2)
                         b--;
                         console.log('dec')
                     }else {
-                    var b1 = message.member.user.tag;
+                    var b1 = m.member.user.tag;
                     Team1.push(b1)
                     b++;
                     console.log('inc')
