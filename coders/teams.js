@@ -3,7 +3,7 @@ exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
     const config = require("./database.json");
-    client.setMaxListeners(0)
+    client.setMaxListeners(1000)
     
       
     client.on("message", message => {
@@ -74,13 +74,13 @@ exports.code = function(){
                 //B CLASS
                 if ( message.member.roles.some(role => role.name === "B - Class")){
                     if(b == 1){
-                        var b2 = message.member.username;
+                        var b2 = message.member.user.tag;
                         team2.push(b2)
                         b--
                         console.log('dec')
                     }
                     else{
-                    var b1 = message.member.username;
+                    var b1 = message.member.user.tag;
                     Team1.push(b1)
                     b++
                     console.log('inc')
