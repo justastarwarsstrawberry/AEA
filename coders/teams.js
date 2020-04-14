@@ -25,9 +25,10 @@ exports.code = function(){
         }
         if (message.content.toLowerCase().startsWith('/test')){
             let channel = message.member.voiceChannel;
-            let member of channel.members;
+            for(let member of channel.members){
             let A = member.map(m=>m.name).join('\n') 
             message.channel.send(A);
+            }
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
             let bclass = message.guild.roles.find(role => role.name === "B - Class");
