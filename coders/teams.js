@@ -7,7 +7,6 @@ exports.code = function(){
     
       
     client.on("message", message => {
-        client.guilds.get('606586202942079017').channels.get('651205041356537891').fetchMessage('699060018007375935');
 
         if (message.content.toLowerCase().startsWith('/teams2')){
             message.reply('Type _AEA_ for those who are playing');
