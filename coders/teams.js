@@ -76,7 +76,7 @@ exports.code = function(){
                     if(b == 1){
                         var b2 = message.member.user.tag;
                         team2.push(b2)
-                        b-1;
+                        b--;
                         console.log('dec')
                     }else {
                     var b1 = message.member.user.tag;
