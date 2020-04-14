@@ -81,7 +81,7 @@ exports.code = function(){
                     }else {
                     var b1 = message.member.user.tag;
                     Team1.push(b1)
-                    b+1;
+                    b++;
                     console.log('inc')
                     }
                 }
