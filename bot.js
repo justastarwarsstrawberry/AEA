@@ -112,7 +112,7 @@ const mlist = new RichEmbed()
 
 
 client.on('message', (message, user) => {
-if(message.member.roles.some(role => role.name === 'Developer') || message.member.roles.some(role => role.name === 'Bot Developer')){
+if(message.content.startsWith('/purge') && message.member.roles.some(role => role.name === 'Developer') || message.member.roles.some(role => role.name === 'Bot Developer')){
 	const user = message.mentions.users.first();
 	// Parse Amount
 	const amount = !!parseInt(message.content.split(' ')[1]) ? parseInt(message.content.split(' ')[1]) : parseInt(message.content.split(' ')[2])
