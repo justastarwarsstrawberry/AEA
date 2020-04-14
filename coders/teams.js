@@ -32,45 +32,41 @@ exports.code = function(){
             var b = 0;
             var c = 0;
             var d = 0;
-            let sclass = message.guild.roles.find(role => role.name === "S - Class");
-            let aclass = message.guild.roles.find(role => role.name === "A - Class");
-            let bclass = message.guild.roles.find(role => role.name === "B - Class");
-            let cclass = message.guild.roles.find(role => role.name === "C - Class");
-            let dclass = message.guild.roles.find(role => role.name === "D - Class");
+
             const filter = m => m.content.startsWith('/t');
             const collector = message.channel.createMessageCollector(filter, { time: 20000 });
 
                 collector.on('collect', m => {
                     console.log(`Collected ${m.content}`);
-                    /*
+                    
                 //S CLASS
-                if (message.member.roles.some(sclass)){
+                if (m.member.roles.some(role => role.name === "S - Class"){
                     if(s == 1){
-                        var s2 = message.member.username;
+                        var s2 = m.member.user.tag;
                         team2.push(s2)
-                        bs-
+                        s--;
 
                     }else{
-                    var s1 = message.member.username;
+                    var s1 = m.member.user.tag;
                     Team1.push(s1)
-                    s++
+                    s++;
                     }
 
                 }
                 // A CLASS
-                if (message.member.roles.some(aclass)){
+                if (m.member.roles.some(role => role.name === "A - Class"){
                     if(a == 1){
-                        var a2 = message.member.username;
+                        var a2 = m.member.user.tag;
                         team2.push(a2)
                         a--
                     }
                     else{
-                    var a1 = message.member.username;
+                    var a1 = m.member.user.tag;
                     Team1.push(a1)
-                    a++
+                    a++;
                     }
                 }
-*/
+
                 //B CLASS
                 if ( m.member.roles.some(role => role.name === "B - Class")){
                     if(b == 1){
@@ -86,35 +82,35 @@ exports.code = function(){
                     }
                 }
 
-                /*
+                
                 // C CLASS
-                if (message.member.roles.some(cclass)){
+                if (m.member.roles.some(role => role.name === "C - Class"){
                     if(c == 1){
-                        var c2 = message.member.username;
+                        var c2 = m.member.user.tag;
                         team2.push(c2)
-                        c--
+                        c--;
                     }
                     else{
-                    var c1 = message.member.username;
+                    var c1 = m.member.user.tag;
                     Team1.push(c1)
-                    c++
+                    c++;
                     }
                     
                 }
                 // D CLASS
-                if (message.member.roles.some(dclass)){
+                if (m.member.roles.some(role => role.name === "D - Class"){
                     if(d == 1){
-                        var d2 = message.member.username;
+                        var d2 = m.member.user.tag;
                         team2.push(d2)
-                        d--
+                        d--;
                     }
                     else{
-                    var d1 = message.member.username;
+                    var d1 = m.member.user.tag;
                     Team1.push(d1)
-                    d++
+                    d++;
                     }
                 }
-                */
+                
             });
 
                 collector.on('end', collected => {
