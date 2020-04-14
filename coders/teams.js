@@ -42,6 +42,7 @@ exports.code = function(){
 
                 collector.on('collect', m => {
                     console.log(`Collected ${m.content}`);
+                    /*
                 //S CLASS
                 if (message.member.roles.some(sclass)){
                     if(s == 1){
@@ -62,13 +63,14 @@ exports.code = function(){
                         var a2 = message.member.username;
                         team2.push(a2)
                         a--
-                    }else{
+                    }
+                    else{
                     var a1 = message.member.username;
                     Team1.push(a1)
                     a++
                     }
                 }
-
+*/
                 //B CLASS
                 if (message.member.roles.some(bclass)){
                     if(b == 1){
@@ -76,20 +78,23 @@ exports.code = function(){
                         team2.push(b2)
                         b--
                         console.log('dec')
-                    }else{
+                    }
+                    else{
                     var b1 = message.member.username;
                     Team1.push(b1)
                     b++
                     console.log('inc')
                     } 
                 }
+                /*
                 // C CLASS
                 if (message.member.roles.some(cclass)){
                     if(c == 1){
                         var c2 = message.member.username;
                         team2.push(c2)
                         c--
-                    }else{
+                    }
+                    else{
                     var c1 = message.member.username;
                     Team1.push(c1)
                     c++
@@ -102,12 +107,14 @@ exports.code = function(){
                         var d2 = message.member.username;
                         team2.push(d2)
                         d--
-                    }else{
+                    }
+                    else{
                     var d1 = message.member.username;
                     Team1.push(d1)
                     d++
                     }
                 }
+                */
             });
 
                 collector.on('end', collected => {
