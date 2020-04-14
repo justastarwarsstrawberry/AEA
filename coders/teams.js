@@ -27,7 +27,7 @@ exports.code = function(){
             let channel = message.member.voiceChannel.members;
             let A = channel.map(m=>m.name).join('\n') 
             message.channel.send(A);
-            
+            /*
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
             let bclass = message.guild.roles.find(role => role.name === "B - Class");
@@ -80,6 +80,7 @@ exports.code = function(){
                     message.reply('Team B')
                     countd - 1;
                 }
+                */
             }
         
 });
