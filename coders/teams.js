@@ -24,15 +24,98 @@ exports.code = function(){
             }
         }
         if (message.content.toLowerCase().startsWith('/test')){
-            let channel = message.member.voiceChannel.members;
-            let A = channel.map(m=>m.name).join('\n') 
-            message.channel.send(A);
-            /*
+            // `m` is a message object that will be passed through the filter function
+            var Team1 = [];
+            var team2 = [];
+            var s = 0;
+            var a = 0;
+            var b = 0;
+            var c = 0;
+            var d = 0;
             let sclass = message.guild.roles.find(role => role.name === "S - Class");
             let aclass = message.guild.roles.find(role => role.name === "A - Class");
             let bclass = message.guild.roles.find(role => role.name === "B - Class");
             let cclass = message.guild.roles.find(role => role.name === "C - Class");
             let dclass = message.guild.roles.find(role => role.name === "D - Class");
+            const filter = m => m.content.startsWith('/t');
+            const collector = message.channel.createMessageCollector(filter, { time: 20000 });
+
+                collector.on('collect', m => {
+                    console.log(`Collected ${m.content}`);
+                //S CLASS
+                if (message.member.roles.some(sclass)){
+                    if(s == 1){
+                        var s2 = message.member.username;
+                        team2.push(s2)
+                        bs-
+
+                    }else{
+                    var s1 = message.member.username;
+                    Team1.push(s1)
+                    s++
+                    }
+
+                }
+                // A CLASS
+                if (message.member.roles.some(aclass)){
+                    if(a == 1){
+                        var a2 = message.member.username;
+                        team2.push(a2)
+                        a--
+                    }else{
+                    var a1 = message.member.username;
+                    Team1.push(a1)
+                    a++
+                    }
+                }
+
+                //B CLASS
+                if (message.member.roles.some(bclass)){
+                    if(b == 1){
+                        var b2 = message.member.username;
+                        team2.push(b2)
+                        b--
+                        console.log('dec')
+                    }else{
+                    var b1 = message.member.username;
+                    Team1.push(b1)
+                    b++
+                    console.log('inc')
+                    } 
+                }
+                // C CLASS
+                if (message.member.roles.some(cclass)){
+                    if(c == 1){
+                        var c2 = message.member.username;
+                        team2.push(c2)
+                        c--
+                    }else{
+                    var c1 = message.member.username;
+                    Team1.push(c1)
+                    c++
+                    }
+                    
+                }
+                // D CLASS
+                if (message.member.roles.some(dclass)){
+                    if(d == 1){
+                        var d2 = message.member.username;
+                        team2.push(d2)
+                        d--
+                    }else{
+                    var d1 = message.member.username;
+                    Team1.push(d1)
+                    d++
+                    }
+                }
+            });
+
+                collector.on('end', collected => {
+                    console.log(`Collected ${collected.size} items`);
+                    message.channel.send('Team A: ' + Team1 + '\nTeam B:' + team2)
+            });
+            /*
+           
             const nick = message.author.displayName;
                 //S CLASS
                 if (message.member.roles.some(sclass) && !counts == 1){
