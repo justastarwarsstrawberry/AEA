@@ -50,6 +50,7 @@ const clist = new RichEmbed()
 	.addField('<unit>', 'name of the unit (nospaces) \n Lists the stats of a specified unit ', false)
 	.addField('/wvs <unit>', 'Gives weaknesses of a specified unit', false)
 	.addField('/tipme', 'Gives Tips For AEA', false)
+	.addField('/teams2', 'A team organizer (still needs testing)', false)
 	.addField('/', '1v1, 2v2, 2v3, 3v3, 4v4, 5v5 \n Gives a random map based on playercount', false)
 	.addField('/flipcoin', 'Heads or Tails?', false)
 	.addField('<time>', 'Set a timer for an amount of time \n (Max: 10m)', false)
@@ -114,7 +115,7 @@ const mlist = new RichEmbed()
 client.on('message', (message, user) => {
 if(message.content.startsWith('/purge') && message.member.roles.some(role => role.name === 'Developer') && client.users.get("287608141191970817")){
 
-	var numberofmessages = 10000;
+	var numberofmessages = 100;
 	let messagecount = parseInt(numberofmessages);
 	message.channel.fetchMessages({ limit: messagecount })
 	  .then(messages => message.channel.bulkDelete(messages));
