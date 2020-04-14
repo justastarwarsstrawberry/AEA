@@ -27,7 +27,7 @@ exports.code = function(){
                     console.log(`Collected ${m.content}`);
                     
                 //S CLASS
-                if (m.member.roles.some(role => role.name === "S - Class"){
+                if (m.member.roles.some(role => role.name === "S - Class")){
                     if(s == 1){
                         var s2 = m.member.user.tag;
                         team2.push(s2)
@@ -41,7 +41,7 @@ exports.code = function(){
 
                 }
                 // A CLASS
-                if (m.member.roles.some(role => role.name === "A - Class"){
+                if (m.member.roles.some(role => role.name === "A - Class")){
                     if(a == 1){
                         var a2 = m.member.user.tag;
                         team2.push(a2)
@@ -71,7 +71,7 @@ exports.code = function(){
 
                 
                 // C CLASS
-                if (m.member.roles.some(role => role.name === "C - Class"){
+                if (m.member.roles.some(role => role.name === "C - Class")){
                     if(c == 1){
                         var c2 = m.member.user.tag;
                         team2.push(c2)
@@ -85,7 +85,7 @@ exports.code = function(){
                     
                 }
                 // D CLASS
-                if (m.member.roles.some(role => role.name === "D - Class"){
+                if (m.member.roles.some(role => role.name === "D - Class")){
                     if(d == 1){
                         var d2 = m.member.user.tag;
                         team2.push(d2)
