@@ -76,16 +76,15 @@ exports.code = function(){
                     if(b == 1){
                         var b2 = message.member.user.tag;
                         team2.push(b2)
-                        b--
+                        b-1;
                         console.log('dec')
                     }
-                    else{
                     var b1 = message.member.user.tag;
                     Team1.push(b1)
-                    b++
+                    b+1;
                     console.log('inc')
-                    } 
                 }
+
                 /*
                 // C CLASS
                 if (message.member.roles.some(cclass)){
@@ -119,7 +118,7 @@ exports.code = function(){
 
                 collector.on('end', collected => {
                     console.log(`Collected ${collected.size} items`);
-                    message.channel.send('Team A: ' + Team1 + '\nTeam B:' + team2)
+                    message.channel.send('Team A: ' + Team1 + '\nTeam B: ' + team2)
             });
             /*
            
