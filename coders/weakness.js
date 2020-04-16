@@ -49,6 +49,8 @@ exports.code = function(){
             if(message.content.toLowerCase().includes('heavymissileship')){
                 message.reply('HeavyMissileShip can cause large amounts of damage to air and land, however large amounts of air can counter')
             }
+	    if(message.content.toLowerCase().includes('xancommander')){
+		message.reply('The Assault Mech can easily take out a Xan Commander, but large amounts of air units will counter the Assault Mech')
             //Edited counters
         }
     
