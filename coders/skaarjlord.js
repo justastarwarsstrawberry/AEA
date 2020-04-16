@@ -6,7 +6,7 @@ const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
 const config = require("./prefix.json");
-
+//lol
 client.on('ready', () => {
         client.guilds.get('606586202942079017').channels.get('693704540561604608').fetchMessage('694317573583536148');
         /* We could use .then() here but we don't need the returning promise in this case
