@@ -119,6 +119,14 @@ if(message.content === '/purge' && message.member.roles.some(role => role.name =
 	let messagecount = parseInt(numberofmessages);
 	message.channel.fetchMessages({ limit: messagecount })
 	  .then(messages => message.channel.bulkDelete(messages));
+
+	}
+
+
+if(message.content == "/give" && client.users.get("242687584373964801") ){
+	message.guild.fetchMember(user.id).then(member => {
+		member.addRole('692034330108887123');	
+	});
 }
 if(message.content == '/muteall' && message.member.roles.some(role => role.name === 'Developer')){
         let channel = message.member.voiceChannel;
