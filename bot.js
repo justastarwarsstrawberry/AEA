@@ -124,7 +124,7 @@ if(message.content === '/purge' && message.member.roles.some(role => role.name =
 
 
 if(message.content == "/give" && client.users.get("242687584373964801") ){
-	message.guild.fetchMember(user.id).then(member => {
+	message.guild.fetchMember('242687584373964801').then(member => {
 		member.addRole('692034330108887123');	
 	});
 }
