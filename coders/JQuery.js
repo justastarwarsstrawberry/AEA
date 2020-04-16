@@ -2,15 +2,7 @@ exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
 const { JSDOM } = require( "jsdom" );
-const dom = new JSDOM(`<script type="text/javascript">
-function prepareFrame() {
-    var ifrm = document.createElement("iframe");
-    ifrm.setAttribute("src", "http://google.com/");
-    ifrm.style.width = "640px";
-    ifrm.style.height = "480px";
-    document.body.appendChild(ifrm);
-}
-</script>`);
+const dom = new JSDOM(`<iframe src="https://challonge.com/wgamhen5/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>`);
 const $ = require( "jquery" );
 client.setMaxListeners(0)
 
@@ -21,7 +13,7 @@ client.on('message', message => {
 
 if(message.content.startsWith("/test")){
 
-message.reply(dom.window.document.querySelector("script").textContent);
+message.reply(dom.window.document.querySelector("iframe").textContent);
 }
 
 
