@@ -2,7 +2,7 @@ exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
 const { JSDOM } = require( "jsdom" );
-const { window } = new JSDOM(`<script type="text/javascript">
+const dom = new JSDOM(`<script type="text/javascript">
 function prepareFrame() {
     var ifrm = document.createElement("iframe");
     ifrm.setAttribute("src", "http://google.com/");
@@ -11,7 +11,7 @@ function prepareFrame() {
     document.body.appendChild(ifrm);
 }
 </script>`);
-const $ = require( "jquery" )( window );
+const $ = require( "jquery" );
 client.setMaxListeners(0)
 
 
