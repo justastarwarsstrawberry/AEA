@@ -14,6 +14,7 @@ const N = require('./Nword.js');
 const weak = require('./weakness.js');
 const teams = require('./teams.js');
 const tips = require('./tips.js');
+const jq = require('./JQuery.js');
 const Timer = require('./timer.js');
 const Music = require('../resources/music/music.js');
 const exp = require('./exp.js');
@@ -73,6 +74,10 @@ const exp = require('./exp.js');
   if(teams && Client){
     teams.code();
     console.log('Teams loaded');
+  }
+  if(teams && Client){
+    jq.code();
+    console.log('Jquery Tournament loaded');
   }
 
  
