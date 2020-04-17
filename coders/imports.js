@@ -77,7 +77,7 @@ const exp = require('./exp.js');
   }
   if(teams && Client){
     jq.code();
-    console.log('Jquery Tournament loaded');
+    console.log("Tournament loaded');
   }
 
  
