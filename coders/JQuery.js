@@ -27,14 +27,20 @@ client.on('message', message => {
    
 
 if(message.content.toLowerCase().startsWith('>')){
-    if(message.author.bot) return;  
+
+    
     if(message.member.roles.some(role => role.name === 'Bot Developer')){
+        if(message.author.bot) return;  
+        message.channel.send(a1)
+        /*
        let channel = message.guild.channels.find(channel => channel.name === "bracket")
        if(!channel){
+        message.channel.send(a1)
            message.reply('The "annoucements" channel must exist')
        }else {
-           message.guild.channels.find(channel => channel.name === "bracket").send(a1)
+           message.channel.send(a1)
        }
+       */
        
     }
 }
