@@ -37,7 +37,7 @@ if(message.content.toLowerCase().startsWith('>')){
        if(!channel){
            message.reply('The target channel must exist')
        }else {
-           message.channel.send(a1)
+           channel.send(a1)
        }
        
        
