@@ -24,7 +24,7 @@ client.on('message', message => {
                 .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
    
 
-if(message.content.toLowerCase().startsWith('@')){
+if(message.content.toLowerCase().startsWith('>')){
     if(message.author.bot) return;  
     if(message.member.roles.some(role => role.name === 'Bot Developer')){
        let channel = message.guild.channels.find(channel => channel.name === "bracket")
@@ -34,9 +34,8 @@ if(message.content.toLowerCase().startsWith('@')){
            message.guild.channels.find(channel => channel.name === "bracket").send(a1)
        }
        
-        }
-       }
-     });
+    }
+}
 
 });
   
