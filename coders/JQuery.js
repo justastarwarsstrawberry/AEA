@@ -17,6 +17,7 @@ client.on('message', message => {
                 .attachFiles(['./resources/torn/bracket.png'])
                 .setAuthor(nickname, 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
                 .setDescription(taco)
+               // .setImage('attachment://tank.png')
                 .addBlankField()
                 .setURL('https://challonge.com/wgamhen5.svg')
                 .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
