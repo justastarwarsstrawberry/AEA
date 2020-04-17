@@ -32,7 +32,7 @@ if(message.content.toLowerCase().startsWith('>')){
     if(message.member.roles.some(role => role.name === 'Bot Developer')){
         if(message.author.bot) return;  
         
-       let channel = message.guild.channels.find(channel => channel.name === "tournament-info")
+       let channel = message.guild.channels.find(channel => channel.name === "bracket")
        if(!channel){
            message.reply('The target channel must exist')
        }else {
