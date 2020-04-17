@@ -1,8 +1,7 @@
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
-const fs = require("fs");
 const challonge = require('challonge');
-const $ = require( "jquery" );
+const $ = require( "jquery" )(require("jsdom").jsdom().parentWindow);
 client.setMaxListeners(0)
 
 
