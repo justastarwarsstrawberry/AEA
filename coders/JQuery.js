@@ -1,14 +1,7 @@
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
-const { JSDOM } = require( "jsdom" );
-const dom = new JSDOM(`<iframe src="https://challonge.com/wgamhen5/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true">type here</iframe>`, {
-    url: "https://challonge.com/wgamhen5/module",
-    referrer: "https://challonge.com/wgamhen5/module",
-    contentType: "text/html",
-    includeNodeLocations: true,
-    storageQuota: 10000000
-  });
+const challonge = require('challonge');
 const $ = require( "jquery" );
 client.setMaxListeners(0)
 
@@ -19,7 +12,8 @@ client.on('message', message => {
 
 if(message.content.startsWith("/test")){
 
-message.reply(dom.window.document.querySelector("iframe"));
+message.reply($('.demo_iframe').challonge('wgamhen5', {subdomain: '', theme: '1', multiplier: '1.0', match_width_multiplier: '1.0', show_final_results: '0', show_standings: '0'}));
+
 }
 
 
