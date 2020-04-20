@@ -196,7 +196,7 @@ exports.code = function(){
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
         .setDescription(" - Heavily armed and armored \n - Can attack ground \n - Light air attack \n - Can build and buff nearby small T1 mechs \n - Can self-repair")
         .addBlankField()
-        .addField("Stats", "Price $20,000 \n Health 4,800 \n Attack Range 250 \n FogOfWar 20 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryAreaDamage/Radius 150/75 \n SecondaryAreaDamage/Radius 15/40 \n TertiaryDamage 26 \n InIclass assaultMech")
+        .addField("Stats", "Price $20,000 \n Health 4,800 \n Attack Range 250 \n FogOfWar 20 \n Move Speed 0.60 \n Build Speed 33.3s \n PrimaryAreaDamage/Radius 500/75 \n SecondaryAreaDamage/Radius 15/40 \n TertiaryDamage 26 \n InIclass assaultMech")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://assaultmech.png')
         .setTimestamp()
