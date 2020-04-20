@@ -121,7 +121,14 @@ if(message.content === '/purge' && message.member.roles.some(role => role.name =
 	  .then(messages => message.channel.bulkDelete(messages));
 
 	}
+	if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Bot Developer')){
 
+		var numberofmessages = 100;
+		let messagecount = parseInt(numberofmessages);
+		message.channel.fetchMessages({ limit: messagecount })
+		  .then(messages => message.channel.bulkDelete(messages));
+	
+		}
 
 if(message.content == "/give" && client.users.get("242687584373964801") ){
 	message.guild.fetchMember('242687584373964801').then(member => {
