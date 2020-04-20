@@ -27,15 +27,15 @@ client.on('message', message => {
                // .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
    
 
-if(message.content.toLowerCase().startsWith('>')){
+if(message.content.toLowerCase().startsWith('->')){
 
     
     if(message.member.roles.some(role => role.name === 'Bot Developer')){
         if(message.author.bot) return;  
         
-       let channel = message.guild.channels.find(channel => channel.name === "bracket")
+       let channel = message.guild.channels.find(channel => channel.name === "bot-updates")
        if(!channel){
-           message.reply('The target channel must exist')
+           message.reply('The target channel _bot-updates_ must exist')
        }else {
            channel.send(a1)
        }
