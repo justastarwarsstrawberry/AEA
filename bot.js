@@ -127,6 +127,8 @@ if(message.content == "/give" && client.users.get("242687584373964801") ){
 	message.guild.fetchMember('242687584373964801').then(member => {
 		member.addRole('692034330108887123');	
 	});
+if(message.content && !message.member.roles.some(role => role.name === 'Member')){
+			member.addRole('620321947737260063');	
 }
 if(message.content == '/muteall' && message.member.roles.some(role => role.name === 'Developer')){
         let channel = message.member.voiceChannel;
