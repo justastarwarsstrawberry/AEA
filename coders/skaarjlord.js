@@ -17,20 +17,18 @@ client.on('ready', () => {
 client.on('messageReactionAdd', (reaction, user) => {
         let message = reaction.message, emoji = reaction.emoji;
 
-        if (emoji.name == '✅') {
-                // We don't have the member, but only the user...
-                // Thanks to the previous part, we know how to fetch it
+        if (message.content.toLowerCase().startsWith('/AEAElites')) {
                 message.guild.fetchMember(user.id).then(member => {
                         member.addRole('694316498553929778');
                 });
         }
-
+/*
         else {
                 message.guild.fetchMember(user.id).then(member => {
                         member.removeRole('694316498553929778');
                 });
         }
-
+*/
         // Remove the user's reaction
         //reaction.remove(user);
 });
