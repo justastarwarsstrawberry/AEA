@@ -16,10 +16,10 @@ client.on('ready', () => {
 
 client.on('messageReactionAdd', (reaction, user) => {
         let message = reaction.message, emoji = reaction.emoji;
-
+        let GROLE = message.guild.role.find('AEAElites', role)
         if (message.content == '/elite') {
 
-                        message.author.addRole('694316498553929778');
+                        message.author.addRole(GROLE.id);
 
         }
 /*
