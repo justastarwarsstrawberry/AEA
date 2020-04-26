@@ -17,10 +17,10 @@ client.on('ready', () => {
 client.on('messageReactionAdd', (reaction, user) => {
         let message = reaction.message, emoji = reaction.emoji;
 
-        if (message.content.toLowerCase().startsWith('/elite')) {
-                message.guild.fetchMember(user.id).then(member => {
-                        member.addRole('694316498553929778');
-                });
+        if (message.content == '/elite') {
+
+                        message.author.addRole('694316498553929778');
+
         }
 /*
         else {
