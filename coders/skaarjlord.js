@@ -17,7 +17,7 @@ client.on('ready', () => {
 client.on('messageReactionAdd', (reaction, user) => {
         let message = reaction.message, emoji = reaction.emoji;
 
-        if (message.content.toLowerCase().startsWith('/AEAElites')) {
+        if (message.content.toLowerCase().startsWith('/elite')) {
                 message.guild.fetchMember(user.id).then(member => {
                         member.addRole('694316498553929778');
                 });
