@@ -14,7 +14,7 @@ client.on('ready', () => {
            that 'messageReactionAdd' will always get called */
 });
 
-client.on('messageReactionAdd', (reaction, user) => {
+client.on("message", message => {
         let message = reaction.message, emoji = reaction.emoji;
         let GROLE = message.guild.role.find('AEAElites', role)
         if (message.content == '/elite') {
