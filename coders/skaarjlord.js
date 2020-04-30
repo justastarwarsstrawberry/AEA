@@ -20,7 +20,7 @@ client.on("message", message => {
         if (message.content == '/elite') {
 
                         message.author.addRole(GROLE.id);
-
+// lol
         }
 /*
         else {
