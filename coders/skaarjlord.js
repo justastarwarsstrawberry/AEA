@@ -15,7 +15,6 @@ client.on('ready', () => {
 });
 
 client.on("message", message => {
-        let message = reaction.message, emoji = reaction.emoji;
         let GROLE = message.guild.role.find('AEAElites', role)
         if (message.content == '/elite') {
 
