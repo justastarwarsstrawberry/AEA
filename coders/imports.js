@@ -8,7 +8,6 @@ const Sea = require('./sea.js');
 const Func = require('./skaarjlord.js');
 const Anubis = require('./anubis.js');
 const Darkest = require('./land.js');
-
 const Mechs = require('./mech.js');
 const N = require('./Nword.js');
 const weak = require('./weakness.js');
@@ -18,6 +17,45 @@ const jq = require('./JQuery.js');
 const Timer = require('./timer.js');
 const Music = require('../resources/music/music.js');
 const exp = require('./exp.js');
+
+const onevone = require('./maps/1v1.js');
+const twovtwo = require('./maps/2v2.js');
+const twovthree = require('./maps/2v3.js');
+const threevthree = require('./maps/3v3.js');
+const fourvfour = require('./maps/4v4.js');
+const fivevfive = require('./maps/5v5.js');
+
+if(onevone && Client){
+  onevone.code();
+  console.log('1v1s loaded');
+} 
+if(twovtwo && Client){
+  twovtwo.code();
+  console.log('2v2s loaded');
+} 
+if(twovthree && Client){
+  twovthree.code();
+  console.log('2v3s loaded');
+} 
+if(threevthree && Client){
+  threevthree.code();
+  console.log('3v3s loaded');
+} 
+if(fourvfour && Client){
+  fourvfour.code();
+  console.log('4v4s loaded');
+} 
+if(fivevfive && Client){
+  fivevfive.code();
+  console.log('5v5s loaded');
+} 
+
+if(N && Client){
+  N.code();
+  console.log('Nword loaded');
+} 
+
+
   if(N && Client){
     N.code();
     console.log('Nword loaded');

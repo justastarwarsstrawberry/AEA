@@ -15,11 +15,11 @@ client.on('ready', () => {
 });
 
 client.on("message", message => {
-        let GROLE = message.guild.role.find('AEAElites', role)
+
         if (message.content == '/elite') {
 
-                        message.author.addRole(GROLE.id);
-// lol
+                        message.author.addRole('694316498553929778');
+
         }
 /*
         else {
