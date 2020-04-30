@@ -82,3 +82,4 @@ function getRandomInt(min, max) {
           message.reply('Nuclear War');
     }
 });
+}
