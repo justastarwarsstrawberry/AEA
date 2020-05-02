@@ -15,19 +15,10 @@ client.on('ready', () => {
 });
 
 client.on("message", message => {
-        if (message.content == '/elite') {
+        if (message.content.toLowerCase() === '/aeaelite') {
                         message.member.addRole('694316498553929778');
 
         }
-/*
-        else {
-                message.guild.fetchMember(user.id).then(member => {
-                        member.removeRole('694316498553929778');
-                });
-        }
-*/
-        // Remove the user's reaction
-        //reaction.remove(user);
 });
  
 client.on("message", message => {
