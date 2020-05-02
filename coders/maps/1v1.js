@@ -13,7 +13,7 @@ function getRandomInt(min, max) {
 
 	if(message.content.startsWith('/')){
         if(message.content.includes('1v1')) {
-        var x = getRandomInt(1, 9);
+        var x = getRandomInt(1, 10);
         }
     }
 
@@ -62,6 +62,11 @@ function getRandomInt(min, max) {
         const attachment = new Attachment('./resources/map/[p2]Volcano Duel (2p)_map.png');
         message.channel.send(attachment);
         message.reply('Volcano Duel');
+}
+    if (x===10) {
+        const attachment = new Attachment('./resources/map/p2Land_Bridge_Duel_2p_map.png');
+        message.channel.send(attachment);
+        message.reply('Land Bridge Duel');
 }
 
 

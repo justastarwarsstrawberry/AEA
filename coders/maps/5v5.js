@@ -13,7 +13,7 @@ function getRandomInt(min, max) {
 
 	if(message.content.startsWith('/')){
         if(message.content.includes('5v5')) {
-        var x = getRandomInt(1, 18);
+        var x = getRandomInt(1, 19);
         }
     }
 
@@ -126,7 +126,12 @@ function getRandomInt(min, max) {
     
 }
      
+        if (x===19) {
+        const attachment = new Attachment('./resources/map/p10Desert_Battle-Large_10p_map.png');
+        message.channel.send(attachment);
+            message.reply('Desert Battle Large');
 
+}
 });
 
 }
