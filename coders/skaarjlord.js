@@ -15,10 +15,8 @@ client.on('ready', () => {
 });
 
 client.on("message", message => {
-
         if (message.content == '/elite') {
-
-                        message.author.addRole('694316498553929778');
+                        message.member.addRole('694316498553929778');
 
         }
 /*
