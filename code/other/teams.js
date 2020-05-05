@@ -2,7 +2,7 @@
 exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
-    const config = require("./database.json");
+    //const config = require("../other/database.json");
     client.setMaxListeners(1000)
     
       
