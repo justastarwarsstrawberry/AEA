@@ -4,19 +4,28 @@ client.setMaxListeners(0)
 
 //imports from other files
 
-const Sea = require('./sea.js');
-const Func = require('./skaarjlord.js');
-const Anubis = require('./anubis.js');
-const Darkest = require('./land.js');
-const Mechs = require('./mech.js');
-const N = require('./Nword.js');
-const weak = require('./weakness.js');
-const teams = require('./teams.js');
-const tips = require('./tips.js');
-const jq = require('./JQuery.js');
-const Timer = require('./timer.js');
+
+//Units
+
+const Sea = require('./units/WATER.js');
+const exp = require('./units/EXP.js');
+const Anubis = require('./units/AIR - Anubis.js');
+const Darkest = require('./units/LAND.js');
+const Mechs = require('./units/MECH.js');
+
+// Random
+
+const N = require('./other/Nword.js');
+const weak = require('./other/weakness.js');
+const teams = require('./other/teams.js');
+const tips = require('./other/tips.js');
+const jq = require('./other/JQuery.js');
+const Timer = require('./other/timer.js');
 const Music = require('../resources/music/music.js');
-const exp = require('./exp.js');
+const Func = require('./other/skaarjlord.js');
+
+
+// Maps
 
 const onevone = require('./maps/1v1.js');
 const twovtwo = require('./maps/2v2.js');
@@ -50,21 +59,8 @@ if(fivevfive && Client){
   console.log('5v5s loaded');
 } 
 
-if(N && Client){
-  N.code();
-  console.log('Nword loaded');
-} 
 
-
-  if(N && Client){
-    N.code();
-    console.log('Nword loaded');
-  } 
-
-  if(Timer && Client){
-   		 Timer.code();
-    		console.log('Timer loaded');
-  }
+  // Units
 
   if(Anubis && Client){
    		 Anubis.code();
@@ -85,6 +81,22 @@ if(N && Client){
     Mechs.code();
      console.log('Mechs loaded');
   }
+  if(exp && Client){
+    exp.code();
+    console.log('Experimentals loaded');
+  }
+
+  // Random
+
+  if(N && Client){
+    N.code();
+    console.log('Nword loaded');
+  } 
+
+  if(Timer && Client){
+   		 Timer.code();
+    		console.log('Timer loaded');
+  }
 
   if(Func && Client){
      		Func.code();
@@ -100,10 +112,7 @@ if(N && Client){
     tips.code();
     console.log('Tips loaded');
   }
-  if(exp && Client){
-    exp.code();
-    console.log('Experimentals loaded');
-  }
+ 
 
   if(weak && Client){
     weak.code();
