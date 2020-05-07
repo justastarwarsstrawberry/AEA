@@ -248,6 +248,12 @@ exports.code = function(){
                 if(message.author.bot) return; 
                 message.channel.send(navalcarrier);
             } 
+            
+            //Flying Fortress
+            if (message.content.toLowerCase() === 'flyingfortress') {
+                if(message.author.bot) return; 
+                message.channel.send(flyingfortress);
+            } 
 });
   
   
