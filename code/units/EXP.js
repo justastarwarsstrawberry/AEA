@@ -177,7 +177,7 @@ exports.code = function(){
         .setURL('')
         .attachFiles(['./resources/expfortress.png'])
         .setAuthor('Vox777#2661', 'https://i.imgur.com/kFsKZrD.png')
-        .setDescription(" - Heavily Armoured \n - Can build Land Factory units \n - Anti Air \n - Can attack ground units when landed \n - Built in Fabricator \n - 12 Transport Slots \n - Can only have 8 at a time ")
+        .setDescription(" - Heavily Armoured \n - Can build Land Factory units \n - Anti Air \n - Can attack ground units when landed \n - Built in Fabricator \n - 12 Transport Slots \n - Can only have 8 at a time \n - Useful for transporting experimental mechs across a large area")
         .addBlankField()
         .addField("Stats", "Price $30,000 \n Health 8,000 \n Attack Range 210 \n Move Speed 1.1 \n Build Speed 50.5s \n - Income $8 \n - Direct damage: 35x2/.42s")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
