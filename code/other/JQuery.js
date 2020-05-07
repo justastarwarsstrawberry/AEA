@@ -16,7 +16,7 @@ client.on('message', message => {
              const a1 = new Discord.RichEmbed()
                 .setColor('#1500f7')
                .setTitle('Update')
-               .setAuthor(nickname, avatar)
+               //.setAuthor(nickname, avatar)
                 .setDescription(taco)
                // .setImage(image)
                // .setImage('attachment://tank.png')
