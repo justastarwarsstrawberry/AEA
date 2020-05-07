@@ -176,7 +176,7 @@ exports.code = function(){
         .setTitle('Flying Fortress')
         .setURL('')
         .attachFiles(['./resources/expfortress.png'])
-        .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
+        .setAuthor('Vox777#2661', 'https://i.imgur.com/kFsKZrD.png')
         .setDescription(" - Heavily Armoured \n - Can build Land Factory units \n - Anti Air \n - Can attack ground units when landed \n - Built in Fabricator \n - 12 Transport Slots \n - Can only have 8 at a time ")
         .addBlankField()
         .addField("Stats", "Price $30,000 \n Health 8,000 \n Attack Range 210 \n Move Speed 1.1 \n Build Speed 50.5s \n - Income $8 \n - Direct damage: 35x2/.42s")
