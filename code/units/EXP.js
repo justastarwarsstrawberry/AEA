@@ -37,7 +37,7 @@ exports.code = function(){
         .setURL('')
         .attachFiles(['./resources/exptank.png'])
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
-        .setDescription(" - Very heavily armored \n - Armed with quad cannons \n - Can attack ground \n - Light air attack")
+        .setDescription(" - Very heavily armored \n - Armed with quad cannons \n - Can attack ground \n - Light air attack \n - High range")
         .addBlankField() 
         .addField("Stats", "Price $16,800 \n Health 6,000 \n Attack Range 310 \n Move Speed 0.40 \n Build Speed 60.0s \n PrimaryAreaDamage/Radius 60/65 \n SecondaryDamage 75 \n InIclass cc_experimentalTank")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
