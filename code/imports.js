@@ -12,6 +12,7 @@ const exp = require('./units/EXP.js');
 const Anubis = require('./units/AIR - Anubis.js');
 const Darkest = require('./units/LAND.js');
 const Mechs = require('./units/MECH.js');
+const vox = require('./units/INFANTRY - Vox777.js');
 
 // Random
 
@@ -85,7 +86,10 @@ if(fivevfive && Client){
     exp.code();
     console.log('Experimentals loaded');
   }
-
+  if(vox && Client){
+    vox.code();
+    console.log('Infantry loaded');
+  }
   // Random
 
   if(N && Client){
