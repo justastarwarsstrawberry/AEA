@@ -175,13 +175,13 @@ exports.code = function(){
         .setColor('#1500f7')
         .setTitle('Flying Fortress')
         .setURL('')
-        .attachFiles(['./resources/expspider.png'])
+        .attachFiles(['./resources/expfortress.png'])
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
         .setDescription(" - Heavily Armoured \n - Can build Land Factory units \n - Anti Air \n - Can attack ground units when landed \n - Built in Fabricator \n - 12 Transport Slots \n - Can only have 8 at a time ")
         .addBlankField()
         .addField("Stats", "Price $30,000 \n Health 8,000 \n Attack Range 210 \n Move Speed 1.1 \n Build Speed 50.5s \n - Income $8 \n - Direct damage: 35x2/.42s")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-        .setImage('attachment://expspider.png')
+        .setImage('attachment://expfortress.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
