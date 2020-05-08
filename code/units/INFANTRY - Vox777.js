@@ -5,7 +5,7 @@ exports.code = function(){
     /* Embeds go here
     */
 
-   const i1 = new Discord.RichEmbed()  
+   const xancommander = new Discord.RichEmbed()  
    .setColor('#1500f7')
    .setTitle('Xan Commander')
    .setURL('')
@@ -29,7 +29,7 @@ exports.code = function(){
         //Cyborg
         if (message.content.toLowerCase() === 'xancommander') {
             if(message.author.bot) return; 
-            message.channel.send(i1);
+            message.channel.send(xancommander);
         }
 
     });
