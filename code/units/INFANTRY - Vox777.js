@@ -47,12 +47,10 @@ exports.code = function(){
 
     client.on('message', message => {
         //Xan commander
-        if (message.content.toLowerCase() === 'xancommander') {
-            if(message.author.bot) return; 
-            message.channel.send(xancommander);
-        }
-
-        client.on('message', message => {
+			if (message.content.toLowerCase() === 'xancommander') {
+				if(message.author.bot) return; 
+				message.channel.send(xancommander);
+			}
             //Ghost
             if (message.content.toLowerCase() === 'ghost') {
                 if(message.author.bot) return; 
