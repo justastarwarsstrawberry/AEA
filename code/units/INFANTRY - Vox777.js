@@ -5,7 +5,7 @@ exports.code = function(){
     /* Embeds go here
     */
 
-   const e1 = new Discord.RichEmbed()  
+   const i1 = new Discord.RichEmbed()  
    .setColor('#1500f7')
    .setTitle('Cyborg')
    .setURL('')
@@ -25,6 +25,12 @@ exports.code = function(){
     // If statements go here
 
 
+    client.on('message', message => {
+        //Cyborg
+        if (message.content.toLowerCase() === 'cyborg') {
+            if(message.author.bot) return; 
+            message.channel.send(i1);
+        }
 
     });
 
