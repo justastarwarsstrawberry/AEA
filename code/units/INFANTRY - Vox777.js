@@ -37,9 +37,12 @@ exports.code = function(){
 
 
 
-    client.on('message', message => {
-    
-    // If statements go here
+   /*
+   This was your error
+   client.on('message', message => {
+       
+    */
+
 
 
     client.on('message', message => {
