@@ -12,7 +12,7 @@ exports.code = function(){
    .setURL('')
    .attachFiles(['./resources/xancommander.png'])
    .setAuthor('Vox777#2661', 'https://i.imgur.com/kFsKZrD.png')
-   .setDescription(" - Heavily armed \n - Can attack ground \n - Medium air attack \n - Needs to reload after firing \n - Self repair")
+   .setDescription("- Advanced Next Gen super unit\n- Fast, agile, lightly armoured\n- Extremely powerful plasma minigun melts its enemies quickly\n- Long range ground & air attack\n- Cannot be repaired\n- Cannot fit in transports\n- Has self regen abilities\n- Can only have 1 built at a time\n vunerable to long ranged units like the experimental tank")
    .addBlankField() 
    .addField("Stats", "Price $21,000 \n Health 1,500 \n Attack Range 280 \n Move Speed 1.40 \n Build Speed 165.9s \n PrimaryDamage 22 \n SecondaryAreaDamage/Radius 83/20 \n InIclass  c_xancommander")
    .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
