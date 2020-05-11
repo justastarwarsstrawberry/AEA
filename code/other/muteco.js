@@ -1,9 +1,7 @@
 exports.code = function(){
 
 
-    const ms = requre('ms');
-
-
+    const ms = require('ms');
     const { Client, Attachment } = require('discord.js');
     client.setMaxListeners(0)
     
