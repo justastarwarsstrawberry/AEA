@@ -24,7 +24,7 @@ const jq = require('./other/JQuery.js');
 const Timer = require('./other/timer.js');
 const Music = require('../resources/music/music.js');
 const Func = require('./other/skaarjlord.js');
-
+const mute = require('./other/muteco.js');
 
 // Maps
 
@@ -130,6 +130,9 @@ if(fivevfive && Client){
     jq.code();
     console.log("Tournament loaded");
   }
-
+  if(mute && Client){
+    mute.code();
+    console.log("muteco loaded");
+  }
  
 }
