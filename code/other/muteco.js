@@ -12,11 +12,11 @@ client.on("message", message => {
 
 
 if(message.content.toLowerCase().startsWith('/mute')){
-    let member = msg.mentions.user.first();
+    let member = message.mentions.user.first();
     if (!member) return message.reply('You have not mentioned a user!')
-    let muteRole = msg.guild.roles.find('name', 'Muted');
+    let muteRole = message.guild.roles.find('name', 'Muted');
     if (!muteRole) return message.reply('You dont have a "Muted" role!')
-    let params = msg.content.split(" ").slice(1);
+    let params = message.content.split(" ").slice(1);
     let time = params[1];
     if(!time) return message.reply('There is no specified time!')
 
