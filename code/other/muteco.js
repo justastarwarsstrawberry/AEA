@@ -12,7 +12,7 @@ client.on("message", message => {
 
 
 if(message.content.toLowerCase().startsWith('/mute')){
-    let mentioned = message.mentions.users;
+    let member = message.mentions.users;
     if (!mentioned) return message.reply('You have not mentioned a user!')
     let muteRole = message.guild.roles.find('name', 'Muted');
     if (!muteRole) return message.reply('You dont have a "Muted" role!')
