@@ -14,21 +14,7 @@ client.on("message", message => {
 if(message.content.toLowerCase().startsWith('/mute')){
 
 
-    function getUserFromMention(mention) {
-        if (!mention) return;
-    
-        if (mention.startsWith('<@') && mention.endsWith('>')) {
-            mention = mention.slice(2, -1);
-    
-            if (mention.startsWith('!')) {
-                mention = mention.slice(1);
-            }
-    
-            return client.users.cache.get(mention);
-        }
-    }
-
-	const user = getUserFromMention(args[0]);
+    const user = MessageMentions.members.id;
     if (!user) return message.reply('You have not mentioned a user!')
     let muteRole = message.guild.roles.find('name', 'Muted');
     if (!muteRole) return message.reply('You dont have a "Muted" role!')
