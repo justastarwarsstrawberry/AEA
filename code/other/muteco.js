@@ -14,18 +14,18 @@ client.on("message", message => {
 if(message.content.toLowerCase().startsWith('/mute')){
 
 
-    const user = message.mentions.members.id;
+    const user = message.mentions.user;
     if (!user) return message.reply('You have not mentioned a user!')
     let muteRole = message.guild.roles.find('name', 'Muted');
     if (!muteRole) return message.reply('You dont have a "Muted" role!')
     let params = message.content.split(" ").slice(1);
     let time = params[1];
     if(!time) return message.reply('There is no specified time!')
-    user.addRole(muteRole);
+    user.add(muteRole);
     message.channel.send(`${user.user.tag} has been muted for ${ms(ms(time), {long:true})}...`);
     
 setTimeout(function() {
-    user.removeRole(muteRole);
+    user.remove(muteRole);
     message.channel.send(`${user.user.tag} is unmuted, mute time was ${ms(ms(time), {long:true})}...`);
 }, ms(time));
     }
