@@ -36,9 +36,10 @@ let nickname = member ? member.displayName : null;
    const taco = message.content
          const a1 = new Discord.RichEmbed()
          	.setColor('#1500f7')
-	        .setTitle('Announcement')
+	        .setTitle('New Suggestion!')
          	.setAuthor(nickname, 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-         	.setDescription(taco)
+			 .setDescription(taco)
+			.addField('Vote Options:','✅ or ❌')
          	.addBlankField()
          	.setURL('')
 	        .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
@@ -46,19 +47,23 @@ let nickname = member ? member.displayName : null;
          	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 //https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128
- if(message.author.bot) return;  
+ if(message.author.bot) return; 
+  //if(message.member.roles.some(role => role.name === 'Bot Developer')){ 
+ //}
+if(message.content.toLowerCase().startsWith('+')){
+if (message.channel.id === '620322969977094164'){
 
- if(message.content.toLowerCase().endsWith('#')){
-
- if(message.member.roles.some(role => role.name === 'Bot Developer')){
-	let channel = message.guild.channels.find(channel => channel.name === "announcements")
+	let channel = message.guild.channels.find(channel => channel.name === "❌-votes-✅")
 	if(!channel){
-    	message.reply('The "annoucements" channel must exist')
+    	message.reply('The "❌-votes-✅" channel must exist')
 	}else {
-		message.guild.channels.find(channel => channel.name === "announcements").send(a1)
+		message.guild.channels.find(channel => channel.name === "❌-votes-✅").send(a1)
 	}
+} else {
+	message.reply('This is not the suggestions channel!')
+}
 	
-     }
+
     }
   });
 }
