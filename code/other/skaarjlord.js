@@ -8,7 +8,7 @@ client.setMaxListeners(0)
 const config = require("../other/prefix.json");
 //lol
 client.on('ready', () => {
-        client.guilds.get('606586202942079017').channels.get('693704540561604608').fetchMessage('694317573583536148');
+       // client.guilds.get('606586202942079017').channels.get('693704540561604608').fetchMessage('694317573583536148');
         /* We could use .then() here but we don't need the returning promise in this case
            This will just cache the specified message, to make sure
            that 'messageReactionAdd' will always get called */
