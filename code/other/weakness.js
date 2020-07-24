@@ -133,6 +133,7 @@ exports.code = function(){
             if(message.content.toLowerCase().includes('demotruck')){	
                 message.reply('Demo trucks, T2 turrets and dusters can make the boom go boom inside the boom')		
             }
+            // need more
         }
     });	
 
