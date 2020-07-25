@@ -45,7 +45,7 @@ let userava = message.author;
   //if(message.member.roles.some(role => role.name === 'Bot Developer')){ 
  //}
 if(message.content.toLowerCase().startsWith('+')){
-if (message.channel.id === '620322969977094164'){
+if (message.channel.id === '711753321106636830'){
 
 	let channel = message.guild.channels.find(channel => channel.name === "❌-votes-✅")
 	if(!channel){
