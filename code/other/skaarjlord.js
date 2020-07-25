@@ -49,13 +49,22 @@ if (message.channel.id === '620322969977094164'){
 
 	let channel = message.guild.channels.find(channel => channel.name === "❌-votes-✅")
 	if(!channel){
+
     	message.reply('The "❌-votes-✅" channel must exist')
-	}else {
+	}
+	
+	
+	else {
 		message.guild.channels.find(channel => channel.name === "❌-votes-✅").send(a1)
 	}
-} else {
+
+
+	} else {
+
+
 	message.reply('This is not the suggestions channel!')
-}
+	
+	}
 	
 
     }
