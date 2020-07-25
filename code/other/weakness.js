@@ -78,7 +78,7 @@ exports.code = function(){
 		        message.reply('Minigun mechs or heavy mechs cause they both have high damage and alot of health')		
             }
 
-            if(message.content.toLowerCase().includes('heavymechs') || message.content.toLowerCase().includes('hvymech')){	
+            if(message.content.toLowerCase().includes('heavymech') || message.content.toLowerCase().includes('hvymech')){	
 		        message.reply('Air units would be your best bet, those or T2 land turrets for crushing this bad girl')		
             }
 
@@ -90,7 +90,7 @@ exports.code = function(){
 		        message.reply('Any form of AA on the ground and Heavy interceptors')		
             }
 
-            if(message.content.toLowerCase().includes('moo')){	
+            if(message.content.toLowerCase().includes('moo') || message.content.toLowerCase().includes('moo-class')){	
 		        message.reply('Moo-class counters another moo-class and amphib jets or alot of subs')		
             }
 

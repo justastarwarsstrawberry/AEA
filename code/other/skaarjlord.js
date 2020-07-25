@@ -19,14 +19,7 @@ client.on("message", message => {
                         message.member.addRole('694316498553929778');
 
 		}
-		if (message.content.toLowerCase() === '/signup') {
-						message.member.addRole('706255988889616414');
 
-		}
-		if (message.content.toLowerCase() === '/signout') {
-			message.member.removeRole('706255988889616414');
-
-		}
 });
  
 client.on("message", message => {
