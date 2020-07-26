@@ -38,8 +38,17 @@ client.on('guildMemberAdd', member => {
     //member.addRole(role);
 });
 
+
+
+
+
+function resetBot(channel) {
+    channel.send('Restarting...')
+    .then(msg => client.destroy())
+    .then(() => client.login(process.env.BOT_TOKEN));
+}
+
 const talkedRecently = new Set();
-// Land units
 const clist = new RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Commands')
@@ -194,9 +203,9 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
             // do nothing
         }
     if(message.content == '/stop' && client.users.get("242687584373964801")){
-		message.channel.send('Shutting down...').then(m => {
-        		client.destroy();
-     		});
+		message.channel.send('Shutting down...');
+		resetBot(message.channel);
+
         }
     if(message.content == '/list'){
 	message.channel.send(clist);
