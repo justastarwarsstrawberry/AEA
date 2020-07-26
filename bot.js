@@ -56,6 +56,17 @@ const clist = new RichEmbed()
 	.addField('/', '1v1, 2v2, 2v3, 3v3, 4v4, 5v5 \n Gives a random map based on playercount', false)
 	.addField('/flipcoin', 'Heads or Tails?', false)
 	.addField('<time>', 'Set a timer for an amount of time \n (Max: 10m)', false)
+const alist = new RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Admin Commands')
+	.setURL('')
+	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.addField('/AEAElite', 'Assigns the AEAElites Role for anyone who wishes it... \n Check #📣-announcements-📣 for more details', false)
+	.addField('/muteall - Dev Team Alpha Only', false)
+	.addField('/unmuteall - Dev Team Alpha Only', false)
+	.addField('/purge - Deletes 100 messages in the past', false)
+	.addField('/stop - Stops the bot Lemons Only', false)
 
 	//.addField('a', '<announcementtext>', false)
 	.setDescription('Lists all comands associated with the bot')
@@ -229,7 +240,13 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
         {
             // do nothing
         }
-
+	if(message.content == '/list Admin' || message.content == '/list admin'){
+			message.channel.send(alist);
+			}
+			else
+			{
+					// do nothing
+			}
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
     if (message.content.includes('bruh') || message.content.includes('Bruh')) {
