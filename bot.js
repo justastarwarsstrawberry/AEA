@@ -8,7 +8,7 @@ client.setMaxListeners(0)
 const Imports = require('./code/imports.js');
   if(Imports && Client){
    		Imports.code();
-    		console.log('Loading imports');
+    		console.log('Loaded imports');
   }
 
 client.login(process.env.BOT_TOKEN);
@@ -123,7 +123,7 @@ if(message.content === '/purge' && message.member.roles.some(role => role.name =
 	  .then(messages => message.channel.bulkDelete(messages));
 
 	}
-	if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Bot Developer')){
+	if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Dev Team Alpha')){
 
 		var numberofmessages = 100;
 		let messagecount = parseInt(numberofmessages);
@@ -157,7 +157,7 @@ if(message.content){
 
 
 
-if(message.content == '/muteall' && message.member.roles.some(role => role.name === 'Developer')){
+if(message.content == '/muteall' && message.member.roles.some(role => role.name === 'Dev Team Alpha')){
         let channel = message.member.voiceChannel;
         for (let member of channel.members) {
             member[1].setMute(true)
@@ -170,7 +170,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
         // do nothing
     }
 
-    if(message.content == '/unmuteall' && message.member.roles.some(role => role.name === 'Developer')){
+    if(message.content == '/unmuteall' && message.member.roles.some(role => role.name === 'Dev Team Alpha')){
             let channel = message.member.voiceChannel;
             for (let member of channel.members) {
                 member[1].setMute(false)
@@ -229,16 +229,6 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
         {
             // do nothing
         }
-
-
-
-    if (message.content == '/stop' && client.users.get("242687584373964801") && message.member.roles.some(role => role.name === 'Developer')){
-    //process.exit();
-    }
-    else{
-        // Do notta
-    }
-//tf?
 
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
