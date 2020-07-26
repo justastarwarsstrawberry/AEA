@@ -13,7 +13,7 @@ const Anubis = require('./units/AIR - Anubis.js');
 const Darkest = require('./units/LAND.js');
 const Mechs = require('./units/MECH.js');
 const vox = require('./units/INFANTRY - Vox777.js');
-
+const build = require('./units/BUILDING.js');
 // Random
 
 const N = require('./other/Nword.js');
@@ -89,6 +89,10 @@ if(fivevfive && Client){
   if(vox && Client){
     vox.code();
     console.log('Infantry loaded');
+  }
+  if(build && Client){
+    build.code();
+    console.log('Buildings loaded');
   }
   // Random
 
