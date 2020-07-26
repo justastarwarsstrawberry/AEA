@@ -1,11 +1,8 @@
-//Dont touch Zone start
+
 exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
-//Dont touch Zone end
-// units
-//mechs
-	//test
+
 const lynx = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Lynx')

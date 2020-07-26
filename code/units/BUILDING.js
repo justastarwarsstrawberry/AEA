@@ -1,7 +1,7 @@
-//Dont touch Zone start
 exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     client.setMaxListeners(0)
+
     const tlist = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret List')
