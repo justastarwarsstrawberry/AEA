@@ -56,7 +56,7 @@ const clist = new RichEmbed()
 	.addField('/', '1v1, 2v2, 2v3, 3v3, 4v4, 5v5 \n Gives a random map based on playercount', false)
 	.addField('/flipcoin', 'Heads or Tails?', false)
 	.addField('<time>', 'Set a timer for an amount of time \n (Max: 10m)', false)
-const alist = new RichEmbed()
+const aelist = new RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Admin Commands')
 	.setURL('')
@@ -241,7 +241,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
             // do nothing
         }
 	if(message.content == '/list Admin' || message.content == '/list admin'){
-			message.channel.send(alist);
+			message.channel.send(aelist);
 			}
 			else
 			{
