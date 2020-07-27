@@ -23,7 +23,7 @@ client.on("message", message => {
 		let y = process.openStdin()
 		y.addListener("data", res => {
 			let x = res.toString().trim().split(/ */g)
-			bot.channels.get('715653088077414421').send(x.join(" "))
+			bot.channels.get('711770374202982400').send(x.join(" "))
 		})
 
 });
