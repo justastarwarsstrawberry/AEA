@@ -8,6 +8,11 @@ exports.code = function(){
       
     client.on("message", message => {
 
+
+
+
+
+        /*
         if (message.content.toLowerCase().startsWith('/teams2')){
             message.reply('Type _AEA_ for those who are playing');
             // `m` is a message object that will be passed through the filter function
@@ -103,7 +108,7 @@ exports.code = function(){
                     console.log(`Collected ${collected.size} items`);
                     message.channel.send('Team A: ' + Team1 + '\nTeam B: ' + team2)
             });
-            /*
+            
            
             const nick = message.author.displayName;
                 //S CLASS

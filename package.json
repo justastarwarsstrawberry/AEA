@@ -21,6 +21,7 @@
 		"moment": "^2.24.0",
 		"node-opus": "^0.3.3",
 		"opusscript": "0.0.7",
+		"prompt-sync": "^4.2.0",
 		"reaction-role": "^2.1.5",
 		"simple-youtube-api": "^5.2.1",
 		"ytdl-core": "^1.0.7",
