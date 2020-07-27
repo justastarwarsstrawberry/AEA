@@ -20,7 +20,14 @@ exports.code = function(){
         }
 
 
-
+	// this is a single line comment that isnt picked up by code
+	    
+	    
+	    
+	    
+	/* Multiple line comment
+	that isnt picked up by code
+	*/
 
 
 
