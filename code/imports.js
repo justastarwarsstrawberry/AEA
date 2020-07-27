@@ -25,7 +25,7 @@ const Timer = require('./other/timer.js');
 const Music = require('../resources/music/music.js');
 const Func = require('./other/skaarjlord.js');
 const mute = require('./other/muteco.js');
-const role = require('./other/reactionroles.js');
+//const role = require('./other/reactionroles.js');
 // Maps
 
 const onevone = require('./maps/1v1.js');
@@ -120,12 +120,12 @@ if(fivevfive && Client){
     tips.code();
     console.log('Tips loaded');
   }
- 
+ /*
   if(role && Client){
     role.code();
     console.log('AutoRoles loaded');
   }
- 
+ */
 
   if(weak && Client){
     weak.code();
