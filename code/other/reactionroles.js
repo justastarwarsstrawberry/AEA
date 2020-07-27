@@ -2,9 +2,8 @@ exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     client.setMaxListeners(0)
     const ReactionRole = require("reaction-role");
-
+    const system = new ReactionRole(process.env.BOT_TOKEN);
     
-
 
 
 
@@ -21,8 +20,9 @@ exports.code = function(){
             let resend = system.createMessage(mes1, channel, 9999, null, option1, option2, option3);
 
             message.guild.channels.find(channel => channel.name === "bot-testing").send(resend)
+            system.init();
         }
-
+ 
     });
 
 
