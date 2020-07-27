@@ -25,6 +25,8 @@ const Timer = require('./other/timer.js');
 const Music = require('../resources/music/music.js');
 const Func = require('./other/skaarjlord.js');
 const mute = require('./other/muteco.js');
+const test = require('./other/Test.js');
+
 //const role = require('./other/reactionroles.js');
 // Maps
 
@@ -119,6 +121,11 @@ if(fivevfive && Client){
   if(tips && Client){
     tips.code();
     console.log('Tips loaded');
+  }
+
+  if(test && Client){
+    test.code();
+    console.log('Test.js loaded');
   }
  /*
   if(role && Client){
