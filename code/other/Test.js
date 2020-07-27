@@ -5,7 +5,7 @@ exports.code = function(){
     client.on("message", message => {
 
 
-   if(message.content.toLowerCase.includes('rage') &&  client.users.get("543626502215041025") ){
+   if(message.content.toLowerCase().includes('rage') &&  client.users.get("543626502215041025") ){
         if(message.author.bot) return;
         message.reply('rage? I heard galaxy like to rage like a bitch?');
     }
