@@ -8,7 +8,7 @@ exports.code = function(){
 
 
 
-system.init().then(() => {
+
 
     client.on("message", async(message) => {
 
@@ -25,6 +25,5 @@ system.init().then(() => {
 
     });
 
-});
 
 }
