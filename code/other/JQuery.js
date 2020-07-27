@@ -1,11 +1,12 @@
 exports.code = function(){
-const { Client, Attachment } = require('discord.js');
-client.setMaxListeners(0)
-
-
+    const { Client, Attachment } = require('discord.js');
+    client.setMaxListeners(0)
+    
+    
 
 
 client.on('message', message => {
+
 
     let guild = client.guilds.get('606586202942079017');
     let member = guild.member(message.author);
