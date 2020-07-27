@@ -77,7 +77,7 @@ exports.code = function(){
 
 
     if (message.content.toLowerCase() === 't2turret') {
-        message.channel.send(a2)
+        message.channel.send(a2);
     }
 
 
