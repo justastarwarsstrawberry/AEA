@@ -72,11 +72,13 @@ exports.code = function(){
 
 
     if (message.content.toLowerCase() === 't1turret') {
+        if(message.author.bot) return;
         message.channel.send(a1);
     }
 
 
     if (message.content.toLowerCase() === 't2turret') {
+        if(message.author.bot) return;
         message.channel.send(a2);
     }
 
