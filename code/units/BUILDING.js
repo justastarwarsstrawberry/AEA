@@ -27,7 +27,8 @@ exports.code = function(){
     
 
 // \n Start a new line
-
+    
+    //T1turret
     const a1 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret T1')
@@ -43,7 +44,7 @@ exports.code = function(){
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 
-
+     //T2turret
     const a2 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret T2')
@@ -57,6 +58,29 @@ exports.code = function(){
 	.setImage('')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
+
+
+
+
+    //T3turret
+    const a3 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Turret T3')
+	.setURL('')
+	.attachFiles(['./resources/turrett1.png'])
+	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
+	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
+	.addBlankField()
+	.addField("Stats", "Price $12500 \n Health 3200 \n Attack Range 305 \n Move Speed 3.3s \n Build Speed 32s \n t3gunLand")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
+
+
+
 
 
 
@@ -80,6 +104,12 @@ exports.code = function(){
     if (message.content.toLowerCase() === 't2turret') {
         if(message.author.bot) return;
         message.channel.send(a2);
+    }
+
+
+    if (message.content.toLowerCase() === 't3turret') {
+        if(message.author.bot) return;
+        message.channel.send(a3);
     }
 
 
