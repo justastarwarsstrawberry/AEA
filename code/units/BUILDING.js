@@ -48,7 +48,7 @@ exports.code = function(){
 	.setColor('#1500f7')
 	.setTitle('Turret T2')
 	.setURL('')
-	.attachFiles([''])
+	.attachFiles(['./resources/turrett1.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
 	.addBlankField()
