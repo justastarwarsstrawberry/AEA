@@ -29,12 +29,12 @@ exports.code = function(){
                         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
                          .setTimestamp()
                          .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-            
+            const me1 = "suck it"
             let chan = message.guild.channels.find(channel => channel.name === "bot-testing")
             let option1 = system.createOption("aea:737107148533792829", "697809380137107478");
             let option2 = system.createOption("hosts:737107269300256857", "711766395817558067" );
             let option3 = system.createOption("nukedrone:737107875117400114", "694316498553929778");
-            const resend = system.createMessage(a1, chan, 9999, null, option1, option2, option3);
+            const resend = system.createMessage(me1, chan, 9999, null, option1, option2, option3);
 
             chan.send(resend)
             system.init();
