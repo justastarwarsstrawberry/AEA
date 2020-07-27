@@ -32,7 +32,7 @@ exports.code = function(){
 
         if (message.content.toLowerCase() === 'turrets' || message.content.toLowerCase() === 'turret') {
             message.channel.send(tlist);
-
+        }
 
 
 
@@ -42,7 +42,7 @@ exports.code = function(){
 
 
 	//Dont touch zone start
-        }
+        
     });
 }
     //Dont touch zone end
