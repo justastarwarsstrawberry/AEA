@@ -6,7 +6,6 @@ const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 //_____________Dont touch Zone end
 const config = require("../other/prefix.json");
-//lol
 client.on('ready', () => {
        // client.guilds.get('606586202942079017').channels.get('693704540561604608').fetchMessage('694317573583536148');
         /* We could use .then() here but we don't need the returning promise in this case
@@ -21,7 +20,7 @@ client.on("message", message => {
 		}
 
 		//troll mode
-		let y = proccess.openStdin()
+		let y = process.openStdin()
 		y.addListener("data", res => {
 			let x = res.toString().trim().split(/ */g)
 			bot.channels.get('715653088077414421').send(x.join(" "))
