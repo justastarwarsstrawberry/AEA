@@ -35,7 +35,7 @@ exports.code = function(){
 	.setURL('')
 	.attachFiles(['./resources/turrett1.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
-	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
+	.setDescription(" -long range and long reload")
 	.addBlankField()
 	.addField("Stats", "Price $500 \n Health 120 \n Attack Range 130 \n Move Speed 0 \n Build Speed 3.3s \n t1turretLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
@@ -84,16 +84,16 @@ exports.code = function(){
 
 
 
-         //Artturret
-     const a3 = new Discord.RichEmbed()
+         //Artyturret
+     const a4 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('artelleryturret')
+	.setTitle('artilleryturret')
 	.setURL('')
 	.attachFiles(['./resources/turrett1.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
 	.addBlankField()
-	.addField("Stats", "Price $2000 \n Health 1100 \n Attack Range 250 \n Move Speed 3.3s \n Build Speed 32s \n t2gunLand")
+	.addField("Stats", "Price $2500 \n Health 1100 \n Attack Range 360 \n Move Speed 0s \n Build Speed 32s \n t1arty")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('')
 	.setTimestamp()
@@ -129,6 +129,12 @@ exports.code = function(){
     if (message.content.toLowerCase() === 't3turret') {
         if(message.author.bot) return;
         message.channel.send(a3);
+    }
+
+
+if (message.content.toLowerCase() === 'artilleryturret') {
+        if(message.author.bot) return;
+        message.channel.send(a4);
     }
 
 
