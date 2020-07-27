@@ -22,7 +22,7 @@ const teams = require('./other/teams.js');
 const tips = require('./other/tips.js');
 const jq = require('./other/JQuery.js');
 const Timer = require('./other/timer.js');
-const Music = require('../resources/music/music.js');
+
 const Func = require('./other/skaarjlord.js');
 const mute = require('./other/muteco.js');
 const test = require('./other/Test.js');
@@ -111,11 +111,6 @@ if(fivevfive && Client){
   if(Func && Client){
      		Func.code();
      		console.log('Skaarjlord loaded');
-  }
-
-  if(Music && Client){
-     		Music.code();
-     		console.log('Music loaded');
   }
 
   if(tips && Client){
