@@ -4,9 +4,19 @@ exports.code = function(){
     const fs = require("fs");
     //const config = require("../other/database.json");
     client.setMaxListeners(1000)
-    
+    const prompt = require('prompt-sync')({sigint: true});
       
     client.on("message", message => {
+
+        if (message.content.toLowerCase().startsWith('/team')){
+            const player1 = prompt('Player 1 say "I"')
+        }
+
+
+
+
+
+
 
 
 
