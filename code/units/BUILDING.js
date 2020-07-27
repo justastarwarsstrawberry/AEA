@@ -52,7 +52,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
 	.addBlankField()
-	.addField("Stats", "Price $2000 \n Health 1100 \n Attack Range 250 \n Move Speed 6s \n Build Speed 32s")
+	.addField("Stats", "Price $2000 \n Health 1100 \n Attack Range 250 \n Move Speed 3.3s \n Build Speed 32s t2gunLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('')
 	.setTimestamp()
