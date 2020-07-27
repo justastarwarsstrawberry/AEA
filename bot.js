@@ -43,9 +43,9 @@ client.on('guildMemberAdd', member => {
 
 
 function resetBot(channel) {
-    channel.send('Restarting...')
+    //channel.send('Restarting...')
     .then(msg => client.destroy())
-    .then(() => client.login(process.env.BOT_TOKEN));
+    //.then(() => client.login(process.env.BOT_TOKEN));
 }
 
 const talkedRecently = new Set();
