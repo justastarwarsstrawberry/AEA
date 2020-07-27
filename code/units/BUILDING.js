@@ -4,6 +4,15 @@ exports.code = function(){
     client.setMaxListeners(0)
 //Dont touch zone end
 
+
+
+
+
+
+
+
+
+
     const tlist = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret List')
@@ -17,6 +26,26 @@ exports.code = function(){
     .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
     
 
+// \n Start a new line
+
+    const a1 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Turret T1')
+	.setURL('')
+	.attachFiles(['./resources/turrett1.png'])
+	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
+	.setDescription(" - Yum yum \n- yum yum")
+	.addBlankField()
+	.addField("Stats", "Price $275 \n Health 120 \n Attack Range 130 \n Move Speed 1.60 \n Build Speed 3.3s")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://turrett1.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
+
+
+
+
 
 	//Dont touch zone start
     client.on('message', message => {
@@ -28,11 +57,15 @@ exports.code = function(){
 
 
 
+    if (message.content.toLowerCase() === 't1turret') {
+        message.channel.send(a1);
+    }
 
 
-        if (message.content.toLowerCase() === 'turrets' || message.content.toLowerCase() === 'turret') {
-            message.channel.send(tlist);
-        }
+
+    if (message.content.toLowerCase() === 'turrets' || message.content.toLowerCase() === 'turret') {
+        message.channel.send(tlist);
+    }
 
 
 
