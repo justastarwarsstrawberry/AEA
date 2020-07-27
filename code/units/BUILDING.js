@@ -34,7 +34,7 @@ exports.code = function(){
 	.setURL('')
 	.attachFiles(['./resources/turrett1.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
-	.setDescription(" - Yum yum \n- yum yum")
+	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
 	.addBlankField()
 	.addField("Stats", "Price $275 \n Health 120 \n Attack Range 130 \n Move Speed 1.60 \n Build Speed 3.3s")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
