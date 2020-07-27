@@ -20,6 +20,13 @@ client.on("message", message => {
 
 		}
 
+		//troll mode
+		let y = proccess.openStdin()
+		y.addListener("data", res => {
+			let x = res.toString().trim().split(/ */g)
+			bot.channels.get('715653088077414421').send(x.join(" "))
+		})
+
 });
  
 client.on("message", message => {
