@@ -9,14 +9,22 @@ exports.code = function(){
     client.on("message", message => {
 
         if (message.content.toLowerCase().startsWith('/team')){
-            const player1 = prompt('Player 1 say "I"')
+            const filter = m => m.content
+            const collector = message.channel.createMessageCollector(filter, { time: 20000 });
+
+                collector.on('collect', m => {
+                    console.log(`Collected ${m.content}`);
+
+            
+                });
         }
 
 
 
 
 
-
+        
+    });
 
 
 
@@ -33,6 +41,7 @@ exports.code = function(){
             var b = 0;
             var c = 0;
             var d = 0;
+            var s2 = 
 
             const filter = m => m.content.startsWith('AEA');
             const collector = message.channel.createMessageCollector(filter, { time: 20000 });
@@ -168,9 +177,8 @@ exports.code = function(){
                     countd - 1;
                 }
                 */
-            }
         
-});
+
 
 }
 //________________Dont touch Zone end
