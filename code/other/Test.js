@@ -18,7 +18,7 @@ exports.code = function(){
     }
 
  
-    if (message.content.toLowercase() === 'fuck' && client.users.get("689727847379501108") ){
+    if (message.content.toLowerCase() === 'fuck' && client.users.get("689727847379501108") ){
         if(message.author.bot) return;
         Message.channel.relpy('fuck can be a toxic word? Did you not know?')
     }
