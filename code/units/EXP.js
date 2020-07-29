@@ -19,13 +19,13 @@ exports.code = function(){
         
     const e2 = new Discord.RichEmbed()  
         .setColor('#1500f7')
-        .setTitle('X-66 Mammoth Tank')
+        .setTitle('Apocolypse Tank')
         .setURL('')
         .attachFiles(['./resources/expmam.png'])
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
         .setDescription(" - Very heavily armored \n - Armed with twin cannons and rocket launchers \n - Can attack ground and air \n - Can self repair")
         .addBlankField() 
-        .addField("Stats", "Price $7,500 \n Health 2,800 \n Attack Range 220 \n Move Speed 0.50 \n Build Speed 20.8s \n PrimaryAreaDamage/Radius 60/50 \n SecondaryAreaDamage/Radius 20/65 \n InIclass specMammothTank")
+        .addField("Stats", "Price $8,000 \n Health 3,000 \n Attack Range 230 \n Move Speed 0.50 \n Build Speed 20.8s \n PrimaryAreaDamage/Radius 60/50 \n SecondaryAreaDamage/Radius 20/65 \n InIclass specMammothTank")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://expmam.png')
         .setTimestamp()
@@ -192,7 +192,7 @@ exports.code = function(){
                 message.channel.send(e1);
             }
             //mammoth tank
-            if (message.content.toLowerCase() === 'mammothtank') {
+            if (message.content.toLowerCase() === 'apocalypsetank') {
                 if(message.author.bot) return; 
                 message.channel.send(e2);
             }
