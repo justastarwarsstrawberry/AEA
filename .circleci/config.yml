@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@1.1.6
 jobs:
-  Status-Errors:
+  click-here-for-errors:
     executor:
       name: node/default
     steps:
@@ -11,8 +11,8 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
-            - run: node bot.js
+            - run: node bot.js       
 workflows:
-    build-and-test:
+    click-here-for-errors:
       jobs:
-        - Status-Errors
+        - click-here-for-errors
