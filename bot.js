@@ -191,9 +191,10 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
     if(message.content == '/unmuteall' && message.member.roles.some(role => role.name === 'Dev Team Alpha')){
             let channel = message.member.voiceChannel;
             for (let member of channel.members) {
+				if(!channel.members){
                 member[1].setMute(false)
-               
-            }
+				}
+			}
         }
 
         else
