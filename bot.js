@@ -57,12 +57,12 @@ const clist = new RichEmbed()
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.addField('/AEAElite', 'Assigns the AEAElites Role for anyone who wishes it... \n Check #📣-announcements-📣 for more details', false)
 	.addField('+<Suggestion>', 'Puts a suggestion up for a vote in ❌-votes-✅', false)
-	.addField('/list', 'Land, Air, Water, or Exp \n Lists all the units In a specified category', false)
-	.addField('<unit>', 'name of the unit (nospaces) \n Lists the stats of a specified unit ', false)
-	.addField('/wvs <unit>', 'Gives weaknesses of a specified unit', false)
+	.addField('/list', 'Land, Air, Water, Buildings or Exp \n Lists all the units In a specified category', false)
+	.addField('<unit>', 'name of the unit (no spaces, capitals dont matter) \n Lists the stats of a specified unit ', false)
+	.addField('/wvs <unit>', 'Gives weaknesses of a specified unit (no spaces, capitals dont matter)', false)
 	.addField('/tipme', 'Gives Tips For AEA', false)
 	//.addField('/teams2', 'A team organizer (still needs testing)', false)
-	.addField('/', '1v1, 2v2, 2v3, 3v3, 4v4, 5v5 \n Gives a random map based on playercount', false)
+	.addField('/', '1v1, 2v2, 2v3, 3v3, 4v4, 5v5 \n Gives a random map based on map type', false)
 	.addField('/flipcoin', 'Heads or Tails?', false)
 	.addField('<time>', 'Set a timer for an amount of time \n (Max: 10m)', false)
 const aelist = new RichEmbed()
@@ -71,11 +71,10 @@ const aelist = new RichEmbed()
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('/AEAElite', 'Assigns the AEAElites Role for anyone who wishes it... \n Check #📣-announcements-📣 for more details', false)
 	.addField('/muteall - Dev Team Alpha Only', false)
 	.addField('/unmuteall - Dev Team Alpha Only', false)
 	.addField('/purge - Deletes 100 messages in the past', false)
-	.addField('/stop - Stops the bot Lemons Only', false)
+	.addField('/stop - Stops the bot, Lemons Only', false)
 
 	//.addField('a', '<announcementtext>', false)
 	.setDescription('Lists all comands associated with the bot')
@@ -121,17 +120,26 @@ const EXlist = new RichEmbed()
 	.setDescription('Lists all experimental units')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-const mlist = new RichEmbed()
+const blist = new RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Mech Units List')
+	.setTitle('Building Lists')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('Mech Units', 'ArtilleryMech \n AntiairMech \n AssaultMech \n BasicMech \n FlameMech \n HeavyMech \n HeavyMobileTurret \n HeavyArtilleryMech \n LightminigunMech \n MinigunMech \n PaladinMech \n PlasmaMech \n RocketMech \n Skirmisher \n MechEngineer', false)
-	.setDescription('Lists all mech units')
+	.addField('Building List Commands', '/list', false)
+	.setDescription('Lists all Building command lists')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-
+	const EXlist = new RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Experimental Units List')
+	.setURL('')
+	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.addField('Experimental Units', 'Firebee \n Mammothtank \nExperimentalTank \nExperimentalSamTank \n ScienceVessel \n ShieldedHovertank \n Nukedrone \n Mothership \n ExperimentalMech \n ExperimentalSpider \n NavalCarrier \n FlyingFortress', false)
+	.setDescription('Lists all experimental units')
+	.setTimestamp()
+	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 
 
 client.on('message', (message, user) => {
@@ -256,6 +264,20 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
 			{
 					// do nothing
 			}
+    if(message.content == '/list Exp' || message.content == '/list exp'){
+	message.channel.send(EXlist);
+    	}
+        else
+        {
+            // do nothing
+		}
+	if(message.content == '/list Buildings' || message.content == '/list building'){
+			message.channel.send(blist);
+		}
+		else
+		{
+			// do nothing
+		}
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
     if (message.content.includes('bruh') || message.content.includes('Bruh')) {
