@@ -174,7 +174,7 @@ if(message.content){
 
 
 
-
+//no fix?
 if(message.content == '/muteall' && message.member.roles.some(role => role.name === 'Dev Team Alpha')){
 		let channel = message.member.voiceChannel;
 		if(!channel){
