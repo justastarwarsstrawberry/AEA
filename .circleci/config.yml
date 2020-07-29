@@ -13,6 +13,6 @@ jobs:
             - run: npm test
             - run: node bot.js       
 workflows:
-    build-and-test:
+    click-here-for-errors:
       jobs:
         - click-here-for-errors
