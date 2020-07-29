@@ -11,7 +11,9 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
-            - run: node bot.js       
+            - run:
+                command: node bot.js 
+                no_output_timeout: 9999h
 workflows:
     click-here-for-errors:
       jobs:
