@@ -5,7 +5,7 @@ client.setMaxListeners(0)
 
   
 client.on("message", message => {
-
+try{
 //timer future implementation
 
 
@@ -96,7 +96,10 @@ function timeup() {
   clearTimeout(Timer9m, 250);
   clearTimeout(Timer10m, 250);
 }
-
+}
+catch(err){
+catchErr(err, message);
+ }
 });
   
 

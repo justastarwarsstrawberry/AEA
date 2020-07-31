@@ -2,6 +2,7 @@ exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     client.setMaxListeners(0)
     client.on('message', message => {
+    try{
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -135,7 +136,10 @@ exports.code = function(){
                 message.reply('Hide your income... if you can.')
             }  
         }
-    
+    }
+    catch(err){
+		catchErr(err, message);
+	   }
     });
 
 }

@@ -2,8 +2,8 @@
 exports.code = function(){
 
       
-    client.on("message", message => {
-
+client.on("message", message => {
+try{
 
    if(message.content.toLowerCase().includes('rage') &&  client.users.get("543626502215041025") ){
         if(message.author.bot) return;
@@ -22,7 +22,10 @@ exports.code = function(){
         if(message.author.bot) return;
         Message.channel.relpy('fuck can be a toxic word? Did you not know?')
     }
-    
+}
+catch(err){
+    catchErr(err, message);
+   }
 
     });
 

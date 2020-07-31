@@ -293,7 +293,16 @@ const e21 = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', message => {
-	
+	try{
+
+
+
+
+
+
+
+
+
 //random
 //Gunboat
 if (message.content.toLowerCase() === 'gunboat' && !message.author.bot) {
@@ -404,9 +413,21 @@ if (message.content.toLowerCase() === 'lrs') {
 	if(message.author.bot) return;  
 	message.channel.send(e21);
 }
+
+
+
+
+
+
+}
+catch(err){
+	catchErr(err, message);
+   }
+
+
+
 });
   
-// Fucking done... for now
   
 //_____________Dont touch Zone start
 }

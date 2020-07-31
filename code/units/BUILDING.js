@@ -134,10 +134,15 @@ exports.code = function(){
 
 	//Dont touch zone start
     client.on('message', message => {
+	try{
     //Dont touch zone end
 
 
 
+
+
+
+	
 
 
 
@@ -177,8 +182,14 @@ if (message.content.toLowerCase() === 'artilleryturret') {
 
 
 
+
+
+
 	//Dont touch zone start
-        
+	}
+	catch(err){
+		catchErr(err, message);
+   	}    
     });
 }
     //Dont touch zone end

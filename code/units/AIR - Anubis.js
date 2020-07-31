@@ -268,6 +268,7 @@ const helicopter = new Discord.RichEmbed()
 	
 	client.on('message', message => {
 //units
+try{
     if (message.content.toLowerCase() === 'lightgunship') {
 	    message.channel.send(lightgunship);
     }
@@ -358,7 +359,10 @@ const helicopter = new Discord.RichEmbed()
 
     }
 
-    
+}
+catch(err){
+	catchErr(err, message);
+   }  
 });
 //Dont touch Zone start
 }

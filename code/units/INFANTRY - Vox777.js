@@ -46,6 +46,16 @@ exports.code = function(){
 
 
     client.on('message', message => {
+        try{
+
+
+
+
+
+
+
+
+
         //Xan commander
 			if (message.content.toLowerCase() === 'xancommander') {
 				if(message.author.bot) return; 
@@ -56,7 +66,22 @@ exports.code = function(){
                 if(message.author.bot) return; 
                 message.channel.send(ghost);
             }
-    
+
+
+
+
+
+
+
+
+
+
+            
+
+        }
+        catch(err){
+            catchErr(err, message);
+           }
     });
 
 }

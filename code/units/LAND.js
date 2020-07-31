@@ -318,7 +318,7 @@ const e23 = new Discord.RichEmbed()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
 client.on('message', message => {
-	
+try{	
 
 //tank
     if (message.content.toLowerCase() === 'tank') {
@@ -420,26 +420,57 @@ client.on('message', message => {
 	if(message.author.bot) return; 
 	message.channel.send(e20);
     }	
-//Siegetank
+
     if (message.content.toLowerCase() === 'siegetank') {
 	if(message.author.bot) return; 
 	message.channel.send(e21);
 	}	
-//Siegetank
+
 if (message.content.toLowerCase() === 'achilles') {
 	if(message.author.bot) return; 
 	message.channel.send(e22);
 	}	
-//Siegetank
+
 if (message.content.toLowerCase() === 'radartruck') {
 	if(message.author.bot) return; 
 	message.channel.send(e23);
-    }	
+	}	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//________________Dont touch Zone start
+}
+
+catch(err){
+	catchErr(err, message);
+   }
 });
   
   
   
   
-//________________Dont touch Zone start
+
 }
 //________________Dont touch Zone end

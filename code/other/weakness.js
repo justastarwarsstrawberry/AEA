@@ -3,7 +3,7 @@ exports.code = function(){
     client.setMaxListeners(0)	
 
     client.on('message', message => {	
-
+        try{
         if(message.content.toLowerCase().startsWith('/wvs')) {	
 
             if(message.content.toLowerCase().includes('heavyinterceptor')){	
@@ -135,6 +135,10 @@ exports.code = function(){
             }
             // need more
         }
+    }
+    catch(err){
+		catchErr(err, message);
+	   }
     });	
 
 }	

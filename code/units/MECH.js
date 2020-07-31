@@ -204,6 +204,12 @@ exports.code = function(){
 //add mech eng
 
         client.on('message', message => {
+            try{
+
+
+
+
+
             //basicmech
                 if (message.content.toLowerCase() === 'basicmech') {
 					if(message.author.bot) return; 
@@ -279,5 +285,16 @@ exports.code = function(){
                 if(message.author.bot) return; 
                 message.channel.send(e15);
             }  
+
+
+
+
+        }
+        catch(err){
+            catchErr(err, message);
+           }
+
+
+
             });
 }

@@ -1,6 +1,6 @@
 
 
-try{
+
 const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
@@ -24,7 +24,7 @@ client.login(process.env.BOT_TOKEN);
 
 
 function catchErr (err, message){
-	client.users.get("242687584373964801").send("ERROR ```" + err + "```")
+	client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
 }
 
 
@@ -150,6 +150,7 @@ const blist = new RichEmbed()
 
 
 client.on('message', (message, user) => {
+try{
 if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Developer')){
 
 	var numberofmessages = 100;
@@ -306,8 +307,9 @@ else
     }
 	CustomException.prototype = Object.create(Error.prototype);
 
+	}
+	catch(err){
+		catchErr(err, message);
+	   }
 	});
-}
-catch(err){
- catchErr(err, message);
-}
+

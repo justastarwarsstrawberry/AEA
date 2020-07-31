@@ -24,7 +24,6 @@ const jq = require('./other/JQuery.js');
 const Timer = require('./other/timer.js');
 
 const Func = require('./other/skaarjlord.js');
-const mute = require('./other/muteco.js');
 const test = require('./other/Test.js');
 
 //const role = require('./other/reactionroles.js');
@@ -140,10 +139,6 @@ if(fivevfive && Client){
   if(teams && Client){
     jq.code();
     console.log("Tournament loaded");
-  }
-  if(mute && Client){
-    mute.code();
-    console.log("muteco loaded");
   }
  
 }

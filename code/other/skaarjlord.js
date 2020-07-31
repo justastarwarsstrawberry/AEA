@@ -14,6 +14,7 @@ client.on('ready', () => {
 });
 
 client.on("message", message => {
+	try{
         if (message.content.toLowerCase() === '/aeaelite') {
                         message.member.addRole('694316498553929778');
 
@@ -25,10 +26,15 @@ client.on("message", message => {
 			let x = res.toString().trim().split(/ */g)
 			client.channels.get('711770374202982400').send(x.join(" "))
 		})
+	}
 
+    catch(err){
+		catchErr(err, message);
+	   }
 });
  
 client.on("message", message => {
+try{
 let guild = client.guilds.get('606586202942079017');
 let member = guild.member(message.author);
 let nickname = member ? member.displayName : null;
@@ -73,7 +79,11 @@ if (message.channel.id === '711753321106636830'){
 	}
 	
 
-    }
+	}
+}
+catch(err){
+	catchErr(err, message);
+   }
   });
 }
 
