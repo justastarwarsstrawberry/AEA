@@ -123,7 +123,7 @@ exports.code = function(){
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
         .setDescription(" - Very heavily armed and armored \n- Can attack ground and light air \n- Sub attack when over water \n- Very slow \n - Can self-repair \n- Can move over water")
         .addBlankField()
-        .addField("Stats", "Price $125,000 \n Health 15,000 \n Attack Range 310 \n Move Speed 0.30 \n Build Speed 92.4s")
+        .addField("Stats", "Price $125,000 U: 7,500\n Health 15,000 \n Attack Range 310 \n Move Speed 0.30 \n Build Speed 92.4s")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://expmech.png')
         .setTimestamp()
@@ -137,7 +137,7 @@ exports.code = function(){
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
         .setDescription(" - Advanced heavy seige mech \n- Strong ground attack with long range \n- Gatling anti-tank cannon \n- Drum-fed grenade launcher \n- Guided missiles \n- Cannot fit in air transports \n- Goes nuclear on death \n- Can walk on water")
         .addBlankField()
-        .addField("Stats", "Price $250,000 \n Health 12,000 \n Shield 8,000 \n Attack Range 350 \n Move Speed 0.4 \n Build Speed Varies")
+        .addField("Stats", "Price $250,000 U: 12,500\n Health 12,000 \n Shield 8,000 \n Attack Range 350 \n Move Speed 0.4 \n Build Speed Varies")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setTimestamp()
         .setImage('attachment://exptitan.png')
@@ -151,7 +151,7 @@ exports.code = function(){
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
         .setDescription(" - Support unit \n- Laser defense \n- Built in fabricator \n- Can build/repair units and buildings \n- Cannot fit in transports \n- Can build powerful experimentals \n- Can only have 5 built at once \n- Goes nuclear on death \n - Can walk on water")
         .addBlankField()
-        .addField("Stats", "Price $70,000 \n Health 10,000 \n Attack Range 250 \n Move Speed 0.30 \n Build Speed 83.3s")
+        .addField("Stats", "Price $70,000 U:5000 \n Health 10,000 \n Attack Range 250 \n Move Speed 0.30 \n Build Speed 83.3s")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://expspider.png')
         .setTimestamp()
@@ -165,7 +165,7 @@ exports.code = function(){
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
         .setDescription(" - Experimental Naval Carrier \n- Can make Air and Naval units \n- Built in fabricator \n- Carries 16 Units \n- Goes nuclear on death \n- Can only have 5 at a time")
         .addBlankField()
-        .addField("Stats", "Price $65,000 \n Health 7,500 \n Attack Range 350 \n Move Speed 0.45 \n Build Speed 111.1s")
+        .addField("Stats", "Price $65,000 U: 5000\n Health 7,500 \n Attack Range 350 \n Move Speed 0.45 \n Build Speed 111.1s")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://navalcarrier.png')
         .setTimestamp()
@@ -218,7 +218,7 @@ exports.code = function(){
                 message.channel.send(e6);
             }      
              //nuke drone
-             if (message.content.toLowerCase() === 'nucleardrone') {
+             if (message.content.toLowerCase() === 'nucleardrone' || message.content.toLowerCase() === 'nukedrone') {
                 if(message.author.bot) return; 
                 message.channel.send(e7);
             }       
