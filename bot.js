@@ -1,9 +1,17 @@
 
+
+try{
 const { Client, Attachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
-
 client.setMaxListeners(0)
+
+
+
+
+
+
+
 
 const Imports = require('./code/imports.js');
   if(Imports && Client){
@@ -13,6 +21,15 @@ const Imports = require('./code/imports.js');
 
 client.login(process.env.BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
+
+
+function catchErr (err, message){
+	client.channels.get("738627399658504255").send("ERROR ```" + err + "```")
+}
+
+
+
+
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -288,7 +305,11 @@ else
    	message.channel.send(attachment);
     }
 
-
+Error
 
 
 });
+}
+catch(err){
+ catchErr(err, message);
+}
