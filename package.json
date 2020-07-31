@@ -34,6 +34,6 @@
 		"eslint": "^5.15.2"
 	},
 	"scripts": {
-		"start": "node bot.js && echo stop"
+		"test": "node bot.js"
 	}
 }
