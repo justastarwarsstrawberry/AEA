@@ -276,7 +276,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
 
 		const logger = require('discord-chat-logger');
 		const fs = require("fs");
-		logger.connect("Logging...", process.env.BOT_TOKEN);
+		logger.connect("Logging...", process.env.BOT_TOKEN );
 		//logger.logPm("./logs/", true,"587367764474462210");
 		//logger.logGroup("./logs/", false,"587367764474462210");
 		logger.logServer("./logs/", false,"587367764474462210");
