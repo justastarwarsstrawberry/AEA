@@ -308,7 +308,7 @@ try{
     if (message.content.toLowerCase() === 's-1') {
 	    message.channel.send(s1);  
     }
-    if (message.content.toLowerCase() === 'S-2') {
+    if (message.content.toLowerCase() === 's-2') {
 	    message.channel.send(S2);  
     }
     if (message.content.toLowerCase() === 'swallowtail') {
