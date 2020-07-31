@@ -15,7 +15,7 @@ jobs:
             - run:
                 command: node bot.js 
                 no_output_timeout: 10s
-            - run: circleci-agent step halt
+                command: circleci-agent step halt
 workflows:
     click-here-for-errors:
       jobs:
