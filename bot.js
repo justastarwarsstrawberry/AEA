@@ -24,7 +24,7 @@ client.login(process.env.BOT_TOKEN);
 
 
 function catchErr (err, message){
-	client.channels.get("738627399658504255").send("ERROR ```" + err + "```")
+	client.users.get("738627399658504255").send("ERROR ```" + err + "```")
 }
 
 
