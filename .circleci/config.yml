@@ -12,9 +12,9 @@ jobs:
 
             - run: npm install
             - run: npm test
-            - run:
-                command: node bot.js 
-            - run: circleci-agent step halt
+
+                
+                    
 workflows:
     click-here-for-errors:
       jobs:
