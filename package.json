@@ -34,6 +34,6 @@
 		"eslint": "^5.15.2"
 	},
 	"scripts": {
-		"test": "node bot.js"
+		"test": "node bot.js --timeout 4000"
 	}
 }
