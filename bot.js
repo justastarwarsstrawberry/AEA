@@ -199,7 +199,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
 				
 			}
 		}
-        }
+    }
 
         else
         {

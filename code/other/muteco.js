@@ -10,7 +10,7 @@ client.on("message", message => {
     
 
 
-
+/*
 if(message.content.toLowerCase().startsWith('/mute')){
     function getUserFromMention(mention) {
         if (!mention) return;
@@ -41,5 +41,8 @@ setTimeout(function() {
     message.channel.send(`${user.user.tag} is unmuted, mute time was ${ms(ms(time), {long:true})}...`);
 }, ms(time));
     }
+
+    */
 });
 }
+
