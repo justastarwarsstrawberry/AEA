@@ -11,13 +11,8 @@ jobs:
           steps:
 
             - run: npm install
-            - run: npm test
-            - run:
-                command: node bot.js 
-                command2: |
-                  echo '/stop'
-                command3: circleci step halt
-                no_output_timeout: 10s
+            - run: npm test bot.js
+
                 
                     
 workflows:
