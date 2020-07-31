@@ -304,11 +304,9 @@ else
     if (message.content.includes('bruh') || message.content.includes('Bruh')) {
    	message.channel.send(attachment);
     }
+		thisIsNotDefinedXD
 
-Error
-
-
-});
+	});
 }
 catch(err){
  catchErr(err, message);
