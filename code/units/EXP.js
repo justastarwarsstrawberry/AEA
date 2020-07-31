@@ -165,7 +165,7 @@ exports.code = function(){
         .setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
         .setDescription(" - Experimental Naval Carrier \n- Can make Air and Naval units \n- Built in fabricator \n- Carries 16 Units \n- Goes nuclear on death \n- Can only have 5 at a time")
         .addBlankField()
-        .addField("Stats", "Price $65,000 U: 5000\n Health 7,500 \n Attack Range 350 \n Move Speed 0.45 \n Build Speed 111.1s")
+        .addField("Stats", "Price $65,000 U: 5000\n Health 7,500 \n Attack Range 350 \n Move Speed 0.45 \n Build Speed 111.1s \n PrimaryAreaDamage/Radius 25/30 \n SecondaryAreaDamage/Radius 75/100 \n TertiaryAreaDamage/Radius 95 \n InIClass navalCarrier")
         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
         .setImage('attachment://navalcarrier.png')
         .setTimestamp()

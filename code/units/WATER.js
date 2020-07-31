@@ -252,6 +252,8 @@ const e18 = new Discord.RichEmbed()
 	.setImage('attachment://dreadnought.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+/*
+Duplicate
 const e19 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Naval Carrier')
@@ -265,6 +267,9 @@ const e19 = new Discord.RichEmbed()
 	.setImage('attachment://navalcarrier.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
+
+	*/
 const e20 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Target Sub')
@@ -399,10 +404,12 @@ if (message.content.toLowerCase() === 'dreadnought') {
 	message.channel.send(e18);
 }
 //navalcarrier
+/* Duplicate
 if (message.content.toLowerCase() === 'navalcarrier') {
 	if(message.author.bot) return;  
 	message.channel.send(e19);
 }
+*/
 //targetsub
 if (message.content.toLowerCase() === 'targetsub') {
 	if(message.author.bot) return;  
