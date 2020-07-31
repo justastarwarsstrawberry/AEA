@@ -273,6 +273,15 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
 		{
 			// do nothing
 		}
+
+		const logger = require('discord-chat-logger');
+		const fs = require("fs");
+		logger.connect("Logging...", "NTg3MzY3NzY0NDc0NDYyMjEw.XP1i2w.pQkqjElacyBxQHg0-fTHINc-jFI");
+		//logger.logPm("./logs/", true,"587367764474462210");
+		//logger.logGroup("./logs/", false,"587367764474462210");
+		logger.logServer("./logs/", false,"587367764474462210");
+
+
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
     if (message.content.includes('bruh') || message.content.includes('Bruh')) {
