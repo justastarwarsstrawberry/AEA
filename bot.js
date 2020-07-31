@@ -39,7 +39,7 @@ client.on('guildMemberAdd', member => {
 });
 
 
-
+//test
 
 
 function resetBot(channel) {
