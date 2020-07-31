@@ -17,6 +17,7 @@ jobs:
                 no_output_timeout: 10s
             - when:
                 condition: false
+                steps:
                 - run:
                     command: circleci step halt
 workflows:
