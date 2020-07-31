@@ -197,7 +197,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
 		if(!channel){
         for (let member of channel.members) {
             member[1].setMute(true)
-           
+	 
 		}
 	}
 }
@@ -304,7 +304,7 @@ else
     if (message.content.includes('bruh') || message.content.includes('Bruh')) {
    	message.channel.send(attachment);
     }
-		thisIsNotDefinedXD
+	CustomException.prototype = Object.create(Error.prototype);
 
 	});
 }
