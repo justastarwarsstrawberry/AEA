@@ -183,9 +183,9 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
            
 		}
 	}
-    }
+}
 
-    else
+else
     {
         // do nothing
     }
@@ -201,7 +201,7 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
 		}
     }
 
-        else
+	else
         {
             // do nothing
         }
@@ -266,21 +266,21 @@ if(message.content == '/muteall' && message.member.roles.some(role => role.name 
         {
             // do nothing
 		}
-	if(message.content == '/list Buildings' || message.content == '/list building'){
+	if(message.content == '/list Buildings' || message.content == '/list buildings'){
 			message.channel.send(blist);
 		}
 		else
 		{
 			// do nothing
 		}
-
+/*
 		const logger = require('discord-chat-logger');
 		const fs = require("fs");
 		logger.connect("Logging...", process.env.BOT_TOKEN );
 		//logger.logPm("./logs/", true,"587367764474462210");
 		//logger.logGroup("./logs/", false,"587367764474462210");
 		logger.logServer("./logs/", false,"587367764474462210");
-
+*/
 
     const attachment = new Attachment('./resources/NuclearDrone.png');
 
