@@ -91,7 +91,7 @@ exports.code = function(){
 	.setURL('')
 	.attachFiles(['./resources/artilleryturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
-	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
+	.setDescription(" -long range and long reload")
 	.addBlankField()
 	.addField("Stats", "Price $2,500 \n Health 1100 \n Attack Range 360 \n Move Speed 0s \n Build Speed 32s \n InIclass t1arty")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
