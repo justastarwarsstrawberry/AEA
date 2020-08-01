@@ -250,7 +250,7 @@ if (message.content.toLowerCase() === 'artilleryturret') {
 
 
 
-if (message.content.toLowerCase() === 'flame turret') {
+if (message.content.toLowerCase() === 'flameturret') {
         if(message.author.bot) return;
         message.channel.send(a5);
     }
@@ -258,7 +258,7 @@ if (message.content.toLowerCase() === 'flame turret') {
 
 
 
-    if (message.content.toLowerCase() === 'rocket turret') {
+    if (message.content.toLowerCase() === 'rocketturret') {
         if(message.author.bot) return;
         message.channel.send(a6);
     }
