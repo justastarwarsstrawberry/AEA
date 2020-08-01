@@ -112,7 +112,7 @@ exports.code = function(){
 	.setURL('')
 	.attachFiles(['./resources/flameturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
-	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
+	.setDescription(" -short range, area of attack.")
 	.addBlankField()
 	.addField("Stats", "Price $1,800 \n Health 500 \n Attack Range 180 \n Move Speed 0s \n Build Speed 32s \n InIclass t1flameLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
