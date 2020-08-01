@@ -277,13 +277,6 @@ else
 			{
 					// do nothing
 			}
-    if(message.content == '/list Exp' || message.content == '/list exp'){
-	message.channel.send(EXlist);
-    	}
-        else
-        {
-            // do nothing
-		}
 	if(message.content == '/list Buildings' || message.content == '/list buildings'){
 			message.channel.send(blist);
 		}
