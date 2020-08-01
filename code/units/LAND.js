@@ -27,6 +27,7 @@ const e1 = new Discord.RichEmbed()
 	.setImage('attachment://tank.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+	
 const e2 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('AA Missile Tank')

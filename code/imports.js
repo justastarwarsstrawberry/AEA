@@ -25,6 +25,8 @@ const Timer = require('./other/timer.js');
 
 const Func = require('./other/skaarjlord.js');
 const test = require('./other/Test.js');
+//const rukkit = require('./jars/rukkit.js')
+//const music = require('./jars/music/music.js')
 
 //const role = require('./other/reactionroles.js');
 // Maps
@@ -121,6 +123,16 @@ if(fivevfive && Client){
     test.code();
     console.log('Test.js loaded');
   }
+  /*
+  if(rukkit && Client){
+    rukkit.code();
+    console.log('Rukkit.js loaded');
+  }
+  if(music && Client){
+    music.code();
+    console.log('Music loaded');
+  }
+
  /*
   if(role && Client){
     role.code();

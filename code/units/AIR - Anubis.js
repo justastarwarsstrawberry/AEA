@@ -275,7 +275,7 @@ try{
     if (message.content.toLowerCase() === 'heavyinterceptor') {
 	    message.channel.send(heavyinterceptor);
     }
-    if (message.content.toLowerCase() === 'Interceptor') {
+    if (message.content.toLowerCase() === 'interceptor') {
 	    message.channel.send(interceptor);
     }
     if (message.content.toLowerCase() === 'dropship') {
