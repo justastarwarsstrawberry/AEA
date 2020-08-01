@@ -105,7 +105,7 @@ exports.code = function(){
 
 
 
-
+         //flame turret
     const a5 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret flame')
@@ -114,7 +114,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
 	.addBlankField()
-	.addField("Stats", "Price $2000 \n Health 1100 \n Attack Range 250 \n Move Speed 3.3s \n Build Speed 32s \n InIclass t1flameLand")
+	.addField("Stats", "Price $1,800 \n Health 500 \n Attack Range 180 \n Move Speed 0s \n Build Speed 32s \n InIclass t1flameLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://flameturret.png')
 	.setTimestamp()
@@ -169,6 +169,14 @@ if (message.content.toLowerCase() === 'artilleryturret') {
         if(message.author.bot) return;
         message.channel.send(a4);
     }
+
+
+
+if (message.content.toLowerCase() === 'flame turret') {
+        if(message.author.bot) return;
+        message.channel.send(a5);
+    }
+
 
 
     if (message.content.toLowerCase() === '/list turrets' || message.content.toLowerCase() === '/list turret') {
