@@ -193,7 +193,7 @@ exports.code = function(){
 	.setColor('#1500f7')
 	.setTitle('heavy cannon')
 	.setURL('')
-	.attachFiles(['./resources/heavycanon.png'])
+	.attachFiles(['./resources/heavycannon.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -can attack ground and air. \n long range. .")
 	.addBlankField()
