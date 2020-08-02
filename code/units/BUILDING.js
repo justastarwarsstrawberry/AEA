@@ -267,7 +267,7 @@ if (message.content.toLowerCase() === 'flameturret') {
 
 
 
-    if (message.content.toLowerCase() === 'bunker turret') {
+    if (message.content.toLowerCase() === 'bunkerturret') {
         if(message.author.bot) return;
         message.channel.send(a7);
     }
@@ -277,7 +277,7 @@ if (message.content.toLowerCase() === 'flameturret') {
 
 
 
-    if (message.content.toLowerCase() === 'light canon') {
+    if (message.content.toLowerCase() === 'lightcannon') {
         if(message.author.bot) return;
         message.channel.send(a8);
     }
@@ -285,7 +285,7 @@ if (message.content.toLowerCase() === 'flameturret') {
 
 
 
-    if (message.content.toLowerCase() === 'heavy canon') {
+    if (message.content.toLowerCase() === 'heavycannon') {
         if(message.author.bot) return;
         message.channel.send(a9);
     }
