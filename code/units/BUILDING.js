@@ -20,7 +20,8 @@ exports.code = function(){
 	.setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
 	.setDescription("A list of all turrets to be typed and displayed")
 	.addBlankField()
-	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret")
+	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret  \n bunker turret \n light canon
+ \n heavy canon")
     .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
     .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
@@ -37,7 +38,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -long range and long reload")
 	.addBlankField()
-	.addField("Stats", "Price $500 \n Health 120 \n Attack Range 130 \n Move Speed 0 \n Build Speed 3.3s \n InIclass t1turretLand")
+	.addField("Stats", "Price $500 \n Health 120 \n Attack Range 130 \n Build Speed 3.3s \n InIclass t1turretLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://turrett1.png')
 	.setTimestamp()
@@ -53,7 +54,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
 	.addBlankField()
-	.addField("Stats", "Price $2,000 \n Health 1100 \n Attack Range 250 \n Move Speed 0 \n Build Speed 32s \n InIclass t2gunLand")
+	.addField("Stats", "Price $2,000 \n Health 1100 \n Attack Range 250 \n Build Speed 32s \n InIclass t2gunLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://turrett2.png')
 	.setTimestamp()
@@ -72,7 +73,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
 	.addBlankField()
-	.addField("Stats", "Price $12,500 \n Health 3200 \n Attack Range 305 \n Move Speed 0 \n Build Speed 32s \n InIclass t3gunLand")
+	.addField("Stats", "Price $12,500 \n Health 3200 \n Attack Range 305 \n Build Speed 32s \n InIclass t3gunLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://turrett3.png')
 	.setTimestamp()
@@ -93,7 +94,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -long range and long reload")
 	.addBlankField()
-	.addField("Stats", "Price $2,500 \n Health 1100 \n Attack Range 360 \n Move Speed 0s \n Build Speed 32s \n InIclass t1arty")
+	.addField("Stats", "Price $2,500 \n Health 1100 \n Attack Range 360 \n Build Speed 32s \n InIclass t1arty")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://artilleryturret.png')
 	.setTimestamp()
@@ -114,7 +115,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -short range, area of attack.")
 	.addBlankField()
-	.addField("Stats", "Price $1,800 \n Health 500 \n Attack Range 180 \n Move Speed 0s \n Build Speed 32s \n InIclass t1flameLand")
+	.addField("Stats", "Price $1,800 \n Health 500 \n Attack Range 180 \n Build Speed 32s \n InIclass t1flameLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://flameturret.png')
 	.setTimestamp()
@@ -135,7 +136,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -can attack ground and air. \n long range. .")
 	.addBlankField()
-	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300 \n Move Speed 0s \n Build Speed 32s \n InIclass rocket_turret")
+	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300 \n Build Speed 32s \n InIclass rocket_turret")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://rocketturret.png')
 	.setTimestamp()
@@ -150,13 +151,14 @@ exports.code = function(){
 	.setColor('#1500f7')
 	.setTitle('turret bunker')
 	.setURL('')
-	.attachFiles(['./resources/rocketturret.png'])
+	.attachFiles(['./resources/bunkerturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
-	.setDescription(" -can attack ground and air. \n long range. .")
+	.setDescription("- Heavily armoured bunker turret\n- Near artillery range\n- Heavy damage from dual cannons")
+
 	.addBlankField()
-	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300 \n Move Speed 0s \n Build Speed 32s \n InIclass rocket_turret")
+	.addField("Stats", "Price $8,000 \n Health 7000 \n Attack Range 280 \n Build Speed 32s \n InIclass turret bunker")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://rocketturret.png')
+	.setImage('attachment://bunkerturret.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -174,7 +176,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -can attack ground and air. \n long range. .")
 	.addBlankField()
-	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300 \n Move Speed 0s \n Build Speed 32s \n InIclass rocket_turret")
+	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300  \n Build Speed 32s \n InIclass rocket_turret")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://rocketturret.png')
 	.setTimestamp()
@@ -196,7 +198,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -can attack ground and air. \n long range. .")
 	.addBlankField()
-	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300 \n Move Speed 0s \n Build Speed 32s \n InIclass rocket_turret")
+	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300  \n Build Speed 32s \n InIclass rocket_turret")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://rocketturret.png')
 	.setTimestamp()
@@ -262,6 +264,33 @@ if (message.content.toLowerCase() === 'flameturret') {
         if(message.author.bot) return;
         message.channel.send(a6);
     }
+
+
+
+
+    if (message.content.toLowerCase() === 'bunker turret') {
+        if(message.author.bot) return;
+        message.channel.send(a7);
+    }
+
+
+
+
+
+
+    if (message.content.toLowerCase() === 'light canon') {
+        if(message.author.bot) return;
+        message.channel.send(a8);
+    }
+
+
+
+
+    if (message.content.toLowerCase() === 'heavy canon') {
+        if(message.author.bot) return;
+        message.channel.send(a9);
+    }
+
 
 
 
