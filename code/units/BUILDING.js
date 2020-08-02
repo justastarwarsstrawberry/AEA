@@ -133,7 +133,7 @@ exports.code = function(){
 	.setURL('')
 	.attachFiles(['./resources/rocketturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
-	.setDescription(" -can attack ground and air. \n long range. .")
+	.setDescription(" -can attack ground and air. \n -long range.")
 	.addBlankField()
 	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300 \n Build Speed 32s \n InIclass rocket_turret")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
