@@ -12,9 +12,10 @@ try{
     
 
 
-    if (message.content.toLowerCase() === 'host' && client.users.get("428543881978707969") ){
+    
+    if (message.content.toLowerCase() === 'press f') {
         if(message.author.bot) return;
-        message.channel.reply('host? Can I host?');
+        message.reply(f);
     }
 
  
