@@ -20,7 +20,7 @@ exports.code = function(){
 	.setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
 	.setDescription("A list of all turrets to be typed and displayed")
 	.addBlankField()
-	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret \n missileturret  \n bunker turret \n light cannon\n heavy cannon\n SAMT1\n SAMT2\n SAMT3")
+	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret \n missileturret  \n bunker turret \n light cannon\n heavy cannon\n t1sam\n t2sam\n t3sam")
     .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
     .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
@@ -381,7 +381,7 @@ if (message.content.toLowerCase() === 'missileturret') {
 
 
 
-    if (message.content.toLowerCase() === 'SAMT1') {
+    if (message.content.toLowerCase() === 't1sam') {
         if(message.author.bot) return;
         message.channel.send(a11);
     }
@@ -389,14 +389,14 @@ if (message.content.toLowerCase() === 'missileturret') {
 
 
 
-    if (message.content.toLowerCase() === 'SAMT2') {
+    if (message.content.toLowerCase() === 't2sam') {
         if(message.author.bot) return;
         message.channel.send(a12);
     }
 
 
 
-    if (message.content.toLowerCase() === 'SAMT3') {
+    if (message.content.toLowerCase() === 't3sam') {
         if(message.author.bot) return;
         message.channel.send(a13);
     }
