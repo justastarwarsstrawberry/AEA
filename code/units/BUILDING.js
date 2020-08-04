@@ -20,7 +20,7 @@ exports.code = function(){
 	.setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
 	.setDescription("A list of all turrets to be typed and displayed")
 	.addBlankField()
-	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret \n missileturret  \n bunker turret \n light cannon\n heavy cannon\n t1sam\n t2sam\n t3sam\n emp aa\nflak aa")
+	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret \n missileturret  \n bunker turret \n light cannon\n heavy cannon\n t1sam\n t2sam\n t3sam\n empaa\nflakturret")
     .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
     .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
@@ -293,17 +293,17 @@ exports.code = function(){
 
 
           //emp aa
-    const a13 = new Discord.RichEmbed()
+    const a14 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('emp aa')
 	.setURL('')
-	.attachFiles(['./resources/samturrett3.png'])
+	.attachFiles(['./resources/empaa.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-shoots surface to air missiles\n- cannot attack ground\n- upgradable")
 	.addBlankField()
 	.addField("Stats", "Price $9000 \n Health 3900 \n Attack Range 400  \n Build Speed 0.002s \n InIclass c_antiAirTurretT3")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://samturrett3.png')
+	.setImage('attachment://empaa.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 
@@ -313,17 +313,17 @@ exports.code = function(){
 
 
           //flak aa
-    const a13 = new Discord.RichEmbed()
+    const a15 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('flak aa')
 	.setURL('')
-	.attachFiles(['./resources/samturrett3.png'])
+	.attachFiles(['./resources/flakturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
-	.setDescription("-shoots surface to air missiles\n- cannot attack ground\n- upgradable")
+	.setDescription("- Short range heavy splash damage\n- The bane of gunships")
 	.addBlankField()
-	.addField("Stats", "Price $9000 \n Health 3900 \n Attack Range 400  \n Build Speed 0.002s \n InIclass c_antiAirTurretT3")
+	.addField("Stats", "Price $4100 \n Health 2700 \n sheild 1500 \n Attack Range 250  \n Build Speed 0.0008s \n InIclass c_antiAirTurretFlak")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://samturrett3.png')
+	.setImage('attachment://flaktuuret.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 
@@ -438,6 +438,22 @@ if (message.content.toLowerCase() === 'missileturret') {
         message.channel.send(a13);
     }
 
+
+
+
+    if (message.content.toLowerCase() === 'empaa') {
+        if(message.author.bot) return;
+        message.channel.send(a14);
+    }
+
+
+
+
+
+    if (message.content.toLowerCase() === 'flakturret') {
+        if(message.author.bot) return;
+        message.channel.send(a15);
+    }
 
 
 
