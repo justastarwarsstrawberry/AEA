@@ -7,14 +7,15 @@ try{
 
    if(message.content.toLowerCase().includes('rage') &&  client.users.get("543626502215041025") ){
         if(message.author.bot) return;
-        message.reply('rage? I heard galaxy like to rage like a bitch?');
+        message.reply('someone raged hun?');
     }
     
 
 
-    if (message.content.toLowerCase() === 'host' && client.users.get("428543881978707969") ){
+    
+    if (message.content.toLowerCase() === 'press f') {
         if(message.author.bot) return;
-        message.channel.reply('host? Can I host?');
+        message.reply(f);
     }
 
  
