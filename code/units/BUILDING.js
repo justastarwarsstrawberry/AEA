@@ -20,7 +20,7 @@ exports.code = function(){
 	.setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
 	.setDescription("A list of all turrets to be typed and displayed")
 	.addBlankField()
-	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret  \n bunker turret \n light cannon\n heavy cannon")
+	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret \n missileturret  \n bunker turret \n light cannon\n heavy cannon")
     .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
     .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
@@ -144,9 +144,30 @@ exports.code = function(){
 
 
 
+         //missileturret
+    const a7 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('missile turret')
+	.setURL('')
+	.attachFiles(['./resources/rocketturret2.png'])
+	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
+	.setDescription(" -can attack ground and air. \n -long range.")
+	.addBlankField()
+	.addField("Stats", "Price $11,000 \n Health 1800 \n Attack Range 360 \n Build Speed 0.0005s \n InIclass missile_turret")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://rocketturret2.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
+
+
+
+
+
+
+
 
          //bunkerturret
-    const a7 = new Discord.RichEmbed()
+    const a8 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('turret bunker')
 	.setURL('')
@@ -167,7 +188,7 @@ exports.code = function(){
 
 
            //light cannon
-    const a8 = new Discord.RichEmbed()
+    const a9 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('canon')
 	.setURL('')
@@ -189,7 +210,7 @@ exports.code = function(){
 
 
           //heavy cannon
-    const a9 = new Discord.RichEmbed()
+    const a10 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('heavy cannon')
 	.setURL('')
@@ -265,11 +286,17 @@ if (message.content.toLowerCase() === 'flameturret') {
     }
 
 
+if (message.content.toLowerCase() === 'missileturret') {
+        if(message.author.bot) return;
+        message.channel.send(a7);
+    }
+
+
 
 
     if (message.content.toLowerCase() === 'bunkerturret') {
         if(message.author.bot) return;
-        message.channel.send(a7);
+        message.channel.send(a8);
     }
 
 
@@ -279,7 +306,7 @@ if (message.content.toLowerCase() === 'flameturret') {
 
     if (message.content.toLowerCase() === 'lightcannon') {
         if(message.author.bot) return;
-        message.channel.send(a8);
+        message.channel.send(a9);
     }
 
 
@@ -287,7 +314,7 @@ if (message.content.toLowerCase() === 'flameturret') {
 
     if (message.content.toLowerCase() === 'heavycannon') {
         if(message.author.bot) return;
-        message.channel.send(a9);
+        message.channel.send(a10);
     }
 
 
