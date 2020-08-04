@@ -330,6 +330,67 @@ exports.code = function(){
 
 
 
+
+
+
+
+          //subturret t1
+    const a16 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('flak aa')
+	.setURL('')
+	.attachFiles(['./resources/flakturret.png'])
+	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
+	.setDescription("- Short range heavy splash damage\n- The bane of gunships")
+	.addBlankField()
+	.addField("Stats", "Price $4100 \n Health 2700 \n sheild 1500 \n Attack Range 250  \n Build Speed 0.0008s \n InIclass c_antiAirTurretFlak")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://flakturret.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+
+
+
+
+          //subturret t2
+    const a17 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('flak aa')
+	.setURL('')
+	.attachFiles(['./resources/flakturret.png'])
+	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
+	.setDescription("- Short range heavy splash damage\n- The bane of gunships")
+	.addBlankField()
+	.addField("Stats", "Price $4100 \n Health 2700 \n sheild 1500 \n Attack Range 250  \n Build Speed 0.0008s \n InIclass c_antiAirTurretFlak")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://flakturret.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+
+
+
+
+
+          //subturret t3
+    const a18 = new Discord.RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('flak aa')
+	.setURL('')
+	.attachFiles(['./resources/flakturret.png'])
+	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
+	.setDescription("- Short range heavy splash damage\n- The bane of gunships")
+	.addBlankField()
+	.addField("Stats", "Price $4100 \n Health 2700 \n sheild 1500 \n Attack Range 250  \n Build Speed 0.0008s \n InIclass c_antiAirTurretFlak")
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setImage('attachment://flakturret.png')
+	.setTimestamp()
+	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+
+
+
+
+
+
 	//Dont touch zone start
     client.on('message', message => {
 	try{
