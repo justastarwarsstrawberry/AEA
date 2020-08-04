@@ -7,7 +7,7 @@ try{
 
    if(message.content.toLowerCase().includes('rage') &&  client.users.get("543626502215041025") ){
         if(message.author.bot) return;
-        message.reply('rage? I heard galaxy like to rage like a bitch?');
+        message.reply('someone raged hun?');
     }
     
 
