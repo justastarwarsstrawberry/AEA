@@ -20,7 +20,7 @@ exports.code = function(){
 	.setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
 	.setDescription("A list of all turrets to be typed and displayed")
 	.addBlankField()
-	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret \n missileturret  \n bunker turret \n light cannon\n heavy cannon\n SAMturretT1\n SAMturretT2\n SAMturretT3")
+	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret \n missileturret  \n bunker turret \n light cannon\n heavy cannon\n SAMT1\n SAMT2\n SAMT3")
     .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
     .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
@@ -234,13 +234,13 @@ exports.code = function(){
 	.setColor('#1500f7')
 	.setTitle('anti-turretT1')
 	.setURL('')
-	.attachFiles(['./resources/heavycannon.png'])
+	.attachFiles(['./resources/samturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-shoots surface to air missiles\n- cannot attack ground\n- upgradable")
 	.addBlankField()
 	.addField("Stats", "Price $600 \n Health 800 \n Attack Range 250  \n Build Speed 0.002s \n InIclass c_antiAirTurret12")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://heavycannon.png')
+	.setImage('attachment://samturret.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
@@ -255,13 +255,13 @@ exports.code = function(){
 	.setColor('#1500f7')
 	.setTitle('anti-turretT2')
 	.setURL('')
-	.attachFiles(['./resources/heavycannon.png'])
+	.attachFiles(['./resources/samturrett2.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-shoots surface to air missiles\n- cannot attack ground\n- upgradable")
 	.addBlankField()
 	.addField("Stats", "Price $1,200 \n Health 1400 \n Attack Range 320  \n Build Speed 0.0008s \n InIclass c_antiAirTurretT212")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://heavycannon.png')
+	.setImage('attachment://samturrett2.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 
@@ -271,18 +271,18 @@ exports.code = function(){
 
 
 
-          //anti air T3ý
+          //anti air T3
     const a13 = new Discord.RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('anti-turretT3')
 	.setURL('')
-	.attachFiles(['./resources/heavycannon.png'])
+	.attachFiles(['./resources/samturrett3.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-shoots surface to air missiles\n- cannot attack ground\n- upgradable")
 	.addBlankField()
 	.addField("Stats", "Price $9000 \n Health 3900 \n Attack Range 400  \n Build Speed 0.002s \n InIclass c_antiAirTurretT3")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.setImage('attachment://heavycannon.png')
+	.setImage('attachment://samturrett3.png')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
 
@@ -381,7 +381,7 @@ if (message.content.toLowerCase() === 'missileturret') {
 
 
 
-    if (message.content.toLowerCase() === 'SAMturretT1') {
+    if (message.content.toLowerCase() === 'SAMT1') {
         if(message.author.bot) return;
         message.channel.send(a11);
     }
@@ -389,14 +389,14 @@ if (message.content.toLowerCase() === 'missileturret') {
 
 
 
-    if (message.content.toLowerCase() === 'SAMturretT2') {
+    if (message.content.toLowerCase() === 'SAMT2') {
         if(message.author.bot) return;
         message.channel.send(a12);
     }
 
 
 
-    if (message.content.toLowerCase() === 'SAMturretT3') {
+    if (message.content.toLowerCase() === 'SAMT3') {
         if(message.author.bot) return;
         message.channel.send(a13);
     }
