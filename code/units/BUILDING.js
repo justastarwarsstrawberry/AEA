@@ -20,7 +20,7 @@ exports.code = function(){
 	.setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
 	.setDescription("A list of all turrets to be typed and displayed")
 	.addBlankField()
-	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n flame turret \n rocket turret \n missileturret  \n bunker turret \n light cannon\n heavy cannon\n t1sam\n t2sam\n t3sam\n empaa\nflakturret")
+	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n FlameTurret \n RocketTurret \n MissileTurret  \n BunkerTurret \n LightCannon\n HeavyCannon\n T1SamTurret\n T2SamTurret\n T3SamTurret\n EMPAATurret\n FlakTurret")
     .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
     .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
@@ -94,7 +94,7 @@ exports.code = function(){
          //Artyturret
      const a4 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Artillery turret')
+	.setTitle('Artillery Turret')
 	.setURL('')
 	.attachFiles(['./resources/artilleryturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -115,7 +115,7 @@ exports.code = function(){
          //flame turret
     const a5 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('Turret flame')
+	.setTitle('Flame Turret')
 	.setURL('')
 	.attachFiles(['./resources/flameturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -136,7 +136,7 @@ exports.code = function(){
          //rocket turret
     const a6 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('rocket turret')
+	.setTitle('Rocket Turret')
 	.setURL('')
 	.attachFiles(['./resources/rocketturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -154,7 +154,7 @@ exports.code = function(){
          //missileturret
     const a7 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('missile turret')
+	.setTitle('Rocket Turret T2')
 	.setURL('')
 	.attachFiles(['./resources/rocketturrett2.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -176,7 +176,7 @@ exports.code = function(){
          //bunkerturret
     const a8 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('turret bunker')
+	.setTitle('Bunker Turret')
 	.setURL('')
 	.attachFiles(['./resources/bunkerturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -197,7 +197,7 @@ exports.code = function(){
            //light cannon
     const a9 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('canon')
+	.setTitle('Light Cannon')
 	.setURL('')
 	.attachFiles(['./resources/lightcannon.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -219,7 +219,7 @@ exports.code = function(){
           //heavy cannon
     const a10 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('heavy cannon')
+	.setTitle('Heavy Cannon')
 	.setURL('')
 	.attachFiles(['./resources/heavycannon.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -239,7 +239,7 @@ exports.code = function(){
           //anti air T1
     const a11 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('anti-turretT1')
+	.setTitle('SAM Turret')
 	.setURL('')
 	.attachFiles(['./resources/samturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -260,7 +260,7 @@ exports.code = function(){
           //anti air T2
     const a12 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('anti-turretT2')
+	.setTitle('SAM Turret T2')
 	.setURL('')
 	.attachFiles(['./resources/samturrett2.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -281,7 +281,7 @@ exports.code = function(){
           //anti air T3
     const a13 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('anti-turretT3')
+	.setTitle('SAM Turret T3')
 	.setURL('')
 	.attachFiles(['./resources/samturrett3.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -302,7 +302,7 @@ exports.code = function(){
           //emp aa
     const a14 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('emp aa')
+	.setTitle('EMP AA Turret')
 	.setURL('')
 	.attachFiles(['./resources/empaa.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -322,7 +322,7 @@ exports.code = function(){
           //flak aa
     const a15 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('flak aa')
+	.setTitle('FLAK AA Turret')
 	.setURL('')
 	.attachFiles(['./resources/flakturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -344,7 +344,7 @@ exports.code = function(){
           //subturret t1
     const a16 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('subturret t1')
+	.setTitle('Sub Turret t1')
 	.setURL('')
 	.attachFiles(['./resources/subturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -362,7 +362,7 @@ exports.code = function(){
           //subturret t2
     const a17 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('subturret t2')
+	.setTitle('Sub Turret t2')
 	.setURL('')
 	.attachFiles(['./resources/subturrett2.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -381,7 +381,7 @@ exports.code = function(){
           //subturret t3
     const a18 = new Discord.RichEmbed()
 	.setColor('#1500f7')
-	.setTitle('subturret t3')
+	.setTitle('Sub Turret t3')
 	.setURL('')
 	.attachFiles(['./resources/subturrett3.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
@@ -413,7 +413,7 @@ exports.code = function(){
 
 
 
-    if (message.content.toLowerCase() === 't1turret') {
+    if (message.content.toLowerCase() === 't1turret' || message.content.toLowerCase() === 'turret') {
         if(message.author.bot) return;
         message.channel.send(a1);
     }
@@ -486,7 +486,7 @@ if (message.content.toLowerCase() === 'missileturret') {
 
 
 
-    if (message.content.toLowerCase() === 't1sam') {
+    if (message.content.toLowerCase() === 't1sam' || message.content.toLowerCase() === 't1samturret' || message.content.toLowerCase() === 'samturret') {
         if(message.author.bot) return;
         message.channel.send(a11);
     }
@@ -494,14 +494,14 @@ if (message.content.toLowerCase() === 'missileturret') {
 
 
 
-    if (message.content.toLowerCase() === 't2sam') {
+    if (message.content.toLowerCase() === 't2sam' || message.content.toLowerCase() === 't2samturret') {
         if(message.author.bot) return;
         message.channel.send(a12);
     }
 
 
 
-    if (message.content.toLowerCase() === 't3sam') {
+    if (message.content.toLowerCase() === 't3sam' || message.content.toLowerCase() === 't3samturret') {
         if(message.author.bot) return;
         message.channel.send(a13);
     }
@@ -509,7 +509,7 @@ if (message.content.toLowerCase() === 'missileturret') {
 
 
 
-    if (message.content.toLowerCase() === 'empaa') {
+    if (message.content.toLowerCase() === 'empaa' || message.content.toLowerCase() === 'empaaturret') {
         if(message.author.bot) return;
         message.channel.send(a14);
     }
