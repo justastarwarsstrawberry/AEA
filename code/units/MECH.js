@@ -4,7 +4,8 @@ exports.code = function(){
     const fs = require("fs");
     client.setMaxListeners(0)
 //Dont touch Zone end
-
+catchError();
+death
     const e1 = new Discord.RichEmbed()  
         .setColor('#1500f7')
         .setTitle('Basic Mech')
