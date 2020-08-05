@@ -3,7 +3,9 @@ exports.code = function(){
     client.setMaxListeners(0)
     const ReactionRole = require("reaction-role");
     const system = new ReactionRole(process.env.BOT_TOKEN);
-    
+    function catchErr (err, message){
+        client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
+    }
 
 
 

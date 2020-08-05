@@ -4,6 +4,12 @@ exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 const fs = require("fs");
 client.setMaxListeners(0)
+
+
+
+function catchErr (err, message){
+	client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
+}
 //_____________Dont touch Zone end
  const e0 = new Discord.RichEmbed()
 	.setColor('#1500f7')

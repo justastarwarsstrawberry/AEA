@@ -1,5 +1,6 @@
 //_____________Dont touch Zone start
 exports.code = function(){
+    
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
     //const config = require("../other/database.json");

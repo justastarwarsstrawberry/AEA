@@ -2,6 +2,11 @@ exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
     client.setMaxListeners(0)
+
+
+    function catchErr (err, message){
+        client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
+    }
     /* Embeds go here
     */
 
