@@ -108,6 +108,16 @@ const llist = new RichEmbed()
 	.setDescription('Lists all land units')
 	.setTimestamp()
 	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
+const mlist = new RichEmbed()
+	.setColor('#1500f7')
+	.setTitle('Land Units List')
+	.setURL('')
+	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
+	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.addField('Mech Units', 'ArtilleryMech \n AntiAirMech \n AssaultMech \nBasicMech \n FlameMech \n HeavyMech \n HeavyArtilleryMech \n HeavyMobileTurret \n LightMinigunMech \n MobileTurret \n MinigunMech\n PaladinMech \n PlasmaMech \n RocketMech \n TelsaMech', false)
+	.setDescription('Lists all land units')
+	.setTimestamp()
+	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
 const alist = new RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Air Units List')
@@ -243,7 +253,7 @@ else
         {
             // do nothing
         }
-    if(message.content == '/list Mech' || message.content == '/list mech'){
+    if(message.content.toLowerCase() == '/list mech' || message.content.toLowerCase() == '/list mechs'){
 	message.channel.send(mlist);
     	}
         else
