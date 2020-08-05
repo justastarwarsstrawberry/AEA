@@ -5,9 +5,7 @@ const fs = require("fs");
 client.setMaxListeners(0)
 
 
-function catchErr (err, message){
-	client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
-}
+
 //_____________Dont touch Zone end
   
 	

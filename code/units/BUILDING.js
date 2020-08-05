@@ -3,9 +3,7 @@ exports.code = function(){
     const { Client, Attachment } = require('discord.js');
 	client.setMaxListeners(0)
 	
-	function catchErr (err, message){
-		client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
-	}
+	
 //Dont touch zone end
 
 
