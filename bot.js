@@ -22,7 +22,7 @@ function catchErr (err, message){
 }
 
 
-
+/*
 
 const nodes = [{
     host: "localhost",
@@ -78,7 +78,7 @@ client.on("message", async message => {
     }
 });
 
-
+*/
 
 //status
 client.on('ready', () => {
