@@ -224,14 +224,14 @@ try{
 		  .then(messages => message.channel.bulkDelete(messages));
 	
 		}
-		if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Admin')){
+	if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Admin')){
 
-			var numberofmessages = 100;
-			let messagecount = parseInt(numberofmessages);
-			message.channel.fetchMessages({ limit: messagecount })
-			  .then(messages => message.channel.bulkDelete(messages));
+		var numberofmessages = 100;
+		let messagecount = parseInt(numberofmessages);
+		message.channel.fetchMessages({ limit: messagecount })
+		  .then(messages => message.channel.bulkDelete(messages));
 		
-			}
+		}
 
 
 
@@ -250,8 +250,8 @@ if(message.content){
 			message.member.addRole('620321947737260063');	
 }
 
-
-if(message.content == '/muteall' && message.member.roles.some(role => role.id === '620321354977247272')){
+let myRole = message.guild.roles.get("620321354977247272");
+if(message.content == '/muteall' && message.member.roles === myRole){
 		let channel = message.member.voiceChannel;
 		if(!channel){
         for (let member of channel.members) {
@@ -266,7 +266,7 @@ else
         // do nothing
     }
 
-    if(message.content == '/unmuteall' && message.member.roles.some(role => role.id === '620321354977247272')){
+    if(message.content == '/unmuteall' && message.member.roles === myRole){
 			let channel = message.member.voiceChannel;
 			if(!channel){
             for (let member of channel.members) {

@@ -22,12 +22,6 @@ client.on("message", message => {
 
 		}
 
-		//troll mode
-		let y = process.openStdin()
-		y.addListener("data", res => {
-			let x = res.toString().trim().split(/ */g)
-			client.channels.get('711770374202982400').send(x.join(" "))
-		})
 	}
 
     catch(err){
