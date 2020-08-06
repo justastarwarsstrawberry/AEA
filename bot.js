@@ -250,38 +250,40 @@ if(message.content){
 			message.member.addRole('620321947737260063');	
 }
 
-let devalpha = message.guild.roles.get("620321354977247272");
+let id1 = '242687584373964801'
+let id2 = '287608141191970817'
+let id3 = '428543881978707969'
 //let myRole = message.guild.roles.get("620321354977247272");
-if(message.content == '/muteall' && message.member.roles.has(devalpha)){
+
+	if(message.content == '/mute'){
+		if(client.users.get(id1) ||  client.users.get(id2) || client.users.get(id3)){
 		let channel = message.member.voiceChannel;
-		if(!channel){
-        for (let member of channel.members) {
-            member[1].setMute(true)
-	 
-		}
-	}
-}
-
-else
-    {
-        // do nothing
-    }
-
-    if(message.content == '/unmuteall' && message.member.roles.has(devalpha)){
-			let channel = message.member.voiceChannel;
 			if(!channel){
-            for (let member of channel.members) {
-
-                member[1].setMute(false)
-				
+			for (let member of channel.members) {
+				member[1].setMute(true)
+		
+				}
 			}
 		}
-    }
+		else{
+			//do nothing
+		}
+	}
 
-	else
-        {
-            // do nothing
-        }
+    if(message.content == '/unmute'){
+		if(client.users.get(id1) ||  client.users.get(id2) || client.users.get(id3)){
+		let channel = message.member.voiceChannel;
+			if(!channel){
+			for (let member of channel.members) {
+				member[1].setMute(false)
+		 
+				}
+			}
+		}
+		else{
+			//do nothing
+		}
+	}
     if(message.content == '/stop' && client.users.get("242687584373964801")){
 		message.channel.send('Shutting down...');
 		resetBot(message.channel);
