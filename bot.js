@@ -250,9 +250,9 @@ if(message.content){
 			message.member.addRole('620321947737260063');	
 }
 
-let devalpha = message.guild.roles.find("name", "Dev Team Alpha");
+let devalpha = message.guild.roles.get("620321354977247272");
 //let myRole = message.guild.roles.get("620321354977247272");
-if(message.content == '/muteall' && message.member.roles.has(devalpha.id)){
+if(message.content == '/muteall' && message.member.roles.has(devalpha)){
 		let channel = message.member.voiceChannel;
 		if(!channel){
         for (let member of channel.members) {
@@ -267,7 +267,7 @@ else
         // do nothing
     }
 
-    if(message.content == '/unmuteall' && message.member.roles.has(devalpha.id)){
+    if(message.content == '/unmuteall' && message.member.roles.has(devalpha)){
 			let channel = message.member.voiceChannel;
 			if(!channel){
             for (let member of channel.members) {
