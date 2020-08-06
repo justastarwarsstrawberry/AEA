@@ -215,7 +215,6 @@ const blist = new RichEmbed()
 
 
 client.on('message', (message, user) => {
-try{
 	if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Dev Team Alpha')){
 
 		var numberofmessages = 100;
@@ -360,9 +359,5 @@ let id3 = '428543881978707969'
    	message.channel.send(attachment);
     }
 
-	}
-	catch(err){
-		catchErr(err, message);
-	   }
-	});
+});
 
