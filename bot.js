@@ -266,7 +266,8 @@ let id3 = '428543881978707969'
 		else{
 			//do nothing
 		}
-	}
+	
+
 
     if(message.content == '/unmute'){
 		if(client.users.get(id1) ||  client.users.get(id2) || client.users.get(id3)){
