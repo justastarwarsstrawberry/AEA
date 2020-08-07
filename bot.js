@@ -256,13 +256,12 @@ let id3 = '428543881978707969'
 
 	if(message.content == '/mute'){
 		if(client.users.get(id1) ||  client.users.get(id2) || client.users.get(id3)){
-		let channel = message.member.voiceChannel;
-			if(!channel){
+			let channel = message.member.voiceChannel;
 			for (let member of channel.members) {
 				member[1].setMute(true)
-		
-				}
+	
 			}
+		}
 		}
 		else{
 			//do nothing
@@ -359,5 +358,6 @@ let id3 = '428543881978707969'
    	message.channel.send(attachment);
     }
 
-});
+
+	});
 
