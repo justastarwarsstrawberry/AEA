@@ -408,13 +408,6 @@ exports.code = function(){
 
 
 
-
-
-	
-
-
-
-
     if (message.content.toLowerCase() === 't1turret' || message.content.toLowerCase() === 'turret') {
         if(message.author.bot) return;
         message.channel.send(a1);
