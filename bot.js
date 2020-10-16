@@ -22,63 +22,7 @@ function catchErr (err, message){
 }
 
 
-/*
 
-const nodes = [{
-    host: "localhost",
-    port: 2333,
-    password: "youshallnotpass",
-}]
- 
-// Ready event fires when the Discord.js client is ready.
-// Use once so it only fires once.
-client.once("ready", () => {
-    console.log("Ready!")
-    // Initializes an Erela client with the Discord.js client and nodes.
-    client.music = new ErelaClient(client, nodes);
-    // Listens to events.
-    client.music.on("nodeConnect", node => console.log("New node connected"));
-    client.music.on("nodeError", (node, error) => console.log(`Node error: ${error.message}`));
-    client.music.on("trackStart", (player, track) => player.textChannel.send(`Now playing: ${track.title}`));
-    client.music.on("queueEnd", player => {
-        player.textChannel.send("Queue has ended.")
-        client.music.players.destroy(player.guild.id);
-    });
-});
- 
-
-
-
-client.on("message", async message => {
-    if (message.content.toLowerCase().startsWith("/play")) {
-        const {
-            voiceChannel 
-        } = message.member;
-        // Note: for discord.js master you need to use
-        // const { channel } = message.member.voice;
- 
-        // Spawns a player and joins the voice channel.
-        const player = client.music.players.spawn({
-            guild: message.guild,
-            voiceChannel: voiceChannel,
-            textChannel: message.channel,
-        });
- 
-        // Searches Youtube with your query and the requester of the track(s).
-        // Returns a SearchResult with tracks property.
-        const res = await client.music.search(message.content.slice(6), message.author);
- 
-        // Adds the first track to the queue.
-        player.queue.add(res.tracks[0]);
-        message.channel.send(`Enqueuing track ${res.tracks[0].title}.`)
- 
-        // Plays the player (plays the first track in the queue).
-        // The if statement is needed else it will play the current track again
-        if (!player.playing) player.play();
-    }
-});
-
-*/
 
 //status
 client.on('ready', () => {
@@ -129,14 +73,15 @@ const clist = new RichEmbed()
 	.addField('/AEAElite', 'Assigns the AEAElites Role for anyone who wishes it... \n Check #📣-announcements-📣 for more details', false)
 	.addField('+<Suggestion>', 'Puts a suggestion up for a vote in ❌-votes-✅', false)
 	.addField('/list', 'Land, Air, Water, Buildings or Exp \n Lists all the units In a specified category', false)
-	.addField('<unit>', 'name of the unit (no spaces, capitals dont matter) \n Lists the stats of a specified unit ', false)
+	//.addField('<unit>', 'name of the unit (no spaces, capitals dont matter) \n Lists the stats of a specified unit ', false)
 	.addField('/wvs <unit>', 'Gives weaknesses of a specified unit (no spaces, capitals dont matter)', false)
 	.addField('/tipme', 'Gives Tips For AEA', false)
 	//.addField('/teams2', 'A team organizer (still needs testing)', false)
 	.addField('/', '1v1, 2v2, 2v3, 3v3, 4v4, 5v5 \n Gives a random map based on map type', false)
 	.addField('/flipcoin', 'Heads or Tails?', false)
 	.addField('<time>', 'Set a timer for an amount of time \n (Max: 10m)', false)
-        .addField('/how to beat 101', 'gives list of the players on how to beat them (wip) \n (ex /horseman)', false)
+	//.addField('/htb', 'gives list of the players on how to beat them (wip) \n (ex /horseman)', false)
+	
 const aelist = new RichEmbed()
 	.setColor('#1500f7')
 	.setTitle('Admin Commands')
@@ -294,7 +239,8 @@ let id3 = '428543881978707969'
         else
         {
             // do nothing
-        }
+		}
+		
     if(message.content == '/list Land' || message.content == '/list land'){
 	message.channel.send(llist);
     	}
@@ -329,7 +275,17 @@ let id3 = '428543881978707969'
         else
         {
             // do nothing
-        }
+		}
+		
+	if(message.content == '/list Buildings' || message.content == '/list buildings'){
+	message.channel.send(blist);
+		}
+		else
+		{
+			// do nothing
+		}
+
+		
 	if(message.content == '/list Admin' || message.content == '/list admin'){
 			message.channel.send(aelist);
 			}
@@ -337,13 +293,7 @@ let id3 = '428543881978707969'
 			{
 					// do nothing
 			}
-	if(message.content == '/list Buildings' || message.content == '/list buildings'){
-			message.channel.send(blist);
-		}
-		else
-		{
-			// do nothing
-		}
+
 /*
 		const logger = require('discord-chat-logger');
 		const fs = require("fs");

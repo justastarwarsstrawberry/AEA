@@ -14,21 +14,28 @@ const Darkest = require('./units/LAND.js');
 const Mechs = require('./units/MECH.js');
 const vox = require('./units/INFANTRY - Vox777.js');
 const build = require('./units/BUILDING.js');
+
+
+
 // Random
-//const beat = require('./other/101 how to beat.js');
+const kd = require('./other/kd.js');
 const N = require('./other/Nword.js');
 const weak = require('./other/weakness.js');
 const teams = require('./other/teams.js');
 const tips = require('./other/tips.js');
 const jq = require('./other/JQuery.js');
 const Timer = require('./other/timer.js');
-
 const Func = require('./other/skaarjlord.js');
-const test = require('./other/Test.js');
+
+
+//const test = require('./other/Test.js');
 //const rukkit = require('./jars/rukkit.js')
 //const music = require('./jars/music/music.js')
 
 //const role = require('./other/reactionroles.js');
+
+
+
 // Maps
 
 const onevone = require('./maps/1v1.js');
@@ -104,6 +111,11 @@ if(fivevfive && Client){
     console.log('Nword loaded');
   } 
 
+  if(kd && Client){
+    kd.code();
+    console.log('Kill/death loaded');
+  } 
+
   if(Timer && Client){
    		 Timer.code();
     		console.log('Timer loaded');
@@ -118,13 +130,6 @@ if(fivevfive && Client){
     tips.code();
     console.log('Tips loaded');
   }
-
-/*
-  if(beat && Client){
-    tips.code();
-    console.log('101 beat loaded');
-  }
-*/
 
   if(test && Client){
     test.code();
