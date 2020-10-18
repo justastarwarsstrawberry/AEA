@@ -3,18 +3,51 @@ const { WSAEISCONN } = require('constants');
 exports.code = function(){
     const { Client, Attachment } = require('discord.js');
     const fs = require("fs");
+    const Enmap = require("enmap");
     let db = require("./nwords.json");
     client.setMaxListeners(0)
 
+    client.points = new Enmap({name: "wlr"});
 
 
+    
     client.on('message', (message, user) => {
+        if (message.author.bot) return;
+        if (message.guild) {
+          // Let's simplify the `key` part of this.
+          const key = `${message.guild.id}-${message.author.id}`;
+          client.points.ensure(key, {
+            user: message.author.id,
+            guild: message.guild.id,
+            wins: 0,
+            loses: 0
+          });
+          client.points.inc(key, "wlr");
+        }
+        // Rest of message handler
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         let member = guild.member(message.author);
         let nickname = member ? member.displayName : null;
         let userava = message.author;
-        fs.readFile("temp.txt", function(err, win, lose) {
-            console.log(win);
-            console.log(lose);
           
             const wlr = new Discord.RichEmbed()
                 .setColor('#1500f7')
@@ -36,7 +69,7 @@ exports.code = function(){
             message.send(wlr)
             
         }
-        });
+        
     });
 
 }
