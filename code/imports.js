@@ -131,10 +131,6 @@ if(fivevfive && Client){
     console.log('Tips loaded');
   }
 
-  if(test && Client){
-    test.code();
-    console.log('Test.js loaded');
-  }
   /*
   if(rukkit && Client){
     rukkit.code();
