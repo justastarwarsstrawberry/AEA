@@ -3,8 +3,8 @@
 
 const { Client, Attachment, RichEmbed } = require('discord.js');
 const { ErelaClient } = require("erela.js");
-global.Discord = require('discord.js');
-global.client = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 client.setMaxListeners(0)
 
 const Imports = require('./code/imports.js');
