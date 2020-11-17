@@ -13,7 +13,7 @@ const nworde = new Discord.MessageEmbed()
 	.setTitle('The N Word has been spoken')
 	.attachFiles(['./resources/nwordmechs.jpg'])
 	.setDescription("May the wrath of god banish them...")
-	.addBlankField()
+	
 	.setImage('attachment://nwordmechs.jpg')
 	.setTimestamp()
 	.setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');

@@ -24,7 +24,7 @@ exports.code = function(){
                          .setAuthor(nickname, userava.avatarURL)
                          .setDescription(taco)
                         //.addField('Vote Options:','✅ or ❌')
-                         .addBlankField()
+                         
                          .setURL('')
                         .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
                          .setTimestamp()

@@ -21,7 +21,7 @@ exports.code = function(){
 	.setURL('')
 	.setAuthor('Lemons#5444', 'https://i.imgur.com/9wxw0Sg.png')
 	.setDescription("A list of all turrets to be typed and displayed")
-	.addBlankField()
+	
 	.addField("Turrets", "T1Turret \n T2Turret \n T3Turret \n ArtilleryTurret \n FlameTurret \n RocketTurret \n MissileTurret  \n BunkerTurret \n LightCannon\n HeavyCannon\n T1SamTurret\n T2SamTurret\n T3SamTurret\n EMPAATurret\n FlakTurret")
     .setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setTimestamp()
@@ -41,7 +41,7 @@ exports.code = function(){
 	.attachFiles(['./resources/turrett1.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -can only target  ground units\n-multiple upgrades")
-	.addBlankField()
+	
 	.addField("Stats", "Price $500 \n Health 120 \n Attack Range 130 \n directDamage 41 \n Build Speed 3.3s \n InIclass t1turretLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://turrett1.png')
@@ -61,7 +61,7 @@ exports.code = function(){
 	.attachFiles(['./resources/turrett2.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
-	.addBlankField()
+	
 	.addField("Stats", "Price $2,000 \n Health 1100 \n Attack Range 250 \n directDamage 42 \n Build Speed 32s \n InIclass t2gunLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://turrett2.png')
@@ -80,7 +80,7 @@ exports.code = function(){
 	.attachFiles(['./resources/turrett3.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -Can only target ground units\n-Multiple upgrades available")
-	.addBlankField()
+	
 	.addField("Stats", "Price $12,500 \n Health 3200 \n Attack Range 305 \n directDamage 44 \n Build Speed 32s \n InIclass t3gunLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://turrett3.png')
@@ -101,7 +101,7 @@ exports.code = function(){
 	.attachFiles(['./resources/artilleryturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -long range and long reload")
-	.addBlankField()
+	
 	.addField("Stats", "Price $2,500 \n Health 1100 \n Attack Range 360 \n AOEdamage 150 \n Build Speed 32s \n InIclass t1arty")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://artilleryturret.png')
@@ -122,7 +122,7 @@ exports.code = function(){
 	.attachFiles(['./resources/flameturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -short range, area of attack.")
-	.addBlankField()
+	
 	.addField("Stats", "Price $1,800 \n Health 500 \n Attack Range 180 \n Build Speed 32s \n InIclass t1flameLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://flameturret.png')
@@ -143,7 +143,7 @@ exports.code = function(){
 	.attachFiles(['./resources/rocketturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -can attack ground and air. \n -long range.")
-	.addBlankField()
+	
 	.addField("Stats", "Price $2,400 \n Health 900 \n Attack Range 300 \n Build Speed 32s \n InIclass rocket_turret")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://rocketturret.png')
@@ -161,7 +161,7 @@ exports.code = function(){
 	.attachFiles(['./resources/rocketturrett2.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -can attack ground and air. \n -long range.")
-	.addBlankField()
+	
 	.addField("Stats", "Price $11,000 \n Health 1800 \n Attack Range 360 \n Build Speed 0.0005s \n InIclass missile_turret")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://rocketturrett2.png')
@@ -184,7 +184,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("- Heavily armoured bunker turret\n- Near artillery range\n- Heavy damage from dual cannons")
 
-	.addBlankField()
+	
 	.addField("Stats", "Price $8,000 \n Health 7000 \n Attack Range 280 \n Build Speed 32s \n InIclass turret bunker")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://bunkerturret.png')
@@ -204,7 +204,7 @@ exports.code = function(){
 	.attachFiles(['./resources/lightcannon.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-Can attack ground only\n-Very long range\n-Must be ordered to fire manually\n-Needs to be reloaded manually after 5 shots")
-	.addBlankField()
+	
 	.addField("Stats", "Price $7,500 \n Health 1200 \n Attack Range 390  \n Build Speed 0.0005s \n InIclass turretArtyLight")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://lightcannon.png')
@@ -226,7 +226,7 @@ exports.code = function(){
 	.attachFiles(['./resources/heavycannon.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-Can attack ground only\n-Very long range\n-Must be ordered to fire manually\n-Needs to be reloaded manually after 10 shots")
-	.addBlankField()
+	
 	.addField("Stats", "Price $16,500 \n Health 2400 \n Attack Range 440  \n Build Speed 0.0005s \n InIclass turretArtyHeavy")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://heavycannon.png')
@@ -246,7 +246,7 @@ exports.code = function(){
 	.attachFiles(['./resources/samturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-shoots surface to air missiles\n- cannot attack ground\n- upgradable")
-	.addBlankField()
+	
 	.addField("Stats", "Price $600 \n Health 800 \n Attack Range 250  \n Build Speed 0.002s \n InIclass c_antiAirTurret12")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://samturret.png')
@@ -267,7 +267,7 @@ exports.code = function(){
 	.attachFiles(['./resources/samturrett2.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-shoots surface to air missiles\n- cannot attack ground\n- upgradable")
-	.addBlankField()
+	
 	.addField("Stats", "Price $1,200 \n Health 1400 \n Attack Range 320  \n Build Speed 0.0008s \n InIclass c_antiAirTurretT212")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://samturrett2.png')
@@ -288,7 +288,7 @@ exports.code = function(){
 	.attachFiles(['./resources/samturrett3.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("-shoots surface to air missiles\n- cannot attack ground\n- upgradable")
-	.addBlankField()
+	
 	.addField("Stats", "Price $9,000 \n Health 3900 \n Attack Range 400  \n Build Speed 0.002s \n InIclass c_antiAirTurretT3")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://samturrett3.png')
@@ -309,7 +309,7 @@ exports.code = function(){
 	.attachFiles(['./resources/empaa.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("- Can attack air only\n- Shoots powerful AOE EMP blasts\n- The bane of heavy interceptors\n- EMP's instantly disables enemy")
-	.addBlankField()
+	
 	.addField("Stats", "Price $3,900 \n Health  1800 \n sheild 200 \n Attack Range 330  \n Build Speed 0.002s \n InIclass shredderAATurret")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://empaa.png')
@@ -329,7 +329,7 @@ exports.code = function(){
 	.attachFiles(['./resources/flakturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("- Short range heavy splash damage\n- The bane of gunships")
-	.addBlankField()
+	
 	.addField("Stats", "Price $4,100 \n Health 2700 \n sheild 1500 \n Attack Range 250  \n Build Speed 0.0008s \n InIclass c_antiAirTurretFlak")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://flakturret.png')
@@ -351,7 +351,7 @@ exports.code = function(){
 	.attachFiles(['./resources/subturret.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("- Short range heavy splash damage\n- The bane of gunships")
-	.addBlankField()
+	
 	.addField("Stats", "Price $1,000 \n Health 800 \n Attack Range 220  \n Build Speed 0.00010s \n InIclass c_antiAirTurretFlak")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://subturret.png')
@@ -369,7 +369,7 @@ exports.code = function(){
 	.attachFiles(['./resources/subturrett2.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("- Short range heavy splash damage\n- The bane of gunships")
-	.addBlankField()
+	
 	.addField("Stats", "Price $4100 \n Health 2700 \n sheild 1500 \n Attack Range 250  \n Build Speed 0.0008s \n InIclass c_antiAirTurretFlak")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://subturrett2.png')
@@ -388,7 +388,7 @@ exports.code = function(){
 	.attachFiles(['./resources/subturrett3.png'])
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription("- Short range heavy splash damage\n- The bane of gunships")
-	.addBlankField()
+	
 	.addField("Stats", "Price $4100 \n Health 2700 \n sheild 1500 \n Attack Range 250  \n Build Speed 0.0008s \n InIclass c_antiAirTurretFlak")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://subturret t3.png')
