@@ -9,7 +9,7 @@ exports.code = function(){
     */
 
     //Xan Commander
-   const xancommander = new Discord.RichEmbed()  
+   const xancommander = new Discord.MessageEmbed()  
    .setColor('#1500f7')
    .setTitle('Xan Commander')
    .setURL('')
@@ -24,7 +24,7 @@ exports.code = function(){
    .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
    //Ghost
-   const ghost = new Discord.RichEmbed()  
+   const ghost = new Discord.MessageEmbed()  
    .setColor('#1500f7')
    .setTitle('Ghost')
    .setURL('')

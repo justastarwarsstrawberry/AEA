@@ -3,7 +3,7 @@ exports.code = function(){
     const fs = require("fs");
     client.setMaxListeners(0)
 
-    const e1 = new Discord.RichEmbed()  
+    const e1 = new Discord.MessageEmbed()  
         .setColor('#1500f7')
         .setTitle('Fire bee')
         .setURL('')
@@ -17,7 +17,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
         
-    const e2 = new Discord.RichEmbed()  
+    const e2 = new Discord.MessageEmbed()  
         .setColor('#1500f7')
         .setTitle('Apocolypse Tank')
         .setURL('')
@@ -31,7 +31,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
         
-    const e3 = new Discord.RichEmbed()  
+    const e3 = new Discord.MessageEmbed()  
         .setColor('#1500f7')
         .setTitle('Experimental Tank')
         .setURL('')
@@ -45,7 +45,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
     
-    const e4 = new Discord.RichEmbed()  
+    const e4 = new Discord.MessageEmbed()  
         .setColor('#1500f7')
         .setTitle('Experimental Sam Tank')
         .setURL('')
@@ -59,7 +59,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
         
-    const e5 = new Discord.RichEmbed()  
+    const e5 = new Discord.MessageEmbed()  
         .setColor('#1500f7')
         .setTitle('Science Vessel')
         .setURL('')
@@ -73,7 +73,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
-    const e6 = new Discord.RichEmbed()  
+    const e6 = new Discord.MessageEmbed()  
         .setColor('#1500f7')
         .setTitle('Shielded Hovertank')
         .setURL('')
@@ -87,7 +87,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
         
-    const e7 = new Discord.RichEmbed()  
+    const e7 = new Discord.MessageEmbed()  
         .setColor('#1500f7')
         .setTitle('Nuclear Drone')
         .setURL('')
@@ -101,7 +101,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
     
-    const mothership = new Discord.RichEmbed()
+    const mothership = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Mothership')
         .setURL('')
@@ -115,7 +115,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');  
 
-    const expmech = new Discord.RichEmbed()
+    const expmech = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Experimental Mech')
         .setURL('')
@@ -129,7 +129,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
-    const titan = new Discord.RichEmbed()
+    const titan = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Titan')
         .setURL('')
@@ -143,7 +143,7 @@ exports.code = function(){
         .setImage('attachment://exptitan.png')
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
         
-    const expspider = new Discord.RichEmbed()
+    const expspider = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Experimental Spider')
         .setURL('')
@@ -157,7 +157,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
 
-    const navalcarrier = new Discord.RichEmbed()
+    const navalcarrier = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Naval Carrier')
         .setURL('')
@@ -171,7 +171,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
     
-    const flyingfortress = new Discord.RichEmbed()
+    const flyingfortress = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Flying Fortress')
         .setURL('')

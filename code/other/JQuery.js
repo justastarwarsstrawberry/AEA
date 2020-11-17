@@ -14,7 +14,7 @@ try{
     // let avatar = message.member.avatarURL;
     let image = message.Attachment
        const taco = message.content
-             const a1 = new Discord.RichEmbed()
+             const a1 = new Discord.MessageEmbed()
                 .setColor('#1500f7')
                .setTitle('Update')
                //.setAuthor(nickname, avatar)

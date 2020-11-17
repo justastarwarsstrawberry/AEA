@@ -8,7 +8,7 @@ client.setMaxListeners(0)
 //_____________Dont touch Zone end
 
   
-const nworde = new Discord.RichEmbed()
+const nworde = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('The N Word has been spoken')
 	.attachFiles(['./resources/nwordmechs.jpg'])

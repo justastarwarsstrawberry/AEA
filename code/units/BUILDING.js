@@ -15,7 +15,7 @@ exports.code = function(){
 
 
 
-    const tlist = new Discord.RichEmbed()
+    const tlist = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret List')
 	.setURL('')
@@ -34,7 +34,7 @@ exports.code = function(){
 // \n Start a new line
     
     //T1turret
-    const a1 = new Discord.RichEmbed()
+    const a1 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret T1')
 	.setURL('')
@@ -54,7 +54,7 @@ exports.code = function(){
 
 
      //T2turret
-    const a2 = new Discord.RichEmbed()
+    const a2 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret T2')
 	.setURL('')
@@ -73,7 +73,7 @@ exports.code = function(){
 
 
     //T3turret
-    const a3 = new Discord.RichEmbed()
+    const a3 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Turret T3')
 	.setURL('')
@@ -94,7 +94,7 @@ exports.code = function(){
 
 
          //Artyturret
-     const a4 = new Discord.RichEmbed()
+     const a4 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Artillery Turret')
 	.setURL('')
@@ -115,7 +115,7 @@ exports.code = function(){
 
 
          //flame turret
-    const a5 = new Discord.RichEmbed()
+    const a5 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Flame Turret')
 	.setURL('')
@@ -136,7 +136,7 @@ exports.code = function(){
 
 
          //rocket turret
-    const a6 = new Discord.RichEmbed()
+    const a6 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Rocket Turret')
 	.setURL('')
@@ -154,7 +154,7 @@ exports.code = function(){
 
 
          //missileturret
-    const a7 = new Discord.RichEmbed()
+    const a7 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Rocket Turret T2')
 	.setURL('')
@@ -176,7 +176,7 @@ exports.code = function(){
 
 
          //bunkerturret
-    const a8 = new Discord.RichEmbed()
+    const a8 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Bunker Turret')
 	.setURL('')
@@ -197,7 +197,7 @@ exports.code = function(){
 
 
            //light cannon
-    const a9 = new Discord.RichEmbed()
+    const a9 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Light Cannon')
 	.setURL('')
@@ -219,7 +219,7 @@ exports.code = function(){
 
 
           //heavy cannon
-    const a10 = new Discord.RichEmbed()
+    const a10 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Heavy Cannon')
 	.setURL('')
@@ -239,7 +239,7 @@ exports.code = function(){
 
 
           //anti air T1
-    const a11 = new Discord.RichEmbed()
+    const a11 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('SAM Turret')
 	.setURL('')
@@ -260,7 +260,7 @@ exports.code = function(){
 
 
           //anti air T2
-    const a12 = new Discord.RichEmbed()
+    const a12 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('SAM Turret T2')
 	.setURL('')
@@ -281,7 +281,7 @@ exports.code = function(){
 
 
           //anti air T3
-    const a13 = new Discord.RichEmbed()
+    const a13 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('SAM Turret T3')
 	.setURL('')
@@ -302,7 +302,7 @@ exports.code = function(){
 
 
           //emp aa
-    const a14 = new Discord.RichEmbed()
+    const a14 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('EMP AA Turret')
 	.setURL('')
@@ -322,7 +322,7 @@ exports.code = function(){
 
 
           //flak aa
-    const a15 = new Discord.RichEmbed()
+    const a15 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('FLAK AA Turret')
 	.setURL('')
@@ -344,7 +344,7 @@ exports.code = function(){
 
 
           //subturret t1
-    const a16 = new Discord.RichEmbed()
+    const a16 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Sub Turret t1')
 	.setURL('')
@@ -362,7 +362,7 @@ exports.code = function(){
 
 
           //subturret t2
-    const a17 = new Discord.RichEmbed()
+    const a17 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Sub Turret t2')
 	.setURL('')
@@ -381,7 +381,7 @@ exports.code = function(){
 
 
           //subturret t3
-    const a18 = new Discord.RichEmbed()
+    const a18 = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Sub Turret t3')
 	.setURL('')

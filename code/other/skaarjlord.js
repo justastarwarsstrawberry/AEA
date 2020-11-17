@@ -36,7 +36,7 @@ let member = guild.member(message.author);
 let nickname = member ? member.displayName : null;
 let userava = message.author;
    const taco = message.content
-         const a1 = new Discord.RichEmbed()
+         const a1 = new Discord.MessageEmbed()
          	.setColor('#1500f7')
 	        .setTitle('New Suggestion!')
          	.setAuthor(nickname, userava.avatarURL)

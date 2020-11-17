@@ -5,7 +5,7 @@ exports.code = function(){
     client.setMaxListeners(0)
 //Dont touch Zone end
 
-    const e1 = new Discord.RichEmbed()  
+    const e1 = new Discord.MessageEmbed()  
         .setColor('#1500f7')
         .setTitle('Basic Mech')
         .setURL('')
@@ -19,7 +19,7 @@ exports.code = function(){
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
         
-    const e2 = new Discord.RichEmbed() 
+    const e2 = new Discord.MessageEmbed() 
         .setColor('#1500f7')
         .setTitle('Artillery Mech') 
         .setURL('')
@@ -32,7 +32,7 @@ exports.code = function(){
         .setImage('attachment://artillerymech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e3 = new Discord.RichEmbed()
+    const e3 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Mobile Turret')
         .setURL('')
@@ -45,7 +45,7 @@ exports.code = function(){
         .setImage('attachment://mobileturret.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e4 = new Discord.RichEmbed()
+    const e4 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Anti Air Mech')
         .setURL('')
@@ -58,7 +58,7 @@ exports.code = function(){
         .setImage('attachment://antiairmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e5 = new Discord.RichEmbed()
+    const e5 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Light Minigun Mech')
         .setURL('')
@@ -71,7 +71,7 @@ exports.code = function(){
         .setImage('attachment://lightminigunmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e6 = new Discord.RichEmbed()
+    const e6 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Heavy Mech')
         .setURL('')
@@ -84,7 +84,7 @@ exports.code = function(){
         .setImage('attachment://heavymech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e7 = new Discord.RichEmbed()
+    const e7 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Minigun Mech')
         .setURL('')
@@ -97,7 +97,7 @@ exports.code = function(){
         .setImage('attachment://minigunmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e8 = new Discord.RichEmbed()
+    const e8 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Tesla Mech')
         .setURL('')
@@ -110,7 +110,7 @@ exports.code = function(){
         .setImage('attachment://teslamech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e9 = new Discord.RichEmbed()
+    const e9 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Paladin Mech')
         .setURL('')
@@ -123,7 +123,7 @@ exports.code = function(){
         .setImage('attachment://paladinmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e10 = new Discord.RichEmbed()
+    const e10 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Flame Mech')
         .setURL('')
@@ -136,7 +136,7 @@ exports.code = function(){
         .setImage('attachment://flamemech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e11 = new Discord.RichEmbed()
+    const e11 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Plasma Mech')
         .setURL('')
@@ -149,7 +149,7 @@ exports.code = function(){
         .setImage('attachment://plasmamech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e12 = new Discord.RichEmbed()
+    const e12 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Heavy Artillery Mech')
         .setURL('')
@@ -162,7 +162,7 @@ exports.code = function(){
         .setImage('attachment://hvyartmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e13 = new Discord.RichEmbed()
+    const e13 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Rocket Mech')
         .setURL('')
@@ -175,7 +175,7 @@ exports.code = function(){
         .setImage('attachment://rocketmech.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e14 = new Discord.RichEmbed()
+    const e14 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Heavy Mobile Turret')
         .setURL('')
@@ -188,7 +188,7 @@ exports.code = function(){
         .setImage('attachment://hvymobileturret.png')
         .setTimestamp()
         .setFooter('Edited by: SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128');
-    const e15 = new Discord.RichEmbed()
+    const e15 = new Discord.MessageEmbed()
         .setColor('#1500f7')
         .setTitle('Assault Mech')
         .setURL('')

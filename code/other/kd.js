@@ -49,7 +49,7 @@ exports.code = function(){
         let nickname = member ? member.displayName : null;
         let userava = message.author;
           
-            const wlr = new Discord.RichEmbed()
+            const wlr = new Discord.MessageEmbed()
                 .setColor('#1500f7')
                 .setTitle('Win to Lose Ratio')
                 .setURL('')
