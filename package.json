@@ -6,6 +6,7 @@
   "dependencies": {
     "better-sqlite3": "^7.1.1",
     "discord.js": "^12.4.1",
+    "discord.js.old": "^11.6.5",
     "enmap": "^5.8.0",
     "sqlite": "^4.0.15"
   },
