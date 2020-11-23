@@ -10,7 +10,7 @@ const Imports = require('./code/imports.js');
    		Imports.code();
     		console.log('Loading imports');
   }
-const BOT_TOKEN = "NTg3MzY3NzY0NDc0NDYyMjEw.XP1i2w.O87bz-9VFuW7zeOX_70xaZ-vwC4"
+const BOT_TOKEN = You shall not pass
 client.login(BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
 
