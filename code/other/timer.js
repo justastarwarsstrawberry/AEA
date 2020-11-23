@@ -3,11 +3,11 @@ exports.code = function(){
 const { Client, Attachment } = require('discord.js');
 client.setMaxListeners(0)
 
-function catchErr (err, message){
-	client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
-}
+
+	//client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
+
 client.on("message", message => {
-try{
+
 //timer future implementation
 
 
@@ -98,10 +98,8 @@ function timeup() {
   clearTimeout(Timer9m, 250);
   clearTimeout(Timer10m, 250);
 }
-}
-catch(err){
-catchErr(err, message);
- }
+
+
 });
   
 

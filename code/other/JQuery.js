@@ -6,9 +6,9 @@ exports.code = function(){
 
 
 client.on('message', message => {
-try{
 
-    let guild = client.guilds.get('606586202942079017');
+
+    let guild = client.guilds.cache.get('606586202942079017');
     let member = guild.member(message.author);
     let nickname = member ? member.displayName : null;
     // let avatar = message.member.avatarURL;
@@ -45,10 +45,6 @@ if(message.content.toLowerCase().startsWith('->')){
     }
 }
 
-}
-catch(err){
-    catchErr(err, message);
-   }
 });
   
   

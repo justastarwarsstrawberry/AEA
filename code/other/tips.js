@@ -5,7 +5,7 @@ exports.code = function(){
         client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
     }
     client.on('message', message => {
-    try{
+
     function getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -139,10 +139,7 @@ exports.code = function(){
                 message.reply('Hide your income... if you can.')
             }  
         }
-    }
-    catch(err){
-		catchErr(err, message);
-	   }
+
     });
 
 }

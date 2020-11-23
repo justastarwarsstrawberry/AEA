@@ -1,29 +1,23 @@
 
-
-
-const { Client, Attachment, RichEmbed } = require('discord.js');
+const { Client, MessageAttachment, RichEmbed } = require('discord.js');
 global.Discord = require('discord.js');
 global.client = new Discord.Client();
+
 client.setMaxListeners(0)
 
 const Imports = require('./code/imports.js');
   if(Imports && Client){
    		Imports.code();
-    		console.log('Loaded imports');
+    		console.log('Loading imports');
   }
-
-client.login(process.env.BOT_TOKEN);
+const BOT_TOKEN = "NTg3MzY3NzY0NDc0NDYyMjEw.XP1i2w.O87bz-9VFuW7zeOX_70xaZ-vwC4"
+client.login(BOT_TOKEN);
 //BOT_TOKEN is the Client Secret
 
+client.once('ready', () => {
+	console.log('Ready!');
+});
 
-function catchErr (err, message){
-	client.channels.get("738108973651066890").send("ERROR ```" + err + "```")
-}
-
-
-
-
-//status
 client.on('ready', () => {
     client.user.setStatus('available')
     client.user.setPresence({
@@ -34,203 +28,170 @@ client.on('ready', () => {
     });
 });
 
-
-
-
-//welcome message
 client.on('guildMemberAdd', member => {
 
     const channel = member.guild.channels.find(ch => ch.name === 'general');
     if (!channel) return;
     channel.send(`Welcome to AEA, ${member}!`);
+
+    //const member = message.mentions.members.first();
+    //member.addRole(role);
 });
 
-
-
-
-
-
-function resetBot(channel) {
-    channel.send('Restarting...')
-    .then(msg => client.destroy())
-    .then(() => client.login(process.env.BOT_TOKEN));
-}
-
-
-
-
-
-
-
 const talkedRecently = new Set();
-const clist = new RichEmbed()
+// Land units
+const clist = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Commands')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('/AEAElite', 'Assigns the AEAElites Role for anyone who wishes it... \n Check #📣-announcements-📣 for more details', false)
-	.addField('+<Suggestion>', 'Puts a suggestion up for a vote in ❌-votes-✅', false)
-	.addField('/list', 'Land, Air, Water, Buildings or Exp \n Lists all the units In a specified category', false)
-	//.addField('<unit>', 'name of the unit (no spaces, capitals dont matter) \n Lists the stats of a specified unit ', false)
-	.addField('/wvs <unit>', 'Gives weaknesses of a specified unit (no spaces, capitals dont matter)', false)
+	.setThumbnail('https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238')
+	.addField('/AEAElite', 'Assigns the AEAElites Role for anyone who wishes it...', false)
+	.addField('/<Suggestion>', 'Puts a suggestion up for a vote in ❌-votes-✅ \n Must be in the suggestions channel!', false)
+	.addField('/list', 'Land, Air, Water, or Exp \n Lists all the units In a specified category', false)
+	.addField('<unit>', 'name of the unit (nospaces) \n Lists the stats of a specified unit ', false)
+	.addField('/wvs <unit>', 'Gives weaknesses of a specified unit', false)
 	.addField('/tipme', 'Gives Tips For AEA', false)
 	//.addField('/teams2', 'A team organizer (still needs testing)', false)
-	.addField('/', '1v1, 2v2, 2v3, 3v3, 4v4, 5v5 \n Gives a random map based on map type', false)
+	.addField('/<#v#>', '1v1, 2v2, 2v3, 3v3, 4v4, 5v5 \n Gives a random map based on playercount', false)
 	.addField('/flipcoin', 'Heads or Tails?', false)
 	.addField('<time>', 'Set a timer for an amount of time \n (Max: 10m)', false)
-	//.addField('/htb', 'gives list of the players on how to beat them (wip) \n (ex /horseman)', false)
-	
-const aelist = new RichEmbed()
-	.setColor('#1500f7')
-	.setTitle('Admin Commands')
-	.setURL('')
-	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('/muteall', ' - Dev Team Alpha Only', false)
-	.addField('/unmuteall', '- Dev Team Alpha Only', false)
-	.addField('/purge', ' - Deletes 100 messages in the past', false)
-	.addField('/stop', ' - Stops the bot, Lemons Only', false)
 
 	//.addField('a', '<announcementtext>', false)
 	.setDescription('Lists all comands associated with the bot')
 	.setTimestamp()
-	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-const llist = new RichEmbed()
+	.setFooter('More Soon!', 'https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238');
+const llist = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Land Units List')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setThumbnail('https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238')
 	.addField('Land Units', 'Artillery \n Achilles \n Buffalo \n CombatEngineer  \n Comet \n DemoTruck \n HeavyTank \n HeavyArtillery \n HoverTank \n HeavyHoverTank \n LaserTank \n MissileTank \n PlasmaSniper \n SiegeTank \n Scout \n Saber \n Tank \n Typhoon \n TeslaTank \n Zephyr', false)
 	.setDescription('Lists all land units')
 	.setTimestamp()
-	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-const mlist = new RichEmbed()
-	.setColor('#1500f7')
-	.setTitle('Land Units List')
-	.setURL('')
-	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('Mech Units', 'ArtilleryMech \n AntiAirMech \n AssaultMech \nBasicMech \n FlameMech \n HeavyMech \n HeavyArtilleryMech \n HeavyMobileTurret \n LightMinigunMech \n MobileTurret \n MinigunMech\n PaladinMech \n PlasmaMech \n RocketMech \n TelsaMech', false)
-	.setDescription('Lists all land units')
-	.setTimestamp()
-	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-const alist = new RichEmbed()
+	.setFooter('More Soon!', 'https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238');
+const alist = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Air Units List')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setThumbnail('https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238')
 	.addField('Air Units', 'ApacheHelicopter \n Amphibious Jet \n AttackJet \n Bomber \n Dropship \n Gunship \n GrandSlamBomber \n HeavyInterceptor \n HeavyMissileAircraft \n Helicopter \n Interceptor \n Kirov \n LightGunship \n MissileAirship \n MAE-1 \n PhantomScout \n S-1 \n S-2 \n SwallowTail', false)
 	.setDescription('Lists all air units')
 	.setTimestamp()
-	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-const wlist = new RichEmbed()
+	.setFooter('More Soon!', 'https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238');
+const wlist = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Sea Units List')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
+	.setThumbnail('https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238')
 	.addField('Sea Units', 'AntiAirBoat \nAmphibiousWarship \nAttackSubmarine \nBattleCruiser\nBattleship \nCorvette \nDestroyer \nDreadnought \nFrigate \nGunboat \nHeavyMissileShip \nHeavyBattleship \nHeavysub \nLRS \nMissileship \nNautilus \nNavalCarrier \nReconsub \nSelenium \nTargetsub \nThunderHead', false)
 	.setDescription('Lists all sea units')
 	.setTimestamp()
-	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-const EXlist = new RichEmbed()
+	.setFooter('More Soon!', 'https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238');
+const EXlist = new Discord.MessageEmbed()
 	.setColor('#1500f7')
 	.setTitle('Experimental Units List')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('Experimental Units', 'Firebee \n Apocolypse Tank \nExperimentalTank \nExperimentalSamTank \n ScienceVessel \n ShieldedHovertank \n Nukedrone \n Mothership \n ExperimentalMech \n ExperimentalSpider \n NavalCarrier \n FlyingFortress', false)
+	.setThumbnail('https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238')
+	.addField('Experimental Units', 'Firebee \n Mammothtank \nExperimentalTank \nExperimentalSamTank \n ScienceVessel \n ShieldedHovertank \n Nukedrone \n Mothership \n ExperimentalMech \n ExperimentalSpider \n NavalCarrier \n FlyingFortress', false)
 	.setDescription('Lists all experimental units')
 	.setTimestamp()
-	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
-const blist = new RichEmbed()
+	.setFooter('More Soon!', 'https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238');
+const mlist = new Discord.MessageEmbed()
 	.setColor('#1500f7')
-	.setTitle('Building Lists')
+	.setTitle('Mech Units List')
 	.setURL('')
 	.setAuthor('SkaarjLord', 'https://cdn.discordapp.com/avatars/287608141191970817/6d82a2d09c9b2323f453abf5bfaaa588.png?size=128')
-	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
-	.addField('Building List Commands', '/list turrets', false)
-	.setDescription('Lists all Building command lists')
+	.setThumbnail('https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238')
+	.addField('Mech Units', 'ArtilleryMech \n AntiairMech \n AssaultMech \n BasicMech \n FlameMech \n HeavyMech \n HeavyMobileTurret \n HeavyArtilleryMech \n LightminigunMech \n MinigunMech \n PaladinMech \n PlasmaMech \n RocketMech \n Skirmisher \n MechEngineer', false)
+	.setDescription('Lists all mech units')
 	.setTimestamp()
-	.setFooter('More Soon!', 'https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128');
+	.setFooter('More Soon!', 'https://camo.githubusercontent.com/7203f752f0f936475f4ac41dcd3ef9d93af9c2452176a05a1e2b081d1a255ef1/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f69636f6e732f3630363538363230323934323037393031372f34323362346662626563663162626164353566653631343638303337623334642e776562703f73697a653d313238');
+
 
 
 client.on('message', (message, user) => {
-	if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Dev Team Alpha')){
+if(message.content === '/purge' && message.member.roles.cache.find(role => role.name === 'Dev Team Alpha')){
+
+	var numberofmessages = 100;
+	let messagecount = parseInt(numberofmessages);
+	message.channel.messages.fetch({ limit: messagecount })
+	  .then(messages => message.channel.bulkDelete(messages));
+
+	}
+	if(message.content === '/purge' && message.member.roles.cache.find(role => role.name === 'Bot Developer')){
 
 		var numberofmessages = 100;
 		let messagecount = parseInt(numberofmessages);
-		message.channel.fetchMessages({ limit: messagecount })
+		message.channel.messages.fetch({ limit: messagecount })
 		  .then(messages => message.channel.bulkDelete(messages));
 	
 		}
-	if(message.content === '/purge' && message.member.roles.some(role => role.name === 'Admin')){
+		if(message.content === '/purge' && message.member.roles.cache.find(role => role.name === 'Admin')){
 
-		var numberofmessages = 100;
-		let messagecount = parseInt(numberofmessages);
-		message.channel.fetchMessages({ limit: messagecount })
-		  .then(messages => message.channel.bulkDelete(messages));
+			var numberofmessages = 100;
+			let messagecount = parseInt(numberofmessages);
+			message.channel.messages.fetch({ limit: messagecount })
+			  .then(messages => message.channel.bulkDelete(messages));
 		
-		}
-
-
-
-/*
-Not necessary
+			}
 if(message.content == "/give" && client.users.get("242687584373964801") ){
 	message.guild.fetchMember('242687584373964801').then(member => {
 		member.addRole('692034330108887123');	
 	});
 }
+
+/*
+    //const role = client.guild.find(role => role.name === 'Member');
+    //If anything
+    let role = message.guild.roles.find(r => r.name === "Member");
+    if(message.content){
+	    if(message.author.bot) return;  
+         message.guild.fetchMember(message.author).then(member => {
+           message.guild.member.roles.add('620321947737260063');	
+           
+          });
+		     
+    }
+
 */
 
-//If anything
-if(message.content){
-	if(message.author.bot) return;  
-			message.member.addRole('620321947737260063');	
-}
-
-let id1 = '242687584373964801'
-let id2 = '287608141191970817'
-let id3 = '428543881978707969'
-//let myRole = message.guild.roles.get("620321354977247272");
-
-	if(message.content == '/mute'){
-		if(client.users.get(id1) ||  client.users.get(id2) || client.users.get(id3)){
-			let channel = message.member.voiceChannel;
-			for (let member of channel.members) {
-				member[1].setMute(true)
-	
-			}
-		}
-		}
-		else{
-			//do nothing
-		}
-	
 
 
-    if(message.content == '/unmute'){
-		if(client.users.get(id1) ||  client.users.get(id2) || client.users.get(id3)){
-		let channel = message.member.voiceChannel;
-			if(!channel){
-			for (let member of channel.members) {
-				member[1].setMute(false)
-		 
-				}
-			}
-		}
-		else{
-			//do nothing
-		}
-	}
+
+if(message.content == '/muteall' && message.member.roles.cache.some(role => role.name === 'Developer')){
+        let channel = message.member.voiceChannel;
+        for (let member of channel.members) {
+            member[1].setMute(true)
+           
+        }
+    }
+
+    else
+    {
+        // do nothing
+    }
+
+    if(message.content == '/unmuteall' && message.member.roles.cache.some(role => role.name === 'Developer')){
+            let channel = message.member.voiceChannel;
+            for (let member of channel.members) {
+                member[1].setMute(false)
+               
+            }
+        }
+
+        else
+        {
+            // do nothing
+        }
     if(message.content == '/stop' && client.users.get("242687584373964801")){
-		message.channel.send('Shutting down...');
-		resetBot(message.channel);
-
+		message.channel.send('Shutting down...').then(m => {
+        		client.destroy();
+     		});
         }
     if(message.content == '/list'){
 	message.channel.send(clist);
@@ -238,8 +199,7 @@ let id3 = '428543881978707969'
         else
         {
             // do nothing
-		}
-		
+        }
     if(message.content == '/list Land' || message.content == '/list land'){
 	message.channel.send(llist);
     	}
@@ -247,7 +207,7 @@ let id3 = '428543881978707969'
         {
             // do nothing
         }
-    if(message.content.toLowerCase() == '/list mech' || message.content.toLowerCase() == '/list mechs'){
+    if(message.content == '/list Mech' || message.content == '/list mech'){
 	message.channel.send(mlist);
     	}
         else
@@ -274,40 +234,25 @@ let id3 = '428543881978707969'
         else
         {
             // do nothing
-		}
-		
-	if(message.content == '/list Buildings' || message.content == '/list buildings'){
-	message.channel.send(blist);
-		}
-		else
-		{
-			// do nothing
-		}
+        }
 
-		
-	if(message.content == '/list Admin' || message.content == '/list admin'){
-			message.channel.send(aelist);
-			}
-			else
-			{
-					// do nothing
-			}
 
-/*
-		const logger = require('discord-chat-logger');
-		const fs = require("fs");
-		logger.connect("Logging...", process.env.BOT_TOKEN );
-		//logger.logPm("./logs/", true,"587367764474462210");
-		//logger.logGroup("./logs/", false,"587367764474462210");
-		logger.logServer("./logs/", false,"587367764474462210");
-*/
 
-    const attachment = new Attachment('./resources/NuclearDrone.png');
+    if (message.content == '/stop' && client.users.get("242687584373964801") && message.member.roles.cache.some(role => role.name === 'Developer')){
+    //process.exit();
+    }
+    else{
+        // Do notta
+    }
+//tf?
 
+    
+	const attachment = new MessageAttachment('./resources/NuclearDrone.png');
     if (message.content.includes('bruh') || message.content.includes('Bruh')) {
-   	message.channel.send(attachment);
+		message.channel.send(attachment);
     }
 
 
-	});
 
+
+});

@@ -10,7 +10,7 @@ exports.code = function(){
 
 
     client.on("message", async(message) => {
-        try{
+
         
         if(message.content.toLowerCase().startsWith('}') && client.users.get("242687584373964801")){
             let guild = client.guilds.get('606586202942079017');
@@ -39,10 +39,8 @@ exports.code = function(){
             chan.send(resend)
             system.init();
         }
-    }
-    catch(err){
-		catchErr(err, message);
-	   }
+    
+
     });
 
 

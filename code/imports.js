@@ -18,7 +18,7 @@ const build = require('./units/BUILDING.js');
 
 
 // Random
-const kd = require('./other/kd.js');
+//const kd = require('./other/kd.js');
 const N = require('./other/Nword.js');
 const weak = require('./other/weakness.js');
 const teams = require('./other/teams.js');
@@ -28,7 +28,7 @@ const Timer = require('./other/timer.js');
 const Func = require('./other/skaarjlord.js');
 
 
-//const test = require('./other/Test.js');
+const test = require('./other/Test.js');
 //const rukkit = require('./jars/rukkit.js')
 //const music = require('./jars/music/music.js')
 
@@ -110,12 +110,12 @@ if(fivevfive && Client){
     N.code();
     console.log('Nword loaded');
   } 
-
+/*
   if(kd && Client){
     kd.code();
     console.log('Kill/death loaded');
   } 
-
+*/
   if(Timer && Client){
    		 Timer.code();
     		console.log('Timer loaded');
@@ -130,7 +130,10 @@ if(fivevfive && Client){
     tips.code();
     console.log('Tips loaded');
   }
-
+  if(test && Client){
+    test.code();
+    console.log('Handbook loaded');
+  }
   /*
   if(rukkit && Client){
     rukkit.code();
