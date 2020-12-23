@@ -42,7 +42,7 @@ exports.code = function(){
 	.setAuthor('justasweetstrawberry[🇵🇭]#5774', 'https://imgur.com/TlX2rnJ.png')
 	.setDescription(" -can only target  ground units\n-multiple upgrades")
 	
-	.addField("Stats", "Price $500 \n Health 120 \n Attack Range 130 \n directDamage 41 \n Build Speed 3.3s \n InIclass t1turretLand")
+	.addField("Stats", "Price $501 \n Health 120 \n Attack Range 130 \n directDamage 41 \n Build Speed 3.3s \n InIclass t1turretLand")
 	.setThumbnail('https://cdn.discordapp.com/icons/606586202942079017/7eafb97b0aa80cecb8e4a9f0a7f87c21.webp?size=128')
 	.setImage('attachment://turrett1.png')
 	.setTimestamp()
